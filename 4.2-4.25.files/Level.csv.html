@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.02.09.0000.0000\rawexd\Level.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.03.07.0000.0000\rawexd\Level.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6836801,446.112,9.19831,-657.706,0,0.99<wbr>176,45,2008025,371,0,613</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6836801,446.112,9.19831,-657.706,0,0.99<wbr>176,45,2008025,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6836811,320.699,-120.439,-297.566,0,0.9<wbr>9176,45,2007915,371,0,613</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6836812,-470.797,-94.7889,191.878,2.289<wbr>17,1,8,1019981,371,0,613</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6836812,-470.797,-94.7889,191.878,2.289<wbr>17,1,8,1019981,371,0,613</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7074902,745.205,70,489.769,0.240379,1,8<wbr>,1024133,369,0,621</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7074902,745.205,70,489.769,0.240379,1,8<wbr>,1024133,369,0,621</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7074905,530.895,70,577.621,0,1,45,20090<wbr>51,369,0,621</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7074906,610.691,81,647.804,0,103,51,0,3<wbr>69,0,621</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7074906,610.691,81,647.804,0,103,51,0,3<wbr>69,0,621</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7164436,-493.961,1.30118,542.902,2.1411<wbr>6,1,8,1024625,354,0,614</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7164436,-493.961,1.30118,542.902,2.1411<wbr>6,1,8,1024625,354,0,614</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7171992,-133.147,-5.02026,149.283,1.112<wbr>74,1,8,1024517,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7173798,8.59076,4,35.172,1.55294,1,8,10<wbr>24705,370,0,628</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7173798,8.59076,4,35.172,1.55294,1,8,10<wbr>24705,370,0,628</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7173819,615.411,69.0775,-79.881,-2.7274<wbr>4,1,8,1024722,371,0,613</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7173819,615.411,69.0775,-79.881,-2.7274<wbr>4,1,8,1024722,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7173820,</span><span class="sf17b16">552</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">048</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">0824184</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">262</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">928</span><span style="color: #000000; background-color: #efcb05; ">,-0.</span><span class="sf17b16">7<wbr>06245</span><span style="color: #000000; background-color: #efcb05; ">,1,8,1024723,371,0,613</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7173820,</span><span class="sf17b16">534</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">211</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">000618696</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">252</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">565</span><span style="color: #000000; background-color: #efcb05; ">,-<wbr>0.</span><span class="sf17b16">899868</span><span style="color: #000000; background-color: #efcb05; ">,1,8,1024723,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7173821,</span><span class="sf17b16">550</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">501</span><span style="color: #000000; background-color: #efcb05; ">,0.</span><span class="sf17b16">105705</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">261</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">156</span><span style="color: #000000; background-color: #efcb05; ">,2.</span><span class="sf17b16">465<wbr>79</span><span style="color: #000000; background-color: #efcb05; ">,1,8,1024724,371,0,613</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7173821,</span><span class="sf17b16">532</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">373</span><span style="color: #000000; background-color: #efcb05; ">,0.</span><span class="sf17b16">0442338</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">251</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">122</span><span style="color: #000000; background-color: #efcb05; ">,2.</span><span class="sf17b16">27<wbr>217</span><span style="color: #000000; background-color: #efcb05; ">,1,8,1024724,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7173822,</span><span class="sf17b16">554</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">198</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">108926</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">263</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">961</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">94<wbr>0756</span><span style="color: #000000; background-color: #efcb05; ">,1,8,1024716,371,0,613</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7173822,</span><span class="sf17b16">536</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">537</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; ">0.</span><span class="sf17b16">00440741</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">253</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">167</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">1<wbr></span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">13438</span><span style="color: #000000; background-color: #efcb05; ">,1,8,1024716,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7173823,</span><span class="sf17b16">554</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">996</span><span style="color: #000000; background-color: #efcb05; ">,0.</span><span class="sf17b16">181804</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">262</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">494</span><span style="color: #000000; background-color: #efcb05; ">,-1.</span><span class="sf17b16">39<wbr>894</span><span style="color: #000000; background-color: #efcb05; ">,1,8,1024720,371,0,613</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7173823,</span><span class="sf17b16">537</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">034</span><span style="color: #000000; background-color: #efcb05; ">,0.</span><span class="sf17b16">0204363</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">251</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">577</span><span style="color: #000000; background-color: #efcb05; ">,-1.</span><span class="sf17b16">5<wbr>9257</span><span style="color: #000000; background-color: #efcb05; ">,1,8,1024720,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7174281,127.71,11.9991,-77.8306,0,3,51,<wbr>0,370,0,628</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7174281,127.71,11.9991,-77.8306,0,3,51,<wbr>0,370,0,628</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7178328,40.1965,4,61.3848,-1.5708,1,40,<wbr>0,370,0,628</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7178328,40.1965,4,61.3848,-1.5708,1,40,<wbr>0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7178333,</span><span class="sf17b16">731</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">886</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">61</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">2989</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">144</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">271</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">2.</span><span class="sf17b16">9448<wbr>1</span><span style="color: #000000; background-color: #efcb05; ">,1,40,0,371,0,613</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7178333,</span><span class="sf17b16">727</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">313</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">4517</span><span style="color: #000000; background-color: #efcb05; ">,-</span><span class="sf17b16">141</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">507</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; ">2.</span><span class="sf17b16">908<wbr>65</span><span style="color: #000000; background-color: #efcb05; ">,1,40,0,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7178334,-0.0103015,0,7.89867,-3.10021,1<wbr>,40,0,377,0,639</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7178334,-0.0103015,0,7.89867,-3.10021,1<wbr>,40,0,377,0,639</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7187046,462.713,29.6979,749.334,0,3,51,<wbr>0,371,0,613</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7187046,462.713,29.6979,749.334,0,3,51,<wbr>0,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7188107,-119.799,-12.9855,532.494,-1.56<wbr>706,1,8,1024951,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7188681,12.0379,55.9548,237.965,-0.4783<wbr>05,1,8,1024952,367,0,612</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7188681,12.0379,55.9548,237.965,-0.4783<wbr>05,1,8,1024952,367,0,612</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7226940,-4.43916,0,-1.71168,2.08866,1,4<wbr>0,0,461,0,744</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7226940,-4.43916,0,-1.71168,2.08866,1,4<wbr>0,0,461,0,744</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7226945,-174.014,-12.9865,539.802,-0.99<wbr>4522,1,8,1025047,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7226952,-165.564,-12.2489,513.577,-2.55<wbr>359,1,8,1025048,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7226962,-0.004112,0.199975,-4.83677,0,1<wbr>,8,1025049,461,0,744</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7226962,-0.004112,0.199975,-4.83677,0,1<wbr>,8,1025049,461,0,744</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7240643,282.193,16.2023,842.541,2.69989<wbr>,1,40,0,371,0,613</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7240643,282.193,16.2023,842.541,2.69989<wbr>,1,40,0,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7242012,-148.981,-13.2601,519.198,0.489<wbr>153,1,8,1025178,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7242167,-7.02354,0.0210915,4.69892,2.45<wbr>084,0.5,5,0,461,0,744</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7242167,-7.02354,0.0210915,4.69892,2.45<wbr>084,0.5,5,0,461,0,744</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7244808,96.0178,8.15,106.663,2.76746,0.<wbr>5,5,0,370,0,628</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7244808,96.0178,8.15,106.663,2.76746,0.<wbr>5,5,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7244849,-129.176,-5,145.379,-0.0322289,<wbr>1,8,1025233,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7244850,-129.163,-5,146.967,-3.13929,1,<wbr>8,1025234,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7244904,-124.666,-13.0465,510.45,0.7543<wbr>15,0.99176,45,2009414,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7244905,206.012,42.7421,-267.659,0,0.99<wbr>176,45,2009415,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7244908,-396.539,93.6753,-58.8068,0,0.9<wbr>9176,45,2009416,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7244909,148.607,34.4091,81.7426,0,0.991<wbr>76,45,2009417,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7244910,-25.5623,31.8837,-423.62,0,0.99<wbr>176,45,2009418,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7244911,566.766,36.8967,-156.687,0,0.99<wbr>176,45,2009419,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7244996,197.62,18.4586,563.165,-0.66158<wbr>8,0.5,5,0,216,0,402</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7244996,197.62,18.4586,563.165,-0.66158<wbr>8,0.5,5,0,216,0,402</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7247162,633.828,1.54028,216.269,2.7675,<wbr>0.5,5,0,371,0,613</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7247162,633.828,1.54028,216.269,2.7675,<wbr>0.5,5,0,371,0,613</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7247203,-127.153,-11.4901,543.45,-1.858<wbr>03,1,8,1025261,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7247204,-140.329,-12.6829,553.129,0,1,8<wbr>,1025262,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7247376,-151.021,-13.2237,529.709,3.061<wbr>87,1,8,1025274,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7247377,-174.014,-12.9866,539.802,-0.99<wbr>4522,1,8,1025275,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7247378,-169.513,-13.2219,550.548,2.245<wbr>81,1,8,1025276,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7247379,-151.907,-12.5326,512.181,0.152<wbr>391,1,8,1025277,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7247500,8.12099,0,-8.09141,-2.75348,1,8<wbr>,1025278,136,0,351</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7247500,8.12099,0,-8.09141,-2.75348,1,8<wbr>,1025278,136,0,351</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7257023,-39.4765,4,-146.183,0,2,51,0,13<wbr>,0,130</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7257023,-39.4765,4,-146.183,0,2,51,0,13<wbr>,0,130</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7257111,-138.934,-12.2966,543.224,0,0.9<wbr>9176,45,2009421,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7257112,-372.078,63.8172,-458.646,0,0.9<wbr>9176,45,2009432,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7257114,435.549,34.7524,-48.0881,0,0.99<wbr>176,45,2009433,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7257285,-50.0304,6.5,-89.9666,-3.09803,<wbr>1,8,1025311,3,0,133</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7257285,-50.0304,6.5,-89.9666,-3.09803,<wbr>1,8,1025311,3,0,133</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7257471,-296.214,-26.6873,-211.776,0,4,<wbr>51,0,3,0,133</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7257471,-296.214,-26.6873,-211.776,0,4,<wbr>51,0,3,0,133</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7257734,-113.891,-12.3347,511.433,-0.27<wbr>4916,1,8,1025310,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7258352,540.696,71.3182,7.63034,0,103,5<wbr>1,0,367,0,612</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7258352,540.696,71.3182,7.63034,0,103,5<wbr>1,0,367,0,612</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7262619,-163.12,7.16405,-82.2673,-0.698<wbr>26,1,8,1025305,3,0,133</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7262619,-163.12,7.16405,-82.2673,-0.698<wbr>26,1,8,1025305,3,0,133</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7265544,-148.763,-13.2543,528.885,2.570<wbr>5,1,8,1025334,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7265545,74.1025,30.5494,-714.841,0,2,51<wbr>,0,25,0,156</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7265545,74.1025,30.5494,-714.841,0,2,51<wbr>,0,25,0,156</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7281115,-48.5538,4.99997,-125.481,3.027<wbr>63,1,8,1025343,13,0,130</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7281115,-48.5538,4.99997,-125.481,3.027<wbr>63,1,8,1025343,13,0,130</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7288512,-158.982,-5,142.091,-0.119395,1<wbr>,8,1025344,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7291188,32.7012,0.265756,30.1467,-2.457<wbr>15,1,8,1025346,463,0,759</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7291188,32.7012,0.265756,30.1467,-2.457<wbr>15,1,8,1025346,463,0,759</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7315940,-154.339,-10.8184,-164.979,0,3,<wbr>51,0,3,0,133</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7315940,-154.339,-10.8184,-164.979,0,3,<wbr>51,0,3,0,133</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7316084,-35.0339,14,-58.4602,-1.57045,0<wbr>.5,5,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7316197,-35.0339,14,-57.3319,-1.57045,0<wbr>.5,5,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7316204,-36.9239,14,-58.4602,1.57045,0.<wbr>5,5,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7316205,-36.9239,14,-57.2605,1.57045,0.<wbr>5,5,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7316703,-35.111,14,-64.0421,-0.805766,0<wbr>.5,5,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7316704,-33.3715,13.9998,-64.8356,-0.09<wbr>55393,0.5,5,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7317389,-20.4189,2.87592E-06,-58.9403,1<wbr>.57045,1,40,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7317671,-20.1946,0,-58.9664,1.57045,0.5<wbr>,5,0,370,0,628</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7320795,-21.5,4,-138.789,1.95806,0.5,5,<wbr>0,13,0,130</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7320795,-21.5,4,-138.789,1.95806,0.5,5,<wbr>0,13,0,130</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7327810,70.9887,4.90027,-122.462,0,3,51<wbr>,0,3,0,133</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7327810,70.9887,4.90027,-122.462,0,3,51<wbr>,0,3,0,133</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7329671,-174.252,-12.9842,540.149,-0.64<wbr>1166,0.5,5,0,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7329674,-119.799,-12.9855,532.494,-1.56<wbr>711,0.5,5,0,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7329676,-151.987,-12.5326,512.212,0.213<wbr>754,0.5,5,0,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7329865,-174.014,-12.9866,539.802,-0.99<wbr>4522,0.5,5,0,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7329866,-165.564,-12.2489,513.577,-2.55<wbr>359,0.5,5,0,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7330755,-133.79,6.71611,-119.852,0.8677<wbr>24,1,8,1025512,3,0,133</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7330755,-133.79,6.71611,-119.852,0.8677<wbr>24,1,8,1025512,3,0,133</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7340294,-239.979,258.906,784.115,-3.104<wbr>21,1,8,1025514,368,0,620</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7340294,-239.979,258.906,784.115,-3.104<wbr>21,1,8,1025514,368,0,620</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7341214,-106.131,-1.96569,528.174,1.760<wbr>52,1,8,1025515,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7341216,-118.822,-5.64418,542.016,1.204<wbr>75,1,8,1025516,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7341218,-115.953,-5.63331,541.131,-0.72<wbr>8848,1,8,1025517,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7341220,-181.339,-12.342,530.526,-0.640<wbr>703,1,8,1025518,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7341222,-179.919,-12.8745,532.252,2.884<wbr>92,1,8,1025519,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7341231,-121.955,-21.5628,582.371,3.141<wbr>59,1,8,1025520,414,0,732</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7342449,-46.3953,5.70527,-99.4541,3.001<wbr>6,1,8,1025521,3,0,133</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7342449,-46.3953,5.70527,-99.4541,3.001<wbr>6,1,8,1025521,3,0,133</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

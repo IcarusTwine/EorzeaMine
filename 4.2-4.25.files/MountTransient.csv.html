@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.02.09.0000.0000\rawexd\MountTransient.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.03.07.0000.0000\rawexd\MountTransient.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">135,"Summon forth your Nezha chariot and travel the skies like a god.","Yanxian legend tells of a chariot that would carry gods and heroes across the heavens that they might keep watch over their earthbound children. Surprisingly, the realm's flora and fauna are unscathed by the fire and wind belched forth by the divine carriage.","You look to me like</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">135,"Summon forth your Nezha chariot and travel the skies like a god.","Yanxian legend tells of a chariot that would carry gods and heroes across the heavens that they might keep watch over their earthbound children. Surprisingly, the realm's flora and fauna are unscathed by the fire and wind belched forth by the divine carriage.","You look to me like</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">a </span><span style="color: #000000; background-color: #efcb05; ">man</span><span style="color: #000000; background-color: #efcb05; "> in need of a nice,</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">a </span><span class="sf17b18">&lt;If(PlayerParameter(4))&gt;woman&lt;Else/&gt;</span><span style="color: #000000; background-color: #efcb05; ">man<wbr></span><span class="sf17b18">&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; "> in need of a nice,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">relaxin' carriage ride!</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">relaxin' carriage ride!</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">149,"","",""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">149,"","",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">150,"</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">150,"</span><span class="sf17b18">Summon</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">forth</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">your</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tyrannosaur</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">experience</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">firsthand</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">lost</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">time</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">when</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">scalekin</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ruled</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">world.</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Alarmed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">scholars</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">report</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">“T-Rex”—as</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">called</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">those</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">short</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ink—has</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">gained</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">power</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">flight</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">through</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">continued</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">exposure</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Isle</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Val's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">turbulent</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">aether.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Despite</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">its</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ferocious</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">nature,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">some</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">still</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">approach</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">insisting</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">can</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tamed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">adventurer</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">great</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">strength.</span><span style="color: #000000; background-color: #efcb05; "> ","</span><span class="sf17b18">The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tyrannosaurs</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">become</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">pests</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">late.</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; </span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Vath</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Keeneye</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">151,"","",""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">151,"","",""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

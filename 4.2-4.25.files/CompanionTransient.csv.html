@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.02.09.0000.0000\rawexd\CompanionTransient.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.03.07.0000.0000\rawexd\CompanionTransient.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Parley! Squaaawk!</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Parley! Squaaawk!</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;- Loose-beaked Parrot","Parley","Transports action party to the central summoning </span><span class="sf17b16">gate</span><span style="color: #000000; background-color: #efcb05; ">. ",50,35,3,False,False,False,False,False<wbr>,9</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;- Loose-beaked Parrot","Parley","Transports action party to the central summoning </span><span class="sf17b16">Gate</span><span style="color: #000000; background-color: #efcb05; ">. ",50,35,3,False,False,False,False,False<wbr>,9</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">58,"Summon your wind-up Amalj'aa minion. What is burnt may never burn, but rises again, harder and stronger.","Amalj'aa blacksmith Narujj Boh of the Brotherhood of Ash began dabbling in clockwork after rescuing the mammet minion of an adventurer slain near his forges. This particular sample is the product of moons of meticulous calculations</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">58,"Summon your wind-up Amalj'aa minion. What is burnt may never burn, but rises again, harder and stronger.","Amalj'aa blacksmith Narujj Boh of the Brotherhood of Ash began dabbling in clockwork after rescuing the mammet minion of an adventurer slain near his forges. This particular sample is the product of moons of meticulous calculations</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">a chocobo's arse is yellow.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">a chocobo's arse is yellow.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;- Path Companion","Unsatiable","Doubles the amount of HP restored to allies stationed in </span><span class="sf17b16">gates</span><span style="color: #000000; background-color: #efcb05; ">.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp;- Path Companion","Unsatiable","Doubles the amount of HP restored to allies stationed in </span><span class="sf17b16">Gates</span><span style="color: #000000; background-color: #efcb05; ">.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(52258)&gt;Duration:&lt;/Color&gt; 20s",35,75,2,False,True,False,False,Fal<wbr>se,9</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(52258)&gt;Duration:&lt;/Color&gt; 20s",35,75,2,False,True,False,False,Fal<wbr>se,9</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; - Yda","Final Hell","Delivers an attack with a potency of 230 to all enemies within range.",45,55,3,True,False,False,False,<wbr>False,1</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; - Yda","Final Hell","Delivers an attack with a potency of 230 to all enemies within range.",45,55,3,True,False,False,False,<wbr>False,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">108,"Summon your wind-up Papalymo minion. Comes complete with irremovable smirk.","After a clerical error resulted in a sizable windfall for the organization, Scions of the Seventh Dawn coinkeeper Tataru took it upon herself to use the funds to commission wind-up automata crafted in the likeness of her</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">108,"Summon your wind-up Papalymo minion. Comes complete with irremovable smirk.","After a clerical error resulted in a sizable windfall for the organization, Scions of the Seventh Dawn coinkeeper Tataru took it upon herself to use the funds to commission wind-up automata crafted in the likeness of her own</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">own favorite members─</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">favorite members─</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Papalymo being the first.","He'd sooner swallow</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Papalymo being the first.","He'd sooner swallow</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">You gave your word...</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">You gave your word...</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; - Lady Iceheart","Super Jump","Transports action party to the central summoning </span><span class="sf17b16">gate</span><span style="color: #000000; background-color: #efcb05; ">. ",45,20,4,False,True,False,False,False,<wbr>9</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; - Lady Iceheart","Super Jump","Transports action party to the central summoning </span><span class="sf17b16">Gate</span><span style="color: #000000; background-color: #efcb05; ">. ",45,20,4,False,True,False,False,False,<wbr>9</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">229,"Summon your wind-up Hraesvelgr minion. Comes complete with overhead nameplate to help with spelling.","An uncanny attention to detail has been paid in the creation of this automaton, commissioned to help Ishgardians remember a time when hate did not rule the hearts of man and dragon. This is especially true of Hraesvelgr's eyes in</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">229,"Summon your wind-up Hraesvelgr minion. Comes complete with overhead nameplate to help with spelling.","An uncanny attention to detail has been paid in the creation of this automaton, commissioned to help Ishgardians remember a time when hate did not rule the hearts of man and dragon. This is especially true of Hraesvelgr's eyes in</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">moment at the butts.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">moment at the butts.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; - Barthovieu","Boko Bump","</span><span class="sf17b18">'</span><span style="color: #000000; background-color: #efcb05; ">Delivers an attack with a potency of 300 to all enemies within range. The action party is immediately withdrawn from the playing field after execution.",80,65,4,False,False,True,Tr<wbr>ue,False,1</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; - Barthovieu","Boko Bump","</span><span style="color: #000000; background-color: #efcb05; ">Delivers an attack with a potency of 300 to all enemies within range. The action party is immediately withdrawn from the playing field after execution.",80,65,4,False,False,True,Tr<wbr>ue,False,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">239,"Summon your wind-up red mage minion. He'd rather be red than dead.","Tales of mages dabbling in the schools of both black and white abound, but most end in the adept realizing that she should have focused on a single art rather than allowing hubris to drive her to believe that she</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">239,"Summon your wind-up red mage minion. He'd rather be red than dead.","Tales of mages dabbling in the schools of both black and white abound, but most end in the adept realizing that she should have focused on a single art rather than allowing hubris to drive her to believe that she</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">like coeurls.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">like coeurls.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; - Gerolt","Spiritfist","Doubles the amount of HP restored to allies stationed in </span><span class="sf17b16">gates</span><span style="color: #000000; background-color: #efcb05; ">.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; - Gerolt","Spiritfist","Doubles the amount of HP restored to allies stationed in </span><span class="sf17b16">Gates</span><span style="color: #000000; background-color: #efcb05; ">.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(52258)&gt;Duration:&lt;/Color&gt; 20s",65,55,3,False,True,False,True,Fals<wbr>e,9</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(52258)&gt;Duration:&lt;/Color&gt; 20s",65,55,3,False,True,False,True,Fals<wbr>e,9</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">dollop of salamander oil.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">dollop of salamander oil.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; - Godbert","Eft in Charge","Doubles the amount of HP restored to allies stationed in </span><span class="sf17b16">gates</span><span style="color: #000000; background-color: #efcb05; ">.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; - Godbert","Eft in Charge","Doubles the amount of HP restored to allies stationed in </span><span class="sf17b16">Gates</span><span style="color: #000000; background-color: #efcb05; ">.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(52258)&gt;Duration:&lt;/Color&gt; 20s",20,80,2,False,False,False,False,Fa<wbr>lse,9</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(52258)&gt;Duration:&lt;/Color&gt; 20s",20,80,2,False,False,False,False,Fa<wbr>lse,9</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; - Kamaitachi","White Courier","Knocks back all enemies within range.",40,60,2,False,False,True,True,F<wbr>alse,9</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; - Kamaitachi","White Courier","Knocks back all enemies within range.",40,60,2,False,False,True,True,F<wbr>alse,9</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">285,"</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">",</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,False,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">Fa<wbr>lse</span><span style="color: #000000; background-color: #efcb05; ">,False,False,</span><span class="sf17b16">0</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">285,"</span><span class="sf17b18">Summon</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">your</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">wind-up</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Fafnir</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">minion.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Protective</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">eyewear</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">highly</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">recommended.</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Why</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">scholar</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">who</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">crafted</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">mechanical</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">marvel</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">felt</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">already</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">deadly</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dragon</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">need</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">carry</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">sword</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">legendary</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">one,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">at</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">remains</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">unclear.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">When</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">questioned,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">he</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">simply</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">refused</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">alter</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">design</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">began</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">muttering</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">about</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">286,"</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">",</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,False,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">Fa<wbr>lse</span><span style="color: #000000; background-color: #efcb05; ">,False,False,</span><span class="sf17b16">0</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">“drop</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">rates.”</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Those</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">hard</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">scales,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">those</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">287,"</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">","</span><span style="color: #000000; background-color: #efcb05; ">",</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,False,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">Fa<wbr>lse</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False,</span><span class="sf17b16">0</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">claws...that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">puny</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">body.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">you</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">some</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">kind</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">lesser</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dragon,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">kupo?</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; </span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mogzin</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Ridill</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Delivers</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">attack</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">potency</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">90</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">knocks</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">back</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">all</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">enemies</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">within</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">range.</span><span style="color: #000000; background-color: #efcb05; ">",</span><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">20</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">,False,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False,F<wbr>alse,</span><span class="sf17b16">1</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">286,"</span><span class="sf17b18">Summon</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">your</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">wind-up</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mithra</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">minion.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Opinions</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">how</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Miqo'te</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">rate</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">compared</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">their</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ancestors</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">best</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">kept</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">oneself.</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">A</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">stack</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dusty</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tomes</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">healthy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">imagination</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">served</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">inspiration</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">automaton</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">designed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">depict</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mithra─ancient</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ancestor</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Miqo'te.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">She</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">wears</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">traditional</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">scorpion</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">harness</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">rendered</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">painstaking—and</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">pointless—detail</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">by</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">her</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Sharlayan</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">creator.</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Looking</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">make</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">new</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">frrriend,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">we?</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; </span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Nanaa</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mihgo</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Mihgo's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Amigos</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Increases</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ATK</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">all</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">allies</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">within</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">range</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">20</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(40</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">if</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ally</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;Color(-34022)&gt;poppet&lt;/Color&gt;).</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&lt;Color(52258)&gt;Duration:&lt;/Color&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">6s</span><span style="color: #000000; background-color: #efcb05; ">",</span><span class="sf17b16">50</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">50</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">,False,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False,False<wbr>,</span><span class="sf17b16">3</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">287,"</span><span class="sf17b18">Summon</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">your</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Prince</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Anemos</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">minion.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cute</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">cudgely.</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Much</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">chagrin</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">his</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">father─the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Lord</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Anemos─the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">young</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">heir</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">has</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">yet</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">outgrow</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">odd</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">habit</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">concealing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">cudgels</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">using</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">them</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">bludgeon</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">anyone</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">who</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">dares</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">question</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">his</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">merits.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Thankfully,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">absence</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">thew</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">leaves</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">his</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">lively</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">blows</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">lacking.</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">By</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Twelve,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">what</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">hideous,</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">monstrous</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">abomination!</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; </span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Impresario</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Dipsy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Duel</span><span style="color: #000000; background-color: #efcb05; ">","</span><span class="sf17b18">Delivers</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">attack</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">potency</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">150</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">all</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">enemies</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">within</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">range</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">while</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">reducing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">DEF</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">30%.</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&lt;Color(52258)&gt;Duration:&lt;/Color&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">6s</span><span style="color: #000000; background-color: #efcb05; ">",</span><span class="sf17b16">30</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">20</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">,False,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False,<wbr></span><span class="sf17b16">1</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">288,"Summon your komainu minion. Part lion, part dog, all lion-dog.","Believed to ward the places from intruders with evil intent, statues of these mythical lion-dog creatures are oft erected at the gates of sacred locations such as shrines. When paired with another, they will always face forward.","Bright as a lamp,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">288,"Summon your komainu minion. Part lion, part dog, all lion-dog.","Believed to ward the places from intruders with evil intent, statues of these mythical lion-dog creatures are oft erected at the gates of sacred locations such as shrines. When paired with another, they will always face forward.","Bright as a lamp,</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

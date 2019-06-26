@@ -1,0 +1,590 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.02.09.0000.0000\rawexd\Addon.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.03.07.0000.0000\rawexd\Addon.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">236,"&lt;If(GreaterThan(IntegerParameter(1<wbr>),9999))&gt;9999+&lt;Else/&gt;&lt;Value&gt;IntegerPara<wbr>meter(1)&lt;/Value&gt;&lt;/If&gt;&lt;If(GreaterThan(In<wbr>tegerParameter(3),0))&gt;/ &lt;If(GreaterThan(IntegerParameter(2),999<wbr>9))&gt;9999+&lt;Else/&gt;&lt;Value&gt;IntegerParameter<wbr>(2)&lt;/Value&gt;&lt;/If&gt;&lt;Else/&gt;&lt;/If&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">236,"&lt;If(GreaterThan(IntegerParameter(1<wbr>),9999))&gt;9999+&lt;Else/&gt;&lt;Value&gt;IntegerPara<wbr>meter(1)&lt;/Value&gt;&lt;/If&gt;&lt;If(GreaterThan(In<wbr>tegerParameter(3),0))&gt;/ &lt;If(GreaterThan(IntegerParameter(2),999<wbr>9))&gt;9999+&lt;Else/&gt;&lt;Value&gt;IntegerParameter<wbr>(2)&lt;/Value&gt;&lt;/If&gt;&lt;Else/&gt;&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">237,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">238,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">238,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">898,"Glamours are unavailable due to equipment restrictions."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">898,"Glamours are unavailable due to equipment restrictions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">899,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasis<wbr>&gt;&lt;Gui(62)/&gt;Elemental Level &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/Emp<wbr>hasis&gt;&lt;Else/&gt;Elemental Level &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;<wbr>"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">900,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasis<wbr>&gt;&lt;Gui(62)/&gt;Level &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/Emp<wbr>hasis&gt;&lt;Else/&gt;Level &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;<wbr>"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">900,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasis<wbr>&gt;&lt;Gui(62)/&gt;Level &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/Emp<wbr>hasis&gt;&lt;Else/&gt;Level &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;<wbr>"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1036,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasi<wbr>s&gt;&lt;Gui(62)/&gt;&lt;Value&gt;IntegerParameter(1)<wbr>&lt;/Value&gt; &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;&lt;/Emphasis&gt;&lt;Else/&gt;&lt;Value&gt;IntegerPara<wbr>meter(1)&lt;/Value&gt; &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;&lt;/If&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1036,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasi<wbr>s&gt;&lt;Gui(62)/&gt;&lt;Value&gt;IntegerParameter(1)<wbr>&lt;/Value&gt; &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;&lt;/Emphasis&gt;&lt;Else/&gt;&lt;Value&gt;IntegerPara<wbr>meter(1)&lt;/Value&gt; &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1037,"</span><span style="color: #000000; background-color: #efcb05; ">??</span><span style="color: #000000; background-color: #efcb05; "> &lt;Highlight&gt;StringParameter(1)&lt;/Highligh<wbr>t&gt;</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1037,"</span><span class="sf17b18">&lt;If(IntegerParameter(2))&gt;&lt;Highlig<wbr>ht&gt;StringParameter(1)&lt;/Highlight&gt;&lt;Else/<wbr>&gt;</span><span style="color: #000000; background-color: #efcb05; ">??</span><span class="sf17b18">?</span><span style="color: #000000; background-color: #efcb05; "> &lt;Highlight&gt;StringParameter(1)&lt;/Highligh<wbr>t&gt;</span><span class="sf17b18">&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1038,"&lt;Highlight&gt;StringParameter(1)&lt;/Hi<wbr>ghlight&gt; "</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1038,"&lt;Highlight&gt;StringParameter(1)&lt;/Hi<wbr>ghlight&gt; "</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1077,"Available under lv. &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1077,"Available under lv. &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1078,"&lt;If(IntegerParameter(3))&gt;&lt;Sheet(C<wbr>lassJob,IntegerParameter(2),1)/&gt; &nbsp;&lt;Gui(62)/&gt;&lt;Emphasis&gt;&lt;Highlight&gt;StringP<wbr>arameter(1)&lt;/Highlight&gt;&lt;/Emphasis&gt;&lt;Else<wbr>/&gt;&lt;Sheet(ClassJob,IntegerParameter(2),1<wbr>)/&gt; &nbsp;&lt;Highlight&gt;StringParameter(1)&lt;/Highlig<wbr>ht&gt;&lt;/If&gt; &nbsp; &nbsp;&lt;If(GreaterThan(IntegerParameter(7),0))<wbr>&gt;EXP –/–&lt;Else/&gt;&lt;If(GreaterThan(IntegerParame<wbr>ter(6),0))&gt;&lt;Gui(76)/&gt;&lt;Color(-5912)&gt;&lt;Unk<wbr>nown14&gt;FDFFC030&lt;/Unknown14&gt;EXP &lt;Format(IntegerParameter(4),FF022C)/&gt;/&lt;<wbr>Format(IntegerParameter(5),FF022C)/&gt;&lt;Un<wbr>known14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;&lt;Else/&gt;E<wbr>XP &lt;Format(IntegerParameter(4),FF022C)/&gt;/&lt;<wbr>Format(IntegerParameter(5),FF022C)/&gt;&lt;/I<wbr>f&gt;&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1079,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasi<wbr>s&gt;&lt;Gui(62)/&gt;&lt;Highlight&gt;StringParameter<wbr>(1)&lt;/Highlight&gt; &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;&lt;/Emphasis&gt;&lt;Else/&gt;&lt;If(IntegerParamete<wbr>r(5))&gt;&lt;Highlight&gt;StringParameter(1)&lt;/H<wbr>ighlight&gt; &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;&lt;Else/&gt;&lt;If(IntegerParameter(4))&gt;&lt;High<wbr>light&gt;StringParameter(2)&lt;/Highlight&gt;&lt;El<wbr>se/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Hig<wbr>hlight&gt; &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;&lt;/If&gt;&lt;/If&gt;&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1080,"DoW/DoM"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1080,"DoW/DoM"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1088,"&lt;Unknown2D&gt;FF1302280EFF09436C6173<wbr>734A6F62E802010320&lt;/Unknown2D&gt; / &lt;Unknown2D&gt;FF1302280EFF09436C6173734A6F<wbr>62E803010320&lt;/Unknown2D&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1088,"&lt;Unknown2D&gt;FF1302280EFF09436C6173<wbr>734A6F62E802010320&lt;/Unknown2D&gt; / &lt;Unknown2D&gt;FF1302280EFF09436C6173734A6F<wbr>62E803010320&lt;/Unknown2D&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1089,"&lt;If(IntegerParameter(2))&gt;&lt;Highlig<wbr>ht&gt;StringParameter(1)&lt;/Highlight&gt;&lt;Else/<wbr>&gt;??? &lt;Highlight&gt;StringParameter(1)&lt;/Highligh<wbr>t&gt;&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1090,"Large-scale Levequests"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1090,"Large-scale Levequests"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1092,"Use &lt;If(IntegerParameter(1))&gt;&lt;If(LessThanOr<wbr>EqualTo(IntegerParameter(1),10))&gt;&lt;Switc<wbr>h(IntegerParameter(1))&gt;&lt;Case(1)&gt;one&lt;/Ca<wbr>se&gt;&lt;Case(2)&gt;two&lt;/Case&gt;&lt;Case(3)&gt;three&lt;/C<wbr>ase&gt;&lt;Case(4)&gt;four&lt;/Case&gt;&lt;Case(5)&gt;five&lt;/<wbr>Case&gt;&lt;Case(6)&gt;six&lt;/Case&gt;&lt;Case(7)&gt;seven&lt;<wbr>/Case&gt;&lt;Case(8)&gt;eight&lt;/Case&gt;&lt;Case(9)&gt;nin<wbr>e&lt;/Case&gt;&lt;Case(10)&gt;ten&lt;/Case&gt;&lt;/Switch&gt;&lt;E<wbr>lse/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;<wbr>&lt;/If&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;<wbr>/Value&gt;&lt;/If&gt; guildleve &lt;If(Equal(IntegerParameter(0),1))&gt;allow<wbr>ance&lt;Else/&gt;allowances&lt;/If&gt; to accept &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;?"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1092,"Use &lt;If(IntegerParameter(1))&gt;&lt;If(LessThanOr<wbr>EqualTo(IntegerParameter(1),10))&gt;&lt;Switc<wbr>h(IntegerParameter(1))&gt;&lt;Case(1)&gt;one&lt;/Ca<wbr>se&gt;&lt;Case(2)&gt;two&lt;/Case&gt;&lt;Case(3)&gt;three&lt;/C<wbr>ase&gt;&lt;Case(4)&gt;four&lt;/Case&gt;&lt;Case(5)&gt;five&lt;/<wbr>Case&gt;&lt;Case(6)&gt;six&lt;/Case&gt;&lt;Case(7)&gt;seven&lt;<wbr>/Case&gt;&lt;Case(8)&gt;eight&lt;/Case&gt;&lt;Case(9)&gt;nin<wbr>e&lt;/Case&gt;&lt;Case(10)&gt;ten&lt;/Case&gt;&lt;/Switch&gt;&lt;E<wbr>lse/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;<wbr>&lt;/If&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;<wbr>/Value&gt;&lt;/If&gt; guildleve &lt;If(Equal(IntegerParameter(0),1))&gt;allow<wbr>ance&lt;Else/&gt;allowances&lt;/If&gt; to accept &lt;Highlight&gt;StringParameter(2)&lt;/Highligh<wbr>t&gt;?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1093,"&lt;Value&gt;IntegerParameter(1)&lt;/Valu<wbr>e&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1095,"Add New Tab"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1095,"Add New Tab"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1111,"&lt;If(IntegerParameter(1))&gt;&lt;Highli<wbr>ght&gt;StringParameter(2)&lt;/Highlight&gt; &lt;Else/&gt;&lt;/If&gt;&lt;Unknown2D&gt;FF07022903EA0403<wbr>&lt;/Unknown2D&gt;&lt;If(IntegerParameter(4))&gt; &lt;Highlight&gt;StringParameter(5)&lt;/Highligh<wbr>t&gt;&lt;Else/&gt;&lt;/If&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1111,"&lt;If(IntegerParameter(1))&gt;&lt;Highli<wbr>ght&gt;StringParameter(2)&lt;/Highlight&gt; &lt;Else/&gt;&lt;/If&gt;&lt;Unknown2D&gt;FF07022903EA0403<wbr>&lt;/Unknown2D&gt;&lt;If(IntegerParameter(4))&gt; &lt;Highlight&gt;StringParameter(5)&lt;/Highligh<wbr>t&gt;&lt;Else/&gt;&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1112,"&lt;If(IntegerParameter(1))&gt;&lt;Highlig<wbr>ht&gt;StringParameter(2)&lt;/Highlight&gt;% &lt;Else/&gt;&lt;/If&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">Highlight&gt;StringParameter(<wbr></span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">)&lt;/Highlight&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">If</span><span style="color: #000000; background-color: #efcb05; ">(IntegerParameter(</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">))&gt;<wbr></span><span style="color: #000000; background-color: #efcb05; "> &lt;</span><span style="color: #000000; background-color: #efcb05; ">Highlight&gt;StringParameter(5)&lt;/Highligh<wbr>t&gt;&lt;Else/&gt;&lt;/If&gt;"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1112,"&lt;If(IntegerParameter(1))&gt;&lt;Highlig<wbr>ht&gt;StringParameter(2)&lt;/Highlight&gt;% &lt;Else/&gt;&lt;/If&gt;&lt;</span><span class="sf17b18">Unknown2D&gt;FF07022903EA0403<wbr>&lt;/Unknown2D&gt;&lt;If(IntegerParameter(4))&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;</span><span style="color: #000000; background-color: #efcb05; ">Highlight&gt;StringParameter(</span><span class="sf17b16">5</span><span style="color: #000000; background-color: #efcb05; ">)&lt;/Highligh<wbr>t&gt;&lt;</span><span class="sf17b18">Else/&gt;&lt;/</span><span style="color: #000000; background-color: #efcb05; ">If</span><span class="sf17b18">&gt;"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">1113,"&lt;If</span><span style="color: #000000; background-color: #efcb05; ">(IntegerParameter(</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">))&gt;</span><span class="sf17b18">&lt;Highli<wbr>ght&gt;StringParameter(2)&lt;/Highlight&gt;</span><span style="color: #000000; background-color: #efcb05; "> &lt;</span><span class="sf17b18">Else/&gt;&lt;/If&gt;&lt;Unknown2D&gt;FF07022903EA0403<wbr>&lt;/Unknown2D&gt;&lt;If(IntegerParameter(4))&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">H<wbr>ighlight&gt;StringParameter(5)&lt;/Highlight&gt;<wbr>&lt;Else/&gt;&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1115,"Alliance A"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1115,"Alliance A"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2038,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2038,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2039,"&lt;Highlight&gt;StringParameter(1)&lt;/H<wbr>ighlight&gt;&lt;Indent/&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2041,"x&lt;Value&gt;IntegerParameter(1)&lt;/Valu<wbr>e&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2041,"x&lt;Value&gt;IntegerParameter(1)&lt;/Valu<wbr>e&gt;"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2048,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasi<wbr>s&gt;&lt;Gui(62)/&gt;&lt;Highlight&gt;StringParameter(<wbr>1)&lt;/Highlight&gt;%&lt;/Emphasis&gt;&lt;Else/&gt;&lt;Highl<wbr>ight&gt;StringParameter(1)&lt;/Highlight&gt;%&lt;/I<wbr>f&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2048,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasi<wbr>s&gt;&lt;Gui(62)/&gt;&lt;Highlight&gt;StringParameter(<wbr>1)&lt;/Highlight&gt;%&lt;/Emphasis&gt;&lt;Else/&gt;&lt;Highl<wbr>ight&gt;StringParameter(1)&lt;/Highlight&gt;%&lt;/I<wbr>f&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2049,"&lt;If(IntegerParameter(3))&gt;&lt;Emphasi<wbr>s&gt;&lt;Gui(62)/&gt;&lt;Highlight&gt;StringParameter<wbr>(1)&lt;/Highlight&gt;&lt;/Emphasis&gt;&lt;Else/&gt;&lt;High<wbr>light&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/I<wbr>f&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2050,"Alliance"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2050,"Alliance"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3042,"You peer into the Zodiac glass..."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3042,"You peer into the Zodiac glass..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3049,"&lt;</span><span class="sf17b16">Clickable(</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">Sheet(ClassJob,Intege<wbr>rParameter(1),27)</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b18">)/&gt;</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3049,"&lt;</span><span class="sf17b16">Unknown2D&gt;FF1202280EFF09436C6173<wbr>734A6F62E8021C03</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b18">Unknown2D</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3050,"Duty Recorder"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3050,"Duty Recorder"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5444,"Bonus"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5444,"Bonus"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5445,"Collectability: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;If(E<wbr>qual(IntegerParameter(2),IntegerParamet<wbr>er(1)))&gt;&lt;Else/&gt;</span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; ">&lt;If(Equal(IntegerParame<wbr>ter(2),0))&gt;&lt;Else/&gt;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Value&gt;IntegerParamet<wbr>er(2)&lt;/Value&gt;&lt;/If&gt;&lt;/If&gt;"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5445,"Collectability: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;If(E<wbr>qual(IntegerParameter(2),IntegerParamet<wbr>er(1)))&gt;&lt;Else/&gt;</span><span style="color: #000000; background-color: #efcb05; ">&lt;If(Equal(IntegerParamet<wbr>er(2),0))&gt;&lt;Else/&gt;</span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; ">&lt;Value&gt;IntegerParamet<wbr>er(2)&lt;/Value&gt;&lt;/If&gt;&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5446,"&lt;Value&gt;IntegerParameter(1)&lt;/Value<wbr>&gt;</span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; ">&lt;If(Equal(IntegerParameter(2),0))&gt;&lt;El<wbr>se/&gt;</span><span style="color: #000000; background-color: #efcb05; ">&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;<wbr>/If&gt;"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5446,"&lt;Value&gt;IntegerParameter(1)&lt;/Value<wbr>&gt;</span><span style="color: #000000; background-color: #efcb05; ">&lt;If(Equal(IntegerParameter(2),0))&gt;&lt;Els<wbr>e/&gt;</span><span class="sf17b18">-</span><span style="color: #000000; background-color: #efcb05; ">&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;<wbr>/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5447,"Time Remaining: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;h &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;m &lt;Time(IntegerParameter(3))/&gt;[&lt;Value&gt;Top<wbr>LevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopL<wbr>evelParameter(219)&lt;/Value&gt; &lt;Value&gt;TopLevelParameter(218)&lt;/Value&gt;:&lt;<wbr>TwoDigitValue&gt;TopLevelParameter(217)&lt;/T<wbr>woDigitValue&gt;]"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5447,"Time Remaining: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;h &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;m &lt;Time(IntegerParameter(3))/&gt;[&lt;Value&gt;Top<wbr>LevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopL<wbr>evelParameter(219)&lt;/Value&gt; &lt;Value&gt;TopLevelParameter(218)&lt;/Value&gt;:&lt;<wbr>TwoDigitValue&gt;TopLevelParameter(217)&lt;/T<wbr>woDigitValue&gt;]"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6179,"Confirm the time remaining until current voyages are complete."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6179,"Confirm the time remaining until current voyages are complete."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6180,"</span><span class="sf17b16">Tasks</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">accomplished</span><span style="color: #000000; background-color: #efcb05; ">: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; (&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;/&lt;Va<wbr>lue&gt;IntegerParameter(</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">)&lt;/Value&gt; remaining)"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6180,"</span><span class="sf17b16">Voyages</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">completed</span><span style="color: #000000; background-color: #efcb05; ">: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; (&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;/&lt;Va<wbr>lue&gt;IntegerParameter(</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">)&lt;/Value&gt; remaining)"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6181,"No voyages in progress."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6181,"No voyages in progress."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6259,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6259,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6260,"Allow non-</span><span class="sf17b16">Free</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Company</span><span style="color: #000000; background-color: #efcb05; "> members access to your estate hall?"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6260,"Allow non-</span><span class="sf17b16">free</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">company</span><span style="color: #000000; background-color: #efcb05; "> members access to your estate hall?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6261,"Estate Hall Access"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6261,"Estate Hall Access"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp;- The demolition of an estate&lt;/Color&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp;- The demolition of an estate&lt;/Color&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">Thsi</span><span style="color: #000000; background-color: #efcb05; "> includes items purchased on the Mog Station or redeemed with a promotional code.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">This</span><span style="color: #000000; background-color: #efcb05; "> includes items purchased on the Mog Station or redeemed with a promotional code.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6713,"Travel to &lt;Switch(IntegerParameter(2))&gt;&lt;Case(1)&gt;1<wbr>st&lt;/Case&gt;&lt;Case(2)&gt;2nd&lt;/Case&gt;&lt;Case(3)&gt;3r<wbr>d&lt;/Case&gt;&lt;Case(4)&gt;4th&lt;/Case&gt;&lt;Case(5)&gt;5th<wbr>&lt;/Case&gt;&lt;Case(6)&gt;6th&lt;/Case&gt;&lt;Case(7)&gt;7th&lt;<wbr>/Case&gt;&lt;Case(8)&gt;8th&lt;/Case&gt;&lt;Case(9)&gt;9th&lt;/<wbr>Case&gt;&lt;Case(10)&gt;10th&lt;/Case&gt;&lt;Case(11)&gt;11t<wbr>h&lt;/Case&gt;&lt;Case(12)&gt;12th&lt;/Case&gt;&lt;Case(13)&gt;<wbr>13th&lt;/Case&gt;&lt;Case(14)&gt;14th&lt;/Case&gt;&lt;Case(1<wbr>5)&gt;15th&lt;/Case&gt;&lt;Case(16)&gt;16th&lt;/Case&gt;&lt;Cas<wbr>e(17)&gt;17th&lt;/Case&gt;&lt;Case(18)&gt;18th&lt;/Case&gt;&lt;<wbr>Case(19)&gt;19th&lt;/Case&gt;&lt;Case(20)&gt;20th&lt;/Cas<wbr>e&gt;&lt;/Switch&gt; Ward, &lt;Sheet(PlaceName,IntegerParameter(1),0)<wbr>/&gt;?"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6713,"Travel to &lt;Switch(IntegerParameter(2))&gt;&lt;Case(1)&gt;1<wbr>st&lt;/Case&gt;&lt;Case(2)&gt;2nd&lt;/Case&gt;&lt;Case(3)&gt;3r<wbr>d&lt;/Case&gt;&lt;Case(4)&gt;4th&lt;/Case&gt;&lt;Case(5)&gt;5th<wbr>&lt;/Case&gt;&lt;Case(6)&gt;6th&lt;/Case&gt;&lt;Case(7)&gt;7th&lt;<wbr>/Case&gt;&lt;Case(8)&gt;8th&lt;/Case&gt;&lt;Case(9)&gt;9th&lt;/<wbr>Case&gt;&lt;Case(10)&gt;10th&lt;/Case&gt;&lt;Case(11)&gt;11t<wbr>h&lt;/Case&gt;&lt;Case(12)&gt;12th&lt;/Case&gt;&lt;Case(13)&gt;<wbr>13th&lt;/Case&gt;&lt;Case(14)&gt;14th&lt;/Case&gt;&lt;Case(1<wbr>5)&gt;15th&lt;/Case&gt;&lt;Case(16)&gt;16th&lt;/Case&gt;&lt;Cas<wbr>e(17)&gt;17th&lt;/Case&gt;&lt;Case(18)&gt;18th&lt;/Case&gt;&lt;<wbr>Case(19)&gt;19th&lt;/Case&gt;&lt;Case(20)&gt;20th&lt;/Cas<wbr>e&gt;&lt;/Switch&gt; Ward, &lt;Sheet(PlaceName,IntegerParameter(1),0)<wbr>/&gt;?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6714,"Private Residence Relocation (Plot &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;, Ward &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;, &lt;SheetEn(PlaceName,2,IntegerParameter(1<wbr>),2,1)/&gt;)</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6714,"Private Residence Relocation (Plot &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;, Ward &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;, &lt;SheetEn(PlaceName,2,IntegerParameter(1<wbr>),2,1)/&gt;)</span><span class="sf17b18">.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6715,"Free Company Estate Relocation (Plot &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;, Ward &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;, &lt;SheetEn(PlaceName,2,IntegerParameter(1<wbr>),2,1)/&gt;)</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6715,"Free Company Estate Relocation (Plot &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;, Ward &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;, &lt;SheetEn(PlaceName,2,IntegerParameter(1<wbr>),2,1)/&gt;)</span><span class="sf17b18">.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6716,"Shared Estate Settings"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">6716,"Shared Estate Settings"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">・Players may only own one private and one free company estate per &lt;Color(-154)&gt;World&lt;/Color&gt; per&lt;Color(-154)&gt;service account&lt;/Color&gt;.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">・Players may only own one private and one free company estate per &lt;Color(-154)&gt;World&lt;/Color&gt; per &lt;Color(-154)&gt;service account&lt;/Color&gt;.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">・Free companies with less than &lt;Color(-154)&gt;</span><span class="sf17b16">three</span><span style="color: #000000; background-color: #efcb05; "> members&lt;/Color&gt; cannot purchase land.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">・Free companies with less than &lt;Color(-154)&gt;</span><span class="sf17b16">four</span><span style="color: #000000; background-color: #efcb05; "> members&lt;/Color&gt; cannot purchase land.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">8912,"Evaluation"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">8912,"Evaluation"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8913,"&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF8E6A0C&lt;<wbr>/Unknown14&gt;&lt;Highlight&gt;StringParameter(2<wbr>)&lt;/Highlight&gt;&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;<wbr>/Color&gt;&lt;If(Equal(IntegerParameter(1),60<wbr>721))&gt;&lt;Gui(89)/&gt;&lt;Else/&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">If</span><span style="color: #000000; background-color: #efcb05; ">(Equal(Intege<wbr>rParameter(1),60722))&gt;&lt;Gui(90)/&gt;&lt;Else/&gt;<wbr>&lt;</span><span style="color: #000000; background-color: #efcb05; ">If</span><span style="color: #000000; background-color: #efcb05; ">(Equal(IntegerParameter(1),60723))&gt;&lt;<wbr>Gui(91)/&gt;&lt;Else/&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">If</span><span style="color: #000000; background-color: #efcb05; ">(Equal(IntegerParame<wbr>ter(1),60724))&gt;&lt;Gui(92)/&gt;&lt;Else/&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">If</span><span style="color: #000000; background-color: #efcb05; ">(Equ<wbr>al(IntegerParameter(1),60725))&gt;&lt;Gui(93)<wbr>/&gt;&lt;Else/&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">If</span><span style="color: #000000; background-color: #efcb05; ">(Equal(IntegerParameter(1),<wbr>60726))&gt;&lt;Gui(94)/&gt;&lt;Else/&gt;&lt;/If&gt;&lt;</span><span class="sf17b18">/</span><span style="color: #000000; background-color: #efcb05; ">If</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b18">If<wbr></span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b18">If</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;/If&gt;</span><span class="sf17b18">&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8913,"&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF8E6A0C&lt;<wbr>/Unknown14&gt;&lt;Highlight&gt;StringParameter(2<wbr>)&lt;/Highlight&gt;&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;<wbr>/Color&gt;&lt;If(Equal(IntegerParameter(1),60<wbr>721))&gt;&lt;Gui(89)/&gt;&lt;Else/&gt;&lt;</span><span class="sf17b18">/</span><span style="color: #000000; background-color: #efcb05; ">If</span><span class="sf17b18">&gt;&lt;If</span><span style="color: #000000; background-color: #efcb05; ">(Equal(I<wbr>ntegerParameter(1),60722))&gt;&lt;Gui(90)/&gt;&lt;E<wbr>lse/&gt;&lt;</span><span class="sf17b18">/</span><span style="color: #000000; background-color: #efcb05; ">If</span><span class="sf17b18">&gt;&lt;If</span><span style="color: #000000; background-color: #efcb05; ">(Equal(IntegerParameter(1)<wbr>,60723))&gt;&lt;Gui(91)/&gt;&lt;Else/&gt;&lt;</span><span class="sf17b18">/</span><span style="color: #000000; background-color: #efcb05; ">If</span><span class="sf17b18">&gt;&lt;If</span><span style="color: #000000; background-color: #efcb05; ">(Equa<wbr>l(IntegerParameter(1),60724))&gt;&lt;Gui(92)/<wbr>&gt;&lt;Else/&gt;&lt;</span><span class="sf17b18">/</span><span style="color: #000000; background-color: #efcb05; ">If</span><span class="sf17b18">&gt;&lt;If</span><span style="color: #000000; background-color: #efcb05; ">(Equal(IntegerParameter<wbr>(1),60725))&gt;&lt;Gui(93)/&gt;&lt;Else/&gt;&lt;</span><span class="sf17b18">/</span><span style="color: #000000; background-color: #efcb05; ">If</span><span class="sf17b18">&gt;&lt;If</span><span style="color: #000000; background-color: #efcb05; ">(E<wbr>qual(IntegerParameter(1),60726))&gt;&lt;Gui(9<wbr>4)/&gt;&lt;Else/&gt;&lt;/If&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">If</span><span class="sf17b18">(Equal(IntegerParame<wbr>ter(1),60852))</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;</span><span class="sf17b18">Gui(102)</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;</span><span class="sf17b18">Else</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; ">"<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">8914,"Details"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">8914,"Details"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">10459,"??????"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">10459,"??????"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">10460,"</span><span class="sf17b16">Appraising</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">10460,"</span><span class="sf17b16">Working</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">10461,"Name"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">10461,"Name"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">10995,"Do not adjust the level of any items."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">10995,"Do not adjust the level of any items."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11000,"Lockbox</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11000,"Lockbox </span><span class="sf17b18">Opening/Crystal</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Exchange</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11001,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11001,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11004,"Qty."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11004,"Qty."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11005,"</span><span style="color: #000000; background-color: #efcb05; ">Open &lt;SheetEn(Item,2,IntegerParameter(1),1,1<wbr>)/&gt;</span><span style="color: #000000; background-color: #efcb05; ">?</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11005,"</span><span class="sf17b18">&lt;If(Equal(IntegerParameter(1),21<wbr>803))&gt;Offer</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;SheetEn(Item,2,IntegerParameter(1),1,1<wbr>)/&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">exchange&lt;Else/&gt;</span><span style="color: #000000; background-color: #efcb05; ">Open &lt;SheetEn(Item,2,IntegerParameter(1),1,1<wbr>)/&gt;</span><span class="sf17b18">&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; ">?</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Attempts remaining: &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Attempts remaining: &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11006,"</span><span class="sf17b16">Open</span><span style="color: #000000; background-color: #efcb05; "> &lt;</span><span class="sf17b16">Value&gt;</span><span style="color: #000000; background-color: #efcb05; ">IntegerParameter(</span><span class="sf17b16">4</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b18">Value</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span style="color: #000000; background-color: #efcb05; "> &lt;SheetEn(Item,</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">,IntegerParameter(1),2,1<wbr>)/&gt;</span><span style="color: #000000; background-color: #efcb05; ">?</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11006,"</span><span class="sf17b16">&lt;If(Equal(IntegerParameter(1),21<wbr>803))&gt;Offer</span><span style="color: #000000; background-color: #efcb05; "> &lt;</span><span class="sf17b16">SheetEn(Item,2,</span><span style="color: #000000; background-color: #efcb05; ">IntegerParameter(</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b18">,2,1<wbr>)/&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">exchange</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span class="sf17b18">Else</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span class="sf17b18">Open</span><span style="color: #000000; background-color: #efcb05; "> &lt;SheetEn(Item,</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">,IntegerParameter(1),2,1<wbr>)/&gt;</span><span class="sf17b18">&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; ">?</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Attempts remaining: &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Attempts remaining: &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11007,"</span><span class="sf17b16">Content</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11007,"</span><span class="sf17b16">Results</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11008,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11008,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11010,"Close"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11010,"Close"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11011,"There is nothing to </span><span class="sf17b16">open</span><span style="color: #000000; background-color: #efcb05; ">."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11011,"There is nothing to </span><span class="sf17b16">display</span><span style="color: #000000; background-color: #efcb05; ">."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11025,"&lt;Clickable(&lt;Sheet(Action,Integer<wbr>Parameter(1),0)/&gt;)/&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11025,"&lt;Clickable(&lt;Sheet(Action,Integer<wbr>Parameter(1),0)/&gt;)/&gt;"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11544,"Reset stance."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11544,"Reset stance."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11600,"Magia Board"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11601,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11602,"Elemental Level"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11603,"Elemental EXP"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11604,"Elements"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11605,"&lt;Value&gt;IntegerParameter(1)&lt;/Valu<wbr>e&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11606,"Confirm"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11607,"Remove All"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11608,"Magicite"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11609,"Elemental Experience Points"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11610,"Treasure Acquisition"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11611,"Adventurer List"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11612,"Refresh Eureka adventurer list results."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11613,"World"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11614,"&lt;Color(-154)&gt;Unable to retrieve data.&lt;/Color&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11615,"Time Remaining"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11616,"&lt;If(LessThan(IntegerParameter(1)<wbr>,1))&gt;Less than 1m&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Va<wbr>lue&gt;m&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11617,"Expedition Time Remaining: &lt;If(LessThan(IntegerParameter(1),1))&gt;Le<wbr>ss than 1m&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Va<wbr>lue&gt;m&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11618,"&lt;If(GreaterThan(IntegerParameter<wbr>(2),0))&gt;&lt;Format(IntegerParameter(1),FF0<wbr>22C)/&gt;/&lt;Format(IntegerParameter(2),FF02<wbr>2C)/&gt;&lt;Else/&gt;–/–&lt;/If&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11619,"Party Seeker On"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11620,"Party Seeker Off"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11621,"Return to the starting point for</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">“&lt;Highlight&gt;ObjectParameter(56)&lt;/Highli<wbr>ght&gt;”? </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;Color(-34022)&gt;※You will automatically return 10 minutes after KO.&lt;/Color&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11622,"MA"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11623,"&lt;If(Equal(PlayerParameter(80),1)<wbr>)&gt;&lt;CommandIcon(10)/&gt;&lt;Else/&gt;&lt;/If&gt; Spin Counterclockwise &nbsp;&lt;If(Equal(PlayerParameter(80),1))&gt;&lt;Comm<wbr>andIcon(8)/&gt;&lt;Else/&gt;&lt;/If&gt; Spin Clockwise"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11624,"+&lt;Value&gt;IntegerParameter(1)&lt;/Val<wbr>ue&gt;%)"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11625,"("</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11720,"PvP Team Board"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11720,"PvP Team Board"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11921,"Item"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11921,"Item"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d25" href="#d25">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11922,"</span><span class="sf17b16">Location</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11922,"</span><span class="sf17b16">Inventory</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11923,"Armoury Chest (Main Hand/Off Hand)"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11923,"Armoury Chest (Main Hand/Off Hand)"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(-34022)&gt;※The gear can no longer be equipped as an item.&lt;/Color&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(-34022)&gt;※The gear can no longer be equipped as an item.&lt;/Color&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d26" href="#d26">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11933,"Use &lt;SheetEn(Item,1,IntegerParameter(1),1,1<wbr>)/&gt; to transform the selected piece of &lt;Color(-154)&gt;</span><span class="sf17b16">Set</span><span style="color: #000000; background-color: #efcb05; ">-registered&lt;/Color&gt; gear into a glamour and store in your dresser?</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11933,"Use &lt;SheetEn(Item,1,IntegerParameter(1),1,1<wbr>)/&gt; to transform the selected piece of &lt;Color(-154)&gt;</span><span class="sf17b16">set</span><span style="color: #000000; background-color: #efcb05; ">-registered&lt;/Color&gt; gear into a glamour and store in your dresser?</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(-34022)&gt;※The gear can no longer be equipped as an item.&lt;/Color&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Color(-34022)&gt;※The gear can no longer be equipped as an item.&lt;/Color&gt;"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">102607,"Level (Descending)"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">102607,"Level (Descending)"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d27" href="#d27">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">102608,"This duty is item level synced. All </span><span class="sf17b16">items</span><span style="color: #000000; background-color: #efcb05; "> levels will be adjusted to the level indicated."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">102608,"This duty is item level synced. All </span><span class="sf17b16">item</span><span style="color: #000000; background-color: #efcb05; "> levels will be adjusted to the level indicated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">102609,"Role requirements are not enforced for this duty."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">102609,"Role requirements are not enforced for this duty."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.02.09.0000.0000\rawexd\LogMessage.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Desktop\FF14 Tools\backups\2018.03.07.0000.0000\rawexd\LogMessage.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">548,44,1,0,False,"Target is unconscious. &lt;Clickable(&lt;If(Equal(ObjectParameter(1)<wbr>,ObjectParameter(2)))&gt;Your&lt;Else/&gt;&lt;If(Eq<wbr>ual(ObjectParameter(1),ObjectParameter(<wbr>2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;<wbr>&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,<wbr>1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;<wbr>'s&lt;/If&gt;)/&gt; use of &lt;SheetEn(Item,2,IntegerParameter(1),1,1<wbr>)/&gt; was canceled."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">548,44,1,0,False,"Target is unconscious. &lt;Clickable(&lt;If(Equal(ObjectParameter(1)<wbr>,ObjectParameter(2)))&gt;Your&lt;Else/&gt;&lt;If(Eq<wbr>ual(ObjectParameter(1),ObjectParameter(<wbr>2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;<wbr>&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,<wbr>1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;<wbr>'s&lt;/If&gt;)/&gt; use of &lt;SheetEn(Item,2,IntegerParameter(1),1,1<wbr>)/&gt; was canceled."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">549,58,1,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">EXP chain #&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;! Chain expires in &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;If(Equal(IntegerParameter(2),1))&gt;secon<wbr>d&lt;Else/&gt;seconds&lt;/If&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">549,58,1,0,False,"</span><span class="sf17b18">&lt;If(GreaterThan(Integ<wbr>erParameter(2),0))&gt;</span><span style="color: #000000; background-color: #efcb05; ">EXP chain #&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;! Chain expires in &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;If(Equal(IntegerParameter(2),1))&gt;secon<wbr>d&lt;Else/&gt;seconds&lt;/If&gt;.</span><span class="sf17b18">&lt;Else/&gt;Maximum</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">chain</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">(&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;)</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">achieved!&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">550,48,1,0,False,"&lt;Clickable(&lt;If(Equal(<wbr>ObjectParameter(1),ObjectParameter(3)))<wbr>&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjSt<wbr>r,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you<wbr>&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(8),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr> &lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(3)))&gt;lose&lt;Else/&gt;loses&lt;/If&gt; the effect of &lt;Sheet(Status,IntegerParameter(2),0)/&gt;.<wbr>"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">550,48,1,0,False,"&lt;Clickable(&lt;If(Equal(<wbr>ObjectParameter(1),ObjectParameter(3)))<wbr>&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjSt<wbr>r,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you<wbr>&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(8),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr> &lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(3)))&gt;lose&lt;Else/&gt;loses&lt;/If&gt; the effect of &lt;Sheet(Status,IntegerParameter(2),0)/&gt;.<wbr>"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3495,60,9,0,False,"Unable to relocate. You must wait at least 5 minutes before changing residences again."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3495,60,9,0,False,"Unable to relocate. You must wait at least 5 minutes before changing residences again."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3496,60,9,0,False,"A moratorium has been placed upon all plot sales to </span><span class="sf17b16">indivuduals</span><span style="color: #000000; background-color: #efcb05; ">."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3496,60,9,0,False,"A moratorium has been placed upon all plot sales to </span><span class="sf17b16">individuals</span><span style="color: #000000; background-color: #efcb05; ">."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3497,60,9,0,False,"No more land may be purchased on this world by characters attached to this service account."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3497,60,9,0,False,"No more land may be purchased on this world by characters attached to this service account."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3498,60,9,0,False,"Unable to purchase plot. Your free company has less than </span><span class="sf17b16">three</span><span style="color: #000000; background-color: #efcb05; "> members."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3498,60,9,0,False,"Unable to purchase plot. Your free company has less than </span><span class="sf17b16">four</span><span style="color: #000000; background-color: #efcb05; "> members."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3499,60,9,0,False,"This plot of land is not yet ready for purchase."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3499,60,9,0,False,"This plot of land is not yet ready for purchase."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3735,57,33,0,False,"The anima housed in &lt;SheetEn(Item,2,IntegerParameter(1),1,1<wbr>)/&gt; has grown nigh unyielding from aetheric condensation."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3735,57,33,0,False,"The anima housed in &lt;SheetEn(Item,2,IntegerParameter(1),1,1<wbr>)/&gt; has grown nigh unyielding from aetheric condensation."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3736,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3736,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Unable</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">complete</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">exchange.</span><span style="color: #000000; background-color: #efcb05; "> &nbsp;</span><span class="sf17b18">&lt;Clickable(&lt;SheetEn(Item,2,IntegerParam<wbr>eter(1),1,1)/&gt;)/&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">currently</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">equipped.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3737,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3737,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Unable</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">complete</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">exchange.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Inventory</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">full.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3738,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3738,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Unable</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">complete</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">exchange.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Either</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;SheetEn(Item,2,IntegerParameter(1),1,1<wbr>)/&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;SheetEn(Item,3,IntegerParameter(2),1,1<wbr>)/&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">currently</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">equipped.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3739,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3739,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Unable</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">complete</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">exchange.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">can</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">only</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">possess</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">one</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;SheetEn(Item,3,IntegerParameter(1),1,1<wbr>)/&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3740,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3740,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Unable</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">complete</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">exchange.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">can</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">only</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">possess</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">one</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;SheetEn(Item,3,IntegerParameter(1),1,1<wbr>)/&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;SheetEn(Item,3,IntegerParameter(2),1,1<wbr>)/&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3741,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3741,0,0,0,False,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7433,57,1,0,False,"The lock is pried is opened. You receive &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;SheetEn(Item,1,IntegerParameter(1),Int<wbr>egerParameter(2),1)/&gt;."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7433,57,1,0,False,"The lock is pried is opened. You receive &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;SheetEn(Item,1,IntegerParameter(1),Int<wbr>egerParameter(2),1)/&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7434,60,8,0,False,"</span><span class="sf17b16">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">do</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">not</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">enough</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">lockboxes</span><span style="color: #000000; background-color: #efcb05; ">."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7434,60,8,0,False,"</span><span class="sf17b16">Insufficient</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">items</span><span style="color: #000000; background-color: #efcb05; ">."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7435,60,8,0,False,"Unable to </span><span class="sf17b16">open</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">lockbox</span><span style="color: #000000; background-color: #efcb05; ">. Your inventory is full."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7435,60,8,0,False,"Unable to </span><span class="sf17b16">execute</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">command</span><span style="color: #000000; background-color: #efcb05; ">. Your inventory is full."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7436,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7436,0,0,0,False,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7570,60,9,0,False,"Unable to register. Your mind is severely poisoned by overactvity."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7570,60,9,0,False,"Unable to register. Your mind is severely poisoned by overactvity."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7571,60,9,0,False,"Unable to register for </span><span class="sf17b16">same</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">duty </span><span class="sf17b16">twice</span><span style="color: #000000; background-color: #efcb05; ">."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7571,60,9,0,False,"Unable to register for </span><span class="sf17b16">more</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">than</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">one</span><span style="color: #000000; background-color: #efcb05; "> duty </span><span class="sf17b18">at</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">time</span><span style="color: #000000; background-color: #efcb05; ">."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7572,60,9,0,False,"Unable to register. Duty registration has ended."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7572,60,9,0,False,"Unable to register. Duty registration has ended."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7621,60,9,0,False,"Unable to execute command."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7621,60,9,0,False,"Unable to execute command."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7622,77,1,0,False,"You change the PvP team name to </span><span style="color: #000000; background-color: #efcb05; ">&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,P<wbr>layerParameter(8),0)/&gt;&lt;Else/&gt;ObjectPara<wbr>meter(3)&lt;/If&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7622,77,1,0,False,"You change the PvP team name to </span><span class="sf17b18">“</span><span style="color: #000000; background-color: #efcb05; ">&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,<wbr>PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectPar<wbr>ameter(3)&lt;/If&gt;.</span><span class="sf17b18">”</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7623,77,1,0,False,"&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr> &lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;change&lt;Else/&gt;changes&lt;/If&gt; the PvP team name to </span><span style="color: #000000; background-color: #efcb05; ">&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,P<wbr>layerParameter(8),0)/&gt;&lt;Else/&gt;ObjectPara<wbr>meter(3)&lt;/If&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7623,77,1,0,False,"&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr> &lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;change&lt;Else/&gt;changes&lt;/If&gt; the PvP team name to </span><span class="sf17b18">“</span><span style="color: #000000; background-color: #efcb05; ">&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,<wbr>PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectPar<wbr>ameter(3)&lt;/If&gt;.</span><span class="sf17b18">”</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7624,60,9,0,False,"The PvP team name cannot be changed until at least 30 days have passed since the last update."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7624,60,9,0,False,"The PvP team name cannot be changed until at least 30 days have passed since the last update."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7625,77,1,0,False,"The PvP team name has been changed to </span><span style="color: #000000; background-color: #efcb05; ">&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,P<wbr>layerParameter(8),0)/&gt;&lt;Else/&gt;ObjectPara<wbr>meter(3)&lt;/If&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7625,77,1,0,False,"The PvP team name has been changed to </span><span class="sf17b18">“</span><span style="color: #000000; background-color: #efcb05; ">&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,<wbr>PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectPar<wbr>ameter(3)&lt;/If&gt;.</span><span class="sf17b18">”</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7626,57,32,0,False,"The PvP team “&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,<wbr>PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectPar<wbr>ameter(3)&lt;/If&gt;” is formed."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7626,57,32,0,False,"The PvP team “&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,<wbr>PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectPar<wbr>ameter(3)&lt;/If&gt;” is formed."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">8077,29,1,0,False,"&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr> &lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;perform&lt;Else/&gt;performs&lt;/If&gt; a ritual prayer."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">8077,29,1,0,False,"&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr> &lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;perform&lt;Else/&gt;performs&lt;/If&gt; a ritual prayer."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8078,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8078,</span><span class="sf17b16">29</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr></span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;cast&lt;Else/&gt;casts&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Megaflare</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;She<wbr>etEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;<wbr>&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParamet<wbr>er(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParamete<wbr>r(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/I<wbr>f&gt;&lt;/If&gt;.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Nothing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">happens.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8079,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8079,</span><span class="sf17b16">29</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr></span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;cast&lt;Else/&gt;casts&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Megaflare.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Nothing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">happens.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">8080,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">8080,0,0,0,False,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9050,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9050,0,0,0,False,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9051,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9051,</span><span class="sf17b16">64</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr></span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;gain&lt;Else/&gt;gains&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;If(E<wbr>qual(IntegerParameter(3),0))&gt;&lt;Else/&gt;(+&lt;<wbr>Value&gt;IntegerParameter(3)&lt;/Value&gt;%)&lt;/If<wbr>&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">elemental</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">experience</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(exp,1))&gt;point&lt;Else/&gt;points&lt;/I<wbr>f&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9052,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9052,</span><span class="sf17b16">64</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr></span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;lose&lt;Else/&gt;loses&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">elemental</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">experience</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(exp,1))&gt;point&lt;Else/&gt;points&lt;/I<wbr>f&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9053,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9053,</span><span class="sf17b16">64</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr></span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;attain&lt;Else/&gt;attains&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">elemental</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">level</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;!</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9054,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9054,</span><span class="sf17b16">64</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">&lt;Clickable(&lt;If(Equal<wbr>(ObjectParameter(1),ObjectParameter(2))<wbr>)&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;Sh<wbr>eetEn(ObjStr,2,PlayerParameter(7),1,1)/<wbr>&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt;<wbr></span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;If(Equal(ObjectParameter(1),ObjectPara<wbr>meter(2)))&gt;drop&lt;Else/&gt;drops&lt;/If&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">elemental</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">level</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9055,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9055,0,0,0,False,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9060,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9060,0,0,0,False,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9061,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9061,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">far</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">below</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">recommended</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">elemental</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">level</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">battle.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Your</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">contribution</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">not</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">weighed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">heavily.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9062,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9062,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Unable</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">obtain</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">item.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Insufficient</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">inventory</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">space.</span><span style="color: #000000; background-color: #efcb05; "> "</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9063,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9063,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">32</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Notorious</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">monster</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">detected</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">nearby!</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9064,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9064,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">33</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">All</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">magia</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">aether</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">restored.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9065,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9065,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Not</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">enough</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">magia</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">aether.</span><span style="color: #000000; background-color: #efcb05; "> "</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9066,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9066,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">Unable</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">execute</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">command</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">at</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">time.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9067,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9067,0,0,0,False,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9079,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9079,0,0,0,False,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9080,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9080,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">33</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">now</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">access</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;SheetEn(PlaceName,2,&lt;Sheet(EurekaAethe<wbr>rnet,IntegerParameter(1),0)/&gt;,2,1)/&gt;.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9081,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9081,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">33</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">must</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">attain</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">elemental</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">level</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">attune</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">this</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Aethernet</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">shard.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9082,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">0</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9082,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">33</span><span style="color: #000000; background-color: #efcb05; ">,0,False,"</span><span class="sf17b18">There</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">are</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">no</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">other</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Aethernet</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">shards</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">available</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">you</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">island.</span><span style="color: #000000; background-color: #efcb05; "> "</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9083,0,0,0,False,""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">9083,0,0,0,False,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>
