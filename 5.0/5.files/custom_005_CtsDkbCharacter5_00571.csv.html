@@ -1,0 +1,628 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">Untitled left</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\custom\005\CtsDkbCharacter5_00571.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">key,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#,,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">int32,str,str</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">0,"TEXT_CTSDKBCHARACTER5_00571_FRITHRIK<wbr>_000_000","Do you have a request for the Facet of Fishing? To be honest, we're having trouble filling orders, so I don't think we'll be able to help you at present. Sorry!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_0<wbr>00_008",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_0<wbr>00_009",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_0<wbr>00_010",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">4,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_0<wbr>00_011",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_0<wbr>00_012",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_0<wbr>00_020","Frithrik's esteem for you has grown."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_0<wbr>00_021",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_0<wbr>00_022","Deliver the items Frithrik needs, and deliver them often to improve your standing with the Facet of Fishing!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9,"TEXT_CTSDKBCHARACTER5_00571_FRITHRIK<wbr>_000_030","Many fishers avoid waters known to contain eighteyes eels, like the Rift of Sighs, but the nutritional benefits they offer are worth the risk. And by that, I mean “the risk of them cutting holes in your flesh and drinking your blood.”"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">10,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_050","Oh yes, very nice! Not the biggest or plumpest I've seen, but I'm sure this'll work wonders for our shadow-blind patrons all the same!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_055","I say! This one must have been quite the bloodthirsty glutton─in a very literal sense─before you managed to reel it in!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">12,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_100","Thank you for your hard work. I believe we have a sufficient number of eighteyes eels for the time being."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">13,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_101","I don't think I mentioned this, but the people I used to test the treatment for shadow-blindness are acquaintances of mine who work in the Cabinet of Curiosity."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">14,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_102","Old books must be kept out of the light if at all possible, so not being able to see in the dark poses something of a problem."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">15,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_103","The curators have already started eating their eels, although we'll need to wait and see if they have the desired effect."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">16,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_104","Of course, they welcomed the chance to try something different from the usual fare caught at the Source. Not only that, they were extremely satisfied with the taste!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">17,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_105","Speaking of something different, I think it's high time we had you cast your line in new waters."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">18,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_106","Having said that, I'm still investigating which condition we should attempt to treat next. In the meantime, perhaps you could hone your skills in preparation for challenges that lie ahead!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">19,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_170","Frithrik is pleased with your efforts. He now considers you a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fisherman's Friend&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">20,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_130","Ah, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;! I was hoping you would stop by, for I have most welcome news!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">21,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_135","The next request will be available from Frithrik upon reaching level 73 as a fisher."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">22,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_150","The course of eels we recommended to the curators of the Cabinet of Curiosity has done all we could have hoped for, and more. Some of them claim they can even &lt;Emphasis&gt;read&lt;/Emphasis&gt; in the dark now!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">23,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_151","At any rate, word of this treatment has spread throughout the city, and appears to have found its way to the ears of my compatriots in the Facet of Fishing."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">24,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_152","Unfortunately, most of them remain convinced that I'm unfit to act as their leader, so I asked the chirurgeons of Spagyrics if there are any other diseases that they have difficulty treating."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">25,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_153","They say that a lot of people come to them complaining of rashes and so on. However, a few of those patients have also taken to eating all sorts of strange things, such as coal and paper!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">26,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_154","After consulting the Cabinet of Curiosity, I learned that these symptoms often occur in those who lack meat and dairy in their diets."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">27,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_155","At first, I didn't see any way for the Facet of Fishing to help, but after a little more digging, I found that these types of food are rich in zinc."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">28,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_156","Do you know what else is rich in zinc? Creamy oysters!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">29,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_157","Unfortunately, they can be hard to come by unless you go all the way to Kholusia. But being the helpful sort you are, you'd be willing to go and snag some, wouldn't you?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">30,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_158","Splendid! I'm sure the chirurgeons will be thrilled once Spagyrics is free of paper-munching patients!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">31,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_171","The deliveries list for Frithrik has been updated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">32,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_180","It sounds like the chirurgeons can't get those oysters soon enough─the patients have taken to eating parts of Spagyrics itself. If we delay any longer, there'll be nothing left of the place!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">33,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_181","While skin rashes and strange eating habits are far from life-threatening, I imagine the sufferers are at their wits' end. We must do all we can to help them!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">34,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_200","Not bad! I expect you'll be able to find some even better ones if you keep trying."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">35,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_205","You certainly don't see creamy oysters like this every day! By all means, keep them coming!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">36,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_230","Well, that makes another shipment's worth. What say we deliver these to Spagyrics?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">37,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_231","Hullo! We come bearing oysters!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">38,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_232","Oh, you're just in time! The patients have already eaten their way through the last batch, and were pestering us for more."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">39,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_233","This fellow was the most persistent of the lot, although he tells me he's well on the road to recovery."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,"TEXT_CTSDKBCHARACTER5_00571_PATIENT<wbr>MAN00571_000_234","I am, I am! Oh praise be, it's a miracle! Before I started my course of oysters, I'd eat almost anything I could get my gnashers around. Boots, candles, even a tatty old amaro brush!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">41,"TEXT_CTSDKBCHARACTER5_00571_PATIENT<wbr>MAN00571_000_235","I spent goodness knows how long picking the bristles out of my teeth, and then I ate those as well! But thanks to you, I'm cured!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">42,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_236","Actually, the remedy is from an old book, so I think its author is the one worthy of your gratitude."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">43,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_237","Come now, Master Frithrik, there's no need to be so modest. As a matter of fact, you and your scholarly pursuits have become the talk of the Crystarium."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">44,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_238","First, the curators of the Cabinet of Curiosity, and now the patients here at Spagyrics─it really is quite remarkable. I wonder, might I be so bold as to request your aid in another matter?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">45,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_239","You have my thanks. Actually, I'd like to ask whether your tomes mention any cases where dizziness is accompanied by heart palpitations. These symptoms are fairly common in isolation, but cases of them occurring together have been rare until recently."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">46,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_240","Obviously, we tell our patients to rest as much as possible, but beyond that, there is little else we can do for them."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">47,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_241","Until we know what's causing it, the chances of a full recovery are slim. Please, will you look into what might be behind it?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">48,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_242","I'll do everything in my power."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">49,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_243","This might take a while, but I have a feeling I'll be calling on your services again. Until then, keep practicing!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">50,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_310","Frithrik is delighted with your efforts. He now considers you a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Piscatorial Pioneer&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">51,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_260","I've made an incredible breakthrough!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">52,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_265","The next request will be available from Frithrik upon reaching level 75 as a fisher."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">53,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_290","The key to curing the mysterious illness lies in the brightmirror clam."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">54,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_291","Unfortunately, they are not native to the Source, so we'll have to try further afield."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">55,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_292","My tomes tell me they can be found near Longmirror Lake, once part of the Kingdom of Voeburt."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">56,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_293","These days, that whole area is part of Il Mheg, and most of us would sooner steer clear of there if we can help it."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">57,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_294","Although, since your assignment to catch those eels, I assume you're not scared of a few pixies?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">58,"TEXT_CTSDKBCHARACTER5_00571_Q1_000_<wbr>000","What will you say?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">59,"TEXT_CTSDKBCHARACTER5_00571_A1_000_<wbr>001","Well, Feo mostly seems fine. Mostly."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">60,"TEXT_CTSDKBCHARACTER5_00571_A1_000_<wbr>002","I ain't afraid of no gho─I mean, pixies."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">61,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_295","You know Feo? Then the rumors of the traveler who befriended a pixie are actually about you. Am I right?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">62,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_296","Is that so? Hmm... You wouldn't happen to be the traveler who befriended a pixie, by any chance?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">63,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_297","Ha ha! You certainly are full of surprises! It seems I've found the perfect candidate to go fishing for clams in Il Mheg. There should be some in a river called “the Spoiled One,” if the rumors are true. So, are you up to the task?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">64,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_298","I say, you seem rather confident! Those mischief-makers had better think twice before they play any tricks on you!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">65,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_299","Unfortunately, I won't be able to join you on this occasion as I have...things to take care of. And no, it's not because I'm terrified of pixies! Perish the thought!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">66,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_311","The Crystarium Deliveries list for Frithrik has been updated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">67,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_330","I do apologize for asking you to travel into the heart of Il Mheg. If only there were a more convenient location for harvesting brightmirror clams..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">68,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_350","Hmm... I'm sure this will be perfectly adequate. Well, it's certainly fresh, if nothing else!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">69,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_355","Well, well! It seems like your hard work has been rewarded!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">70,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_380","Your brightmirror clams are being distributed to the patients as we speak."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">71,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_381","Oh, that's right─the chirurgeons mentioned they might be paying us a visit at some point, presumably to shower you with praise."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">72,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_382","Frithrik! &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;! The clams did the trick! How can we ever repay you?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">73,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_383","Let's not worry about all that now. The main thing is the welfare of your patients. Just a moment─is that Lobb?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">74,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_384","Yes, he's one of many who've benefited from your efforts. Until recently, he could barely stand without experiencing dizziness and palpitations. Thankfully, the treatment worked exactly as you'd predicted."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">75,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_385","To tell the truth, he probably would've recovered even quicker if he'd spent more time sleeping instead of constantly talking about the Facet of Fishing. Now, I don't like to pry, but I hear there has been some discontent among your members."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">76,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_386","Not to put too fine a point on it, but I thought that if a facet member were to try one of your treatments, then... Well, I'm sure you see what I'm getting at."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">77,"TEXT_CTSDKBCHARACTER5_00571_LOBB_00<wbr>0_387","I'll take it from here, if you don't mind. Frithrik, I'm not one to mince my words, and I won't be starting now. When you first started spouting off about “balanced diets” and “nutritional value,” I thought it was a load of nonsense."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">78,"TEXT_CTSDKBCHARACTER5_00571_LOBB_00<wbr>0_388","That was until the chirurgeons cajoled me into trying your methods─without my knowledge, I might add! Anyway, after a few servings of brightmirror clam, I started to notice a difference. Only then did they tell me it was all your idea, and the scales fell from my eyes."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">79,"TEXT_CTSDKBCHARACTER5_00571_LOBB_00<wbr>0_389","As much as I hate making apologies, I reckon I owe you one. I'm sorry, Frithrik. If there's anything I can do to make it up to you, just say the word."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">80,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_390","Oh, it's quite all right, really! But if you're feeling up to returning to work, there are a few assignments you can help with."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">81,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_391","Yes, we could use a lot more creamy oysters and brightmirror clams! And not just for Spagyrics, either."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">82,"TEXT_CTSDKBCHARACTER5_00571_SPAGYRI<wbr>CSHEALER00571_000_392","If we can encourage the citizenry to include them in their meals, then perhaps some of the illnesses we've been treating will become a thing of the past."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">83,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_393","Yes, I couldn't agree more. We'll do our best to keep the shipments coming in!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">84,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_394","It's amazing to think that the knowledge in those ancient tomes could be making such a difference in this day and age. Perhaps this will add a bit more weight to my side of the argument."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">85,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_395","Of course, if it weren't for your bravery and commitment, none of this would've been possible."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">86,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_396","Now that Lobb has offered to assist us, we should be able to maintain the supply of our existing specialties while exploring new avenues. If you keep reeling in nutritious morsels, I'll see what information I can gather!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">87,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_460","Frithrik is overjoyed with your efforts. He now considers you an &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Apex Angler&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">88,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_400","A new quest continuing the story of the Facet of Fishing is now available. Upon its completion, the Crystarium Deliveries list for Frithrik will be updated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">89,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_420","I've found a cure! Well, a potential cure, anyway."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">90,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_425","The next request will be available from Frithrik upon reaching level 78 as a fisher."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">91,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_450","As you may recall, Lobb told us of a young lady suffering from a prolonged bout of jaundice and frequent spells of dizziness."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">92,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_451","Although we made an earnest attempt to retrieve the necessary information from the Cabinet of Curiosity, it was when we asked the curators for help that we finally struck gold."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">93,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_452","It seems that the key to overcoming such symptoms lies in the nutrition-rich fat reserves of certain fish, particularly those that spend extended periods out of water."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">94,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_453","Now, if you think that species like that would be incredibly hard to find...you'd be right. The tomes tell of the Amber monkfish, which lurks beneath the sands of Amh Araeng, around the Hills of Amber, seeking what little moisture it can find."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">95,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_454","Fishing in a desert sounds like rather a daunting task, but I assume you're up to the challenge?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">96,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_455","I knew I could count on you!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">97,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_456","If the illustrations in the books are anything to go by, they're ugly little blighters. We should probably try to catch as many as possible, though. Oh, and watch your fingers!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">98,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM_<wbr>000_461","The Crystarium Deliveries list for Frithrik has been updated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">99,"TEXT_CTSDKBCHARACTER5_00571_FRITHRI<wbr>K_000_480","I think it would be best to have Lobb give the fish to his friend in person, since it was his idea to help her. If you bring them to me, I'll make sure he gets them."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">100,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_500","Oh...it's even more hideous than in the tomes. Is it my imagination, or does it seem a little underfed? No matter, I'm sure it will be nutritious enough."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">101,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_505","Argh! It's a monster! I do hope that Lobb does something to make it look a little more appetizing before presenting it to his friend. For what it's worth, I don't think they come much bigger or uglier than this!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">102,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_530","I think that should be enough, we don't want her being overnourished!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">103,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_531","Come to think of it, I don't believe I've ever met our patient, which is not so surprising, given her condition. I take it the treatment is going well?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">104,"TEXT_CTSDKBCHARACTER5_00571_LOBB_0<wbr>00_532","Oh yes, she's looking a lot better. Less yellow around the eyeballs, at least."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">105,"TEXT_CTSDKBCHARACTER5_00571_LOBB_0<wbr>00_533","Trouble is, even after eating all that liver, she's still as limp and lifeless as a beached jellyfish."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">106,"TEXT_CTSDKBCHARACTER5_00571_LOBB_0<wbr>00_534","She's always been a bit of a sickly child, but the chirurgeons seem to think it could be something worse, most likely crysteosis."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">107,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_535","Oh gods! I wouldn't wish that on anyone, not even Mervyl! Ahem!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">108,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_536","Oh, I'm sorry, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;. Since you're not from these parts, you've probably never heard of crysteosis."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">109,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_537","Its name derives from the fact that it only affects those living in and around the Crystarium, although the exact causes are unclear. The body gradually becomes less and less responsive and can even lead to death in some cases."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">110,"TEXT_CTSDKBCHARACTER5_00571_LOBB_0<wbr>00_538","There's one more thing I have to tell you. It's about the patient─she's Mervyl's daughter, Hurielle!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">111,"TEXT_CTSDKBCHARACTER5_00571_LOBB_0<wbr>00_539","We all know that he's too proud to come to you, and I thought it best to keep her identity from you in case you refused to help. But her condition is a lot worse than we'd realized, so it's time to stop messing around."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">112,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_540","Yes, we can't allow the feud between Mervyl and myself to jeopardize Hurielle's treatment. Though I must say, Lobb, I'm rather disappointed that you thought I could be that petty! Your doubts were entirely unwarranted, I assure you."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">113,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_541","Now that I think about it, the day we saw Mervyl in the Cabinet of Curiosity, he must've been there to research his daughter's illness. But that was when we thought that jaundice and dizziness were the worst of her symptoms..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">114,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_542","There's only one thing for it! It's back to the books!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">115,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_543","&lt;Split(&lt;Highlight&gt;ObjectPa<wbr>rameter(1)&lt;/Highlight&gt;, ,1)/&gt;, you leave this to us."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">116,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_544","If there's a way to cure crysteosis through the nutrients in fish, we're sure to find it! We'll be needing your angling skills before long, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;─I'm certain!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">117,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_545","If past experience is anything to go by, we'll be sending you off to some fiend-invested bog at the arse end of─I mean, somewhere tranquil and picturesque!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">118,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM<wbr>_000_549","Frithrik is deeply moved by your efforts. He now considers you an &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Aquatic Artisan&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">119,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM<wbr>_000_550","A new quest continuing the story of the Facet of Fishing is now available. Speak with Frithrik as a fisher at level 80 or above to undertake the quest."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">120,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM<wbr>_000_560",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">121,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_570","Ah, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;! How are you?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">122,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_575","Things have never been better here at the Facet of Fishing. We've learned how to provide both quantity and quality, not to mention variety."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">123,"TEXT_CTSDKBCHARACTER5_00571_FRITHR<wbr>IK_000_576","Of course, none of this would have been possible without you. I'll do my best to follow in your fine example. You are truly a fisher's fisher!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">124,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM<wbr>_000_580","Unable to obtain your reward. Your inventory is full."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">125,"TEXT_CTSDKBCHARACTER5_00571_SYSTEM<wbr>_000_590","In order to make deliveries, you must be a fisher."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

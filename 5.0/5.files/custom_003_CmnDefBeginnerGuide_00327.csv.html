@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\custom\003\CmnDefBeginnerGuide_00327.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\custom\003\CmnDefBeginnerGuide_00327.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">48,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_101","The “New Adventurer” status is applied to all players who have recently begun their adventures in Eorzea."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">48,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_101","The “New Adventurer” status is applied to all players who have recently begun their adventures in Eorzea."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">49,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_100_101","The “New Adventurer” status will be removed from players once they exceed 168 hours of play time, and have completed the main scenario quest “</span><span class="sf17b16">The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Far</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Edge</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Fate</span><span style="color: #000000; background-color: #efcb05; ">.”"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">49,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_100_101","The “New Adventurer” status will be removed from players once they exceed 168 hours of play time, and have completed the main scenario quest “</span><span class="sf17b16">A</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Requiem</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Heroes</span><span style="color: #000000; background-color: #efcb05; ">.”"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">50,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_102","New adventurers can be identified by the two-leaf symbol (&lt;Gui(77)/&gt;) displayed next to their name."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">50,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_102","New adventurers can be identified by the two-leaf symbol (&lt;Gui(77)/&gt;) displayed next to their name."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2: Receive 300 player commendations."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2: Receive 300 player commendations."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">76,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_155","3: Complete any level </span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; "> tank </span><span class="sf17b16">job</span><span style="color: #000000; background-color: #efcb05; "> quest.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">76,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_155","3: Complete any level </span><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; "> tank </span><span class="sf17b16">role</span><span style="color: #000000; background-color: #efcb05; "> quest.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">4: Complete any level </span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; "> healer </span><span class="sf17b16">job</span><span style="color: #000000; background-color: #efcb05; "> quest.</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">4: Complete any level </span><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; "> healer </span><span class="sf17b16">role</span><span style="color: #000000; background-color: #efcb05; "> quest.</span><span class="sf17b18">"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5: Complete any level </span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">DPS </span><span class="sf17b16">job</span><span style="color: #000000; background-color: #efcb05; "> </span><span style="color: #000000; background-color: #efcb05; ">quest."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">77,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_100_155","</span><span style="color: #000000; background-color: #efcb05; ">5: Complete any level </span><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">melee</span><span style="color: #000000; background-color: #efcb05; "> DPS </span><span class="sf17b16">or</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ranged</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">DPS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">role</span><span style="color: #000000; background-color: #efcb05; "> quest."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">77</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_156","Disciple of the Hand/Land Achievement Set</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">78</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_156","Disciple of the Hand/Land Achievement Set</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1: Gather or catch 300 collectables.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1: Gather or catch 300 collectables.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2: Synthesize 100 collectables."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2: Synthesize 100 collectables."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">78</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_157","3: Reach level </span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; "> in any Disciple of the Hand class.</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">79</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_157","3: Reach level </span><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; "> in any Disciple of the Hand class.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">4: Reach level </span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; "> in any Disciple of the Land class."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">4: Reach level </span><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; "> in any Disciple of the Land class."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">79</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_158","Completing either of these achievement sets will qualify you to become a mentor."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_158","Completing either of these achievement sets will qualify you to become a mentor."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">80</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_159","Once you meet the prerequisites, speak with one of the Smiths to receive your official induction into the ranks of the mentors."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">81</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_159","Once you meet the prerequisites, speak with one of the Smiths to receive your official induction into the ranks of the mentors."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">81</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_160","There are times when young heroes seek to embark upon a perilous adventure, but are held back by a dearth of willing companions. Offering your sword or scepter in such situations is another way in which mentors aid the adventuring community!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">82</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_160","There are times when young heroes seek to embark upon a perilous adventure, but are held back by a dearth of willing companions. Offering your sword or scepter in such situations is another way in which mentors aid the adventuring community!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">82</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_161","Mentors that register for Duty Roulette: Mentor will be funneled into duties that are struggling to fill party member slots."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">83</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_161","Mentors that register for Duty Roulette: Mentor will be funneled into duties that are struggling to fill party member slots."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">83</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_162","Completing Duty Roulette: Mentor a set number of times will earn you an exclusive achievement reward."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">84</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_162","Completing Duty Roulette: Mentor a set number of times will earn you an exclusive achievement reward."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">84</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_170","Mentors are not bound by the chains of duty at all hours of the day and night─you need not identify yourself as a mentor when your own adventures demand your full attention!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">85</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_170","Mentors are not bound by the chains of duty at all hours of the day and night─you need not identify yourself as a mentor when your own adventures demand your full attention!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">85</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_171","After speaking with one of the Smiths and accepting the mentor position, you will be able to set your online status to “mentor.”"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">86</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_171","After speaking with one of the Smiths and accepting the mentor position, you will be able to set your online status to “mentor.”"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">86</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_172","When setting this status to active, you can choose between several fields of expertise. This will decide the type of mentor symbol that appears next to your character name."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">87</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_172","When setting this status to active, you can choose between several fields of expertise. This will decide the type of mentor symbol that appears next to your character name."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">87</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_100_172","The fields of expertise are as follows:</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">88</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_100_172","The fields of expertise are as follows:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Gui(79)/&gt; : Expert in PvE combat</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Gui(79)/&gt; : Expert in PvE combat</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Gui(81)/&gt; : Expert in PvP combat"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Gui(81)/&gt; : Expert in PvP combat"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">88</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_101_172","Alternatively, you can choose to be identified with the &lt;Gui(78)/&gt; symbol, which indicates a wealth of knowledge in all fields."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">89</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_101_172","Alternatively, you can choose to be identified with the &lt;Gui(78)/&gt; symbol, which indicates a wealth of knowledge in all fields."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">89</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_173","Regardless of online status, you will always be eligible to register for Duty Roulette: Mentor, and you will also receive the experience point bonus from grouping with new adventurers."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">90</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_173","Regardless of online status, you will always be eligible to register for Duty Roulette: Mentor, and you will also receive the experience point bonus from grouping with new adventurers."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">90</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_174","Furthermore, an inactive mentor status will not prevent you from participating in the Novice Network while you remain a mentor."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">91</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_174","Furthermore, an inactive mentor status will not prevent you from participating in the Novice Network while you remain a mentor."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">91</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_175","The auto-join settings for the Novice Network can be toggled on or off using the &lt;UIForeground&gt;F20222&lt;/UIForeground&gt;/nov<wbr>icenetwork&lt;UIForeground&gt;01&lt;/UIForegroun<wbr>d&gt; text command."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">92</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_175","The auto-join settings for the Novice Network can be toggled on or off using the &lt;UIForeground&gt;F20222&lt;/UIForeground&gt;/nov<wbr>icenetwork&lt;UIForeground&gt;01&lt;/UIForegroun<wbr>d&gt; text command."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">92</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_176","Participation in the Novice Network can also be toggled by accessing the Novice Network List via the leaf icon in the log window."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">93</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_176","Participation in the Novice Network can also be toggled by accessing the Novice Network List via the leaf icon in the log window."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">93</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_180","...Aye, well you certainly have the requisite experience. We would be overjoyed to have you represent the guild as one of our mentors!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">94</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_180","...Aye, well you certainly have the requisite experience. We would be overjoyed to have you represent the guild as one of our mentors!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">94</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_185","...And a new mentor is born! You have our gratitude, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;! New adventurers everywhere will be most appreciative of your service!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">95</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_185","...And a new mentor is born! You have our gratitude, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;! New adventurers everywhere will be most appreciative of your service!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">95</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_186","The Adventurers' Guild has certified you as an official mentor! You now have access to the Novice Network, Duty Roulette: Mentor, and are eligible to receive the experience point bonus from grouping with new adventurers."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">96</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_186","The Adventurers' Guild has certified you as an official mentor! You now have access to the Novice Network, Duty Roulette: Mentor, and are eligible to receive the experience point bonus from grouping with new adventurers."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">96</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_187","When interacting on the Novice Network chat channel, we ask that you do your best to offer advice and encouragement to beginning players, and answer their questions with patience and clarity."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">97</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYST<wbr>EM_000_187","When interacting on the Novice Network chat channel, we ask that you do your best to offer advice and encouragement to beginning players, and answer their questions with patience and clarity."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">97</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_190","...The choice is yours, of course. Should you happen to change your mind, however, we are always accepting applicants!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">98</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_190","...The choice is yours, of course. Should you happen to change your mind, however, we are always accepting applicants!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">98</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_200","You wish to renounce your mentor status? Your reasons are your own, of course, but are you certain this is what you wish to do?"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">99</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_200","You wish to renounce your mentor status? Your reasons are your own, of course, but are you certain this is what you wish to do?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">99</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COAC<wbr>H00327_000_205","...Very well, your certification has been rescinded. Should you ever wish to regain your mentor status, however, do not hesitate to approach me or one of my colleagues!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">100</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_205","...Very well, your certification has been rescinded. Should you ever wish to regain your mentor status, however, do not hesitate to approach me or one of my colleagues!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">100</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_210","Had a change of heart, have we? Wonderful! I believe I heard a collective sigh of relief from confused neophytes everywhere!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">101</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_210","Had a change of heart, have we? Wonderful! I believe I heard a collective sigh of relief from confused neophytes everywhere!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">101</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_300","There are those in this world who put aside the trappings of adventure, only to find themselves drawn back to the life of a hero. Resuming old endeavors after a prolonged absence can be trying in this ever-changing realm, and returning champions may need your aid to reacclimate."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">102</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_300","There are those in this world who put aside the trappings of adventure, only to find themselves drawn back to the life of a hero. Resuming old endeavors after a prolonged absence can be trying in this ever-changing realm, and returning champions may need your aid to reacclimate."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">102</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_301","Returner status is available to players who have at least one class at level 50 or above, and have not visited Eorzea in more than 45 days."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">103</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_301","Returner status is available to players who have at least one class at level 50 or above, and have not visited Eorzea in more than 45 days."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">103</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_302","Returners can be identified by the symbol (&lt;Gui(95)/&gt;) displayed next to their name."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">104</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_302","Returners can be identified by the symbol (&lt;Gui(95)/&gt;) displayed next to their name."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">104</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_303","Returners receive the same benefits as new adventurers, and are eligible for invites to the Novice Network chat channel, as well as an experience point bonus when forming a party with a mentor."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">105</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_303","Returners receive the same benefits as new adventurers, and are eligible for invites to the Novice Network chat channel, as well as an experience point bonus when forming a party with a mentor."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">105</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_304","Returner status will automatically be removed from players once they have accumulated 72 hours of gameplay after accepting the Returner's Bounty."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">106</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_304","Returner status will automatically be removed from players once they have accumulated 72 hours of gameplay after accepting the Returner's Bounty."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">106</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_220","The Hall of the Novice offers a comprehensive series of training exercises for adventurers wishing to prepare themselves for the rigors of party combat. Would you like to register for a course?"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">107</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_220","The Hall of the Novice offers a comprehensive series of training exercises for adventurers wishing to prepare themselves for the rigors of party combat. Would you like to register for a course?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">107</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_225","You now have access to the Hall of the Novice. Register for training exercises by speaking with one of the Smiths, or select &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Hall of the Novice&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; located under &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Duty&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in the main menu."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">108</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_SYS<wbr>TEM_000_225","You now have access to the Hall of the Novice. Register for training exercises by speaking with one of the Smiths, or select &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Hall of the Novice&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; located under &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Duty&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in the main menu."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">108</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_230","The Hall of the Novice is an Adventurers' Guild initiative that seeks to prepare new adventurers for the rigors of party combat."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">109</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_230","The Hall of the Novice is an Adventurers' Guild initiative that seeks to prepare new adventurers for the rigors of party combat."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">109</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_235","Here within these walls, we offer burgeoning heroes a bevy of training exercises. Step into the flames, my friend, and forge the skills you shall need for the morrow!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">110</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_235","Here within these walls, we offer burgeoning heroes a bevy of training exercises. Step into the flames, my friend, and forge the skills you shall need for the morrow!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">110</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_240","The Hall can be found just north of Aleport, in western La Noscea. Within its walls, we offer burgeoning heroes a bevy of training exercises. Step into the flames, my friend, and forge the skills you shall need for the morrow!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">111</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_240","The Hall can be found just north of Aleport, in western La Noscea. Within its walls, we offer burgeoning heroes a bevy of training exercises. Step into the flames, my friend, and forge the skills you shall need for the morrow!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">111</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_195","（★未使用／削除予定★）"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">112</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFBEGINNERGUIDE_00327_COA<wbr>CH00327_000_195","（★未使用／削除予定★）"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

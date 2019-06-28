@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\GCSupplyDuty.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\GCSupplyDuty.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">70,19579,1,19583,1,19585,1,19824,3,1982<wbr>7,3,19830,3,19886,3,19887,3,19889,3,189<wbr>18,1,19575,1,19576,1,18936,1,19656,1,19<wbr>756,1,18953,1,18956,1,18957,1,19655,1,1<wbr>9658,1,19659,1,19582,1,19586,1,19588,1,<wbr>19957,10,0,1,0,1,19933,10,0,1,0,1,20035<wbr>,3,20231,4,0,1</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">70,19579,1,19583,1,19585,1,19824,3,1982<wbr>7,3,19830,3,19886,3,19887,3,19889,3,189<wbr>18,1,19575,1,19576,1,18936,1,19656,1,19<wbr>756,1,18953,1,18956,1,18957,1,19655,1,1<wbr>9658,1,19659,1,19582,1,19586,1,19588,1,<wbr>19957,10,0,1,0,1,19933,10,0,1,0,1,20035<wbr>,3,20231,4,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">71,27202,1,27204,1,27205,1,27854,3,0,1,<wbr>0,1,27765,1,0,1,0,1,25648,1,27083,1,256<wbr>63,1,27201,1,27206,1,27207,1,25705,1,25<wbr>707,1,25704,1,27161,1,27164,1,27166,1,2<wbr>7079,1,27088,1,27089,1,27801,10,27696,1<wbr>0,0,1,27820,10,27683,10,27825,10,27412,<wbr>1,27519,4,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">72,25791,1,25792,1,0,1,27855,3,0,1,0,1,<wbr>27960,3,0,1,0,1,25847,1,25814,1,25806,1<wbr>,25820,1,25828,1,25832,1,25863,1,25866,<wbr>1,25867,1,25812,1,25818,1,25824,1,25793<wbr>,1,25788,1,25801,1,27697,10,0,1,0,1,276<wbr>84,10,27824,10,27750,10,27433,1,27523,4<wbr>,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">73,25796,1,25797,1,0,1,27858,3,27859,3,<wbr>27857,3,27767,3,27770,3,27769,3,25805,1<wbr>,25807,1,25813,1,25810,1,25815,1,25838,<wbr>1,25800,1,25802,1,25860,1,25827,1,25839<wbr>,1,25845,1,25795,1,25803,1,25804,1,2796<wbr>8,10,0,1,0,1,27832,10,0,1,0,1,27460,3,2<wbr>7532,4,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">74,25956,1,27108,1,27114,1,27860,3,2786<wbr>2,3,27861,3,25958,1,25959,1,27772,1,259<wbr>71,1,26002,1,25976,1,25994,1,26019,1,27<wbr>178,1,25949,1,25960,1,25964,1,25980,1,2<wbr>7171,1,27179,1,25948,1,25955,1,27115,1,<wbr>27698,10,0,1,0,1,27685,10,27753,10,0,1,<wbr>27476,3,27538,4,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">75,26008,1,27218,1,27220,1,27863,3,2786<wbr>4,3,27865,3,27775,1,27957,3,0,1,25965,1<wbr>,25967,1,27105,1,25985,1,26018,1,27216,<wbr>1,27103,1,27212,1,26023,1,25993,1,25997<wbr>,1,27211,1,27100,1,27106,1,27102,1,2769<wbr>9,10,0,1,0,1,27834,10,27829,10,27826,10<wbr>,27478,3,27545,4,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">76,26111,1,26112,1,26116,1,27867,3,2786<wbr>8,3,27869,3,27778,1,27777,1,0,1,26149,1<wbr>,26150,1,26161,1,26142,1,26158,1,26164,<wbr>1,26171,1,26120,1,26122,1,26147,1,26157<wbr>,1,26163,1,26108,1,26121,1,26123,1,2770<wbr>0,10,0,1,0,1,27821,10,27686,10,27779,10<wbr>,27490,3,27550,4,27553,4</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">77,27129,1,27133,1,27135,1,27871,3,2787<wbr>0,3,27872,3,26118,1,26119,1,27959,3,271<wbr>25,1,27126,1,26125,1,26127,1,26134,1,27<wbr>188,1,26132,1,26177,1,27124,1,27181,1,2<wbr>7184,1,26135,1,27138,1,27131,1,27123,1,<wbr>27701,10,0,1,0,1,27780,10,0,1,0,1,27493<wbr>,3,27558,4,27559,4</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">78,26271,1,26272,1,26277,1,27874,3,2787<wbr>5,3,27873,3,26278,1,26279,1,27781,1,262<wbr>91,1,26293,1,26298,1,26294,1,26305,1,26<wbr>302,1,26282,1,26329,1,26345,1,26295,1,2<wbr>6319,1,26322,1,26273,1,26280,1,26284,1,<wbr>27782,10,0,1,0,1,27819,10,27783,10,2783<wbr>7,10,27464,3,27563,4,27564,4</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">79,27228,1,27229,1,27230,1,27876,3,2787<wbr>7,3,27878,3,27788,1,27790,1,0,1,26285,1<wbr>,26303,1,26309,1,26318,1,26326,1,27226,<wbr>1,26333,1,26341,1,26342,1,26304,1,26313<wbr>,1,26307,1,27151,1,27153,1,27158,1,2770<wbr>2,10,0,1,0,1,27784,10,27785,10,27759,10<wbr>,27495,3,27575,4,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">80,27150,1,27154,1,27156,1,27880,3,2788<wbr>1,3,27882,3,27786,1,27787,1,27789,1,271<wbr>46,1,27147,1,0,1,27193,1,27195,1,27197,<wbr>1,27145,1,27222,1,27224,1,27191,1,27192<wbr>,1,27194,1,27143,1,27144,1,27148,1,2770<wbr>3,10,0,1,0,1,27687,10,0,1,0,1,27500,3,2<wbr>7573,4,27579,4</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

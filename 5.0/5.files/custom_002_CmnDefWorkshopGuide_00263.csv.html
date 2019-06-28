@@ -1,0 +1,532 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\custom\002\CmnDefWorkshopGuide_00263.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\custom\002\CmnDefWorkshopGuide_00263.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">120,"TEXT_CMNDEFWORKSHOPGUIDE_00263_A6_<wbr>000_006","Repairing damaged components."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">120,"TEXT_CMNDEFWORKSHOPGUIDE_00263_A6_<wbr>000_006","Repairing damaged components."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">121,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_610_000","BZZZT...★※☆</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">121,"</span><span class="sf17b18">TEXT_CMNDEFWORKSHOPGUIDE_00263_A6_<wbr>000_007",""</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">122,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_610_000","BZZZT...★※☆</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Eager to get wet? All you need is ※☆★ and watertight ★※☆※!&lt;/Emphasis&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Eager to get wet? All you need is ※☆★ and watertight ★※☆※!&lt;/Emphasis&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">122</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_610_001","To outfit and register a submersible, you must have in your possession the requisite components and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;dive credits&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt;."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">123</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_610_001","To outfit and register a submersible, you must have in your possession the requisite components and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;dive credits&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">123</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_610_002","Dive credits can be purchased from resident caretakers with company credits, whereas &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;submersible components&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegro<wbr>und&gt;01&lt;/UIForeground&gt; can be constructed in your company workshop. Please note that hull, stern, bow, and bridge components are required to outfit a submersible."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">124</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_610_002","Dive credits can be purchased from resident caretakers with company credits, whereas &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;submersible components&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegro<wbr>und&gt;01&lt;/UIForeground&gt; can be constructed in your company workshop. Please note that hull, stern, bow, and bridge components are required to outfit a submersible."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">124</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_620_000","BZZZT...★※☆</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">125</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_620_000","BZZZT...★※☆</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Having trouble picking the right ★※☆ for you? Not to worry! ※★☆※ put it best when ※★ said, “★※☆※※☆★.”&lt;/Emphasis&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Having trouble picking the right ★※☆ for you? Not to worry! ※★☆※ put it best when ※★ said, “★※☆※※☆★.”&lt;/Emphasis&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">125</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_620_001","Each component will affect your submersible's performance in a variety of ways."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">126</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_620_001","Each component will affect your submersible's performance in a variety of ways."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">126</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_620_002","You may wish to change components depending on how you intend to deploy your submersible."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">127</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_620_002","You may wish to change components depending on how you intend to deploy your submersible."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">127</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_630_000","BZZZT...★※☆</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">128</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_630_000","BZZZT...★※☆</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Don't forget that there are limits to ※☆★, even if you have all the ★※☆※!&lt;/Emphasis&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Don't forget that there are limits to ※☆★, even if you have all the ★※☆※!&lt;/Emphasis&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">128</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_630_001","Submersible components are comprised of multiple &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;parts&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. The combined total of all component parts cannot exceed the vessel's &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;capacity&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">129</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_630_001","Submersible components are comprised of multiple &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;parts&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. The combined total of all component parts cannot exceed the vessel's &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;capacity&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">129</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_630_002","As your submersible's &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;rank&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; increases, the vessel's capacity will as well."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">130</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_630_002","As your submersible's &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;rank&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; increases, the vessel's capacity will as well."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">130</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_630_003","Your submersible's rank will increase as it gains experience via subaquatic voyages."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">131</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_630_003","Your submersible's rank will increase as it gains experience via subaquatic voyages."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">131</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_640_000","BZZZT...★※☆</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">132</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_640_000","BZZZT...★※☆</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Your ★※☆※ mammet is the perfect ※☆★, equipped to handle all eventualities─such as ★※☆※, ★※☆, or even something so patently ridiculous and unlikely as ★※☆※※☆★!&lt;/Emphasis&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Your ★※☆※ mammet is the perfect ※☆★, equipped to handle all eventualities─such as ★※☆※, ★※☆, or even something so patently ridiculous and unlikely as ★※☆※※☆★!&lt;/Emphasis&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">132</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_640_001","To chart a subaquatic voyage, access the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;voyage control panel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; and select a submersible, followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Deploy submersible on subaquatic voyage&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;. Once you have finalized the details, select &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Deploy&lt;UIGlow&gt;01&lt;/UI<wbr>Glow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, and the voyage will commence."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">133</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_640_001","To chart a subaquatic voyage, access the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;voyage control panel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; and select a submersible, followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Deploy submersible on subaquatic voyage&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;. Once you have finalized the details, select &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Deploy&lt;UIGlow&gt;01&lt;/UI<wbr>Glow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, and the voyage will commence."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">133</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_640_002","Each voyage will require a number of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;ceruleum tanks&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, which can be purchased with company credits from the mammet voyager #004A or resident caretakers."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">134</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_640_002","Each voyage will require a number of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;ceruleum tanks&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, which can be purchased with company credits from the mammet voyager #004A or resident caretakers."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">134</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_640_003","Once your submersible returns, you can review the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;voyage log&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt; and collect any items found during the voyage. These items may prove useful in drafting plans for new projects."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">135</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_640_003","Once your submersible returns, you can review the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;voyage log&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt; and collect any items found during the voyage. These items may prove useful in drafting plans for new projects."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">135</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_640_004","As you continue to conduct subaquatic voyages, you will gain access to facilities for registering and housing additional company submersibles."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">136</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_640_004","As you continue to conduct subaquatic voyages, you will gain access to facilities for registering and housing additional company submersibles."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">136</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_650_000","BZZZT...★※☆</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">137</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_650_000","BZZZT...★※☆</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;※☆★ agrees: there's nothing more ★※※★☆※☆ than your mammet's first voyage log!&lt;/Emphasis&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;※☆★ agrees: there's nothing more ★※※★☆※☆ than your mammet's first voyage log!&lt;/Emphasis&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">137</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_650_001","Upon the completion of a subaquatic voyage, your mammet will provide a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;voyage log&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt; detailing the results."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">138</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_650_001","Upon the completion of a subaquatic voyage, your mammet will provide a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;voyage log&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt; detailing the results."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">138</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_650_002","The information contained in this log may prove useful in preparing for your next voyage."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">139</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_650_002","The information contained in this log may prove useful in preparing for your next voyage."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">139</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_650_003","Please note that only the log for the previous voyage will be retained."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">140</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_650_003","Please note that only the log for the previous voyage will be retained."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">140</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_660_000","BZZZT...★※☆</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">141</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_660_000","BZZZT...★※☆</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Though it may seem irksome at first, we believe you'll find that the care and maintenance of your submersible is ※★☆※ as ※★☆※!&lt;/Emphasis&gt;"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;Emphasis&gt;Though it may seem irksome at first, we believe you'll find that the care and maintenance of your submersible is ※★☆※ as ※★☆※!&lt;/Emphasis&gt;"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">141</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_660_001","The condition of your submersible's components will decrease with each subaquatic voyage."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">142</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_660_001","The condition of your submersible's components will decrease with each subaquatic voyage."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">142</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_660_002","Should a component's condition reach 0%, it will suffer &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;catastrophic failure&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt;, and you will be unable to deploy your submersible."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">143</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_660_002","Should a component's condition reach 0%, it will suffer &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;catastrophic failure&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt;, and you will be unable to deploy your submersible."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">143</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_660_003","To repair a component, access the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;voyage control panel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; and select a submersible, followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Repair submersible components&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegro<wbr>und&gt;01&lt;/UIForeground&gt;. Please note that you cannot do so without the requisite materials."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">144</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_660_003","To repair a component, access the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;voyage control panel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; and select a submersible, followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Repair submersible components&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegro<wbr>und&gt;01&lt;/UIForeground&gt;. Please note that you cannot do so without the requisite materials."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">144</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_DEF<wbr>AULT</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">145</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MAM<wbr>MET00263_670_000</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">145</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_TIT<wbr>LE_01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">146</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_SYS<wbr>TEM_670_001</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">146</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">147</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_DEF<wbr>AULT</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">147</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_02</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">148</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_TIT<wbr>LE_01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">148</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_03</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">149</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">149</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_04</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">150</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_02</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">150</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_CAN<wbr>CEL</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">151</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_03</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">151</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_A</span><span style="color: #000000; background-color: #efcb05; ">",<wbr>""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">152</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_04</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">152</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_A01<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">153</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_CAN<wbr>CEL</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">153</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_A01<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">154</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_A</span><span style="color: #000000; background-color: #efcb05; ">",<wbr>""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">154</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_A01<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">155</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_A01<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">155</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B</span><span style="color: #000000; background-color: #efcb05; ">",<wbr>""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">156</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_A01<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">156</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_TITLE_B01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">157</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_A01<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">157</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">158</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B</span><span style="color: #000000; background-color: #efcb05; ">",<wbr>""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">158</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B02</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">159</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_TITLE_B01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">159</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B03</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">160</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">160</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B04</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">161</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B02</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">161</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B05</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">162</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B03</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">162</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">163</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B04</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">163</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">164</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_B05</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">164</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">165</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">165</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">166</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">166</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_5</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">167</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">167</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">168</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">168</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">169</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B01<wbr>_5</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">169</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">170</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">170</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">171</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">171</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_5</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">172</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">172</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B03<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">173</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">173</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B03<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">174</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B02<wbr>_5</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">174</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B03<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">175</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B03<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">175</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B04<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">176</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B03<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">176</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B04<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">177</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B03<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">177</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B04<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">178</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B04<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">178</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B05<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">179</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B04<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">179</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B05<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">180</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B04<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">180</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B05<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">181</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B05<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">181</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B05<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">182</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B05<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">182</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_C</span><span style="color: #000000; background-color: #efcb05; ">",<wbr>""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">183</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B05<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">183</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_C01<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">184</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_B05<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">184</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_C01<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">185</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_C</span><span style="color: #000000; background-color: #efcb05; ">",<wbr>""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">185</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D</span><span style="color: #000000; background-color: #efcb05; ">",<wbr>""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">186</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_C01<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">186</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_TITLE_D01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">187</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_C01<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">187</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">188</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D</span><span style="color: #000000; background-color: #efcb05; ">",<wbr>""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">188</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D02</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">189</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_TITLE_D01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">189</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D03</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">190</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D01</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">190</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D04</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">191</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D02</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">191</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D05</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">192</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D03</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">192</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D06</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">193</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D04</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">193</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D01<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">194</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D05</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">194</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D01<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">195</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_MEN<wbr>U_D06</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">195</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D01<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">196</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D01<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">196</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D02<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">197</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D01<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">197</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D02<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">198</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D01<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">198</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D02<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">199</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D02<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">199</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D03<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">200</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D02<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">200</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D03<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">201</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D02<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">201</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D03<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">202</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D03<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">202</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D03<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">203</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D03<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">203</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">204</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D03<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">204</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">205</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D03<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">205</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">206</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">206</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">207</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">207</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_5</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">208</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">208</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D05<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">209</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">209</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D05<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">210</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D04<wbr>_5</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">210</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D05<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">211</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D05<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">211</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D05<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">212</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D05<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">212</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D06<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">213</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D05<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">213</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D06<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">214</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D05<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">214</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D06<wbr>_3</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">215</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D06<wbr>_1</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">215</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D06<wbr>_4</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">216</span><span style="color: #000000; background-color: #efcb05; ">,"</span><span class="sf17b16">TEXT_CMNDEFWORKSHOPGUIDE_00263_D06<wbr>_2</span><span style="color: #000000; background-color: #efcb05; ">",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">217,"TEXT_CMNDEFWORKSHOPGUIDE_00263_D06<wbr>_3",""</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">218,"TEXT_CMNDEFWORKSHOPGUIDE_00263_D06<wbr>_4",""</span>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

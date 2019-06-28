@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\Completion.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\Completion.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">229,2,29,"","Let's have some fun!","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">229,2,29,"","Let's have some fun!","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">230,2,</span><span class="sf17b16">30</span><span style="color: #000000; background-color: #efcb05; ">,"","I'll do my best!","-"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">230,2,</span><span class="sf17b16">31</span><span style="color: #000000; background-color: #efcb05; ">,"","I'll do my best!","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">231,2,30,"","Let's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">give</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">our</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">best</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">shot!","-"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">232,2,32,"","This</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">should</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fun!","-"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">233,2,33,"","If</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">we</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">stay</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">cool,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">everything</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fine!","-"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">300,3,0,"@","【Questions】","Questions."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">300,3,0,"@","【Questions】","Questions."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1392,17,353,"","Wondrous Tails","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1392,17,353,"","Wondrous Tails","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1395,17,160,"","Allagan tomestone of creation","-"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1396,17,71,"","undersized party","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1396,17,71,"","undersized party","-"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1494,18,202,"","quick chat","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1494,18,202,"","quick chat","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1495,18,414,"","ceruleum","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1496,18,413,"","ceruleum engine","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1497,18,415,"","gobtank","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1498,18,416,"","goblin mercenary","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1500,19,0,"@","【Online Status】","Online Status."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1500,19,0,"@","【Online Status】","Online Status."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1648,22,163,"","yellow gatherers' scrip","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1648,22,163,"","yellow gatherers' scrip","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1649,22,154,"","white crafters' scrip","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1650,22,164,"","white gatherers' scrip","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1900,23,0,"@","【Primals】","Primals."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">1900,23,0,"@","【Primals】","Primals."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2198,24,4051,"","Anemos","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2198,24,4051,"","Anemos","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2200,49,0,"Mount[1-</span><span style="color: #000000; background-color: #efcb05; ">102,104-</span><span style="color: #000000; background-color: #efcb05; ">146,148-148,<wbr>150-</span><span style="color: #000000; background-color: #efcb05; ">164,166-</span><span style="color: #000000; background-color: #efcb05; ">168</span><span style="color: #000000; background-color: #efcb05; ">,170-</span><span class="sf17b16">186</span><span style="color: #000000; background-color: #efcb05; ">]","【Mounts】","M<wbr>ounts"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2200,49,0,"Mount[1-</span><span class="sf17b18">1,4-6,8-9,15-15,18-2<wbr>2,25-38,40-50,52-56,58-59,62-62,65-65,6<wbr>7-78,80-84,86-87,90-</span><span style="color: #000000; background-color: #efcb05; ">102,104-</span><span class="sf17b18">106,108-116<wbr>,121-127,130-130,133-133,135-136,138-</span><span style="color: #000000; background-color: #efcb05; ">14<wbr>6,148-148,150-</span><span class="sf17b18">154,156-156,158-</span><span style="color: #000000; background-color: #efcb05; ">164,166-</span><span class="sf17b18">1<wbr>66,</span><span style="color: #000000; background-color: #efcb05; ">168</span><span class="sf17b18">-168</span><span style="color: #000000; background-color: #efcb05; ">,170-</span><span class="sf17b16">194,197-197</span><span style="color: #000000; background-color: #efcb05; ">]","【Mounts】"<wbr>,"Mounts"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2201,50,0,"ClassJob[1-</span><span class="sf17b16">36</span><span style="color: #000000; background-color: #efcb05; ">]","【Classes &amp; Jobs】","Classes &amp; Jobs."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2201,50,0,"ClassJob[1-</span><span class="sf17b16">38</span><span style="color: #000000; background-color: #efcb05; ">]","【Classes &amp; Jobs】","Classes &amp; Jobs."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2202,51,0,"PlaceName[20-37,39-59,61-</span><span class="sf17b16">65</span><span style="color: #000000; background-color: #efcb05; ">,<wbr>94-94,107-107,</span><span style="color: #000000; background-color: #efcb05; ">123-123,125-125,128-129,1<wbr>40-140,154-154,184-184,206-206,216-216,<wbr>218-218,223-223,230-230,237-237,239-239<wbr>,</span><span style="color: #000000; background-color: #efcb05; ">271-271,290-290,300-300,313-313,323-32<wbr>3,325-325,331-331,</span><span class="sf17b18">333-333,</span><span style="color: #000000; background-color: #efcb05; ">337-337,350-3<wbr>50,357-361,386-386,388-388,392-392,401-<wbr>401,404-404,406-406,411-411,418-418,425<wbr>-427,</span><span class="sf17b16">440</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">440</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">459</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">459,462-465,467-</span><span style="color: #000000; background-color: #efcb05; ">468,47<wbr>7-478,493-493,496-498,</span><span style="color: #000000; background-color: #efcb05; ">694-694,</span><span style="color: #000000; background-color: #efcb05; ">1301-</span><span class="sf17b16">1305<wbr></span><span style="color: #000000; background-color: #efcb05; ">,1334-1334,1363-1363,1374-1374,1377-137<wbr>7,1390-1390,1399-1399,1406-</span><span class="sf17b16">1410</span><span style="color: #000000; background-color: #efcb05; ">,1431-14<wbr>31,1484-1484,1500-1500,1628-1628,1633-1<wbr>633,1638-1638,1645-1645,1647-1647,1664-<wbr>1665,1708-1708,1714-1714,1723-1723,1731<wbr>-1731,1740-1740,1742-1742,1759-1759,179<wbr>2-</span><span class="sf17b16">1792</span><span style="color: #000000; background-color: #efcb05; ">,1799-1802,1805-1805,1807-1807,18<wbr>09-1809,1835-1835,1841-1841,1847-1847,1<wbr>853-1853,1857-1857,1868-1868,1884-1884,<wbr>2000-2002,2018-2018,2025-2025,2031-2031<wbr>,2034-2034,2038-2038,2042-2042,2046-204<wbr>6,2050-2050,2081-2082,2088-2088,2090-20<wbr>90,2099-2101,2116-2116,2123-2123,2130-2<wbr>131,2147-2148,2151-2151,2178-2178,2181-<wbr>2181,2200-2200,2204-2204,2214-2214,2256<wbr>-2256,2265-2266,</span><span class="sf17b18">2284-2284,2292-2292,</span><span style="color: #000000; background-color: #efcb05; ">229<wbr>5-2295,2297-2301,</span><span style="color: #000000; background-color: #efcb05; ">2327-2327,2340-2340,23<wbr>54-2354,2357-2360,2367-2367,2372-2372,2<wbr>383-2383,2400-2404,2406-</span><span class="sf17b18">2412,</span><span style="color: #000000; background-color: #efcb05; ">2414</span><span class="sf17b18">-2414</span><span style="color: #000000; background-color: #efcb05; ">,<wbr></span><span class="sf17b18">2437-2437,</span><span style="color: #000000; background-color: #efcb05; ">2448-2450,2462-2462,2483-2483<wbr>,</span><span style="color: #000000; background-color: #efcb05; ">2496-2496,</span><span style="color: #000000; background-color: #efcb05; ">2510-2510,2530-2530,2545-254<wbr>5,</span><span style="color: #000000; background-color: #efcb05; ">2586-2586,2589-2589,2613-2613,2634-26<wbr>34,2646-2646,2660-2660,2665-2665,2670-2<wbr>670,</span><span style="color: #000000; background-color: #efcb05; ">2693-2693,2707-2708,2715-2715,2717-<wbr>2720,2725-2725,</span><span style="color: #000000; background-color: #efcb05; ">2736-2736,2762-2762,2769<wbr>-2769,2773-2773,</span><span style="color: #000000; background-color: #efcb05; ">2779-2779,2793-2793,</span><span style="color: #000000; background-color: #efcb05; ">280<wbr>5-2805,2810-2810,2813-2814,2822-2822,28<wbr>33-2833,2850-2851,2864-2864</span><span style="color: #000000; background-color: #efcb05; ">]","【Places】<wbr>","Places."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2202,51,0,"PlaceName[20-37,39-59,61-</span><span class="sf17b16">66</span><span style="color: #000000; background-color: #efcb05; ">,<wbr>94-94,107-107,</span><span class="sf17b18">112-112,</span><span style="color: #000000; background-color: #efcb05; ">123-123,125-125,1<wbr>28-129,140-140,154-154,184-184,206-206,<wbr>216-216,218-218,223-223,230-230,237-237<wbr>,239-239,</span><span class="sf17b18">260-260,</span><span style="color: #000000; background-color: #efcb05; ">271-271,290-290,300-30<wbr>0,313-313,323-323,325-325,331-331,</span><span style="color: #000000; background-color: #efcb05; ">337-3<wbr>37,350-350,357-361,386-386,388-388,392-<wbr>392,401-401,404-404,406-406,411-411,418<wbr>-418,425-427,</span><span class="sf17b16">430</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">430</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">464</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">468,477-478,49<wbr>3-493,496-498,</span><span class="sf17b18">548-548,617-617,</span><span style="color: #000000; background-color: #efcb05; ">694-694,</span><span class="sf17b18">7<wbr>33-733,</span><span style="color: #000000; background-color: #efcb05; ">1301-</span><span class="sf17b16">1304</span><span style="color: #000000; background-color: #efcb05; ">,1334-1334,1363-1363,13<wbr>74-1374,1377-1377,1390-1390,1399-1399,1<wbr>406-</span><span class="sf17b16">1409</span><span style="color: #000000; background-color: #efcb05; ">,1431-1431,1484-1484,1500-1500,<wbr>1628-1628,1633-1633,1638-1638,1645-1645<wbr>,1647-1647,1664-1665,1708-1708,1714-171<wbr>4,1723-1723,1731-1731,1740-1740,1742-17<wbr>42,1759-1759,1792-</span><span class="sf17b16">1793</span><span style="color: #000000; background-color: #efcb05; ">,1799-1802,1805-1<wbr>805,1807-1807,1809-1809,1835-1835,1841-<wbr>1841,1847-1847,1853-1853,1857-1857,1868<wbr>-1868,1884-1884,2000-2002,2018-2018,202<wbr>5-2025,2031-2031,2034-2034,2038-2038,20<wbr>42-2042,2046-2046,2050-2050,2081-2082,2<wbr>088-2088,2090-2090,2099-2101,2116-2116,<wbr>2123-2123,2130-2131,2147-2148,2151-2151<wbr>,2178-2178,2181-2181,2200-2200,2204-220<wbr>4,2214-2214,2256-2256,2265-2266,</span><span style="color: #000000; background-color: #efcb05; ">2295-22<wbr>95,2297-2301,</span><span class="sf17b18">2310-2310,</span><span style="color: #000000; background-color: #efcb05; ">2327-2327,2340-2<wbr>340,2354-2354,2357-2360,2367-2367,2372-<wbr>2372,2383-2383,2400-2404,2406-</span><span style="color: #000000; background-color: #efcb05; ">2414</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">2448<wbr>-2450,2462-2462,2483-2483,</span><span class="sf17b18">2485-2485,</span><span style="color: #000000; background-color: #efcb05; ">249<wbr>6-2496,</span><span class="sf17b18">2499-2499,</span><span style="color: #000000; background-color: #efcb05; ">2510-2510,2530-2530,25<wbr>45-2545,</span><span class="sf17b18">2549-2549,</span><span style="color: #000000; background-color: #efcb05; ">2586-2586,2589-2589,2<wbr>613-2613,2634-2634,2646-2646,2660-2660,<wbr>2665-2665,2670-2670,</span><span class="sf17b18">2691-2691,</span><span style="color: #000000; background-color: #efcb05; ">2693-2693<wbr>,2707-2708,2715-2715,2717-2720,2725-272<wbr>5,</span><span class="sf17b18">2727-2727,</span><span style="color: #000000; background-color: #efcb05; ">2736-2736,2762-2762,2769-27<wbr>69,2773-2773,</span><span class="sf17b18">2775-2775,</span><span style="color: #000000; background-color: #efcb05; ">2779-2779,2793-2<wbr>793,</span><span class="sf17b18">2801-2801,</span><span style="color: #000000; background-color: #efcb05; ">2805-2805,2810-2810,2813-<wbr>2814,2822-2822,2833-2833,2850-2851,2864<wbr>-2864</span><span class="sf17b18">,2950-2957</span><span style="color: #000000; background-color: #efcb05; ">]","【Places】","Places."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2203,52,0,"Race","【Races】","Races."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2203,52,0,"Race","【Races】","Races."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2206,55,0,"GeneralAction[1-10,12-22,24-<wbr>27]","【General Actions】","General Actions."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2206,55,0,"GeneralAction[1-10,12-22,24-<wbr>27]","【General Actions】","General Actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2207,56,0,"Action[9-9,</span><span class="sf17b16">11</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">11</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">14</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">17</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">19</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">31<wbr></span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">35</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">35</span><span style="color: #000000; background-color: #efcb05; ">,37-38,40-</span><span style="color: #000000; background-color: #efcb05; ">54,56-56,</span><span class="sf17b16">59</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">67</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">69-</span><span style="color: #000000; background-color: #efcb05; ">75,78<wbr>-</span><span class="sf17b16">79</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">81-81,</span><span style="color: #000000; background-color: #efcb05; ">83-88,90-90,92-92,94-98,100-1<wbr>01,</span><span class="sf17b18">103-103,</span><span style="color: #000000; background-color: #efcb05; ">106-107,110-110,112-</span><span style="color: #000000; background-color: #efcb05; ">121,124-<wbr>125,127-</span><span class="sf17b16">128</span><span style="color: #000000; background-color: #efcb05; ">,131-137,139-142,144-147,149<wbr>-149,152-159,162-</span><span style="color: #000000; background-color: #efcb05; ">168</span><span style="color: #000000; background-color: #efcb05; ">,170-</span><span style="color: #000000; background-color: #efcb05; ">174,</span><span class="sf17b16">176</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">182</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">18<wbr>4-186,188-190,197-208,210-222,224-228,2<wbr>31-239,241-244,252-252,260-260,268-279,<wbr></span><span class="sf17b18">281-281,</span><span style="color: #000000; background-color: #efcb05; ">283-297,299-301,</span><span style="color: #000000; background-color: #efcb05; ">2135-2135,2240-<wbr>2242,2245-2248,2254-</span><span style="color: #000000; background-color: #efcb05; ">2272,2864-</span><span style="color: #000000; background-color: #efcb05; ">2868</span><span style="color: #000000; background-color: #efcb05; ">,2870<wbr>-2870,2872-</span><span style="color: #000000; background-color: #efcb05; ">2876</span><span style="color: #000000; background-color: #efcb05; ">,2878-</span><span class="sf17b16">2881</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">2885</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">2885</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">288<wbr>7</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">2888</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">2890</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">2892</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3487</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">3487</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3538</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">3596,35<wbr>98-3601,3603-3606,3608-3608,3610-</span><span class="sf17b16">3617</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3<wbr>619</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">3619</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">3621-3621,3623-3625,</span><span class="sf17b16">3627</span><span style="color: #000000; background-color: #efcb05; ">-3629,<wbr></span><span class="sf17b16">3631</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">3636</span><span style="color: #000000; background-color: #efcb05; ">,3638-</span><span style="color: #000000; background-color: #efcb05; ">3643</span><span style="color: #000000; background-color: #efcb05; ">,4072-4079,4081-4084<wbr>,4086-4087,4095-4097,4100-4100,4102-410<wbr>6,4179-4179,4238-4248,4262-4262,4401-44<wbr>06,4560-4560,</span><span class="sf17b16">4568</span><span style="color: #000000; background-color: #efcb05; ">-4574,</span><span class="sf17b16">4645</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">4646</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">7381-</span><span style="color: #000000; background-color: #efcb05; ">7<wbr>445,7447-7450,7477-</span><span class="sf17b16">7572</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">7632-7632,7634-<wbr>7634,7861-</span><span style="color: #000000; background-color: #efcb05; ">7869</span><span style="color: #000000; background-color: #efcb05; ">,7903-7911,8324-8324,</span><span class="sf17b16">9015<wbr></span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9015</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9372</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9372</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9629</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9629</span><span style="color: #000000; background-color: #efcb05; ">]","【Disciple of War &amp; Magic Actions】","Disciple of War &amp; Magic Actions."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2207,56,0,"Action[9-9,</span><span class="sf17b16">15</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">17</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">20</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">21</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">23</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">24<wbr></span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">27</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">31</span><span style="color: #000000; background-color: #efcb05; ">,37-38,40-</span><span class="sf17b18">46,48-49,51-</span><span style="color: #000000; background-color: #efcb05; ">54,56-56,</span><span class="sf17b16">60<wbr></span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">63</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">65-66,</span><span style="color: #000000; background-color: #efcb05; ">69-</span><span class="sf17b18">71,73-</span><span style="color: #000000; background-color: #efcb05; ">75,78-</span><span class="sf17b16">78</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">83-88,90-90<wbr>,92-92,94-98,100-101,</span><span style="color: #000000; background-color: #efcb05; ">106-107,110-110,11<wbr>2-</span><span class="sf17b18">114,116-</span><span style="color: #000000; background-color: #efcb05; ">121,124-125,127-</span><span class="sf17b16">127</span><span style="color: #000000; background-color: #efcb05; ">,131-137,1<wbr>39-142,144-147,149-149,152-159,162-</span><span class="sf17b18">166,<wbr></span><span style="color: #000000; background-color: #efcb05; ">168</span><span class="sf17b18">-168</span><span style="color: #000000; background-color: #efcb05; ">,170-</span><span class="sf17b18">170,172-</span><span style="color: #000000; background-color: #efcb05; ">174,</span><span class="sf17b16">178</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">178</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">180-181<wbr>,</span><span style="color: #000000; background-color: #efcb05; ">184-186,188-190,197-208,210-222,224-22<wbr>8,231-239,241-244,252-252,260-260,268-2<wbr>79,</span><span style="color: #000000; background-color: #efcb05; ">283-297,299-301,</span><span class="sf17b18">633-634,637-637,639-<wbr>639,787-788,791-792,794-794,796-798,800<wbr>-803,805-805,</span><span style="color: #000000; background-color: #efcb05; ">2135-2135,2240-2242,2245-2<wbr>248,2254-</span><span class="sf17b18">2255,2257-</span><span style="color: #000000; background-color: #efcb05; ">2272,2864-</span><span class="sf17b18">2864,2866-<wbr>2866,</span><span style="color: #000000; background-color: #efcb05; ">2868</span><span class="sf17b18">-2868</span><span style="color: #000000; background-color: #efcb05; ">,2870-2870,2872-</span><span class="sf17b18">2874,</span><span style="color: #000000; background-color: #efcb05; ">2876<wbr></span><span class="sf17b18">-2876</span><span style="color: #000000; background-color: #efcb05; ">,2878-</span><span class="sf17b16">2878</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">2890</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">2890</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3538</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">3543</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">354<wbr>5</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">3547</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3549</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">3563</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3566</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">3566,3568-3571,35<wbr>73-3587,3590-3590,3593-</span><span style="color: #000000; background-color: #efcb05; ">3596,3598-3601,3<wbr>603-3606,3608-3608,3610-</span><span class="sf17b16">3610</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3612</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">3615</span><span style="color: #000000; background-color: #efcb05; ">,<wbr></span><span class="sf17b18">3617-3617,</span><span style="color: #000000; background-color: #efcb05; ">3621-3621,3623-3625,</span><span class="sf17b16">3629</span><span style="color: #000000; background-color: #efcb05; ">-3629<wbr>,</span><span class="sf17b16">3632</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">3632,3634-3634,</span><span style="color: #000000; background-color: #efcb05; ">3636</span><span class="sf17b18">-3636</span><span style="color: #000000; background-color: #efcb05; ">,3638-</span><span class="sf17b18">364<wbr>1,</span><span style="color: #000000; background-color: #efcb05; ">3643</span><span class="sf17b18">-3643</span><span style="color: #000000; background-color: #efcb05; ">,4072-4079,4081-4084,4086-40<wbr>87,4095-4097,4100-4100,4102-4106,4179-4<wbr>179,4238-4248,4262-4262,4401-4406,4560-<wbr>4560,</span><span class="sf17b16">4574</span><span style="color: #000000; background-color: #efcb05; ">-4574,</span><span class="sf17b16">4587</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">4587</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">4589-4589,4591<wbr>-4591,4593-4593,4595-4597,4605-4607,461<wbr>5-4615,</span><span style="color: #000000; background-color: #efcb05; ">7381-</span><span class="sf17b18">7416,7418-7436,7438-</span><span style="color: #000000; background-color: #efcb05; ">7445,74<wbr>47-7450,7477-</span><span class="sf17b16">7494</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">7496-7499,7501-7507,7<wbr>509-7521,7523-7531,7533-7533,7535-7535,<wbr>7537-7538,7540-7542,7546-7546,7548-7549<wbr>,7551-7551,7553-7554,7557-7557,7559-756<wbr>2,7568-7568,7571-7571,</span><span style="color: #000000; background-color: #efcb05; ">7632-7632,7634-76<wbr>34,7861-</span><span class="sf17b18">7863,7867-7867,</span><span style="color: #000000; background-color: #efcb05; ">7869</span><span class="sf17b18">-7869</span><span style="color: #000000; background-color: #efcb05; ">,7903-7<wbr>911,8324-8324,</span><span class="sf17b16">9629</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9629</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">15989</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">16015</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">161<wbr>37</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">16165,16191-16196,16457-16489,16491-<wbr>16536,16539-16543,16545-16546,16548-165<wbr>48,16550-16557,16559-16560,16578-16578,<wbr>16766-16766,16791-16803,16889-16889,170<wbr>55-17055,17105-17106,17206-17206,17209-<wbr>17209,17215-17216,18073-18073</span><span style="color: #000000; background-color: #efcb05; ">]","【Disci<wbr>ple of War &amp; Magic Actions】","Disciple of War &amp; Magic Actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2208,57,0,"CraftAction[100001-</span><span class="sf17b16">100010</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">10<wbr>0020</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">100020</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">100033-100033,</span><span class="sf17b18">100036-100036<wbr>,</span><span style="color: #000000; background-color: #efcb05; ">100039-100039,</span><span class="sf17b18">100050-100050,</span><span style="color: #000000; background-color: #efcb05; ">100063-100<wbr>063,</span><span class="sf17b18">100066-100066,</span><span style="color: #000000; background-color: #efcb05; ">100069-100069,100083-<wbr>100083,</span><span class="sf17b18">100095-100095,</span><span style="color: #000000; background-color: #efcb05; ">100098-100098,1001<wbr>08-100108,</span><span class="sf17b18">100120-100120,</span><span style="color: #000000; background-color: #efcb05; ">100128-100128,1<wbr>00136-100137,100145-100145,100153-10015<wbr>3,100161-100161,100169-100169,100177-10<wbr>0187,100195-100195,100203-100203,100211<wbr>-100211,100219-100219,100227-100227,100<wbr>235-100235,100243-100243,100251-100251,<wbr>100259-100259,100267-100267,100275-1002<wbr>75</span><span style="color: #000000; background-color: #efcb05; ">]","【Disciple of the Hand Actions】","Disciple of the Hand Actions."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2208,57,0,"CraftAction[100001-</span><span class="sf17b16">100005</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">10<wbr>0007</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">100008</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">100010-100010,</span><span style="color: #000000; background-color: #efcb05; ">100033-100033<wbr>,</span><span style="color: #000000; background-color: #efcb05; ">100039-100039,</span><span style="color: #000000; background-color: #efcb05; ">100063-100063,</span><span style="color: #000000; background-color: #efcb05; ">100069-100<wbr>069,100083-100083,</span><span style="color: #000000; background-color: #efcb05; ">100098-100098,100108-<wbr>100108,</span><span style="color: #000000; background-color: #efcb05; ">100128-100128,100136-100137,1001<wbr>45-100145,100153-100153,100161-100161,1<wbr>00169-100169,100177-100187,100195-10019<wbr>5,100203-100203,100211-100211,100219-10<wbr>0219,100227-100227,100235-100235,100243<wbr>-100243,100251-100251,100259-100259,100<wbr>267-100267,100275-100275</span><span class="sf17b18">,100283-100283,<wbr>100291-100291,100299-100299,100307-1003<wbr>07,100315-100315,100323-100323,100331-1<wbr>00331,100339-100339</span><span style="color: #000000; background-color: #efcb05; ">]","【Disciple of the Hand Actions】","Disciple of the Hand Actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2209,58,0,"BuddyAction","【Companion Actions】","Companion Actions."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2209,58,0,"BuddyAction","【Companion Actions】","Companion Actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2210,59,0,"PetAction[1-</span><span class="sf17b16">35,37-39</span><span style="color: #000000; background-color: #efcb05; ">]","【Pet<wbr> Actions】","Pet Actions."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2210,59,0,"PetAction[1-</span><span class="sf17b16">7</span><span style="color: #000000; background-color: #efcb05; ">]","【Pet Actions】","Pet Actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2211,60,0,"Weather[col-1,1-</span><span class="sf17b18">11,14-17,19-<wbr></span><span style="color: #000000; background-color: #efcb05; ">20,22-23,25-25,29-29,35-36,40-40,44-44,<wbr>49-51,53-54,60-60,66-66,69-69,71-71,74-<wbr>74,77-77,80-80,82-82,84-84,87-87,92-92,<wbr></span><span style="color: #000000; background-color: #efcb05; ">97-97,102-102,109-113,116-116</span><span style="color: #000000; background-color: #efcb05; ">]","【Weath<wbr>er】","Weather."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2211,60,0,"Weather[col-1,1-</span><span style="color: #000000; background-color: #efcb05; ">20,22-23,25-<wbr>25,29-29,35-36,40-40,44-44,49-51,53-54,<wbr>60-60,66-66,69-69,71-71,74-74,77-77,80-<wbr>80,82-82,84-84,87-87,92-92,</span><span class="sf17b18">95-95,</span><span style="color: #000000; background-color: #efcb05; ">97-97,<wbr>102-102,109-113,116-116</span><span class="sf17b18">,118-118</span><span style="color: #000000; background-color: #efcb05; ">]","【Wea<wbr>ther】","Weather."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2212,61,0,"MainCommand[col-&lt;Value&gt;4&lt;/Va<wbr>lue&gt;,1-36,41-42,44-44,56-62,64-70,72-</span><span style="color: #000000; background-color: #efcb05; ">99<wbr>]","【Main Commands】","Main Commands."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2212,61,0,"MainCommand[col-&lt;Value&gt;4&lt;/Va<wbr>lue&gt;,1-36,41-42,44-44,56-62,64-70,72-</span><span class="sf17b18">82<wbr>,84-</span><span style="color: #000000; background-color: #efcb05; ">99]","【Main Commands】","Main Commands."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2213,62,0,"TextCommand[col-&lt;Value&gt;8&lt;/Va<wbr>lue&gt;,col-&lt;Value&gt;5&lt;/Value&gt;,1-211,213-321<wbr>,323-455,459-699]","【Text Commands】","Text Commands."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2213,62,0,"TextCommand[col-&lt;Value&gt;8&lt;/Va<wbr>lue&gt;,col-&lt;Value&gt;5&lt;/Value&gt;,1-211,213-321<wbr>,323-455,459-699]","【Text Commands】","Text Commands."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2214,63,0,"Action[</span><span class="sf17b16">1561</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1561</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1564</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1564</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1<wbr>567</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1567</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1573</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1573</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1576</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1577</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1580</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1580</span><span style="color: #000000; background-color: #efcb05; ">,<wbr></span><span class="sf17b16">1582</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1585</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">1590</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1592</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3359</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">3362</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">4249</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">4249<wbr></span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">7855</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">7855</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">7857</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">7858</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8746</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8765</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8767</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">879<wbr>9,</span><span class="sf17b16">8801</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">8839,8841-</span><span style="color: #000000; background-color: #efcb05; ">8851,8853-</span><span class="sf17b16">8856</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">8858-88<wbr>67,8869-</span><span class="sf17b16">8870</span><span style="color: #000000; background-color: #efcb05; ">,8872-8874,</span><span class="sf17b16">8876</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">8892,</span><span class="sf17b16">8894</span><span style="color: #000000; background-color: #efcb05; ">-8<wbr>896,</span><span class="sf17b18">8898-8898,</span><span style="color: #000000; background-color: #efcb05; ">8900-8900,</span><span class="sf17b16">8903</span><span style="color: #000000; background-color: #efcb05; ">-8905,</span><span class="sf17b16">8907</span><span style="color: #000000; background-color: #efcb05; ">-<wbr></span><span style="color: #000000; background-color: #efcb05; ">8914,8916-</span><span class="sf17b16">8918</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8921</span><span style="color: #000000; background-color: #efcb05; ">-8925,</span><span class="sf17b16">9013</span><span style="color: #000000; background-color: #efcb05; ">-9014,</span><span class="sf17b18">9098<wbr>-9098,9127-9127,</span><span style="color: #000000; background-color: #efcb05; ">9432-9434,</span><span class="sf17b16">9444</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">9444,945<wbr>7-</span><span style="color: #000000; background-color: #efcb05; ">9461,</span><span class="sf17b16">9618</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9618</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9620</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9628</span><span style="color: #000000; background-color: #efcb05; ">,9637-9637,</span><span class="sf17b16">96<wbr>39</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9639</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9651</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9651</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">10023</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">10029,</span><span class="sf17b16">10032</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">100<wbr>32</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">13975</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">13975</span><span style="color: #000000; background-color: #efcb05; ">]","【PvP Actions】","PvP Actions."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2214,63,0,"Action[</span><span class="sf17b16">1584</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">1584</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">3359</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">3362</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">4<wbr>249</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">4249</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">7855</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">7855</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">7857</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">7857</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8746</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8746</span><span style="color: #000000; background-color: #efcb05; ">,<wbr></span><span class="sf17b16">8749</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8752</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8754</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8756</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8758</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8758</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8761</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8765<wbr></span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8767</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8769</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8772</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8773</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8775</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8785</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8787</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">878<wbr>7,8789-8789,8791-</span><span style="color: #000000; background-color: #efcb05; ">8799,</span><span class="sf17b16">8802</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">8810,8812-88<wbr>12,8814-8816,8820-8826,8828-8831,8833-8<wbr>833,8836-</span><span style="color: #000000; background-color: #efcb05; ">8839,8841-</span><span class="sf17b18">8844,8848-</span><span style="color: #000000; background-color: #efcb05; ">8851,8853-<wbr></span><span class="sf17b16">8853</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">8855-8855,</span><span style="color: #000000; background-color: #efcb05; ">8858-8867,8869-</span><span class="sf17b16">8869</span><span style="color: #000000; background-color: #efcb05; ">,8872<wbr>-8874,</span><span class="sf17b16">8877</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">8885,8887-</span><span style="color: #000000; background-color: #efcb05; ">8892,</span><span class="sf17b16">8895</span><span style="color: #000000; background-color: #efcb05; ">-8896,</span><span style="color: #000000; background-color: #efcb05; ">890<wbr>0-8900,</span><span class="sf17b16">8904</span><span style="color: #000000; background-color: #efcb05; ">-8905,</span><span class="sf17b16">8909</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">8909,8913-</span><span style="color: #000000; background-color: #efcb05; ">8914,89<wbr>16-</span><span class="sf17b16">8916</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">8925</span><span style="color: #000000; background-color: #efcb05; ">-8925,</span><span class="sf17b16">9014</span><span style="color: #000000; background-color: #efcb05; ">-9014,</span><span style="color: #000000; background-color: #efcb05; ">9432-9434,</span><span class="sf17b16">9<wbr>461</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">9461,</span><span class="sf17b16">9621</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9622</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">9625</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9625</span><span style="color: #000000; background-color: #efcb05; ">,9637-9637,<wbr></span><span class="sf17b16">9640</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">9640</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">10023</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">10023</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">10025</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b18">10025,10027<wbr>-</span><span style="color: #000000; background-color: #efcb05; ">10029,</span><span class="sf17b16">17669</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">17669</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b16">17671</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">17672,17674-17<wbr>698,17700-17714,17716-17717,17719-17726<wbr>,17728-17729,17732-17735,17740-17745,17<wbr>747-17747,17749-17754,17756-17771,17774<wbr>-17775,17777-17791,17793-17798,17802-17<wbr>802,17804-17807,17809-17809,17824-17825<wbr>,17832-17832,17866-17866,17889-17891,17<wbr>990-17991,18050-18050</span><span style="color: #000000; background-color: #efcb05; ">]","【PvP Actions】","PvP Actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2215,64,0,"Pet[&lt;Value&gt;0&lt;/Value&gt;,1-</span><span class="sf17b16">9</span><span style="color: #000000; background-color: #efcb05; ">]","<wbr>【Pets】","Pets."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2215,64,0,"Pet[&lt;Value&gt;0&lt;/Value&gt;,1-</span><span class="sf17b16">8,10-<wbr>10,14-15,17-19</span><span style="color: #000000; background-color: #efcb05; ">]","【Pets】","Pets."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2216,65,0,"Companion[noun,1-67,71-</span><span class="sf17b16">335</span><span style="color: #000000; background-color: #efcb05; ">]"<wbr>,"【Minions】","Minions."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2216,65,0,"Companion[noun,1-67,71-</span><span class="sf17b18">152,1<wbr>54-222,224-305,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">307-331,333-342,344-352</span><span style="color: #000000; background-color: #efcb05; ">]","【Minions】","<wbr>Minions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2217,66,0,"PetMirage[col-&lt;Value&gt;2&lt;/Valu<wbr>e&gt;]","【Egi Glamours】","Egi Glamours."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2217,66,0,"PetMirage[col-&lt;Value&gt;2&lt;/Valu<wbr>e&gt;]","【Egi Glamours】","Egi Glamours."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2218,67,0,"ActionComboRoute</span><span style="color: #000000; background-color: #efcb05; ">","【PvP Combos】","PvP Combos."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2218,67,0,"ActionComboRoute</span><span class="sf17b18">[2-2,4-4,6-1<wbr>1,13-15,17-22]</span><span style="color: #000000; background-color: #efcb05; ">","【PvP Combos】","PvP Combos."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2219,68,0,"Action[12958-13007,14476-144<wbr>81]","【Logos Actions】","Logos Actions."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2219,68,0,"Action[12958-13007,14476-144<wbr>81]","【Logos Actions】","Logos Actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2220,69,0,"Action[11383-11431]","【Blue Magic】","Blue Magic."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2900,28,0,"@","【Job Gauge】","Job Gauge"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2900,28,0,"@","【Job Gauge】","Job Gauge"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2923,28,92,"","Ninki","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2923,28,92,"","Ninki","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2924,28,100,"","Ammunition Gauge","-"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2925,28,101,"","Ammunition","-"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2926,28,102,"","Heat Gauge","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2926,28,102,"","Heat Gauge","-"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2928,28,110,"","Blood Gauge","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2928,28,110,"","Blood Gauge","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2929,28,111,"","Blackblood","-"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2930,28,120,"","Arcana Gauge","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2930,28,120,"","Arcana Gauge","-"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2937,28,142,"","Black Mana","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2937,28,142,"","Black Mana","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2938,28,111,"","Darkside Gauge","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2939,28,52,"","Blood Lily","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2940,28,100,"","Heat Gauge","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2941,28,101,"","Battery Gauge","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2942,28,150,"","Powder Gauge","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2943,28,160,"","Step Gauge","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2944,28,161,"","Fourfold Feathers","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3000,25,0,"@","【Gold Saucer】","Gold Saucer."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">3000,25,0,"@","【Gold Saucer】","Gold Saucer."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">4014,17,355,"","custom delivery","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">4014,17,355,"","custom delivery","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">4015,17,163,"","Allagan tomestone of goetia","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5000,24,3001,"","normal raid","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5000,24,3001,"","normal raid","-"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5026,24,6302,"","Hidden Gorge","-"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5026,24,6302,"","Hidden Gorge","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5043,24,2231,"","Kugane Ohashi","-"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5044,24,4055,"","The Baldesion Arsenal","-"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">Untitled left</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\custom\005\CtsDkbCharacter1_00567.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">key,0,1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#,,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">int32,str,str</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">0,"TEXT_CTSDKBCHARACTER1_00567_IOLA_000<wbr>_001","Let's see what you can put together!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1,"TEXT_CTSDKBCHARACTER1_00567_IOLA_000<wbr>_050","These should do the trick. Now to see what the Zun think of them..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2,"TEXT_CTSDKBCHARACTER1_00567_IOLA_000<wbr>_051","Superb work. I'd like to see an amaro try to bite through these beauties!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3,"TEXT_CTSDKBCHARACTER1_00567_IOLA_000<wbr>_100","I've delivered your gauntlets to the Zun for their appraisal. I can only hope they're as impressed as I was."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">4,"TEXT_CTSDKBCHARACTER1_00567_ZUNTRAIN<wbr>ER00567_000_101","A word with you, please."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5,"TEXT_CTSDKBCHARACTER1_00567_IOLA_000<wbr>_102","Is...is something wrong?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6,"TEXT_CTSDKBCHARACTER1_00567_ZUNTRAIN<wbr>ER00567_000_103","I wish to speak with the artisan who crafted the gauntlets."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7,"TEXT_CTSDKBCHARACTER1_00567_IOLA_000<wbr>_104","Ah, that would be &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;, here."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8,"TEXT_CTSDKBCHARACTER1_00567_ZUNTRAIN<wbr>ER00567_000_105","First, let me say that my people are not accustomed to wearing metal armor. Our natural scales are hard as steel to begin with, and we do not like to announce ourselves with flashy adornments."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9,"TEXT_CTSDKBCHARACTER1_00567_ZUNTRAIN<wbr>ER00567_000_106","We wear only what is essential. The exception to this would be our hide jackets, a memento from those beloved amaro we would remember after their passing."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">10,"TEXT_CTSDKBCHARACTER1_00567_ZUNTRAI<wbr>NER00567_000_107","In short, we have no use for bulky protective garments. They would only get in our way."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_108","Noooooo... I should have known not to get my hopes up."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">12,"TEXT_CTSDKBCHARACTER1_00567_ZUNTRAI<wbr>NER00567_000_109","...Ah, but then I tried using the gloves to handle one of our feistier beasts. She clamped her jaws on my fingers...and I didn't feel a thing."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">13,"TEXT_CTSDKBCHARACTER1_00567_ZUNTRAI<wbr>NER00567_000_110","What is more, where I expected the material to be heavy and my movements clumsy, it almost felt as if I was working with bare hands!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">14,"TEXT_CTSDKBCHARACTER1_00567_ZUNTRAI<wbr>NER00567_000_111","You tailored the gauntlets to meet our particular needs, and we would acknowledge that effort with suitable payment. That is all I came to say."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">15,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_112","Phew, for a moment there I thought we'd made a mistake. He seemed pleased, didn't he...?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">16,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_113","More than that, he was &lt;Emphasis&gt;delighted&lt;/Emphasis&gt;. I have an eye for artisans, but I didn't realize you were this talented."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">17,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_114","I mean, you've only crafted one new design, and already my business with the Zun is off to a grand start. I might even be able to pay Eismon his wages this year!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">18,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_115","I feel like with you here, bringing back my old employees is not the distant dream it once was. Please say you'll stay and help! Keep your tools at the ready, and I'll find us some more customers to impress!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">19,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM_<wbr>000_166","Iola is pleased with your efforts. She now considers you the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Iron Bellows' Lifeline&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">20,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_150","&lt;Split(&lt;Highlight&gt;ObjectParamet<wbr>er(1)&lt;/Highlight&gt;, ,1)/&gt;, just the &lt;If(PlayerParameter(4))&gt;woman&lt;Else/&gt;man<wbr>&lt;/If&gt; I wanted to see."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">21,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_151","It's all happening so fast! We've received orders for more of those gauntlets you crafted!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">22,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_152","As I told you, Eismon has a knack for copying existing designs, so I set him loose on the new commissions. After all, he needs to work for his wages!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">23,"TEXT_CTSDKBCHARACTER1_00567_EISMON_<wbr>000_153","Makes a change from working for nothing..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">24,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_154","And as for you, I need another crafting miracle to impress our next potential client─the Mord!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">25,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_155","Have you been to Amh Araeng? The Mord people have a city there, founded on mining and trading."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">26,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_156","I went myself to do some groundwork, but talking about new wares they might need wasn't high on the agenda."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">27,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_157","No, the Mord seemed more intent on feeding me worms─a local delicacy, or so they said. I could barely choke one down..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">28,"TEXT_CTSDKBCHARACTER1_00567_EISMON_<wbr>000_158","Really? The taste started to grow on me after a while. I must have eaten a couple of buckets' worth while I was still waiting to get paid."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">29,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_159","I'm so sorry, Eismon. I truly am..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">30,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_160","Well, my visit to the Mord was something of a loss, but mayhap you have some insight that we could build upon?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">31,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM_<wbr>000_161","The Mord are strikingly similar to the kobolds in appearance. Perhaps the beastmen from the Source make use of something that could prove equally beneficial to their Amh Araeng counterparts..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">32,"TEXT_CTSDKBCHARACTER1_00567_Q1_000_<wbr>000","What manner of item could the Mord find useful?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">33,"TEXT_CTSDKBCHARACTER1_00567_A1_000_<wbr>001","Metal worm jars."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">34,"TEXT_CTSDKBCHARACTER1_00567_A1_000_<wbr>002","Bomb incubators."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">35,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_163","...Incubators? ...For bombs? Surely you're not serious?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">36,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_164","Hm, something to keep their squirmy treats safe?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">37,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_165","I don't know how the Mord will react to that, but I suppose it's worth a try. Make me a worm jar, if you please!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">38,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM_<wbr>000_167","The Crystarium Deliveries list for Iola has been updated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">39,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_200","I wish I could do more to revive the Bellows myself, but it's your crafting prowess that will truly make the difference. I'm grateful for your help!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_250","Thank you! The Mord should be pleased with this!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">41,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_251","Thank you! A container of this quality should keep those wriggling morsels safe and fresh. Not that I'd ever want to eat them..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">42,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_300","...Right. I've done my part and delivered your work to our potential clients in Mord Souq. Hopefully they like what they see."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">43,"TEXT_CTSDKBCHARACTER1_00567_MORDMER<wbr>CHANT00567_000_301","This is the forge where the metal jars were made, yes? I wanted to talk to the makers."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">44,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_302","Welcome, welcome! You've come to the right place."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">45,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_303","...What did you wish to discuss?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">46,"TEXT_CTSDKBCHARACTER1_00567_MORDMER<wbr>CHANT00567_000_304","For white earthworms, &lt;Emphasis&gt;freshness&lt;/Emphasis&gt; is best! They fare poorly in sunlight. Death follows soon. They don't keep well."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">47,"TEXT_CTSDKBCHARACTER1_00567_EISMON_<wbr>000_305","They do taste better fresh from the dirt, that's true."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">48,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_306","What is it with you and worms, Eismon? I'm beginning to think you're a Mord in disguise..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">49,"TEXT_CTSDKBCHARACTER1_00567_MORDMER<wbr>CHANT00567_000_307","We never tried to store earthworms before, but when we put them in your new jar, they stayed happy in the dark. Safe and squirming and delicious!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">50,"TEXT_CTSDKBCHARACTER1_00567_MORDMER<wbr>CHANT00567_000_308","And since the jar is made of metal, it doubles as a cooking pot! Over the fire and dinner is served! Whoever made such a wonderful utensil understands the Mord. Understands worms!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">51,"TEXT_CTSDKBCHARACTER1_00567_MORDMER<wbr>CHANT00567_000_309","If you have any more jars, we would make you an offer. We have much to trade! Coins to buy!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">52,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_310","Another happy customer. It's almost too good to be true. By the way, are &lt;Emphasis&gt;you&lt;/Emphasis&gt; one of these worm gourmets, too?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">53,"TEXT_CTSDKBCHARACTER1_00567_EISMON_<wbr>000_311","It has to be the white ones. They're &lt;Emphasis&gt;meatier&lt;/Emphasis&gt; than other worms, and─"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">54,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_312","You've proven your crafting expertise once again, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;. And thanks to the stability you've given us, I've managed to convince an old friend to return..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">55,"TEXT_CTSDKBCHARACTER1_00567_COLANA_<wbr>000_313","I'm Colana. You might've heard from Iola, but I was working at the Bellows until...until I couldn't anymore."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">56,"TEXT_CTSDKBCHARACTER1_00567_COLANA_<wbr>000_314","After all Iola's father did for us, abandoning the forge never sat well with me, so I'm glad to have another chance to help the business succeed."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">57,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_315","And we're incredibly glad to have you! You can work with Eismon, crafting stock for all these extra commissions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">58,"TEXT_CTSDKBCHARACTER1_00567_COLANA_<wbr>000_316","Did you hear that, Eismon? There's plenty of work to be done, so don't think you can take it easy just because I'm back!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">59,"TEXT_CTSDKBCHARACTER1_00567_EISMON_<wbr>000_317","Now, the reason the white earthworms are meatier has to do with how they survive the arid conditions of Amh Araeng..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">60,"TEXT_CTSDKBCHARACTER1_00567_COLANA_<wbr>000_318","...What is this dolt babbling about?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">61,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_319","Ahem, anyway! Now all that's left is to convince Sue-Rend to return. I'll scout out a new client, and then you can amaze them with your artisanal brilliance!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">62,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM_<wbr>000_366","Iola is delighted with your efforts. She now considers you the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Iron Bellows' Hidden Gem&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">63,"TEXT_CTSDKBCHARACTER1_00567_IOLA_10<wbr>0_350","I was hoping you'd pay a visit, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">64,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_350","Those jars you designed are selling like wildfire─we're almost struggling to keep up with demand!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">65,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_351","I have both Colana and Eismon handling the commissions, though, so you and I can turn all our attention to bringing in new business."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">66,"TEXT_CTSDKBCHARACTER1_00567_COLANA_<wbr>000_352","Aye, we have the jars under control! There's a worm cuisine craze sweeping through the Crystarium, and we stand to make a good bit of coin!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">67,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_353","I will never understand the appeal..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">68,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_354","But enough about worms. Let's discuss our next client shall we? The Ondo! They usually keep to themselves in their underwater settlements, but word from Kholusia says they're willing to engage in trade."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">69,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_355","So Eismon and I went looking for them. We must have trudged along that coastline for days before we finally chanced across a group spearfishing in the shallows. Did you know the Ondo hunt with harpoons fashioned from coral?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">70,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_356","Anyway, I was relieved to find that they were quite amenable to the idea of doing business with the Bellows."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">71,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_357","All we need to do now is to create an item the Ondo might be interested in purchasing. Anything come to mind?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">72,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM_<wbr>000_358","From what Iola has told you, the Ondo sound strikingly similar to the Sahagin. Perhaps the beastmen from the Source make use of something that could prove equally beneficial to their Kholusian counterparts..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">73,"TEXT_CTSDKBCHARACTER1_00567_Q2_000_<wbr>000","What manner of item could the Ondo find useful?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">74,"TEXT_CTSDKBCHARACTER1_00567_A2_000_<wbr>001","Metal tridents."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">75,"TEXT_CTSDKBCHARACTER1_00567_A2_000_<wbr>002","Metal flippers."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">76,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_360","Wouldn't metal flippers be more of a detriment to swimming? Even as you tried to kick forward, the weight would drag you down. Sort of like how my life was progressing before you walked into it..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">77,"TEXT_CTSDKBCHARACTER1_00567_COLANA_<wbr>000_361","Uh-oh, Iola's getting lost in the bad old days. Let's hear another idea─preferably something brilliant that'll snap the boss back to her usual cheery self."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">78,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_362","Ah, an improvement to those coral harpoons I mentioned. I think we're on the right track, but wouldn't the metal rust in the seawater?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">79,"TEXT_CTSDKBCHARACTER1_00567_COLANA_<wbr>000_363","That would depend on the metal used, and I know a few tricks and treatments to ward off rust. Let me worry about that part."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">80,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_364","My dear Colana. Rough edges aside, you always did have a knack for the delicate side of ironwork."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">81,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_365","Well, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;, I can think of no other drawbacks to your trident idea. Craft us a three-pronged masterpiece that will have the Ondo forking out coin and Sue-Rend begging to rejoin our forging family!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">82,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM_<wbr>000_367","The Crystarium Deliveries list for Iola has been updated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">83,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_400","Colana's boisterous return has brought a much-needed fire back to our forge. Although I'm afraid Eismon now has to work twice as hard to avoid being burned!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">84,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_450","Excellent work! These will make fine tools for fishing and battle both!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">85,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_451","This is superlative work! The balance and weight are perfect... Why, you could take down a whale with this thing!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">86,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_500","I've delivered your tridents to the Ondo, and now we wait for their verdict. This is always the most exciting─and terrifying─part..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">87,"TEXT_CTSDKBCHARACTER1_00567_ONDOFIS<wbr>HERMAN00567_000_501","Is thisss the Iron Bellows?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">88,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_502","It certainly is, good sir! Have you come to pay the balance, perchance...?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">89,"TEXT_CTSDKBCHARACTER1_00567_ONDOFIS<wbr>HERMAN00567_000_503","So, you are the ones resssponsible for those tridents!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">90,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_504","Oh no! We've angered them! Insulted their ancestors! Mocked their traditional coral craftsmanship!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">91,"TEXT_CTSDKBCHARACTER1_00567_COLANA_<wbr>000_505","Not to worry. That's why you keep a bruiser like me around!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">92,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_506","Er, Colana? I employ you to hammer iron, not our clients..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">93,"TEXT_CTSDKBCHARACTER1_00567_ONDOFIS<wbr>HERMAN00567_000_507","Listen well, landwalkers. My people dwell beneath the waves where fire does not burn, and we have no ssskill with forging tools of metal. But we recognize massstery when it is delivered into our very hands!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">94,"TEXT_CTSDKBCHARACTER1_00567_ONDOFIS<wbr>HERMAN00567_000_508","Compared to our coral spears, your tridents are ssstronger and sharper, yet show no sign of rusting in the ocean's water. They will ssserve us well in the hunt!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">95,"TEXT_CTSDKBCHARACTER1_00567_ONDOFIS<wbr>HERMAN00567_000_509","Such was our joy and sssatisfaction that I felt compelled to cross the seas, ssswim along rivers, and trek over land to heap praise upon their maker."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">96,"TEXT_CTSDKBCHARACTER1_00567_IOLA_00<wbr>0_510","Then you should give your thanks to &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt; there. It is &lt;If(PlayerParameter(4))&gt;she&lt;Else/&gt;he&lt;/I<wbr>f&gt; who first proposed and crafted the piece in question."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">97,"TEXT_CTSDKBCHARACTER1_00567_ONDOFIS<wbr>HERMAN00567_000_511","You were the landwalker who came with Alphinaud! It seems your talent in metalwork is the equal of your ssskill in battle. Once more you have our gratitude!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">98,"TEXT_CTSDKBCHARACTER1_00567_ONDOFIS<wbr>HERMAN00567_000_512","Master artisan, once more I commend you on your carefully considered work. On behalf of the Ondo, I deliver our endless gratitude!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">99,"TEXT_CTSDKBCHARACTER1_00567_ONDOFIS<wbr>HERMAN00567_000_513","Here is the coin we owe you. I look forward to your next offering."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">100,"TEXT_CTSDKBCHARACTER1_00567_SUEREN<wbr>D_000_514","(-Pretentious Voice-)Well, well. Things appear to be going &lt;Emphasis&gt;swimmingly&lt;/Emphasis&gt; for the Bellows these days. In fact, I might almost believe my expertise was no longer required."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">101,"TEXT_CTSDKBCHARACTER1_00567_COLANA<wbr>_000_515","Sue-Rend, you sneaky bastard! How long've you been there...!?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">102,"TEXT_CTSDKBCHARACTER1_00567_SUEREN<wbr>D_000_516","&lt;Split(&lt;Highlight&gt;ObjectPar<wbr>ameter(1)&lt;/Highlight&gt;, ,1)/&gt;, was it? I managed a glance at one of the tridents you traded to the Ondo, and I must say, I was quite impressed. Your skills are on par with Iola's father, and he was a man of no small talent."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">103,"TEXT_CTSDKBCHARACTER1_00567_SUEREN<wbr>D_000_517","'Twould reflect badly upon my character were I to accept my former position now, only after business had taken a turn for the better...and yet I cannot pass up this opportunity to work alongside an artisan of your caliber. "</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">104,"TEXT_CTSDKBCHARACTER1_00567_COLANA<wbr>_000_518","Or maybe you just can't stand to be away from me. I've got you pegged, Rend!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">105,"TEXT_CTSDKBCHARACTER1_00567_SUEREN<wbr>D_000_519","For the moment, I shall content myself with duplicating your wares in an effort to study your techniques. I assume my assistance will not be turned away...?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">106,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_520","This profession does seem to attract the peculiar types. Still, we should be glad to have Sue-Rend back at the forge."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">107,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_521","If you can look past his pretentious manner, you'll find a seasoned craftsman lurking underneath─even my father put stock in Rend's unmatched speed and precision."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">108,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_522","Just look at all we've achieved! With your help, we've secured another market in the Ondo and lured back my other lost employee!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">109,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_523","I cannot thank you enough, yet I would ask that you stay in my employ just a little longer. Rehiring my artisans was a costly endeavor, and we'll need every coin your new creations bring in..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">110,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_561","Iola is overjoyed with your efforts. She now considers you the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Iron Bellows' Ace in the Hole&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">111,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_524","A new quest continuing the story of the Iron Bellows is now available. Upon its completion, the Crystarium Deliveries list for Iola will be updated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">112,"TEXT_CTSDKBCHARACTER1_00567_IOLA_1<wbr>00_550","Greetings, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;! Ready to conjure up another fantastic new convenience?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">113,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_550","Look at them. Those three have certainly taken to the work with a passion...which I suppose is to be expected from such veteran artisans."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">114,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_551","Anyway, let's get started on our final project, shall we?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">115,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_552","Our client this time around is the Crystarium's own city guard! I may have mentioned this before, but they've been the only customer that's stuck with us through thick and thin, since the time my father ran the Bellows."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">116,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_553","The problem is, Father would accept the guard's commissions regardless of the losses we stood to make, and that hit to our profit margin became a major factor in the forge's decline."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">117,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_554","I understand why he did what he did: the guards protect us from the sin eaters, and he wanted to outfit them with the best equipment we could provide. A sharper sword, a sturdier shield...the slightest edge might help against the monsters which took my mother from us."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">118,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_555","Now more than ever, the Bellows is in a position to supply the Crystarium's defenders in the way my father would have wanted."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">119,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_556","You remember Nee Marn? He recently told me of a special gemstone which can only be found in Il Mheg."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">120,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_557","It seems Voeburtite knights used to carry such a jewel to ward off hostile magicks. A talisman of sorts."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">121,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_558","Well, call it fate, but the city guard's vulnerability to the arcane was the last project to consume my father's attention before he died."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">122,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_559","He wanted to fix the flaw he perceived in their armor, and it falls to me to complete his legacy. As such, the item I would have you craft is already decided: a neckpiece set with the gemstone from Il Mheg!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">123,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_560","This is it, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;, our final collaboration. I look forward to seeing what masterpiece you devise to protect our soldiers from fell sorcery!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">124,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_562","The Crystarium Deliveries list for Iola has been updated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">125,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_600","When this project is finished, I imagine you'll be off to help someone new. It's been selfish of me to hoard all your talent for myself."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">126,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_650","Thank you, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;! This just might be the edge a soldier needs to survive the battlefield's less mundane perils!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">127,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_651","Thank you, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;! With these neckpieces, our soldiers will be equipped to face down even the scariest arcane threats!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">128,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_700","I've delivered your work to the city guard, so that's that─our final project together is all but complete. Now we simply wait for the client's verdict..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">129,"TEXT_CTSDKBCHARACTER1_00567_REYNA_<wbr>000_701","Forgemaster Iola?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">130,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_702","That would be me. What can I do for you, Captain Lyna?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">131,"TEXT_CTSDKBCHARACTER1_00567_REYNA_<wbr>000_703","I came to discuss the new equipment you left with our supply officer."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">132,"TEXT_CTSDKBCHARACTER1_00567_REYNA_<wbr>000_704","Your father always provided us with the highest quality armaments, but was never satisfied with his attempts to infuse arcane resistance. He would have been proud of this neckpiece you've crafted..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">133,"TEXT_CTSDKBCHARACTER1_00567_REYNA_<wbr>000_705","We in the guard face danger on a daily basis, and I cannot overstate how much the availability of your potent talisman will benefit morale. I wanted to visit you in person, that I might properly express my gratitude."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">134,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_706","I am pleased to know you are pleased, but I can only accept thanks for the idea. The craftsmanship was all &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt; here."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">135,"TEXT_CTSDKBCHARACTER1_00567_REYNA_<wbr>000_707","&lt;Split(&lt;Highlight&gt;ObjectParam<wbr>eter(1)&lt;/Highlight&gt;, ,1)/&gt;!? A master artisan? Is there no end to your surprises?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">136,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_708","An impressive talent, isn't it? &lt;If(PlayerParameter(4))&gt;She&lt;Else/&gt;He&lt;/I<wbr>f&gt;'s as skilled as my own father was."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">137,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_709","With their work as a template, I mean to keep the Iron Bellows producing goods of the highest quality."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">138,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_710","As such, I also hope the city guard will continue entrusting their commissions to my forge in the years to come."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">139,"TEXT_CTSDKBCHARACTER1_00567_REYNA_<wbr>000_711","We would consider it a privilege. Be proud to know that the armaments provided by your family's forge serve an integral part of the Crystarium's defense."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">140,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_712","Did you hear that? An “integral part,” she said. I almost feel like weeping!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">141,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_713","It's been a long road getting the Bellows back on track, and you've stood by me every step of the way. Rest well, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;─you deserve it!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">142,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_100_713","Iola is thrilled with your efforts. She now considers you the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Iron Bellows' Greatest Weapon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">143,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_714","A new quest continuing the story of the Iron Bellows is now available. Speak with Iola as either a blacksmith, armorer, or goldsmith at level 80 or above to undertake the quest."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">144,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_800",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">145,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_801",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">146,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_802",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">147,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_803",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">148,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_804",""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">149,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_810","With each delivery you make, Iola will come to hold you in higher &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;esteem&lt;UIGlow&gt;01&lt;/UI<wbr>Glow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">150,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_811","Deliver the items Iola needs, and deliver them often to improve your standing with the Iron Bellows!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">151,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_820","The next request will be available from Iola upon reaching level 73 as a blacksmith, armorer, or goldsmith."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">152,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_821","The next request will be available from Iola upon reaching level 75 as a blacksmith, armorer, or goldsmith."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">153,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_822","The next request will be available from Iola upon reaching level 78 as a blacksmith, armorer, or goldsmith."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">154,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_830","Come to check in on us, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;? As you can see, business is thriving!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">155,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_840","Unable to obtain your reward. Your inventory is full."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">156,"TEXT_CTSDKBCHARACTER1_00567_SYSTEM<wbr>_000_850","In order to make deliveries, you must be a blacksmith, armorer, or goldsmith."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">157,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_860","If this new merchandise fails, then the Bellows is done for. I &lt;Emphasis&gt;have&lt;/Emphasis&gt; to make it work..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">158,"TEXT_CTSDKBCHARACTER1_00567_IOLA_0<wbr>00_900","We won't fall behind the likes of Katliss, no &lt;If(PlayerParameter(4))&gt;ma'am&lt;Else/&gt;sir<wbr>&lt;/If&gt;! The Iron Bellows is here to stay!"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

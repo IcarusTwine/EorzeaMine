@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\custom\000\JobDefSch_00098.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\custom\000\JobDefSch_00098.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">39,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>203","Between my rigorous training regimen and her eagerness to learn, she is certain to become a proper marine in next to no time!"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">39,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>203","Between my rigorous training regimen and her eagerness to learn, she is certain to become a proper marine in next to no time!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>110","&lt;If(Equal(PlayerParameter(68),28)<wbr>)&gt;Are you teasing me? Look in a mirror! Or have you truly forgotten the most basic facts of the tradition which you yourself helped revive!?&lt;Else/&gt;...I see you are conducting yourself in a decidedly non-scholarly manner &lt;If(LessThan(PlayerParameter(11),12))&gt;&lt;<wbr>If(LessThan(PlayerParameter(11),4))&gt;thi<wbr>s evening&lt;Else/&gt;today&lt;/If&gt;&lt;Else/&gt;&lt;If(Less<wbr>Than(PlayerParameter(11),17))&gt;today&lt;Els<wbr>e/&gt;this evening&lt;/If&gt;&lt;/If&gt;. Is that why you wish me to expound upon what I hope you have not forgotten?&lt;/If&gt; &lt;sigh&gt; Very well."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,"</span><span class="sf17b18">TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>204","What</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">stroke</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">luck</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">your</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">journey</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">led</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">you</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">precise</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">inspiration</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Surito</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Carito</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">needed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">culminate</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">his</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">research!</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">To</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">see</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Setoto</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">now</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">gives</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">me</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">much</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">hope</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">all</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tonberries</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">one</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">day</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">restored</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">who</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">they</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">once</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">were."</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">41</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_100_<wbr>110","Hmmm... Now that we are working with Surito Carito, mayhap a review would not go amiss. However, I can scarce imagine I will tell you aught you did not know already..."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">41,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>205","Her</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">recovery</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">proceeding</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">even</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">greater</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">speed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">than</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">we</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">had</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">hoped─just</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">other</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">day,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">she</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">succeeded</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">summoning</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Lilac!</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">And,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">most</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">significantly,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">she</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">happier</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">than</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ever</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">seen</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">her."</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">42</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_200_<wbr>110","Surely, by now you know far more about this subject than I do. &lt;sigh&gt; If you truly wish to hear it again, however, I shall not begrudge you an explanation."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">42,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>206","You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">ought</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">see</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">her</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">when</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">we</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">train─I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">no</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">doubt</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">she</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">go</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">do</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">great</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">things.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">And</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">course,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">mariner</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">myself,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">fully</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">intend</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">at</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">her</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">side</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">when</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">she</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">does!"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">43</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>111","In that age of wonders more than fifteen hundred years ago, when rival nations brought earth-shattering magicks to bear against one another, scholars were instrumental in ensuring the survival of Nym."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">43,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>110","&lt;If(Equal(PlayerParameter(68),28)<wbr>)&gt;Are you teasing me? Look in a mirror! Or have you truly forgotten the most basic facts of the tradition which you yourself helped revive!?&lt;Else/&gt;...I see you are conducting yourself in a decidedly non-scholarly manner &lt;If(LessThan(PlayerParameter(11),12))&gt;&lt;<wbr>If(LessThan(PlayerParameter(11),4))&gt;thi<wbr>s evening&lt;Else/&gt;today&lt;/If&gt;&lt;Else/&gt;&lt;If(Less<wbr>Than(PlayerParameter(11),17))&gt;today&lt;Els<wbr>e/&gt;this evening&lt;/If&gt;&lt;/If&gt;. Is that why you wish me to expound upon what I hope you have not forgotten?&lt;/If&gt; &lt;sigh&gt; Very well."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>112","Though they were far fewer in number relative to the mariners, it is clear that these mages formed the backbone of the Nymian military."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_100_<wbr>110","Hmmm... Now that we are working with Surito Carito, mayhap a review would not go amiss. However, I can scarce imagine I will tell you aught you did not know already..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">45</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>113","One might describe their role as one which provides support, but that does not adequately describe their capabilities, as far as I am concerned."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">45</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_200_<wbr>110","Surely, by now you know far more about this subject than I do. &lt;sigh&gt; If you truly wish to hear it again, however, I shall not begrudge you an explanation."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">46</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>114","Powerful restorative and enhancing magicks, well, those were hardly unusual in that day and age. No, what set scholars apart was both the strength of their magicks, and the manner in which they employed them."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">46</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>111","In that age of wonders more than fifteen hundred years ago, when rival nations brought earth-shattering magicks to bear against one another, scholars were instrumental in ensuring the survival of Nym."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">47</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>115","Aye, I speak of the faeries, those otherworldly creatures which the scholars learned to bind and control."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">47</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>112","Though they were far fewer in number relative to the mariners, it is clear that these mages formed the backbone of the Nymian military."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">48</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>116","However, as we saw firsthand on several occasions, that control is not absolute. And praise the Twelve that it is not, or we might have never learned the true nature of tonberries!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">48</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>113","One might describe their role as one which provides support, but that does not adequately describe their capabilities, as far as I am concerned."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">49</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>117","Alas, I fear that revelation will do little to change how the tortured souls are treated. So long as the rancor drives the tonberries to violence, the people of Vylbrand will have no choice but to defend themselves..."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">49</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>114","Powerful restorative and enhancing magicks, well, those were hardly unusual in that day and age. No, what set scholars apart was both the strength of their magicks, and the manner in which they employed them."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">50</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>115","Aye, I speak of the faeries, those otherworldly creatures which the scholars learned to bind and control."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">51</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>116","However, as we saw firsthand on several occasions, that control is not absolute. And praise the Twelve that it is not, or we might have never learned the true nature of tonberries!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">52</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFSCH_00098_ALKAZOLKA_000_<wbr>117","Alas, I fear that revelation will do little to change how the tortured souls are treated. So long as the rancor drives the tonberries to violence, the people of Vylbrand will have no choice but to defend themselves..."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

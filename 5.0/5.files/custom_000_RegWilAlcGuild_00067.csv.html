@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\custom\000\RegWilAlcGuild_00067.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\custom\000\RegWilAlcGuild_00067.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">25,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_086","Hm hm hm. Heh heh heh. Mwahahahahaha...I honestly have no idea. There is much even alchemy has yet to explain about the mysteries of life and death."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">25,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_086","Hm hm hm. Heh heh heh. Mwahahahahaha...I honestly have no idea. There is much even alchemy has yet to explain about the mysteries of life and death."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">26,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_REGWILALCGUILD_00067_Q2_000_00<wbr>1","What will you ask?"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">26,"</span><span class="sf17b18">TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_090","I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">received</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">most</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">curious</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">missive</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Rising</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Stones</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">regarding</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Scions.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Something</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">about</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">rifts</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">time...</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Would</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">were</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">familiar</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">such</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">theorems.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">It</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">sounds</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">though</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">would</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">make</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">rather</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">intriguing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">field</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">research."</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">27</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_A2_000_00<wbr>1","How do you fare?"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">27,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_REGWILALCGUILD_00067_Q2_000_00<wbr>1","What will you ask?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">28</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_A2_000_00<wbr>2","What can you tell me of alchemy?"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">28</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_A2_000_00<wbr>1","How do you fare?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">29</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_A2_000_00<wbr>3","Nothing."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">29</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_A2_000_00<wbr>2","What can you tell me of alchemy?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">30</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_100","Hah! Despite all the myriad possibilities of our craft that beg to be explored, you would inquire as to &lt;Emphasis&gt;my&lt;/Emphasis&gt; well-being? Well, naturally I am spending every waking hour exploring the myriad possibilities of our craft!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">30</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_A2_000_00<wbr>3","Nothing."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">31</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_101","Though I have stood at what I thought to be the very peak of alchemical achievement, it was but one mountain among many that I now hope to conquer. And, as I work towards my goals, I even deign to accept a commission or two."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">31</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_100","Hah! Despite all the myriad possibilities of our craft that beg to be explored, you would inquire as to &lt;Emphasis&gt;my&lt;/Emphasis&gt; well-being? Well, naturally I am spending every waking hour exploring the myriad possibilities of our craft!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">32</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_102","&lt;sigh&gt; I only wish that the requests of the wealthy were not so insufferably dull. If coin is no object, then why not ask of me a truly daunting and difficult task?"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">32</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_101","Though I have stood at what I thought to be the very peak of alchemical achievement, it was but one mountain among many that I now hope to conquer. And, as I work towards my goals, I even deign to accept a commission or two."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">33</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_103","Have you made no boastworthy discoveries of late? Remember: the world is our crucible, and an alchemist makes marvels of the mundane!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">33</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_102","&lt;sigh&gt; I only wish that the requests of the wealthy were not so insufferably dull. If coin is no object, then why not ask of me a truly daunting and difficult task?"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">34</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_105","I have taken an interest in these so-called “clones” of which you spoke. Fascinating things, really. Mayhap I will begin research in earnest..."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">34</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_103","Have you made no boastworthy discoveries of late? Remember: the world is our crucible, and an alchemist makes marvels of the mundane!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">35</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_106","Hahaha! I say this in jest, of course. I already know more of Allagan magicks than most historians, having chased the notion of creating life as a hunter chases his prey."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">35</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_105","I have taken an interest in these so-called “clones” of which you spoke. Fascinating things, really. Mayhap I will begin research in earnest..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">36</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_107","The alchemists of eld undeniably learned the secret of life eternal. But I ask you, what did this knowledge bring them? Allag still perished, as every civilization does in the fullness of time."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">36</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_106","Hahaha! I say this in jest, of course. I already know more of Allagan magicks than most historians, having chased the notion of creating life as a hunter chases his prey."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">37</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_108","The technologists failed to understand some secret of the mortal soul. Their copies of living men will never be enough to touch upon the truth of this world."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">37</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_107","The alchemists of eld undeniably learned the secret of life eternal. But I ask you, what did this knowledge bring them? Allag still perished, as every civilization does in the fullness of time."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">38</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_109","Remember, my assistant: the world is our crucible, and an alchemist makes wonders of the mundane. We may dig up the past and marvel at the miracles of the ancients, but our path is ever forward!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">38</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_108","The technologists failed to understand some secret of the mortal soul. Their copies of living men will never be enough to touch upon the truth of this world."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">39</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_200","You come calling merely to see how I am faring? And to what end, might I ask? Hmph, had I not known better, I'd say you were worried all that Heartstrike business had rekindled in me the urge to try my hand once more in those most forbidden and sinister of magicks."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">39</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_109","Remember, my assistant: the world is our crucible, and an alchemist makes wonders of the mundane. We may dig up the past and marvel at the miracles of the ancients, but our path is ever forward!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">40</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_201","As well you might. But believe me when I say, you need worry not. Perhaps, long ago, a younger and more fool version of myself would have been tempted to do so. But this is not that time, and I am not that man."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">40</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_200","You come calling merely to see how I am faring? And to what end, might I ask? Hmph, had I not known better, I'd say you were worried all that Heartstrike business had rekindled in me the urge to try my hand once more in those most forbidden and sinister of magicks."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">41</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_202","The man you see before you has learned a valuable lesson. No more will I spend my days in remembrance of and longing for those I have lost. For I have found that to devote myself to the here and now, to live for this day and the people in it, is a far more rewarding life. In that lesson, you were the master, and I the pupil. "</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">41</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_201","As well you might. But believe me when I say, you need worry not. Perhaps, long ago, a younger and more fool version of myself would have been tempted to do so. But this is not that time, and I am not that man."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">42</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_110","You who have studied─some would say “suffered”─at my feet would know more of that subject than most. But I will, however, indulge your request with bemused magnanimity!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">42</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_202","The man you see before you has learned a valuable lesson. No more will I spend my days in remembrance of and longing for those I have lost. For I have found that to devote myself to the here and now, to live for this day and the people in it, is a far more rewarding life. In that lesson, you were the master, and I the pupil. "</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">43</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_111","To properly define the intricate and miraculous work of an alchemist would take days of lengthy explanation─an explanation that many simply would not understand. The simple appellation of “potion brewer” given to us by the masses is, however, largely accurate."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">43</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_110","You who have studied─some would say “suffered”─at my feet would know more of that subject than most. But I will, however, indulge your request with bemused magnanimity!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_112","Restorative salves, ability-enhancing elixirs, deadly toxins and poisons─these are all substances that can be created through our versatile and practical profession."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_111","To properly define the intricate and miraculous work of an alchemist would take days of lengthy explanation─an explanation that many simply would not understand. The simple appellation of “potion brewer” given to us by the masses is, however, largely accurate."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">45</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_113","With the proper knowledge and process, even the most worthless-seeming materials can be combined to produce wondrous compounds. The applications of alchemy are nearly limitless!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">45</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_112","Restorative salves, ability-enhancing elixirs, deadly toxins and poisons─these are all substances that can be created through our versatile and practical profession."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">46</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_REGWILALCGUILD_00067_SEVERIAN_<wbr>000_113","With the proper knowledge and process, even the most worthless-seeming materials can be combined to produce wondrous compounds. The applications of alchemy are nearly limitless!"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">Untitled left</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\GuidePageString.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">key,0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">int32,str</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">0,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1,"Oath Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">2,"This symbol indicates the defensive stance &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Iron Will&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; is in effect, which increases enmity."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">3,"You can view the job gauge description at any time from the Actions &amp; Traits menu."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">4,"Oath Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">5,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Oath Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays the current strength of a paladin's oath, which increases as auto-attacks are performed. A strong oath is required to execute several select actions such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Sheltron&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;,<wbr> &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Cover&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; (acquired at level 45), and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Intervention&lt;UIGlow&gt;<wbr>01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegrou<wbr>nd&gt; (acquired at level 62), and will grow weaker upon using them.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Using certain actions will increase the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Oath Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6,"Beast Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">7,"This symbol indicates the defensive stance &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Defiance&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is in effect, which increases enmity."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8,"Beast Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Beast Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays the current strength of a warrior's wrath. This animalistic rage is required to execute several select actions such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Inner Beast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Steel Cyclone&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; (acquired at level 45) and will grow weaker upon using them.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Using certain actions will increase the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Beast Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">10,"Blood Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">11,"This symbol indicates the defensive stance &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Grit&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is in effect, which increases enmity."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">12,"Darkside Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">13,"This timer indicates the duration of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Darkside&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;,<wbr> which increases damage dealt. Using &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Flood of Darkness&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Edge of Darkness&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; (acquired at level 40) grants &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Darkside&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">14,"Blood Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">15,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blood Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays the amount of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blackblood&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; a dark knight has accumulated. &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blackblood&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; can be consumed to execute actions such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Bloodspiller&lt;UIGlow&gt;<wbr>01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegrou<wbr>nd&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Quietus&lt;UIGlow&gt;01&lt;/U<wbr>IGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; (acquired at level 64).</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Using certain actions will increase the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blood Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">16,"Darkside Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">17,"This symbol indicates that the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Dark Arts&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; effect has been granted. This occurs when the barrier applied by the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;The Blackest Night&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; has absorbed the full amount of damage.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Flood of Darkness&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Edge of Darkness&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; can be performed by consuming &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Dark Arts&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; instead of MP while the effect is active."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">18,"Darkside Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">19,"When executing &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Living Shadow&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;, a second timer indicating its duration will appear."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">20,"Healing Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">21,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Healing Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays the current number of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Lilies&lt;UIGlow&gt;01&lt;/UI<wbr>Glow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; a white mage has accumulated. Lilies are accumulated as time passes while engaged in combat.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Lilies are consumed by using the actions &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Afflatus Solace&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Afflatus Rapture&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; (acquired at level 76)."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">22,"Healing Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">23,"Performing actions that consume Lilies will also nourish the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blood Lily&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt;. The Blood Lily will bloom after consuming three Lilies, allowing the execution of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Afflatus Misery&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">24,"Aetherflow Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">25,"Using the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Aetherflow&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; fills the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Aetherflow Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, which is required to use certain actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">26,"Faerie Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">27,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Faerie Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays the current amount of fae aether accumulated within a faerie. Fae aether is accumulated by using actions such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Lustrate&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Excogitation&lt;UIGlow&gt;<wbr>01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegrou<wbr>nd&gt; which deplete the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Aetherflow Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;. Maintaining an &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Aetherpact&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; or using &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fey Blessing&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; (acquired at level 76) consumes fae aether."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">28,"Faerie Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">29,"Using the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Summon Seraph&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; replaces Eos or Selene with Seraph. The Faerie Gauge will indicate how much time remains before she must return."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">30,"Arcana Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">31,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Arcana Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; allows astrologians to keep track of which card (arcanum) is currently drawn. An arcanum is drawn by using the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Draw&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, and is placed in the middle of the gauge. Using the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Play&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; command executes the arcanum's corresponding action."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">32,"Divination and Arcana Gauges"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">33,"Depending on the arcanum used, you will be granted &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Lunar&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Solar&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Celestial&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> seals. These are consumed when using the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Divination&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; action, and its effect is strengthened with three different seals in play."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">34,"Lightning Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">35,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Lightning Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; indicates a monk's current amount of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Greased Lightning&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegrou<wbr>nd&gt;01&lt;/UIForeground&gt; as well as the time remaining before the effect fades. &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Greased Lightning&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegrou<wbr>nd&gt;01&lt;/UIForeground&gt; is accumulated by executing certain weaponskills, improving attack speed and damage dealt.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">As a monk or pugilist increases in level, the amount of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Greased Lightning&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegrou<wbr>nd&gt;01&lt;/UIForeground&gt; that can be stored at one time will increase to a maximum of 4 units."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">36,"Chakra Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">37,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Chakra Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; indicates the number of chakra a monk currently has opened. Chakra are opened using the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Meditation&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt;, or by using certain weaponskills. Opening 5 allows for the execution of the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Forbidden Chakra&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enlightenment&lt;UIGlow<wbr>&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegro<wbr>und&gt; (acquired at level 74)."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">38,"Lightning Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">39,"The action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Anatman&lt;UIGlow&gt;01&lt;/U<wbr>IGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; temporarily freezes the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Greased Lightning&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegrou<wbr>nd&gt;01&lt;/UIForeground&gt; timer. While it is frozen, the timer will flash and the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Lightning Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; will continue to increase, one unit at a time."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,"Dragon Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">41,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Dragon Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; is displayed upon executing &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blood of the Dragon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;, indicating the amount of time remaining before the effect fades. The potency of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Jump&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Spineshatter Dive&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; are increased when executed under the effect of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blood of the Dragon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">42,"Dragon Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">43,"Using the weaponskill &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Mirage Dive&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blood of the Dragon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; will attract the gaze of the first brood. The icon on the left of the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Dragon Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; indicates the strength of the gaze, up to a maximum of 2 units."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">44,"Using &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Geirskogul&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; while under the brood's full gaze will trigger &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Life of the Dragon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;, changing the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Dragon Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; to red and allowing for the execution of the devastating weaponskills &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Nastrond&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Stardiver&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> (acquired at level 80)."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">45,"Huton Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">46,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Huton Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; indicates time remaining until the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Huton&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; effect fades."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">47,"Ninki Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">48,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Ninki Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays the current amount of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Ninki&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; a ninja has accumulated. &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Ninki&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; slowly builds inside a ninja's body when certain weaponskills are performed and can be used to execute special ninjutsu such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Hellfrog Medium&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Bhavacakra&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; (acquired at level 68)."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">49,"Sen Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">50,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Sen Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays which of the 3 &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Sen&lt;UIGlow&gt;01&lt;/UIGlo<wbr>w&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; effects─&lt;UIForeground&gt;F201F4&lt;/UIForegro<wbr>und&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Setsu&lt;UIGlow<wbr>&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegro<wbr>und&gt; (top), &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Getsu&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; (left), and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Ka&lt;UIGlow&gt;01&lt;/UIGlow<wbr>&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; (right)─are currently accumulated. &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Sen&lt;UIGlow&gt;01&lt;/UIGlo<wbr>w&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is required to perform Iaijutsu, the number of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Sen&lt;UIGlow&gt;01&lt;/UIGlo<wbr>w&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; accumulated determining which weaponskill will be executed─1 for &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Higanbana&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr>, 2 for &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Tenka Goken&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, and 3 for &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Midare Setsugekka&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegro<wbr>und&gt;01&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">51,"Kenki Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">52,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Kenki Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays the current amount of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Kenki&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; a samurai has accumulated. &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Kenki&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; slowly builds in a samurai's blade through the successful execution of weaponskills. &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Kenki&lt;UIGlow&gt;01&lt;/UIG<wbr>low&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is required to execute special devastating attacks such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Hissatsu: Kaiten&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Hissatsu: Gyoten&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; (acquired at level 54), &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Hissatsu: Guren&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; (acquired at level 70), and more."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">53,"Song Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">54,"Singing &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Mage's Ballad&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; will display the action's corresponding &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Song Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, indicating the effect's time remaining.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">If the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Repertoire&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; effect is triggered while &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Mage's Ballad&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; is being sung, the recast times for &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Bloodletter&lt;UIGlow&gt;0<wbr>1&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegroun<wbr>d&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Rain of Death&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; (learned at level 45) are reset."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">55,"&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;<wbr>&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;“詩心”&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;は<wbr>&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;「ベノムバイト/コースティックバイト」&lt;<wbr>UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIF<wbr>oreground&gt;、&lt;UIForeground&gt;F201F4&lt;/UIFore<wbr>ground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;「ウィンドバイト/<wbr>ストームバイト」&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt;による継続ダメージの命中時に一定確率で発<wbr>動します。戦歌を使い、詩心を付与させていくことで吟遊詩人の攻撃力を高めることが<wbr>できます。"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">56,"Singing &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Army's Paeon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; will display the action's corresponding &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Song Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, indicating the effect's time remaining.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">If the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Repertoire&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; effect is triggered while &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Army's Paeon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; is being sung, the bard is granted reduced cast time and recast time, spell cast time and recast time, and auto-attack delay according to the number of stacks accumulated."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">57,"Singing the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Wanderer's Minuet&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; will display the action's corresponding &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Song Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, indicating the effect's time remaining.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">If the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Repertoire&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; effect is triggered while the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Wanderer's Minuet&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; is being sung, the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Pitch Perfect&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; will become available. The potency of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Pitch Perfect&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; increases according to the number of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Repertoire&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; stacks."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">58,"Soul Voice Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">59,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Soul Voice Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; increases in tandem with &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Repertoire&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt;, and is depleted when using the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Apex Arrow&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">60,"Heat Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">61,"Performing certain weaponskills will increase the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Heat Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, and once it is high enough, the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Hypercharge&lt;UIGlow&gt;0<wbr>1&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegroun<wbr>d&gt; will become available. Using &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Hypercharge&lt;UIGlow&gt;0<wbr>1&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegroun<wbr>d&gt; overheats your weapon and allows the use of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Heat Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; (acquired at level 35) and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Auto Crossbow&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; (acquired at level 52)."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">62,"Heat Gauge and Battery Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">63,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Battery Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; accumulates when certain actions are performed and allows the placement of a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Rook Autoturret&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegro<wbr>und&gt;01&lt;/UIForeground&gt;, which will attack your target. It also allows the deployment of an &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Automaton Queen&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; (acquired at level 80) to fight alongside you."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">64,"Elemental Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">65,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Elemental Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; indicates whether you are under the influence of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Astral Fire&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; (after casting a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fire&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; spell) or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Umbral Ice&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt; (after casting a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blizzard&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; spell). While under the influence of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Astral Fire&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt;, all &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fire&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; spells will have increased potency, but require more MP to cast. While under the influence of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Umbral Ice&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt;, you will have significantly increased MP recovery."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">66,"Executing &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enochian&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the influence of either &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Astral Fire&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Umbral Ice&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt; will set the lower-right corner of the gauge aglow, indicating its effect is active. &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enochian&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; increases the potency of magic attacks, as well as unlocks powerful spells such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blizzard IV&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/<wbr>UIForeground&gt;. &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enochian&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; fades when &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Astral Fire&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Umbral Ice&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;<wbr>/UIForeground&gt; expires."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">67,"Casting &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Blizzard IV&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/<wbr>UIForeground&gt; grants 3 &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Umbral Hearts&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; which are represented by the arrows in the gauge's lower-left corner. An &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Umbral Heart&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; is consumed each time a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fire&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; spell is cast, nullifying the MP cost increase applied by the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Astral Fire&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; status."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">68,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enochian&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; bar will fill every 30 seconds the status is maintained. When the crystal at the bottom of the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Elemental Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; glows pink, you will be under effect of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Polyglot&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;,<wbr> which allows the spells &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Foul&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Xenoglossy&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; (acquired at level 80) to be cast, consuming a crystal."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">69,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enochian&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; bar will fill every 30 seconds the status is maintained. When one or more crystals at the bottom of the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Elemental Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; glow pink, you will be under effect of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Polyglot&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;,<wbr> which allows the spells &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Foul&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Xenoglossy&lt;UIGlow&gt;01<wbr>&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground<wbr>&gt; (acquired at level 80) to be cast, consuming a crystal."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">70,"Aetherflow Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">71,"Using the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Energy Drain&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; fills the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Aetherflow Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, which is required to perform certain actions."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">72,"Trance Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">73,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Trance Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; indicates the time remaining for &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Dreadwyrm Trance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">74,"Once &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Dreadwyrm Trance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; has ended, the gauge changes to indicate you have accumulated &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Dreadwyrm Aether&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">75,"&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;<wbr>&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Dreadwyrm Aether&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; allows the summoning of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Demi-Bahamut&lt;UIGlow&gt;<wbr>01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegrou<wbr>nd&gt;. The gauge will indicate the time remaining until it returns."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">76,"After entering &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Firebird Trance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;, the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Trance Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; indicates the time remaining."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">77,"Dreadwyrm Aether"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">78,"Step Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">79,"Performing a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Standard Step&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; changes the appearance of the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Step Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; and causes you to start dancing. Following the displayed icons to execute steps in the correct order and ending with &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Standard Finish&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; will increase your damage dealt and that of party members under the effect of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Closed Position&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt;. The remaining duration of these effects is displayed beneat the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Step Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">80,"Fourfold Feathers"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">81,"Actions such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Reverse Cascade&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Rising Windmill&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; have a chance to grant &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fourfold Feathers&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt;, which are consumed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fan Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fan Dance II&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/<wbr>UIForeground&gt; (acquired at level 50)."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">82,"Step Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">83,"Performing a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Technical Step&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; will display four icons on the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Step Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;. Executing the corresponding actions in the correct order followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Technical Finish&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; increases the damage dealt by you and nearby party members."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">84,"Fourfold Feathers and Esprit Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">85,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Esprit Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; accumulates when you or party members under the effect of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Esprit&lt;UIGlow&gt;01&lt;/UI<wbr>Glow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;─gr<wbr>anted by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Standard Finish&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Technical Finish&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt;─land weaponskills or magick attacks. It is consumed by the action &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">86,"Balance Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">87,"The &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Balance Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; displays the current amount of black mana and white mana a red mage has accumulated. Black mana is accumulated by casting spells commonly associated with black magic (such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Fire&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Thunder&lt;UIGlow&gt;01&lt;/U<wbr>IGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;),<wbr> and white mana by casting spells associated with white magic (such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Aero&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;). There are also some spells and actions that affect both."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">88,"When both black and white mana reach a certain amount, weaponskills such as &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Riposte&lt;UIGlow&gt;01&lt;/U<wbr>IGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; become enchanted and will deal additional damage. If the gap between black and white mana accumulation grows too large, the crystal at the top of the gauge will change color, and it will become more difficult to accumulate the lesser of the two."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">89,"Powder Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">90,"This symbol indicates the defensive stance &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Royal Guard&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; is in effect, which increases enmity."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">91,"Powder Gauge"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">92,"Performing a combo ending in &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Solid Barrel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Demon Slaughter&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegrou<wbr>nd&gt;01&lt;/UIForeground&gt; (acquired at level 40) adds cartridges to the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Powder Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt;, which are expended by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Burst Strike&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;<wbr>01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Gnashing Fang&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01<wbr>&lt;/UIForeground&gt; (acquired at level 60)."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">93,"After summoning &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Demi-Phoenix&lt;UIGlow&gt;<wbr>01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForegrou<wbr>nd&gt;, the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Trance Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;0<wbr>1&lt;/UIForeground&gt; shows the time remaining until it must return."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">94,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">95,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">96,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">97,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">98,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">99,""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">100,""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

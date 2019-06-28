@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\quest\025\JobSam700_02570.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\quest\025\JobSam700_02570.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5,"TEXT_JOBSAM700_02570_SEQ_05","Makoto<wbr> deals Ugetsu the killing blow, thus fulfilling her quest for revenge and ending a great threat to the realm. Sparing not another glance at her birth brother, she sets off with her adoptive family, back to the Sekiseigumi Barracks."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5,"TEXT_JOBSAM700_02570_SEQ_05","Makoto<wbr> deals Ugetsu the killing blow, thus fulfilling her quest for revenge and ending a great threat to the realm. Sparing not another glance at her birth brother, she sets off with her adoptive family, back to the Sekiseigumi Barracks."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6,"TEXT_JOBSAM700_02570_SEQ_06","Makoto<wbr> offers you her eternal gratitude for the vital role you played in defeating the insurgents. Her appointment as captain now official, she pledges to live up to her predecessor's faith in her. Meanwhile, it has come to light that most of the order's younger members joined out of the desire to emulate Kogarashi. Makoto muses that, in embarking upon his quest to right wrongs, Musosai may have wished to sow the seeds of a new generation. Whatever his intent may have been, your master may rest easy in the knowledge that his spirit has taken root within the men and women of the Sekiseigumi, true samurai all who strive to preserve order and ward off chaos. As one who shares their calling, you resolve to continue walking your path with courage and honor, guided always by an unflinching sense of justice.</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6,"TEXT_JOBSAM700_02570_SEQ_06","Makoto<wbr> offers you her eternal gratitude for the vital role you played in defeating the insurgents. Her appointment as captain now official, she pledges to live up to her predecessor's faith in her. Meanwhile, it has come to light that most of the order's younger members joined out of the desire to emulate Kogarashi. Makoto muses that, in embarking upon his quest to right wrongs, Musosai may have wished to sow the seeds of a new generation. Whatever his intent may have been, your master may rest easy in the knowledge that his spirit has taken root within the men and women of the Sekiseigumi, true samurai all who strive to preserve order and ward off chaos. As one who shares their calling, you resolve to continue walking your path with courage and honor, guided always by an unflinching sense of justice.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">※The</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">next</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">samurai</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">quest</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">available</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Makoto</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">once</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">you</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">met</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">following</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">requirements:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">※</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">must</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">completed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">main</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">scenario</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">quest</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">“Shadowbringers.”</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">※</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">must</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">completed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">role</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">quest</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">“Courage</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Born</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Fear.”</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7,"TEXT_JOBSAM700_02570_SEQ_07",""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7,"TEXT_JOBSAM700_02570_SEQ_07",""</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">124,"TEXT_JOBSAM700_02570_MAKOTO_000_08<wbr>8","To ensure that his legacy lives on, I will embark upon my own quest of change here in Kugane. And I pray that you will do the same no matter where your road takes you."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">124,"TEXT_JOBSAM700_02570_MAKOTO_000_08<wbr>8","To ensure that his legacy lives on, I will embark upon my own quest of change here in Kugane. And I pray that you will do the same no matter where your road takes you."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">125,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_JOBSAM700_02570_RANJISHI_100_<wbr>090","I am ashamed for having doubted you. I admired Kogarashi in my childhood, and I believe I speak for all here when I say that I am both honored and grateful for your aid."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">125,"</span><span class="sf17b18">TEXT_JOBSAM700_02570_SYSTEM_100_10<wbr>0","This</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">concludes</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">samurai</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">quests</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">FINAL</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">FANTASY</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">XIV:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Stormblood.</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">In</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">order</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">undertake</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">next</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">series</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">quests,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">you</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">must</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">first</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">meet</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">following</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">requirements:"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">126</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBSAM700_02570_RISHIN_100_09<wbr>1","If we are to approach the mastery of Master Musosai and your good self, we must be relentless in our training!"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">126,"TEXT_JOBSAM700_02570_SYSTEM_100_10<wbr>1","※</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">must</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">registered</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">product</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">key</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">FINAL</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">FANTASY</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">XIV:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Shadowbringers</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">your</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">service</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">account.</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">127</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBSAM700_02570_TOMIKUSA_100_<wbr>092","By defeating her brother, Makoto has severed all ties with her past. If there had been any who doubted her fitness as captain, there are certainly none now."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">※</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">must</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">completed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">main</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">scenario</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">quest</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">“Shadowbringers.”"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">127,"TEXT_JOBSAM700_02570_SYSTEM_100_10<wbr>2","※</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">You</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">must</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">completed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">role</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">quest</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">“Courage</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Born</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Fear.”"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">128,"TEXT_JOBSAM700_02570_SYSTEM_100_10<wbr>3","Once</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">you</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">done</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">so,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">next</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">samurai</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">quest</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">will</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">available</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Makoto."</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">129,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_JOBSAM700_02570_RANJISHI_100_<wbr>090","I am ashamed for having doubted you. I admired Kogarashi in my childhood, and I believe I speak for all here when I say that I am both honored and grateful for your aid."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">130</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBSAM700_02570_RISHIN_100_09<wbr>1","If we are to approach the mastery of Master Musosai and your good self, we must be relentless in our training!"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">131</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBSAM700_02570_TOMIKUSA_100_<wbr>092","By defeating her brother, Makoto has severed all ties with her past. If there had been any who doubted her fitness as captain, there are certainly none now."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

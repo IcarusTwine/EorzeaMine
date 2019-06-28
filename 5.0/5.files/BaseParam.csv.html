@@ -1,0 +1,292 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\BaseParam.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\BaseParam.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">0,-1,"","",0,0,0,0,0,0,0,0,0,0,0,0,0,0,<wbr>0,0,0,0,0,0,0,0,100,100,100,100,100,100<wbr>,100,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">0,-1,"","",0,0,0,0,0,0,0,0,0,0,0,0,0,0,<wbr>0,0,0,0,0,0,0,0,100,100,100,100,100,100<wbr>,100,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1,0,"Strength","Affects physical damage dealt by gladiator's arms, marauder's arms, pugilist's arms, lancer's arms, conjurer's arms, thaumaturge's arms, arcanist's arms, dark knight's arms, samurai's arms, </span><span style="color: #000000; background-color: #efcb05; ">red mage's arms, astrologian's arms, and blue mage's arms.",12,10,4,8,13,8,6,13,8,6,6,6,6,14<wbr>,7,21,42,0,21,50,34,34,90,100,100,100,7<wbr>0,70,70,100,70,100,100,70,70,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">1,0,"Strength","Affects physical damage dealt by gladiator's arms, marauder's arms, pugilist's arms, lancer's arms, conjurer's arms, thaumaturge's arms, arcanist's arms, dark knight's arms, samurai's arms, </span><span class="sf17b18">gunbreaker's</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">arms,</span><span style="color: #000000; background-color: #efcb05; "> red mage's arms, astrologian's arms, and blue mage's arms.",12,10,4,8,13,8,6,13,8,6,6,6,6,14<wbr>,7,21,42,0,21,50,34,34,90,100,100,100,7<wbr>0,70,70,100,70,100,100,70,70,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2,1,"Dexterity","Affects physical ranged damage and damage dealt by rogue's arms.",13,10,4,8,13,8,6,13,8,6,6,6,6,14<wbr>,7,21,42,0,21,50,34,34,90,70,70,70,100,<wbr>70,70,100,70,100,70,100,100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">2,1,"Dexterity","Affects physical ranged damage and damage dealt by rogue's arms.",13,10,4,8,13,8,6,13,8,6,6,6,6,14<wbr>,7,21,42,0,21,50,34,34,90,70,70,70,100,<wbr>70,70,100,70,100,70,100,100,False</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5,4,"Mind","Affects healing magic potency. Also affects attack magic potency when role is Healer.",16,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,90,70,70,70,70<wbr>,70,100,70,100,100,70,70,70,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">5,4,"Mind","Affects healing magic potency. Also affects attack magic potency when role is Healer.",16,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,90,70,70,70,70<wbr>,70,100,70,100,100,70,70,70,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6,5,"Piety","Affects </span><span class="sf17b16">maximum</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">MP</span><span style="color: #000000; background-color: #efcb05; ">. </span><span style="color: #000000; background-color: #efcb05; ">Only applicable when </span><span style="color: #000000; background-color: #efcb05; ">role is Healer.",25,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,90,70,70,70,70<wbr>,70,100,70,70,100,70,70,70,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">6,5,"Piety","Affects </span><span class="sf17b16">MP</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">regeneration</span><span style="color: #000000; background-color: #efcb05; ">. </span><span class="sf17b18">Regeneration</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">rate</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">determined</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">by</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Piety.</span><span style="color: #000000; background-color: #efcb05; "> Only applicable when </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">battle</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> role is Healer.",25,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,90,70,70,70,70<wbr>,70,100,70,70,100,70,70,70,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7,6,"HP","",48,0,0,0,0,0,0,0,0,0,0,0,0,<wbr>0,0,0,0,0,0,0,0,0,100,100,100,100,100,1<wbr>00,100,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7,6,"HP","",48,0,0,0,0,0,0,0,0,0,0,0,0,<wbr>0,0,0,0,0,0,0,0,0,100,100,100,100,100,1<wbr>00,100,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">28,-1,"Critical Hit Evasion","",29,0,0,0,0,0,0,0,0,0,0,0,0,<wbr>0,0,0,0,0,0,0,0,0,100,100,100,100,100,1<wbr>00,100,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">28,-1,"Critical Hit Evasion","",29,0,0,0,0,0,0,0,0,0,0,0,0,<wbr>0,0,0,0,0,0,0,0,0,100,100,100,100,100,1<wbr>00,100,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">29,</span><span class="sf17b16">19</span><span style="color: #000000; background-color: #efcb05; ">,"Slashing Resistance","Decreases damage done by slashing attacks.",43,0,0,0,0,0,0,0,0,20,20,20,2<wbr>0,0,0,0,0,0,0,0,0,0,100,100,100,100,100<wbr>,100,100,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">29,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Slashing Resistance","Decreases damage done by slashing attacks.",43,0,0,0,0,0,0,0,0,20,20,20,2<wbr>0,0,0,0,0,0,0,0,0,0,100,100,100,100,100<wbr>,100,100,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">30,</span><span class="sf17b16">20</span><span style="color: #000000; background-color: #efcb05; ">,"Piercing Resistance","Decreases damage done by piercing attacks.",44,0,0,0,0,0,0,0,0,20,20,20,2<wbr>0,0,0,0,0,0,0,0,0,0,100,100,100,100,100<wbr>,100,100,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">30,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Piercing Resistance","Decreases damage done by piercing attacks.",44,0,0,0,0,0,0,0,0,20,20,20,2<wbr>0,0,0,0,0,0,0,0,0,0,100,100,100,100,100<wbr>,100,100,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">31,</span><span class="sf17b16">21</span><span style="color: #000000; background-color: #efcb05; ">,"Blunt Resistance","Decreases damage done by blunt attacks.",45,0,0,0,0,0,0,0,0,20,20,20,2<wbr>0,0,0,0,0,0,0,0,0,0,100,100,100,100,100<wbr>,100,100,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">31,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Blunt Resistance","Decreases damage done by blunt attacks.",45,0,0,0,0,0,0,0,0,20,20,20,2<wbr>0,0,0,0,0,0,0,0,0,0,100,100,100,100,100<wbr>,100,100,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">32,-1,"Projectile Resistance","",46,0,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,0,0,0,0,100,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,False<wbr></span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">32,-1,"Projectile Resistance","",46,0,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,0,0,0,0,100,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,False<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">33,</span><span class="sf17b16">22</span><span style="color: #000000; background-color: #efcb05; ">,"Attack Magic Potency","Affects the amount of damage dealt by magic attacks.",8,0,0,0,0,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,0,100,100,100,100,100,100,<wbr>100,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">33,</span><span class="sf17b16">19</span><span style="color: #000000; background-color: #efcb05; ">,"Attack Magic Potency","Affects the amount of damage dealt by magic attacks.",8,0,0,0,0,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,0,100,100,100,100,100,100,<wbr>100,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">34,</span><span class="sf17b16">23</span><span style="color: #000000; background-color: #efcb05; ">,"Healing Magic Potency","Affects the amount of HP restored via healing magic.",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,100,100,100,100,100,100,10<wbr>0,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">34,</span><span class="sf17b16">20</span><span style="color: #000000; background-color: #efcb05; ">,"Healing Magic Potency","Affects the amount of HP restored via healing magic.",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,100,100,100,100,100,100,10<wbr>0,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">35,-1,"Enhancement Magic Potency","",10,0,0,0,0,0,0,0,0,0,0,0,0,<wbr>0,0,0,0,0,0,0,0,0,100,100,100,100,100,1<wbr>00,100,100,100,100,100,100,100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">35,-1,"Enhancement Magic Potency","",10,0,0,0,0,0,0,0,0,0,0,0,0,<wbr>0,0,0,0,0,0,0,0,0,100,100,100,100,100,1<wbr>00,100,100,100,100,100,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">36,</span><span class="sf17b16">34</span><span style="color: #000000; background-color: #efcb05; ">,"Elemental Bonus","",36,10,4,8,13,8,6,13,8,6,6,6,6<wbr>,14,7,21,42,0,21,50,34,34,100,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">36,</span><span class="sf17b16">21</span><span style="color: #000000; background-color: #efcb05; ">,"Elemental Bonus","",36,10,4,8,13,8,6,13,8,6,6,6,6<wbr>,14,7,21,42,0,21,50,34,34,100,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">37,</span><span class="sf17b16">24</span><span style="color: #000000; background-color: #efcb05; ">,"Fire Resistance","Decreases fire-aspected damage.",37,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">37,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Fire Resistance","Decreases fire-aspected damage.",37,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">38,</span><span class="sf17b16">25</span><span style="color: #000000; background-color: #efcb05; ">,"Ice Resistance","Decreases ice-aspected damage.",38,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">38,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Ice Resistance","Decreases ice-aspected damage.",38,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">39,</span><span class="sf17b16">26</span><span style="color: #000000; background-color: #efcb05; ">,"Wind Resistance","Decreases wind-aspected damage.",39,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">39,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Wind Resistance","Decreases wind-aspected damage.",39,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,</span><span class="sf17b16">27</span><span style="color: #000000; background-color: #efcb05; ">,"Earth Resistance","Decreases earth-aspected damage.",40,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Earth Resistance","Decreases earth-aspected damage.",40,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">41,</span><span class="sf17b16">28</span><span style="color: #000000; background-color: #efcb05; ">,"Lightning Resistance","Decreases lightning-aspected damage.",41,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">41,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Lightning Resistance","Decreases lightning-aspected damage.",41,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">42,</span><span class="sf17b16">29</span><span style="color: #000000; background-color: #efcb05; ">,"Water Resistance","Decreases water-aspected damage.",42,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">42,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Water Resistance","Decreases water-aspected damage.",42,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">43,-1,"Magic Resistance","",47,0,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,0,0,0,0,100,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,False<wbr></span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">43,-1,"Magic Resistance","",47,0,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,0,0,0,0,100,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,False<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">44,</span><span class="sf17b16">30</span><span style="color: #000000; background-color: #efcb05; ">,"Determination","Affects the amount of damage dealt by both physical and magic attacks, as well as the amount of HP restored by healing spells.",20,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">44,</span><span class="sf17b16">22</span><span style="color: #000000; background-color: #efcb05; ">,"Determination","Affects the amount of damage dealt by both physical and magic attacks, as well as the amount of HP restored by healing spells.",20,10,4,8,13,8,6,13,8,6,6,6,6,<wbr>14,7,21,42,0,21,50,34,34,100,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,F<wbr>alse</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">45,</span><span class="sf17b16">31</span><span style="color: #000000; background-color: #efcb05; ">,"Skill Speed","Affects both the casting and recast timers, as well as the damage over time potency for weaponskills and auto-attacks. The higher the value, the shorter the timers/higher the potency.",21,10,4,8,13,8,6,13,8,6,6,6,6<wbr>,14,7,21,42,0,21,50,34,34,100,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">45,</span><span class="sf17b16">23</span><span style="color: #000000; background-color: #efcb05; ">,"Skill Speed","Affects both the casting and recast timers, as well as the damage over time potency for weaponskills and auto-attacks. The higher the value, the shorter the timers/higher the potency.",21,10,4,8,13,8,6,13,8,6,6,6,6<wbr>,14,7,21,42,0,21,50,34,34,100,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">46,</span><span class="sf17b16">32</span><span style="color: #000000; background-color: #efcb05; ">,"Spell Speed","Affects both the casting and recast timers for spells. The higher the value, the shorter the timers. Also affects a spell's damage over time or healing over time potency.",22,10,4,8,13,8,6,13,8,6,6,6,6<wbr>,14,7,21,42,0,21,50,34,34,100,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">46,</span><span class="sf17b16">24</span><span style="color: #000000; background-color: #efcb05; ">,"Spell Speed","Affects both the casting and recast timers for spells. The higher the value, the shorter the timers. Also affects a spell's damage over time or healing over time potency.",22,10,4,8,13,8,6,13,8,6,6,6,6<wbr>,14,7,21,42,0,21,50,34,34,100,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">47,</span><span class="sf17b16">33</span><span style="color: #000000; background-color: #efcb05; ">,"Haste","",17,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,0,0,0,0,0,100,100,100,100,<wbr>100,100,100,100,100,100,100,100,100,Tru<wbr>e</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">47,</span><span class="sf17b16">25</span><span style="color: #000000; background-color: #efcb05; ">,"Haste","",17,0,0,0,0,0,0,0,0,0,0<wbr>,0,0,0,0,0,0,0,0,0,0,0,100,100,100,100,<wbr>100,100,100,100,100,100,100,100,100,Tru<wbr>e</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">48,-1,"Morale","In PvP, replaces physical and magical defense in determining damage inflicted by other players. Also influences the amount of damage dealt to other players.",73,10,4,8,13,8,6,13,8,6,6,6,6<wbr>,14,7,21,42,0,21,50,34,34,100,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">48,-1,"Morale","In PvP, replaces physical and magical defense in determining damage inflicted by other players. Also influences the amount of damage dealt to other players.",73,10,4,8,13,8,6,13,8,6,6,6,6<wbr>,14,7,21,42,0,21,50,34,34,100,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>False</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">56,-1,"Secondary Attribute","",18,10,4,8,13,8,6,13,8,6,6<wbr>,6,6,14,7,21,42,0,21,50,34,34,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">56,-1,"Secondary Attribute","",18,10,4,8,13,8,6,13,8,6,6<wbr>,6,6,14,7,21,42,0,21,50,34,34,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">57,</span><span class="sf17b16">39</span><span style="color: #000000; background-color: #efcb05; ">,"Slow Resistance","Shortens the duration of slow.",61,14,0,14,14,14,14,14,14,0,0,0,<wbr>0,14,14,28,56,0,28,70,42,42,100,100,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">57,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Slow Resistance","Shortens the duration of slow.",61,14,0,14,14,14,14,14,14,0,0,0,<wbr>0,14,14,28,56,0,28,70,42,42,100,100,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">58,-1,"Petrification Resistance","",62,14,0,14,14,14,14,14,1<wbr>4,0,0,0,0,14,14,28,56,0,28,70,42,42,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,100,100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">58,-1,"Petrification Resistance","",62,14,0,14,14,14,14,14,1<wbr>4,0,0,0,0,14,14,28,56,0,28,70,42,42,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">59,-1,"Paralysis Resistance","",63,14,0,14,14,14,14,14,1<wbr>4,0,0,0,0,14,14,28,56,0,28,70,42,42,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,100,100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">59,-1,"Paralysis Resistance","",63,14,0,14,14,14,14,14,1<wbr>4,0,0,0,0,14,14,28,56,0,28,70,42,42,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,100,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">60,</span><span class="sf17b16">40</span><span style="color: #000000; background-color: #efcb05; ">,"Silence Resistance","Shortens the duration of silence.",64,14,0,14,14,14,14,14,14,0,0<wbr>,0,0,14,14,28,56,0,28,70,42,42,100,100,<wbr>100,100,100,100,100,100,100,100,100,100<wbr>,100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">60,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Silence Resistance","Shortens the duration of silence.",64,14,0,14,14,14,14,14,14,0,0<wbr>,0,0,14,14,28,56,0,28,70,42,42,100,100,<wbr>100,100,100,100,100,100,100,100,100,100<wbr>,100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">61,</span><span class="sf17b16">41</span><span style="color: #000000; background-color: #efcb05; ">,"Blind Resistance","Shortens the duration of blind.",65,14,0,14,14,14,14,14,14,0,0,0<wbr>,0,14,14,28,56,0,28,70,42,42,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,1<wbr>00,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">61,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Blind Resistance","Shortens the duration of blind.",65,14,0,14,14,14,14,14,14,0,0,0<wbr>,0,14,14,28,56,0,28,70,42,42,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,1<wbr>00,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">62,</span><span class="sf17b16">42</span><span style="color: #000000; background-color: #efcb05; ">,"Poison Resistance","Shortens the duration of poison.",66,14,0,14,14,14,14,14,14,0,0,<wbr>0,0,14,14,28,56,0,28,70,42,42,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">62,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Poison Resistance","Shortens the duration of poison.",66,14,0,14,14,14,14,14,14,0,0,<wbr>0,0,14,14,28,56,0,28,70,42,42,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">63,</span><span class="sf17b16">43</span><span style="color: #000000; background-color: #efcb05; ">,"Stun Resistance","Shortens the duration of stun.",67,14,0,14,14,14,14,14,14,0,0,0,<wbr>0,14,14,28,56,0,28,70,42,42,100,100,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">63,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Stun Resistance","Shortens the duration of stun.",67,14,0,14,14,14,14,14,14,0,0,0,<wbr>0,14,14,28,56,0,28,70,42,42,100,100,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">64,</span><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">,"Sleep Resistance","Shortens the duration of sleep.",68,14,0,14,14,14,14,14,14,0,0,0<wbr>,0,14,14,28,56,0,28,70,42,42,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,1<wbr>00,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">64,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Sleep Resistance","Shortens the duration of sleep.",68,14,0,14,14,14,14,14,14,0,0,0<wbr>,0,14,14,28,56,0,28,70,42,42,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,1<wbr>00,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">65,</span><span class="sf17b16">45</span><span style="color: #000000; background-color: #efcb05; ">,"Bind Resistance","Shortens the duration of bind.",69,14,0,14,14,14,14,14,14,0,0,0,<wbr>0,14,14,28,56,0,28,70,42,42,100,100,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">65,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Bind Resistance","Shortens the duration of bind.",69,14,0,14,14,14,14,14,14,0,0,0,<wbr>0,14,14,28,56,0,28,70,42,42,100,100,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">66,</span><span class="sf17b16">46</span><span style="color: #000000; background-color: #efcb05; ">,"Heavy Resistance","Shortens the duration of heavy.",70,14,0,14,14,14,14,14,14,0,0,0<wbr>,0,14,14,28,56,0,28,70,42,42,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,1<wbr>00,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">66,</span><span class="sf17b16">-1</span><span style="color: #000000; background-color: #efcb05; ">,"Heavy Resistance","Shortens the duration of heavy.",70,14,0,14,14,14,14,14,14,0,0,0<wbr>,0,14,14,28,56,0,28,70,42,42,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,1<wbr>00,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">67,-1,"Doom Resistance","",71,14,0,14,14,14,14,14,1<wbr>4,0,0,0,0,14,14,28,56,0,28,70,42,42,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,100,100,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">67,-1,"Doom Resistance","",71,14,0,14,14,14,14,14,1<wbr>4,0,0,0,0,14,14,28,56,0,28,70,42,42,100<wbr>,100,100,100,100,100,100,100,100,100,10<wbr>0,100,100,False</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">69,-1,"Increased Spiritbond Gain","",56,10,2,8,8,8,8,8,8,8,8,8,8,12<wbr>,6,16,32,0,16,40,24,24,100,100,100,100,<wbr>100,100,100,100,100,100,100,100,100,Fal<wbr>se</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">69,-1,"Increased Spiritbond Gain","",56,10,2,8,8,8,8,8,8,8,8,8,8,12<wbr>,6,16,32,0,16,40,24,24,100,100,100,100,<wbr>100,100,100,100,100,100,100,100,100,Fal<wbr>se</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">70,</span><span class="sf17b16">35</span><span style="color: #000000; background-color: #efcb05; ">,"Craftsmanship","Affects the amount of progress achieved in a single synthesis step.",30,35,35,2,30,2,2,2,2,2,2,2,3,35<wbr>,35,32,36,0,4,38,34,34,100,100,100,100,<wbr>100,100,100,100,100,100,100,100,100,Fal<wbr>se</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">70,</span><span class="sf17b16">26</span><span style="color: #000000; background-color: #efcb05; ">,"Craftsmanship","Affects the amount of progress achieved in a single synthesis step.",30,35,35,2,30,2,2,2,2,2,2,2,3,35<wbr>,35,32,36,0,4,38,34,34,100,100,100,100,<wbr>100,100,100,100,100,100,100,100,100,Fal<wbr>se</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">71,</span><span class="sf17b16">36</span><span style="color: #000000; background-color: #efcb05; ">,"Control","Affects the amount of quality improved in a single synthesis step.",31,20,20,10,10,10,10,10,10,3,3,3<wbr>,4,20,20,20,40,0,20,50,30,30,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,1<wbr>00,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">71,</span><span class="sf17b16">27</span><span style="color: #000000; background-color: #efcb05; ">,"Control","Affects the amount of quality improved in a single synthesis step.",31,20,20,10,10,10,10,10,10,3,3,3<wbr>,4,20,20,20,40,0,20,50,30,30,100,100,10<wbr>0,100,100,100,100,100,100,100,100,100,1<wbr>00,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">72,</span><span class="sf17b16">37</span><span style="color: #000000; background-color: #efcb05; ">,"Gathering","Affects the rate at which items are gathered.",33,35,20,1,20,15,1,10,1,1,1,<wbr>1,1,35,35,21,46,0,11,47,45,31,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">72,</span><span class="sf17b16">28</span><span style="color: #000000; background-color: #efcb05; ">,"Gathering","Affects the rate at which items are gathered.",33,35,20,1,20,15,1,10,1,1,1,<wbr>1,1,35,35,21,46,0,11,47,45,31,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>100,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">73,</span><span class="sf17b16">38</span><span style="color: #000000; background-color: #efcb05; ">,"Perception","Affects the rate at which high-quality items are gathered.",34,20,35,20,10,1,5,1,10,1,1,<wbr>1,1,20,20,30,22,0,11,42,12,21,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>100,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">73,</span><span class="sf17b16">29</span><span style="color: #000000; background-color: #efcb05; ">,"Perception","Affects the rate at which high-quality items are gathered.",34,20,35,20,10,1,5,1,10,1,1,<wbr>1,1,20,20,30,22,0,11,42,12,21,100,100,1<wbr>00,100,100,100,100,100,100,100,100,100,<wbr>100,False</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

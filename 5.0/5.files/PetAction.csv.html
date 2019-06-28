@@ -1,0 +1,495 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\PetAction.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\PetAction.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7,"Sic","Order pet to attack.",525,0,0,False,True,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">7,"Sic","Order pet to attack.",525,0,0,False,True,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8,"Obey","Order pet to attack, but refrain from using certain actions until ordered to do so.",</span><span class="sf17b16">526</span><span style="color: #000000; background-color: #efcb05; ">,0,0,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">8,"Obey","Order pet to attack, but refrain from using certain actions until ordered to do so.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,0,0,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9,"Gust","Deals wind damage with a potency of 90.",</span><span class="sf17b16">561</span><span style="color: #000000; background-color: #efcb05; ">,637,1,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">9,"Gust","Deals wind damage with a potency of 90.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,637,1,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">10,"Backdraft","Deals wind damage with a potency of 80.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">10,"Backdraft","Deals wind damage with a potency of 80.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; 15-yalm knockback</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; 15-yalm knockback</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">563</span><span style="color: #000000; background-color: #efcb05; ">,638,1,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,638,1,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11,"Downburst","Deals wind damage with a potency of 80 to target and all enemies nearby it.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">11,"Downburst","Deals wind damage with a potency of 80 to target and all enemies nearby it.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">562</span><span style="color: #000000; background-color: #efcb05; ">,639,1,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,639,1,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">12,"Shining Emerald","Increases target's magic damage taken by 10%.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">12,"Shining Emerald","Increases target's magic damage taken by 10%.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 15s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 15s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">564</span><span style="color: #000000; background-color: #efcb05; ">,640,1,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,640,1,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">13,"Gouge","Deals earth damage with a potency of 70.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">13,"Gouge","Deals earth damage with a potency of 70.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; Increased enmity",</span><span class="sf17b16">551</span><span style="color: #000000; background-color: #efcb05; ">,633,2,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; Increased enmity",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,633,2,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">14,"Shining Topaz","Deals earth damage with a potency of 60 to all nearby enemies.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">14,"Shining Topaz","Deals earth damage with a potency of 60 to all nearby enemies.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; Increased enmity</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; Increased enmity</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">552</span><span style="color: #000000; background-color: #efcb05; ">,634,2,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,634,2,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">15,"Curl","Decreases damage suffered by pet by 20%.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">15,"Curl","Decreases damage suffered by pet by 20%.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 20s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 20s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">553</span><span style="color: #000000; background-color: #efcb05; ">,635,2,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,635,2,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">16,"Storm","Deals earth damage with a potency of 60.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">16,"Storm","Deals earth damage with a potency of 60.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 2s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 2s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">554</span><span style="color: #000000; background-color: #efcb05; ">,636,2,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,636,2,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">17,"Wind Blade","Deals wind damage with a potency of 110.",</span><span class="sf17b16">2711</span><span style="color: #000000; background-color: #efcb05; ">,792,5,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">17,"Wind Blade","Deals wind damage with a potency of 110.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,792,5,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">18,"Shockwave","Deals wind damage with a potency of 90.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">18,"Shockwave","Deals wind damage with a potency of 90.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; 15-yalm knockback</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; 15-yalm knockback</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2713</span><span style="color: #000000; background-color: #efcb05; ">,793,5,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,793,5,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">19,"Aerial Slash","Deals wind damage with a potency of 90 to target and all enemies nearby it.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">19,"Aerial Slash","Deals wind damage with a potency of 90 to target and all enemies nearby it.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2712</span><span style="color: #000000; background-color: #efcb05; ">,794,5,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,794,5,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">20,"Contagion","Increases target's magic damage taken by 10%.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">20,"Contagion","Increases target's magic damage taken by 10%.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 15s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 15s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2714</span><span style="color: #000000; background-color: #efcb05; ">,795,5,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,795,5,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">21,"Aerial Blast","Deals wind damage with a potency of 250 to target and all enemies nearby it.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">21,"Aerial Blast","Deals wind damage with a potency of 250 to target and all enemies nearby it.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Executed when master uses &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enkindle&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>",</span><span class="sf17b16">2715</span><span style="color: #000000; background-color: #efcb05; ">,796,5,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Executed when master uses &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enkindle&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,796,5,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">22,"Rock Buster","Deals earth damage with a potency of 85.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">22,"Rock Buster","Deals earth damage with a potency of 85.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; Increased enmity",</span><span class="sf17b16">2701</span><span style="color: #000000; background-color: #efcb05; ">,787,4,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; Increased enmity",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,787,4,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">23,"Mountain Buster","Deals earth damage with a potency of 70 to all nearby enemies.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">23,"Mountain Buster","Deals earth damage with a potency of 70 to all nearby enemies.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; Increased enmity</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground<wbr>&gt;01&lt;/UIForeground&gt; Increased enmity</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2702</span><span style="color: #000000; background-color: #efcb05; ">,788,4,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,788,4,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">24,"Earthen Ward","Decreases damage suffered by pet by 20%.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">24,"Earthen Ward","Decreases damage suffered by pet by 20%.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 20s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 20s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2703</span><span style="color: #000000; background-color: #efcb05; ">,789,4,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,789,4,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">25,"Landslide","Deals earth damage with a potency of 70.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">25,"Landslide","Deals earth damage with a potency of 70.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 2s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 2s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2704</span><span style="color: #000000; background-color: #efcb05; ">,790,4,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,790,4,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">26,"Earthen Fury","Deals earth damage with a potency of 200 to all nearby targets.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">26,"Earthen Fury","Deals earth damage with a potency of 200 to all nearby targets.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegrou<wbr>nd&gt;01&lt;/UIForeground&gt; 15s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegrou<wbr>nd&gt;01&lt;/UIForeground&gt; 15s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Executed when master uses &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enkindle&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>",</span><span class="sf17b16">2705</span><span style="color: #000000; background-color: #efcb05; ">,791,4,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Executed when master uses &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enkindle&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,791,4,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">27,"Crimson Cyclone","Deals fire damage with a potency of 110.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">27,"Crimson Cyclone","Deals fire damage with a potency of 110.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 2s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 2s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2721</span><span style="color: #000000; background-color: #efcb05; ">,797,3,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,797,3,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">28,"Burning Strike","Deals fire damage with a potency of 135.",</span><span class="sf17b16">2722</span><span style="color: #000000; background-color: #efcb05; ">,798,3,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">28,"Burning Strike","Deals fire damage with a potency of 135.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,798,3,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">29,"Radiant Shield","Creates a barrier around self and nearby party members.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">29,"Radiant Shield","Creates a barrier around self and nearby party members.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 4s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 4s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2723</span><span style="color: #000000; background-color: #efcb05; ">,799,3,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,799,3,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">30,"Flaming Crush","Deals fire damage with a potency of 110 to all nearby enemies.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">30,"Flaming Crush","Deals fire damage with a potency of 110 to all nearby enemies.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2724</span><span style="color: #000000; background-color: #efcb05; ">,800,3,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,800,3,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">31,"Inferno","Deals fire damage with a potency of 200 to all enemies in a cone before it.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">31,"Inferno","Deals fire damage with a potency of 200 to all enemies in a cone before it.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 15s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 15s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Executed when master uses &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enkindle&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>",</span><span class="sf17b16">2725</span><span style="color: #000000; background-color: #efcb05; ">,801,3,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Executed when master uses &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F5&lt;/UIGlow&gt;Enkindle&lt;UIGlow&gt;01&lt;/<wbr>UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.<wbr>",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,801,3,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">32,"Embrace","Restore target's HP.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">32,"Embrace","Restore target's HP.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Cure Potency:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; 250",</span><span class="sf17b16">2826</span><span style="color: #000000; background-color: #efcb05; ">,802,6,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Cure Potency:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; 250",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,802,6,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">33,"Whispering Dawn","Gradually restores own HP and the HP of all nearby party members.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">33,"Whispering Dawn","Gradually restores own HP and the HP of all nearby party members.</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 21s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 21s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2827</span><span style="color: #000000; background-color: #efcb05; ">,803,6,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,803,6,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">34,"Fey Covenant","Increases magic defense of self and nearby party members by 20%.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">34,"Fey Covenant","Increases magic defense of self and nearby party members by 20%.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 20s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 20s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2828</span><span style="color: #000000; background-color: #efcb05; ">,804,6,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,804,6,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">35,"Fey Illumination","Increases spell-based HP restoration of self and nearby party members by 10%.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">35,"Fey Illumination","Increases spell-based HP restoration of self and nearby party members by 10%.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 20s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 20s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d25" href="#d25">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2829</span><span style="color: #000000; background-color: #efcb05; ">,805,6,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,805,6,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">36,"Embrace","Restore target's HP.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">36,"Embrace","Restore target's HP.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d26" href="#d26">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Cure Potency:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; 250",</span><span class="sf17b16">2836</span><span style="color: #000000; background-color: #efcb05; ">,806,7,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Cure Potency:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForegroun<wbr>d&gt;01&lt;/UIForeground&gt; 250",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,806,7,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">37,"Silent Dusk","Silences target.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">37,"Silent Dusk","Silences target.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 1s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 1s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d27" href="#d27">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2837</span><span style="color: #000000; background-color: #efcb05; ">,807,7,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,807,7,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">38,"Fey Caress","Removes a single detrimental effect from all nearby party members.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">38,"Fey Caress","Removes a single detrimental effect from all nearby party members.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Some effects cannot be removed.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Some effects cannot be removed.</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d28" href="#d28">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2811</span><span style="color: #000000; background-color: #efcb05; ">,810,7,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,810,7,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">39,"Fey Wind","Reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay of self and nearby party members by 3%.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">39,"Fey Wind","Reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay of self and nearby party members by 3%.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 30s</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;<wbr>/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;<wbr> 30s</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d29" href="#d29">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">2812</span><span style="color: #000000; background-color: #efcb05; ">,811,7,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">When &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIG<wbr>low&gt;F201FB&lt;/UIGlow&gt;Obey&lt;UIGlow&gt;01&lt;/UIGl<wbr>ow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active, will only execute upon command.",</span><span class="sf17b16">786</span><span style="color: #000000; background-color: #efcb05; ">,811,7,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,"Offensive Mode","Command autoturret to focus on offensive maneuvers.",405,0,8,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">40,"Offensive Mode","Command autoturret to focus on offensive maneuvers.",405,0,8,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">41,"Defensive Mode","Command autoturret to focus on supportive maneuvers.",405,0,8,</span><span class="sf17b18">False,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">41,"Defensive Mode","Command autoturret to focus on supportive maneuvers.",405,0,8,</span><span style="color: #000000; background-color: #efcb05; ">True,False</span><span class="sf17b18">,False</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">42,"","",405,7428,10,True,False,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">42,"","",405,7428,10,True,False,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d30" href="#d30">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">43,"","",405,7449,10,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">43,"","",405,7449,10,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">44,"","",405,7450,0,True,False,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">44,"","",405,7450,0,True,False,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d31" href="#d31">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">45,"","",405,7416,8,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">45,"","",405,7416,8,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">46,"","",405,7417,9,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">46,"","",405,7417,9,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">47,"","",405,7438,0,True,False,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">47,"","",405,7438,0,True,False,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d32" href="#d32">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">48,"","",405,7440,0,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">48,"","",405,7440,0,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">49,"","",405,7441,0,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">49,"","",405,7441,0,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">50,"","",405,8879,0,True,False,False</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">50,"","",405,8879,0,True,False,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d33" href="#d33">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">51,"","",405,8881,0,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">51,"","",405,8881,0,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">52,"","",405,9127,0,True,</span><span class="sf17b16">True</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">52,"","",405,9127,0,True,</span><span class="sf17b16">False</span><span style="color: #000000; background-color: #efcb05; ">,False</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\custom\000\JobDefBlm_00096.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\custom\000\JobDefBlm_00096.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">37,"TEXT_JOBDEFBLM_00096_LALAI_000_167"<wbr>,"Now that Mistress Shatotto herself has chosen you, there can be no doubt. &lt;Highlight&gt;ObjectParameter(1)&lt;/Highligh<wbr>t&gt; of the black─your name will go down in the annals of history with the greatest mages ever to walk this land."</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">37,"TEXT_JOBDEFBLM_00096_LALAI_000_167"<wbr>,"Now that Mistress Shatotto herself has chosen you, there can be no doubt. &lt;Highlight&gt;ObjectParameter(1)&lt;/Highligh<wbr>t&gt; of the black─your name will go down in the annals of history with the greatest mages ever to walk this land."</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">38,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_JOBDEFBLM_00096_LALAI_000_110"<wbr>,"Hm. I would think that &lt;Emphasis&gt;you&lt;/Emphasis&gt; of all people, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;, would know the answer to that. And yet given the nature of our dark art, perhaps it is for the best that you would not forget whence our power comes..."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">38,"</span><span class="sf17b18">TEXT_JOBDEFBLM_00096_LALAI_000_170"<wbr>,"While</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">cannot</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">say</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">enjoy</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">having</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">file</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">these</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">excruciatingly</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">detailed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">reports</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Master</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cocobuki,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">indeed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">most</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">liberating</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">able</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">continue</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">my</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">arcane</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">pursuits</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">full</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">blessing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">support</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Order."</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">39</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_111"<wbr>,"The origins of black magic can be traced back many, many years─to the beginning of the Fifth Astral Era, to be precise. There lived at that time in Eorzea a powerful sorceress named Shatotto, who strived to push the destructive power of magic to its very limits."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">39,"TEXT_JOBDEFBLM_00096_LALAI_000_171"<wbr>,"To</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">think</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">day</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">would</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">come</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">when</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">could</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">peruse</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">myriads</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">tomes</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">archived</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Ossuary</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">broad</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">daylight!</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Needless</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">say,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">there</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">virtually</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">boundless</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">knowledge</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">may</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">yet</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">reaped</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">this."</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">40</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_112"<wbr>,"The typical practice of magi is to weave magic using their own aether. The ability to do so is the greatest magical gift, yet at the same time that gift's greatest limit."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">40,"TEXT_JOBDEFBLM_00096_LALAI_000_172"<wbr>,"By</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">comparing</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">my</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">own</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">findings</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">those</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Master</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Ququruka,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">might</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">learn</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">much</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">how</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">our</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">art</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">has</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">changed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">evolved</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">was</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">passed</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">down</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">through</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">years,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">perhaps</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">even</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">unearth</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">revive</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">aspects</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">been</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">lost</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">time."</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">41</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_113"<wbr>,"Shatotto was able to overcome such inherent limitations by developing a new technique which allowed her to draw upon the aether all around her as the fount of her magic. It was this technique that came to be known as black magic."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">41,"TEXT_JOBDEFBLM_00096_LALAI_000_173"<wbr>,"I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">see</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Yayake</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">muttering</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">mumbling</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">herself</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">each</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">time</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">walk</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">past</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">her</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">on</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">way</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">archives,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">but</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">say:</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">let</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">her</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">mutter!</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">have</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">never</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">let</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">worries</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">smaller</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">minds</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">get</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">way</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">my</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">research,</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">I</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">do</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">&lt;Emphasis&gt;not&lt;/Emphasis&gt;</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">intend</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">start</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">now."</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">42</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_114"<wbr>,"To take up the mantle of black mage is to revive this ancient art and command the aether everywhere to one's will."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">42,"</span><span style="color: #000000; background-color: #efcb05; ">TEXT_JOBDEFBLM_00096_LALAI_000_110"<wbr>,"Hm. I would think that &lt;Emphasis&gt;you&lt;/Emphasis&gt; of all people, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/H<wbr>ighlight&gt;, ,1)/&gt;, would know the answer to that. And yet given the nature of our dark art, perhaps it is for the best that you would not forget whence our power comes..."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">43</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_115"<wbr>,"Following the War of the Magi and the Sixth Umbral Calamity, however, black magic was branded far too great a danger to life, and so its use and even its mere mention were made forbidden. Over time, it came to be forgotten entirely. Or so it was thought..."</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">43</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_111"<wbr>,"The origins of black magic can be traced back many, many years─to the beginning of the Fifth Astral Era, to be precise. There lived at that time in Eorzea a powerful sorceress named Shatotto, who strived to push the destructive power of magic to its very limits."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_112"<wbr>,"The typical practice of magi is to weave magic using their own aether. The ability to do so is the greatest magical gift, yet at the same time that gift's greatest limit."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">45</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_113"<wbr>,"Shatotto was able to overcome such inherent limitations by developing a new technique which allowed her to draw upon the aether all around her as the fount of her magic. It was this technique that came to be known as black magic."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">46</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_114"<wbr>,"To take up the mantle of black mage is to revive this ancient art and command the aether everywhere to one's will."</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">47</span><span style="color: #000000; background-color: #efcb05; ">,"TEXT_JOBDEFBLM_00096_LALAI_000_115"<wbr>,"Following the War of the Magi and the Sixth Umbral Calamity, however, black magic was branded far too great a danger to life, and so its use and even its mere mention were made forbidden. Over time, it came to be forgotten entirely. Or so it was thought..."</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

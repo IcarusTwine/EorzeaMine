@@ -1,0 +1,493 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.05.09.0000.0000\rawexd\ConfigKey.csv</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\user\Documents\GitHub\SaintCoinach\SaintCoinach.Cmd\bin\Release\2019.06.22.0000.0000\rawexd\ConfigKey.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">180,"CMD_FREECOM",255,255,False,4,10,5,<wbr>"Temporarily Switch Chat Mode to Free Company"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">180,"CMD_FREECOM",255,255,False,4,10,5,<wbr>"Temporarily Switch Chat Mode to Free Company"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">181,"CMD_LINKSHELL",255,255,False,4,</span><span class="sf17b16">13</span><span style="color: #000000; background-color: #efcb05; ">,<wbr>5,"Temporarily Switch Chat Mode to </span><span class="sf17b16">Linkshell</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">(Forward)</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">181,"CMD_LINKSHELL",255,255,False,4,</span><span class="sf17b16">22</span><span style="color: #000000; background-color: #efcb05; ">,<wbr>5,"Temporarily Switch Chat Mode to </span><span class="sf17b16">Next</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Linkshell</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">182,"CMD_LINKSHELL_REV",255,255,False,4<wbr>,</span><span class="sf17b16">14</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to </span><span class="sf17b16">Linkshell</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">(Back)</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">182,"CMD_LINKSHELL_REV",255,255,False,4<wbr>,</span><span class="sf17b16">23</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to </span><span class="sf17b16">Previous</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b16">Linkshell</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">183,"CMD_LINKSHELL_1",255,255,False,4,</span><span class="sf17b16">1<wbr>5</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [1]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">183,"CMD_LINKSHELL_1",255,255,False,4,</span><span class="sf17b16">2<wbr>4</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [1]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">184,"CMD_LINKSHELL_2",255,255,False,4,</span><span class="sf17b16">1<wbr>6</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [2]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">184,"CMD_LINKSHELL_2",255,255,False,4,</span><span class="sf17b16">2<wbr>5</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [2]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">185,"CMD_LINKSHELL_3",255,255,False,4,</span><span class="sf17b16">1<wbr>7</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [3]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">185,"CMD_LINKSHELL_3",255,255,False,4,</span><span class="sf17b16">2<wbr>6</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [3]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">186,"CMD_LINKSHELL_4",255,255,False,4,</span><span class="sf17b16">1<wbr>8</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [4]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">186,"CMD_LINKSHELL_4",255,255,False,4,</span><span class="sf17b16">2<wbr>7</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [4]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">187,"CMD_LINKSHELL_5",255,255,False,4,</span><span class="sf17b16">1<wbr>9</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [5]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">187,"CMD_LINKSHELL_5",255,255,False,4,</span><span class="sf17b16">2<wbr>8</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [5]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">188,"CMD_LINKSHELL_6",255,255,False,4,</span><span class="sf17b16">2<wbr>0</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [6]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">188,"CMD_LINKSHELL_6",255,255,False,4,</span><span class="sf17b16">2<wbr>9</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [6]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">189,"CMD_LINKSHELL_7",255,255,False,4,</span><span class="sf17b16">2<wbr>1</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [7]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">189,"CMD_LINKSHELL_7",255,255,False,4,</span><span class="sf17b16">3<wbr>0</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [7]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">190,"CMD_LINKSHELL_8",255,255,False,4,</span><span class="sf17b16">2<wbr>2</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [8]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">190,"CMD_LINKSHELL_8",255,255,False,4,</span><span class="sf17b16">3<wbr>1</span><span style="color: #000000; background-color: #efcb05; ">,5,"Temporarily Switch Chat Mode to Linkshell [8]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">191,"CMD_REPLY_ALWAYS",255,255,False,4,<wbr>103,5,"Reply (Forward)"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">191,"CMD_REPLY_ALWAYS",255,255,False,4,<wbr>103,5,"Reply (Forward)"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">198,"CMD_FREECOM_ALWAYS",255,255,False,<wbr>4,110,5,"Switch Chat Mode to Free Company"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">198,"CMD_FREECOM_ALWAYS",255,255,False,<wbr>4,110,5,"Switch Chat Mode to Free Company"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">199,"CMD_LINKSHELL_ALWAYS",255,255,Fals<wbr>e,4,</span><span class="sf17b16">113</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell (Forward)"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">199,"CMD_LINKSHELL_ALWAYS",255,255,Fals<wbr>e,4,</span><span class="sf17b16">122</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell (Forward)"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">200,"CMD_LINKSHELL_REV_ALWAYS",255,255,<wbr>False,4,</span><span class="sf17b16">114</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell (Back)"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">200,"CMD_LINKSHELL_REV_ALWAYS",255,255,<wbr>False,4,</span><span class="sf17b16">123</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell (Back)"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">201,"CMD_LINKSHELL_1_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">115</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [1]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">201,"CMD_LINKSHELL_1_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">124</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [1]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">202,"CMD_LINKSHELL_2_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">116</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [2]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">202,"CMD_LINKSHELL_2_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">125</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [2]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">203,"CMD_LINKSHELL_3_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">117</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [3]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">203,"CMD_LINKSHELL_3_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">126</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [3]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">204,"CMD_LINKSHELL_4_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">118</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [4]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">204,"CMD_LINKSHELL_4_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">127</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [4]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">205,"CMD_LINKSHELL_5_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">119</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [5]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">205,"CMD_LINKSHELL_5_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">128</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [5]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">206,"CMD_LINKSHELL_6_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">120</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [6]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">206,"CMD_LINKSHELL_6_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">129</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [6]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">207,"CMD_LINKSHELL_7_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">121</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [7]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">207,"CMD_LINKSHELL_7_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">130</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [7]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">208,"CMD_LINKSHELL_8_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">122</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [8]"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">208,"CMD_LINKSHELL_8_ALWAYS",255,255,Fa<wbr>lse,4,</span><span class="sf17b16">131</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Linkshell [8]"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">211,"OK",255,255,True,5,1,1,"Confirm"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">211,"OK",255,255,True,5,1,1,"Confirm"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">271,"MENU_CONTENT",255,255,False,3,32,0<wbr>,"Duty Finder"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">271,"MENU_CONTENT",255,255,False,3,32,0<wbr>,"Duty Finder"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">272,"MENU_CONTENT_INFO",255,255,False,3<wbr>,</span><span class="sf17b16">34</span><span style="color: #000000; background-color: #efcb05; ">,0,"Timers"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">272,"MENU_CONTENT_INFO",255,255,False,3<wbr>,</span><span class="sf17b16">35</span><span style="color: #000000; background-color: #efcb05; ">,0,"Timers"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">273,"MENU_JOURNAL",255,255,False,3,</span><span class="sf17b16">35</span><span style="color: #000000; background-color: #efcb05; ">,0<wbr>,"Journal"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">273,"MENU_JOURNAL",255,255,False,3,</span><span class="sf17b16">36</span><span style="color: #000000; background-color: #efcb05; ">,0<wbr>,"Journal"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">274,"MENU_CRAFT",255,255,False,3,</span><span class="sf17b16">38</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>Crafting Log"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">274,"MENU_CRAFT",255,255,False,3,</span><span class="sf17b16">39</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>Crafting Log"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">275,"MENU_GATHER",255,255,False,3,</span><span class="sf17b16">39</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Gathering Log"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">275,"MENU_GATHER",255,255,False,3,</span><span class="sf17b16">40</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Gathering Log"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">276,"MENU_MONSTER",255,255,False,3,</span><span class="sf17b16">40</span><span style="color: #000000; background-color: #efcb05; ">,0<wbr>,"Hunting Log"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">276,"MENU_MONSTER",255,255,False,3,</span><span class="sf17b16">41</span><span style="color: #000000; background-color: #efcb05; ">,0<wbr>,"Hunting Log"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">277,"MENU_FISH",255,255,False,3,</span><span class="sf17b16">41</span><span style="color: #000000; background-color: #efcb05; ">,0,"F<wbr>ishing Log"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">277,"MENU_FISH",255,255,False,3,</span><span class="sf17b16">42</span><span style="color: #000000; background-color: #efcb05; ">,0,"F<wbr>ishing Log"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">278,"MENU_FISH_GUIDE",255,255,False,3,</span><span class="sf17b16">4<wbr>2</span><span style="color: #000000; background-color: #efcb05; ">,0,"Fish Guide"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">278,"MENU_FISH_GUIDE",255,255,False,3,</span><span class="sf17b16">4<wbr>3</span><span style="color: #000000; background-color: #efcb05; ">,0,"Fish Guide"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">279,"MENU_CONTENTS_NOTEBOOK",255,255,Fa<wbr>lse,3,</span><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">,0,"Challenge Log"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">279,"MENU_CONTENTS_NOTEBOOK",255,255,Fa<wbr>lse,3,</span><span class="sf17b16">45</span><span style="color: #000000; background-color: #efcb05; ">,0,"Challenge Log"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">280,"MENU_ADVENTURE_NOTEBOOK",255,255,F<wbr>alse,3,</span><span class="sf17b16">43</span><span style="color: #000000; background-color: #efcb05; ">,0,"Sightseeing Log"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">280,"MENU_ADVENTURE_NOTEBOOK",255,255,F<wbr>alse,3,</span><span class="sf17b16">44</span><span style="color: #000000; background-color: #efcb05; ">,0,"Sightseeing Log"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">281,"MENU_MARK",255,255,False,3,</span><span class="sf17b16">46</span><span style="color: #000000; background-color: #efcb05; ">,0,"S<wbr>igns"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">281,"MENU_MARK",255,255,False,3,</span><span class="sf17b16">47</span><span style="color: #000000; background-color: #efcb05; ">,0,"S<wbr>igns"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">282,"MENU_FIELD_MARK",255,255,False,3,</span><span class="sf17b16">4<wbr>7</span><span style="color: #000000; background-color: #efcb05; ">,0,"Waymarks"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">282,"MENU_FIELD_MARK",255,255,False,3,</span><span class="sf17b16">4<wbr>8</span><span style="color: #000000; background-color: #efcb05; ">,0,"Waymarks"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">283,"MENU_BUDDY",255,255,False,3,</span><span class="sf17b16">49</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>Companions"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">283,"MENU_BUDDY",255,255,False,3,</span><span class="sf17b16">50</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>Companions"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">284,"MENU_RETURN",255,255,False,3,</span><span class="sf17b16">48</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Return"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">284,"MENU_RETURN",255,255,False,3,</span><span class="sf17b16">49</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Return"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">285,"MENU_TELEPO",255,255,False,3,</span><span class="sf17b16">50</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Teleport"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">285,"MENU_TELEPO",255,255,False,3,</span><span class="sf17b16">51</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Teleport"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">286,"MENU_ACHIVE",255,255,False,3,</span><span class="sf17b16">51</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Achievements"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">286,"MENU_ACHIVE",255,255,False,3,</span><span class="sf17b16">52</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Achievements"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">287,"MENU_SYSTEM",255,253,False,3,</span><span class="sf17b16">52</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"System Menu"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">287,"MENU_SYSTEM",255,253,False,3,</span><span class="sf17b16">53</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"System Menu"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">288,"MENU_HOWTO",255,255,False,3,</span><span class="sf17b16">55</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>Active Help"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">288,"MENU_HOWTO",255,255,False,3,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>Active Help"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">289,"MENU_RECOMMEND_LIST",255,255,False<wbr>,3,</span><span class="sf17b16">56</span><span style="color: #000000; background-color: #efcb05; ">,0,"Recommendations"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">289,"MENU_RECOMMEND_LIST",255,255,False<wbr>,3,</span><span class="sf17b16">58</span><span style="color: #000000; background-color: #efcb05; ">,0,"Recommendations"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">290,"MENU_MACRO",255,255,False,3,</span><span class="sf17b16">57</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>User Macros"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">290,"MENU_MACRO",255,255,False,3,</span><span class="sf17b16">59</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>User Macros"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">291,"MENU_SUPPORT",255,255,False,3,</span><span class="sf17b16">58</span><span style="color: #000000; background-color: #efcb05; ">,0<wbr>,"Support Desk"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">291,"MENU_SUPPORT",255,255,False,3,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">,0<wbr>,"Support Desk"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">292,"MENU_CONFIG",255,255,False,3,</span><span class="sf17b16">60</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Character Configuration"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">292,"MENU_CONFIG",255,255,False,3,</span><span class="sf17b16">62</span><span style="color: #000000; background-color: #efcb05; ">,0,<wbr>"Character Configuration"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">293,"MENU_SYSCONFIG",255,255,False,3,</span><span class="sf17b16">61<wbr></span><span style="color: #000000; background-color: #efcb05; ">,0,"System Configuration"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">293,"MENU_SYSCONFIG",255,255,False,3,</span><span class="sf17b16">63<wbr></span><span style="color: #000000; background-color: #efcb05; ">,0,"System Configuration"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">294,"MENU_LOGCOLOR",255,255,False,3,</span><span class="sf17b16">62</span><span style="color: #000000; background-color: #efcb05; ">,<wbr>0,"Log Colors"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">294,"MENU_LOGCOLOR",255,255,False,3,</span><span class="sf17b16">64</span><span style="color: #000000; background-color: #efcb05; ">,<wbr>0,"Log Colors"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">295,"MENU_PADCUSTOMIZE",255,255,False,3<wbr>,</span><span class="sf17b16">63</span><span style="color: #000000; background-color: #efcb05; ">,0,"Button Configuration"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">295,"MENU_PADCUSTOMIZE",255,255,False,3<wbr>,</span><span class="sf17b16">65</span><span style="color: #000000; background-color: #efcb05; ">,0,"Button Configuration"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">296,"MENU_GOLD_SAUCER",255,255,False,3,<wbr>15,0,"Gold Saucer"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">296,"MENU_GOLD_SAUCER",255,255,False,3,<wbr>15,0,"Gold Saucer"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">297,"MENU_AETHER_CURRENT",255,255,False<wbr>,3,</span><span class="sf17b16">53</span><span style="color: #000000; background-color: #efcb05; ">,0,"Aether Currents"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">297,"MENU_AETHER_CURRENT",255,255,False<wbr>,3,</span><span class="sf17b16">54</span><span style="color: #000000; background-color: #efcb05; ">,0,"Aether Currents"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">298,"MENU_CURRENCY",255,255,False,3,3,0<wbr>,"Currency"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">298,"MENU_CURRENCY",255,255,False,3,3,0<wbr>,"Currency"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">474,"VIRTUAL_PAD_RSTICK_RIGHT",255,255,<wbr>False,7,24,0,"&lt;Gui(23)/&gt; Right Analog Stick Right"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">474,"VIRTUAL_PAD_RSTICK_RIGHT",255,255,<wbr>False,7,24,0,"&lt;Gui(23)/&gt; Right Analog Stick Right"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">490,"MENU_PLAY_GUIDE",255,249,False,3,</span><span class="sf17b16">5<wbr>9</span><span style="color: #000000; background-color: #efcb05; ">,0,"Playguide"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">490,"MENU_PLAY_GUIDE",255,249,False,3,</span><span class="sf17b16">6<wbr>1</span><span style="color: #000000; background-color: #efcb05; ">,0,"Playguide"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">491,"MENU_SUBCOMMAND_CUSTOMIZE",255,255<wbr>,False,3,</span><span class="sf17b16">64</span><span style="color: #000000; background-color: #efcb05; ">,0,"Subcommand Customization"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">491,"MENU_SUBCOMMAND_CUSTOMIZE",255,255<wbr>,False,3,</span><span class="sf17b16">66</span><span style="color: #000000; background-color: #efcb05; ">,0,"Subcommand Customization"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">492,"MENU_BEGINNER_CHANNEL_LIST",255,25<wbr>5,False,3,21,0,"Novice Network List"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">492,"MENU_BEGINNER_CHANNEL_LIST",255,25<wbr>5,False,3,21,0,"Novice Network List"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">493,"MENU_BEGINNERS_MANSION",255,255,Fa<wbr>lse,3,</span><span class="sf17b16">37</span><span style="color: #000000; background-color: #efcb05; ">,0,"Hall of the Novice"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">493,"MENU_BEGINNERS_MANSION",255,255,Fa<wbr>lse,3,</span><span class="sf17b16">38</span><span style="color: #000000; background-color: #efcb05; ">,0,"Hall of the Novice"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">494,"MENU_ORCHESTRION",255,255,False,3,<wbr></span><span class="sf17b16">45</span><span style="color: #000000; background-color: #efcb05; ">,0,"Orchestrion List"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">494,"MENU_ORCHESTRION",255,255,False,3,<wbr></span><span class="sf17b16">46</span><span style="color: #000000; background-color: #efcb05; ">,0,"Orchestrion List"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">495,"MENU_RAID_FINDER",255,255,False,3,<wbr>33,0,"Raid Finder"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">495,"MENU_RAID_FINDER",255,255,False,3,<wbr>33,0,"Raid Finder"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">497,"MENU_CONTACTLIST",255,255,False,3,<wbr>19,0,"Contact List"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">497,"MENU_CONTACTLIST",255,255,False,3,<wbr>19,0,"Contact List"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">498,"MENU_GROUND_MOUNT_SPEED",255,255,F<wbr>alse,3,</span><span class="sf17b16">54</span><span style="color: #000000; background-color: #efcb05; ">,0,"Mount Speed"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">498,"MENU_GROUND_MOUNT_SPEED",255,255,F<wbr>alse,3,</span><span class="sf17b16">55</span><span style="color: #000000; background-color: #efcb05; ">,0,"Mount Speed"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">499,"MENU_BUDDY_BAG",255,255,False,3,7,<wbr>0,"Chocobo Saddlebag"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">499,"MENU_BUDDY_BAG",255,255,False,3,7,<wbr>0,"Chocobo Saddlebag"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">500,"MENU_CONTENTS_REPLAY",255,255,Fals<wbr>e,3,</span><span class="sf17b16">36</span><span style="color: #000000; background-color: #efcb05; ">,0,"Duty Recorder"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">500,"MENU_CONTENTS_REPLAY",255,255,Fals<wbr>e,3,</span><span class="sf17b16">37</span><span style="color: #000000; background-color: #efcb05; ">,0,"Duty Recorder"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">501,"MENU_REPLAY_READY_CHECK",255,255,F<wbr>alse,3,25,0,"Record Ready Check"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">501,"MENU_REPLAY_READY_CHECK",255,255,F<wbr>alse,3,25,0,"Record Ready Check"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">503,"MENU_CWLINKSHELL",255,255,False,3,<wbr>31,0,"Cross-world Linkshell"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">503,"MENU_CWLINKSHELL",255,255,False,3,<wbr>31,0,"Cross-world Linkshell"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">504,"MENU_ALERM",255,255,False,3,</span><span class="sf17b16">65</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>Alarms"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">504,"MENU_ALERM",255,255,False,3,</span><span class="sf17b16">67</span><span style="color: #000000; background-color: #efcb05; ">,0,"<wbr>Alarms"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">505,"MENU_AOZ",255,255,False,3,13,0,"Bl<wbr>ue Magic Spellbook"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">505,"MENU_AOZ",255,255,False,3,13,0,"Bl<wbr>ue Magic Spellbook"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">550,"CMD_BEGINNER",255,255,False,4,</span><span class="sf17b16">23</span><span style="color: #000000; background-color: #efcb05; ">,5<wbr>,"Temporarily Switch Chat Mode to Novice Network"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">506,"MENU_FAITH",255,255,False,3,34,0,"<wbr>Trust"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">551,"CMD_BEGINNER_ALWAYS",255,255,False<wbr>,4,</span><span class="sf17b16">123</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Novice Network"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">507,"MENU_FATE_PROGRESS",255,255,False,<wbr>3,56,0,"FATE</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Completion"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">550,"CMD_BEGINNER",255,255,False,4,</span><span class="sf17b16">32</span><span style="color: #000000; background-color: #efcb05; ">,5<wbr>,"Temporarily Switch Chat Mode to Novice Network"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">551,"CMD_BEGINNER_ALWAYS",255,255,False<wbr>,4,</span><span class="sf17b16">132</span><span style="color: #000000; background-color: #efcb05; ">,5,"Switch Chat Mode to Novice Network"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">552,"PVPTEAM_CHAT",255,255,False,4,11,5<wbr>,"Temporarily Switch Chat Mode to PvP Team"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">552,"PVPTEAM_CHAT",255,255,False,4,11,5<wbr>,"Temporarily Switch Chat Mode to PvP Team"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">553,"PVPTEAM_CHAT_ALWAYS",255,255,False<wbr>,4,111,5,"Switch Chat Mode to PvP Team"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">553,"PVPTEAM_CHAT_ALWAYS",255,255,False<wbr>,4,111,5,"Switch Chat Mode to PvP Team"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">554,"CMD_CWLINKSHELL",255,255,False,4,1<wbr>2,5,"Temporarily Switch Chat Mode to </span><span style="color: #000000; background-color: #efcb05; ">Cross-world </span><span class="sf17b16">Linkshell</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">554,"CMD_CWLINKSHELL",255,255,False,4,1<wbr>2,5,"Temporarily Switch Chat Mode to </span><span class="sf17b18">Next</span><span style="color: #000000; background-color: #efcb05; "> Cross-world </span><span class="sf17b16">LS</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">555,"CMD_CWLINKSHELL_ALWAYS",255,255,Fa<wbr>lse,4,112,5,"Switch Chat Mode to </span><span style="color: #000000; background-color: #efcb05; ">Cross-world </span><span class="sf17b16">Linkshell</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">555,"CMD_CWLINKSHELL_ALWAYS",255,255,Fa<wbr>lse,4,112,5,"Switch Chat Mode to </span><span class="sf17b18">Next</span><span style="color: #000000; background-color: #efcb05; "> Cross-world </span><span class="sf17b16">LS</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">556,"CMD_CWLINKSHELL_REV",255,255,False<wbr>,4,13,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Previous</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">557,"CMD_CWLINKSHELL_1",255,255,False,4<wbr>,14,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[1]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">558,"CMD_CWLINKSHELL_2",255,255,False,4<wbr>,15,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[2]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">559,"CMD_CWLINKSHELL_3",255,255,False,4<wbr>,16,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[3]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">560,"CMD_CWLINKSHELL_4",255,255,False,4<wbr>,17,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[4]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">561,"CMD_CWLINKSHELL_5",255,255,False,4<wbr>,18,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[5]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">562,"CMD_CWLINKSHELL_6",255,255,False,4<wbr>,19,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[6]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">563,"CMD_CWLINKSHELL_7",255,255,False,4<wbr>,20,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[7]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">564,"CMD_CWLINKSHELL_8",255,255,False,4<wbr>,21,5,"Temporarily</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[8]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">565,"CMD_CWLINKSHELL_ALWAYS_REV",255,25<wbr>5,False,4,113,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Previous</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">566,"CMD_CWLINKSHELL_1_ALWAYS",255,255,<wbr>False,4,114,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[1]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">567,"CMD_CWLINKSHELL_2_ALWAYS",255,255,<wbr>False,4,115,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[2]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">568,"CMD_CWLINKSHELL_3_ALWAYS",255,255,<wbr>False,4,116,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[3]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">569,"CMD_CWLINKSHELL_4_ALWAYS",255,255,<wbr>False,4,117,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[4]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">570,"CMD_CWLINKSHELL_5_ALWAYS",255,255,<wbr>False,4,118,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[5]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">571,"CMD_CWLINKSHELL_6_ALWAYS",255,255,<wbr>False,4,119,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[6]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">572,"CMD_CWLINKSHELL_7_ALWAYS",255,255,<wbr>False,4,120,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[7]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">573,"CMD_CWLINKSHELL_8_ALWAYS",255,255,<wbr>False,4,121,5,"Switch</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Chat</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Mode</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">Cross-world</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">LS</span><span style="color: #000000; background-color: #efcb05; "> </span><span class="sf17b18">[8]"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">591,"CHATLOG_VIEWERMODE",255,255,False,<wbr>5,25,1,"Log Window Zoom"</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">591,"CHATLOG_VIEWERMODE",255,255,False,<wbr>5,25,1,"Log Window Zoom"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>
