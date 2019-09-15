@@ -222,3 +222,18 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   height: 20px;
   padding: 10px 10px;
 }
+
+.image {
+    position: relative;
+}
+    
+.image:hover:after {
+    position: absolute;
+    content: attr(title);
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
