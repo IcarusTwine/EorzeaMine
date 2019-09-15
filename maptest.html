@@ -12,43 +12,96 @@
     <body>
         <div style="width: 2048px; height: 2048px; position: absolute;">
         <img id="backgroundmap" style="position: relative;" src="maps/z3fd - Eureka Hydatos.png" alt="..." title="Eureka Hydatos" />
-        <div class="top-left">Key<br>
-            Model = <img src="icons/1.png" alt=""><br>
-            Light = <img src="icons/3.png" alt=""><br>
-            Vfx = <img src="icons/4.png" alt=""><br>
-            PositionMarker = <img src="icons/5.png" alt=""><br>
-            Gimmick = <img src="icons/6.png" alt=""><br>
-            Sound = <img src="icons/7.png" alt=""><br>
-            EventNpc = <img src="icons/8.png" alt=""><br>
-            BattleNpc = <img src="icons/9.png" alt=""><br>
-            Aetheryte = <img src="icons/12.png" alt=""><br>
-            EnvSpace = <img src="icons/13.png" alt=""><br>
-            Gathering = <img src="icons/14.png" alt=""><br>
-            Treasure = <img src="icons/16.png" alt=""><br>
-            Weapon = <img src="icons/39.png" alt=""><br>
-            PopRange = <img src="icons/40.png" alt=""><br>
-            ExitRange = <img src="icons/41.png" alt=""><br>
-            MapRange = <img src="icons/43.png" alt=""><br>
-            NaviMeshRange = <img src="icons/44.png" alt=""><br>
-            EventObject = <img src="icons/45.png" alt=""><br>
-            EnvLocation = <img src="icons/47.png" alt=""><br>
-            EventRange = <img src="icons/49.png" alt=""><br>
-            QuestMarker = <img src="icons/51.png" alt=""><br>
-            CollisionBox = <img src="icons/57.png" alt=""><br>
-            DoorRange = <img src="icons/58.png" alt=""><br>
-            LineVfx = <img src="icons/59.png" alt=""><br>
-            ClientPath = <img src="icons/65.png" alt=""><br>
-            ServerPath = <img src="icons/66.png" alt=""><br>
-            GimmickRange = <img src="icons/67.png" alt=""><br>
-            TargetMarker = <img src="icons/68.png" alt=""><br>
-            ChairMarker = <img src="icons/69.png" alt=""><br>
-            ClickableRange = <img src="icons/70.png" alt=""><br>
-            PrefetchRange = <img src="icons/71.png" alt=""><br>
-            FateRange = <img src="icons/72.png" alt=""><br>
-            SphereCastRange = <img src="icons/75.png" alt=""><br>
-        </div>
 
+
+        <div class="top-left">
+            <button onclick="key()">Key Toggle</button><br>
+            <button onclick="allmarkers()">allmarkers</button><br>
+            <div id="key">
+            <button onclick="model()">Model = <img src="icons/1.png" alt=""></button><br>
+            <button onclick="light()">Light = <img src="icons/3.png" alt=""></button><br>
+            <button onclick="vfx()">Vfx = <img src="icons/4.png" alt=""></button><br>
+            <button onclick="positionmarker()">PositionMarker = <img src="icons/5.png" alt=""></button><br>
+            <button onclick="gimmick()">Gimmick = <img src="icons/6.png" alt=""></button><br>
+            <button onclick="sound()">Sound = <img src="icons/7.png" alt=""></button><br>
+            <button onclick="eventnpc()">EventNpc = <img src="icons/8.png" alt=""></button><br>
+            <button onclick="battlenpc()">BattleNpc = <img src="icons/9.png" alt=""></button><br>
+            <button onclick="aetheryte()">Aetheryte = <img src="icons/12.png" alt=""></button><br>
+            <button onclick="envspace()">EnvSpace = <img src="icons/13.png" alt=""></button><br>
+            <button onclick="gathering()">Gathering = <img src="icons/14.png" alt=""></button><br>
+            <button onclick="treasure()">Treasure = <img src="icons/16.png" alt=""></button><br>
+            <button onclick="weapon()">Weapon = <img src="icons/39.png" alt=""></button><br>
+            <button onclick="poprange()">PopRange = <img src="icons/40.png" alt=""></button><br>
+            <button onclick="exitrange()">ExitRange = <img src="icons/41.png" alt=""></button><br>
+            <button onclick="maprange()">MapRange = <img src="icons/43.png" alt=""></button><br>
+            <button onclick="navimeshrange()">NaviMeshRange = <img src="icons/44.png" alt=""></button><br>
+            <button onclick="eventobject()">EventObject = <img src="icons/45.png" alt=""></button><br>
+            <button onclick="envlocation()">EnvLocation = <img src="icons/47.png" alt=""></button><br>
+            <button onclick="eventrange()">EventRange = <img src="icons/49.png" alt=""></button><br>
+            <button onclick="questmarker()">QuestMarker = <img src="icons/51.png" alt=""></button><br>
+            <button onclick="collisionbox()">CollisionBox = <img src="icons/57.png" alt=""></button><br>
+            <button onclick="doorrange()">DoorRange = <img src="icons/58.png" alt=""></button><br>
+            <button onclick="linevfx()">LineVfx = <img src="icons/59.png" alt=""></button><br>
+            <button onclick="clientpath()">ClientPath = <img src="icons/65.png" alt=""></button><br>
+            <button onclick="serverpath()">ServerPath = <img src="icons/66.png" alt=""></button><br>
+            <button onclick="gimmickrange()">GimmickRange = <img src="icons/67.png" alt=""></button><br>
+            <button onclick="targetmarker()">TargetMarker = <img src="icons/68.png" alt=""></button><br>
+            <button onclick="chairmarker()">ChairMarker = <img src="icons/69.png" alt=""></button><br>
+            <button onclick="clickablerange()">ClickableRange = <img src="icons/70.png" alt=""></button><br>
+            <button onclick="prefetchrange()">PrefetchRange = <img src="icons/71.png" alt=""></button><br>
+            <button onclick="faterange()">FateRange = <img src="icons/72.png" alt=""></button><br>
+            <button onclick="spherecastrange()">SphereCastRange = <img src="icons/75.png" alt=""></button><br>
+        </div>
+    <div id="allmarkers">
+    <div id="positionmarker">
+
+<img id="7767074" style="position: absolute; left: 1003.1px; top: 638.97px;" src="icons/5.png" alt="" title="
+            
     
+
+ID: 7767074
+    
+
+Type: 5
+            " />
+
+<img id="7767079" style="position: absolute; left: 1011.59px; top: 2295.43px;" src="icons/5.png" alt="" title="
+            
+    
+
+ID: 7767079
+    
+
+Type: 5
+            " />
+
+<img id="7829585" style="position: absolute; left: 1025.14px; top: 2300.88px;" src="icons/5.png" alt="" title="
+            
+    
+
+ID: 7829585
+    
+
+Type: 5
+            " />
+
+<img id="7884427" style="position: absolute; left: 959.39px; top: 710.74px;" src="icons/5.png" alt="" title="
+            
+    
+
+ID: 7884427
+    
+
+Type: 5
+            " />
+
+
+    </div>
+    <div id="Gimmick">
+
+
+    </div>
+    <div id="eventnpc">
 
 <img id="7766935" style="position: absolute; left: 973.03px; top: 636.22px;" src="icons/8.png" alt="Krile" title="
             Krile
@@ -280,75 +333,21 @@ ID: 7766989
 Type: 8
             " />
 
-<img id="7767050" style="position: absolute; left: 1238.53px; top: 1491.52px;" src="icons/45.png" alt="" title="
-            
-    
 
-ID: 7767050
-    
+    </div>
+    <div id="battlenpc">
 
-Type: 45
-            " />
 
-<img id="7767055" style="position: absolute; left: 275.53px; top: 735.56px;" src="icons/45.png" alt="" title="
-            
-    
+    </div>
+    <div id="aetheryte">
 
-ID: 7767055
-    
 
-Type: 45
-            " />
+    </div>
+    <div id="gathering">
 
-<img id="7767063" style="position: absolute; left: 1496px; top: 673.27px;" src="icons/45.png" alt="" title="
-            
-    
 
-ID: 7767063
-    
-
-Type: 45
-            " />
-
-<img id="7767064" style="position: absolute; left: 939.66px; top: 640.95px;" src="icons/45.png" alt="" title="
-            
-    
-
-ID: 7767064
-    
-
-Type: 45
-            " />
-
-<img id="7767067" style="position: absolute; left: 1023.94px; top: 624.46px;" src="icons/45.png" alt="" title="
-            
-    
-
-ID: 7767067
-    
-
-Type: 45
-            " />
-
-<img id="7767074" style="position: absolute; left: 1003.1px; top: 638.97px;" src="icons/5.png" alt="" title="
-            
-    
-
-ID: 7767074
-    
-
-Type: 5
-            " />
-
-<img id="7767079" style="position: absolute; left: 1011.59px; top: 2295.43px;" src="icons/5.png" alt="" title="
-            
-    
-
-ID: 7767079
-    
-
-Type: 5
-            " />
+    </div>
+    <div id="poprange">
 
 <img id="7811020" style="position: absolute; left: 959.3px; top: 639.62px;" src="icons/40.png" alt="" title="
             
@@ -1340,15 +1339,113 @@ ID: 7817765
 Type: 40
             " />
 
-<img id="7829585" style="position: absolute; left: 1025.14px; top: 2300.88px;" src="icons/5.png" alt="" title="
+
+    </div>
+    <div id="exitrange">
+
+
+    </div>
+    <div id="eventobject">
+
+<img id="7767050" style="position: absolute; left: 1238.53px; top: 1491.52px;" src="icons/45.png" alt="" title="
             
     
 
-ID: 7829585
+ID: 7767050
     
 
-Type: 5
+Type: 45
             " />
+
+<img id="7767055" style="position: absolute; left: 275.53px; top: 735.56px;" src="icons/45.png" alt="" title="
+            
+    
+
+ID: 7767055
+    
+
+Type: 45
+            " />
+
+<img id="7767063" style="position: absolute; left: 1496px; top: 673.27px;" src="icons/45.png" alt="" title="
+            
+    
+
+ID: 7767063
+    
+
+Type: 45
+            " />
+
+<img id="7767064" style="position: absolute; left: 939.66px; top: 640.95px;" src="icons/45.png" alt="" title="
+            
+    
+
+ID: 7767064
+    
+
+Type: 45
+            " />
+
+<img id="7767067" style="position: absolute; left: 1023.94px; top: 624.46px;" src="icons/45.png" alt="" title="
+            
+    
+
+ID: 7767067
+    
+
+Type: 45
+            " />
+
+<img id="7845335" style="position: absolute; left: 969.45px; top: 1196.71px;" src="icons/45.png" alt="" title="
+            
+    
+
+ID: 7845335
+    
+
+Type: 45
+            " />
+
+<img id="7845630" style="position: absolute; left: 488.11px; top: 1437.4px;" src="icons/45.png" alt="" title="
+            
+    
+
+ID: 7845630
+    
+
+Type: 45
+            " />
+
+<img id="7845634" style="position: absolute; left: 1512.96px; top: 1317.7px;" src="icons/45.png" alt="" title="
+            
+    
+
+ID: 7845634
+    
+
+Type: 45
+            " />
+
+
+    </div>
+    <div id="eventrange">
+
+
+    </div>
+    <div id="questmarker">
+
+
+    </div>
+    <div id="collisionbox">
+
+
+    </div>
+    <div id="clientpath">
+
+
+    </div>
+    <div id="serverpath">
 
 <img id="7840587" style="position: absolute; left: 675.49px; top: 1014.41px;" src="icons/66.png" alt="" title="
             
@@ -1410,36 +1507,6 @@ ID: 7840592
 Type: 66
             " />
 
-<img id="7845335" style="position: absolute; left: 969.45px; top: 1196.71px;" src="icons/45.png" alt="" title="
-            
-    
-
-ID: 7845335
-    
-
-Type: 45
-            " />
-
-<img id="7845630" style="position: absolute; left: 488.11px; top: 1437.4px;" src="icons/45.png" alt="" title="
-            
-    
-
-ID: 7845630
-    
-
-Type: 45
-            " />
-
-<img id="7845634" style="position: absolute; left: 1512.96px; top: 1317.7px;" src="icons/45.png" alt="" title="
-            
-    
-
-ID: 7845634
-    
-
-Type: 45
-            " />
-
 <img id="7848522" style="position: absolute; left: 653.58px; top: 1029.84px;" src="icons/66.png" alt="" title="
             
     
@@ -1470,19 +1537,16 @@ ID: 7848529
 Type: 66
             " />
 
-<img id="7884427" style="position: absolute; left: 959.39px; top: 710.74px;" src="icons/5.png" alt="" title="
-            
-    
 
-ID: 7884427
-    
-
-Type: 5
-            " />
-
+    </div>
+    <div id="targetmarker">
 
 
     </div>
+
+    </div>
+    </div>
+    <script src="assets/js/key.js"></script>
     </body>
     </html>
 
