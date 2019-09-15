@@ -1,21 +1,21 @@
- 
-    function key() {
-      var x = document.getElementById("key");
-      if (x.style.display === "none") {
-x.style.display = "block";
-      } else {
-x.style.display = "none";
-      }
-    }
-
-    function allmarkers() {
-      var x = document.getElementById("allmarkers");
-      if (x.style.display === "none") {
-x.style.display = "block";
-      } else {
-x.style.display = "none";
-      }
-    }
+function allmarkers() {
+      positionmarker();
+      gimmick();
+      questmarker();
+      eventrange();
+      eventnpc();
+      battlenpc();
+      aetheryte();
+      gathering();
+      poprange();
+      exitrange();
+      eventobject();
+      collisionbox();
+      clientpath();
+      serverpath();
+      targetmarker();
+      treasure();
+}
 
     function model() {
       var x = document.getElementById("model");
