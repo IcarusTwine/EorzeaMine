@@ -1,0 +1,860 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+
+      <title>defa - </title>
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+    </head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-sidebar w3-bar-block w3-black" style="width:4%">
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="allmarkers()">---Markers on/off</button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="positionmarker()"><img src="icons/5.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="gimmick()"><img src="icons/6.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventnpc()"><img src="icons/8.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="battlenpc()"><img src="icons/9.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="aetheryte()"><img src="icons/12.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="gathering()"><img src="icons/14.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="treasure()"><img src="icons/16.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="poprange()"><img src="icons/40.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="exitrange()"><img src="icons/41.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventobject()"><img src="icons/45.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventrange()"><img src="icons/49.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="questmarker()"><img src="icons/51.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="collisionbox()"><img src="icons/57.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="clientpath()"><img src="icons/65.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="serverpath()"><img src="icons/66.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="targetmarker()"><img src="icons/68.png" alt=""></button>
+</div>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-hide-small w3-padding-large w3-hover-white">Markers</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+          <div style="width: 2048px; height: 2048px; position: absolute;">
+        <img id="backgroundmap" style="position: relative; left: 18px; top: 18px" src="maps/defa - .png" alt="..."/></div>
+
+    <div id="allmarkers">
+    <div id="positionmarker">
+
+
+    </div>
+    <div id="gimmick">
+
+<img id="7078807" style="position: absolute; left: 1146.57px; top: 1076.46px;" src="icons/6.png" alt="" title="
+    
+Level_ID: 7078807
+Type: 6
+Object_ID: 0" />
+
+<img id="7078900" style="position: absolute; left: 1152.58px; top: 958.08px;" src="icons/6.png" alt="" title="
+    
+Level_ID: 7078900
+Type: 6
+Object_ID: 0" />
+
+<img id="7078927" style="position: absolute; left: 1199.66px; top: 1020.71px;" src="icons/6.png" alt="" title="
+    
+Level_ID: 7078927
+Type: 6
+Object_ID: 0" />
+
+<img id="7078929" style="position: absolute; left: 1086.69px; top: 952.88px;" src="icons/6.png" alt="" title="
+    
+Level_ID: 7078929
+Type: 6
+Object_ID: 0" />
+
+
+    </div>
+    <div id="eventnpc">
+
+<img id="3278193" style="position: absolute; left: 1026.58px; top: 950.5px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 3278193
+Type: 8
+ENpc_ID: 12275" />
+
+<img id="3278194" style="position: absolute; left: 1021.01px; top: 951.06px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 3278194
+Type: 8
+ENpc_ID: 12276" />
+
+<img id="3963618" style="position: absolute; left: 989.56px; top: 1236.07px;" src="icons/8.png" alt="Yda" title="
+            Yda
+Level_ID: 3963618
+Type: 8
+ENpc_ID: 1002275" />
+
+<img id="3963619" style="position: absolute; left: 995.72px; top: 1236.38px;" src="icons/8.png" alt="Papalymo" title="
+            Papalymo
+Level_ID: 3963619
+Type: 8
+ENpc_ID: 1002276" />
+
+
+    </div>
+    <div id="battlenpc">
+
+<img id="3284483" style="position: absolute; left: 1065.51px; top: 952.78px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284483
+Type: 9
+Object_ID: 251" />
+
+<img id="3284484" style="position: absolute; left: 1062.11px; top: 971.31px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284484
+Type: 9
+Object_ID: 251" />
+
+<img id="3284485" style="position: absolute; left: 1056.4px; top: 985.4px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284485
+Type: 9
+Object_ID: 251" />
+
+<img id="3284486" style="position: absolute; left: 1061.2px; top: 961.71px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284486
+Type: 9
+Object_ID: 251" />
+
+<img id="3284487" style="position: absolute; left: 1061.28px; top: 978.74px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284487
+Type: 9
+Object_ID: 251" />
+
+<img id="3284498" style="position: absolute; left: 1053.09px; top: 944.11px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284498
+Type: 9
+Object_ID: 251" />
+
+<img id="3284499" style="position: absolute; left: 1075.56px; top: 956.21px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284499
+Type: 9
+Object_ID: 251" />
+
+<img id="3284500" style="position: absolute; left: 1080.47px; top: 971.54px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284500
+Type: 9
+Object_ID: 251" />
+
+<img id="3284501" style="position: absolute; left: 1048.3px; top: 994.56px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284501
+Type: 9
+Object_ID: 251" />
+
+<img id="3284502" style="position: absolute; left: 1016.73px; top: 994.15px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284502
+Type: 9
+Object_ID: 251" />
+
+<img id="3284503" style="position: absolute; left: 1009.03px; top: 974.98px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284503
+Type: 9
+Object_ID: 251" />
+
+<img id="3284504" style="position: absolute; left: 1013.12px; top: 954.15px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284504
+Type: 9
+Object_ID: 251" />
+
+<img id="3284505" style="position: absolute; left: 1033.19px; top: 939.3px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284505
+Type: 9
+Object_ID: 251" />
+
+<img id="3284506" style="position: absolute; left: 1040.16px; top: 961.99px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284506
+Type: 9
+Object_ID: 249" />
+
+<img id="3284507" style="position: absolute; left: 1041.23px; top: 979.12px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3284507
+Type: 9
+Object_ID: 250" />
+
+<img id="3879685" style="position: absolute; left: 1072.01px; top: 1164.08px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3879685
+Type: 9
+Object_ID: 540" />
+
+<img id="3954548" style="position: absolute; left: 1386.88px; top: 747.32px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3954548
+Type: 9
+Object_ID: 544" />
+
+<img id="3963616" style="position: absolute; left: 1050.6px; top: 1205.38px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3963616
+Type: 9
+Object_ID: 113" />
+
+<img id="3963617" style="position: absolute; left: 1039.08px; top: 1178.33px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3963617
+Type: 9
+Object_ID: 246" />
+
+<img id="3995190" style="position: absolute; left: 1021.81px; top: 1187.04px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3995190
+Type: 9
+Object_ID: 249" />
+
+<img id="5797717" style="position: absolute; left: 1056.43px; top: 1241.18px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5797717
+Type: 9
+Object_ID: 4099" />
+
+<img id="5797718" style="position: absolute; left: 968.04px; top: 1163.93px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5797718
+Type: 9
+Object_ID: 4102" />
+
+<img id="5800011" style="position: absolute; left: 1046px; top: 1214.51px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5800011
+Type: 9
+Object_ID: 4140" />
+
+<img id="5800012" style="position: absolute; left: 1044.85px; top: 1221.14px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5800012
+Type: 9
+Object_ID: 4112" />
+
+<img id="5800013" style="position: absolute; left: 1049.29px; top: 1218.89px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5800013
+Type: 9
+Object_ID: 4113" />
+
+<img id="5800016" style="position: absolute; left: 1035.39px; top: 1228.32px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5800016
+Type: 9
+Object_ID: 4111" />
+
+<img id="5811220" style="position: absolute; left: 1035.63px; top: 1207.26px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5811220
+Type: 9
+Object_ID: 4145" />
+
+<img id="5811221" style="position: absolute; left: 1043.79px; top: 1213.6px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5811221
+Type: 9
+Object_ID: 4146" />
+
+<img id="5814827" style="position: absolute; left: 1022.49px; top: 1223.88px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5814827
+Type: 9
+Object_ID: 3599" />
+
+<img id="5814828" style="position: absolute; left: 1056.92px; top: 1228.31px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5814828
+Type: 9
+Object_ID: 3599" />
+
+<img id="5814829" style="position: absolute; left: 1018.25px; top: 1202.07px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5814829
+Type: 9
+Object_ID: 3599" />
+
+<img id="5814830" style="position: absolute; left: 1052.11px; top: 1193.11px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5814830
+Type: 9
+Object_ID: 3599" />
+
+<img id="5814836" style="position: absolute; left: 1028.29px; top: 1204.82px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5814836
+Type: 9
+Object_ID: 3868" />
+
+<img id="5814837" style="position: absolute; left: 1041.17px; top: 1218.71px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5814837
+Type: 9
+Object_ID: 3933" />
+
+<img id="5852857" style="position: absolute; left: 1078.94px; top: 1244.95px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5852857
+Type: 9
+Object_ID: 4165" />
+
+<img id="5853010" style="position: absolute; left: 988.67px; top: 1192.8px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5853010
+Type: 9
+Object_ID: 4282" />
+
+<img id="5874953" style="position: absolute; left: 1063.26px; top: 1243.23px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5874953
+Type: 9
+Object_ID: 4597" />
+
+<img id="5874955" style="position: absolute; left: 1063.9px; top: 1247.44px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5874955
+Type: 9
+Object_ID: 4602" />
+
+<img id="5874956" style="position: absolute; left: 1067.53px; top: 1242.82px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5874956
+Type: 9
+Object_ID: 4601" />
+
+<img id="5874961" style="position: absolute; left: 1014.7px; top: 1212.58px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5874961
+Type: 9
+Object_ID: 4605" />
+
+<img id="5874962" style="position: absolute; left: 995.34px; top: 1166.39px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5874962
+Type: 9
+Object_ID: 4606" />
+
+<img id="5906154" style="position: absolute; left: 1053.32px; top: 1200.68px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5906154
+Type: 9
+Object_ID: 1016" />
+
+<img id="6970266" style="position: absolute; left: 1053.86px; top: 1215.39px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 6970266
+Type: 9
+Object_ID: 7746" />
+
+<img id="6970267" style="position: absolute; left: 1048.61px; top: 1228.92px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 6970267
+Type: 9
+Object_ID: 7746" />
+
+<img id="6970268" style="position: absolute; left: 1038.76px; top: 1235.81px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 6970268
+Type: 9
+Object_ID: 7746" />
+
+<img id="7074454" style="position: absolute; left: 849.91px; top: 1015.99px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074454
+Type: 9
+Object_ID: 8117" />
+
+<img id="7074455" style="position: absolute; left: 849px; top: 1027.97px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074455
+Type: 9
+Object_ID: 8118" />
+
+<img id="7074456" style="position: absolute; left: 854.91px; top: 1007.8px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074456
+Type: 9
+Object_ID: 8118" />
+
+<img id="7074457" style="position: absolute; left: 841.54px; top: 1014.86px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074457
+Type: 9
+Object_ID: 8118" />
+
+<img id="7074458" style="position: absolute; left: 1165.19px; top: 1253.4px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074458
+Type: 9
+Object_ID: 8119" />
+
+<img id="7074459" style="position: absolute; left: 1175.04px; top: 1248.06px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074459
+Type: 9
+Object_ID: 8116" />
+
+<img id="7074460" style="position: absolute; left: 1160.47px; top: 1241.51px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074460
+Type: 9
+Object_ID: 8115" />
+
+<img id="7074461" style="position: absolute; left: 1107.29px; top: 940.01px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074461
+Type: 9
+Object_ID: 8114" />
+
+<img id="7074462" style="position: absolute; left: 1073.47px; top: 935.61px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074462
+Type: 9
+Object_ID: 8113" />
+
+<img id="7074463" style="position: absolute; left: 1083.02px; top: 958.57px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7074463
+Type: 9
+Object_ID: 8112" />
+
+<img id="7078700" style="position: absolute; left: 1161.82px; top: 1199.4px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078700
+Type: 9
+Object_ID: 8170" />
+
+<img id="7078701" style="position: absolute; left: 1158.22px; top: 1193.78px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078701
+Type: 9
+Object_ID: 8170" />
+
+<img id="7078702" style="position: absolute; left: 1163.84px; top: 1196.65px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078702
+Type: 9
+Object_ID: 8170" />
+
+<img id="7078708" style="position: absolute; left: 1131.28px; top: 1145.02px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078708
+Type: 9
+Object_ID: 8170" />
+
+<img id="7078709" style="position: absolute; left: 1128.47px; top: 1138.42px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078709
+Type: 9
+Object_ID: 8170" />
+
+<img id="7078711" style="position: absolute; left: 1136.35px; top: 1141.91px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078711
+Type: 9
+Object_ID: 8170" />
+
+<img id="7078751" style="position: absolute; left: 1145.39px; top: 1085.52px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078751
+Type: 9
+Object_ID: 8170" />
+
+<img id="7078752" style="position: absolute; left: 1137.45px; top: 1081.36px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078752
+Type: 9
+Object_ID: 8170" />
+
+<img id="7078753" style="position: absolute; left: 1140.26px; top: 1087.29px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7078753
+Type: 9
+Object_ID: 8170" />
+
+<img id="7079366" style="position: absolute; left: 1185.27px; top: 1004.01px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7079366
+Type: 9
+Object_ID: 8170" />
+
+<img id="7079368" style="position: absolute; left: 1198.6px; top: 1007.56px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7079368
+Type: 9
+Object_ID: 8170" />
+
+<img id="7079370" style="position: absolute; left: 1192.63px; top: 999.91px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7079370
+Type: 9
+Object_ID: 8170" />
+
+<img id="7079378" style="position: absolute; left: 1138.67px; top: 952.69px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7079378
+Type: 9
+Object_ID: 8170" />
+
+<img id="7079379" style="position: absolute; left: 1145.69px; top: 947.26px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7079379
+Type: 9
+Object_ID: 8170" />
+
+<img id="7079380" style="position: absolute; left: 1135.31px; top: 961.19px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7079380
+Type: 9
+Object_ID: 8170" />
+
+<img id="7083067" style="position: absolute; left: 874.12px; top: 1039.68px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7083067
+Type: 9
+Object_ID: 8216" />
+
+<img id="7083068" style="position: absolute; left: 895.18px; top: 1027.48px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7083068
+Type: 9
+Object_ID: 8216" />
+
+<img id="7083069" style="position: absolute; left: 886.99px; top: 1007.17px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7083069
+Type: 9
+Object_ID: 8216" />
+
+
+    </div>
+    <div id="aetheryte">
+
+
+    </div>
+    <div id="gathering">
+
+
+    </div>
+    <div id="treasure">
+
+
+    </div>
+    <div id="poprange">
+
+<img id="3278186" style="position: absolute; left: 1013.82px; top: 886.28px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3278186
+Type: 40
+Object_ID: 0" />
+
+<img id="3284474" style="position: absolute; left: 1019.47px; top: 956.2px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3284474
+Type: 40
+Object_ID: 0" />
+
+<img id="3879683" style="position: absolute; left: 1035.34px; top: 1215.27px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3879683
+Type: 40
+Object_ID: 0" />
+
+<img id="3909119" style="position: absolute; left: 1028.45px; top: 951.11px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3909119
+Type: 40
+Object_ID: 0" />
+
+<img id="3954549" style="position: absolute; left: 1387.9px; top: 718.53px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3954549
+Type: 40
+Object_ID: 0" />
+
+<img id="3963620" style="position: absolute; left: 988.88px; top: 1244.88px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3963620
+Type: 40
+Object_ID: 0" />
+
+<img id="4306517" style="position: absolute; left: 1016.28px; top: 1250.72px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4306517
+Type: 40
+Object_ID: 0" />
+
+<img id="5041149" style="position: absolute; left: 1055.26px; top: 1107.69px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5041149
+Type: 40
+Object_ID: 0" />
+
+<img id="5853006" style="position: absolute; left: 996.81px; top: 1258.26px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5853006
+Type: 40
+Object_ID: 0" />
+
+<img id="5853007" style="position: absolute; left: 996.46px; top: 1220.78px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5853007
+Type: 40
+Object_ID: 0" />
+
+<img id="5853009" style="position: absolute; left: 1065.13px; top: 1185.24px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5853009
+Type: 40
+Object_ID: 0" />
+
+<img id="7074578" style="position: absolute; left: 888.06px; top: 1019.74px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 7074578
+Type: 40
+Object_ID: 0" />
+
+<img id="7078952" style="position: absolute; left: 882.59px; top: 1020.96px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 7078952
+Type: 40
+Object_ID: 0" />
+
+
+    </div>
+    <div id="exitrange">
+
+
+    </div>
+    <div id="eventobject">
+
+<img id="4018569" style="position: absolute; left: 1000.32px; top: 1249.11px;" src="icons/45.png" alt="iron leg trap" title="
+            iron leg trap
+Level_ID: 4018569
+Type: 45
+
+EObj_ID: 2001097" />
+
+<img id="4309031" style="position: absolute; left: 1042.89px; top: 1264.24px;" src="icons/45.png" alt="magitek terminal" title="
+            magitek terminal
+Level_ID: 4309031
+Type: 45
+
+EObj_ID: 2000116" />
+
+<img id="5776851" style="position: absolute; left: 882.83px; top: 1153.34px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5776851
+Type: 45
+
+EObj_ID: 2003520" />
+
+<img id="5783051" style="position: absolute; left: 1009.27px; top: 1176.67px;" src="icons/45.png" alt="diabolical gate" title="
+            diabolical gate
+Level_ID: 5783051
+Type: 45
+
+EObj_ID: 2004080" />
+
+<img id="5926482" style="position: absolute; left: 1023.82px; top: 1206.6px;" src="icons/45.png" alt="the Balance" title="
+            the Balance
+Level_ID: 5926482
+Type: 45
+
+EObj_ID: 2005959" />
+
+<img id="5926505" style="position: absolute; left: 1059.5px; top: 1187.98px;" src="icons/45.png" alt="×テスト用タロットカード" title="
+            ×テスト用タロットカード
+Level_ID: 5926505
+Type: 45
+
+EObj_ID: 2006327" />
+
+<img id="6892409" style="position: absolute; left: 1031.02px; top: 1224.63px;" src="icons/45.png" alt="bronze chest" title="
+            bronze chest
+Level_ID: 6892409
+Type: 45
+
+EObj_ID: 2008381" />
+
+<img id="7078817" style="position: absolute; left: 1146.67px; top: 1076.72px;" src="icons/45.png" alt="water-stained letter" title="
+            water-stained letter
+Level_ID: 7078817
+Type: 45
+
+EObj_ID: 2005165" />
+
+<img id="7078818" style="position: absolute; left: 1146.67px; top: 1076.72px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 7078818
+Type: 45
+
+EObj_ID: 2004995" />
+
+<img id="7078894" style="position: absolute; left: 1079.86px; top: 957.66px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 7078894
+Type: 45
+
+EObj_ID: 2005587" />
+
+<img id="7078897" style="position: absolute; left: 1189.98px; top: 962.24px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 7078897
+Type: 45
+
+EObj_ID: 2008780" />
+
+<img id="7078928" style="position: absolute; left: 1219.21px; top: 1031.5px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 7078928
+Type: 45
+
+EObj_ID: 2008780" />
+
+<img id="7079395" style="position: absolute; left: 1157.45px; top: 964.96px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 7079395
+Type: 45
+
+EObj_ID: 2001260" />
+
+<img id="7079396" style="position: absolute; left: 1196.37px; top: 1017.13px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 7079396
+Type: 45
+
+EObj_ID: 2001260" />
+
+<img id="7079397" style="position: absolute; left: 1092.28px; top: 949.2px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 7079397
+Type: 45
+
+EObj_ID: 2001260" />
+
+<img id="7080610" style="position: absolute; left: 1199.47px; top: 1021.21px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 7080610
+Type: 45
+
+EObj_ID: 2009067" />
+
+<img id="7080611" style="position: absolute; left: 1152.39px; top: 958.51px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 7080611
+Type: 45
+
+EObj_ID: 2009067" />
+
+<img id="7080612" style="position: absolute; left: 1086.6px; top: 953.04px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 7080612
+Type: 45
+
+EObj_ID: 2009066" />
+
+<img id="7082005" style="position: absolute; left: 888.06px; top: 1019.74px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 7082005
+Type: 45
+
+EObj_ID: 2007457" />
+
+
+    </div>
+    <div id="eventrange">
+
+<img id="3970069" style="position: absolute; left: 1095.34px; top: 1218.91px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 3970069
+Type: 49
+Object_ID: 5000000" />
+
+<img id="7081936" style="position: absolute; left: 885.83px; top: 1016.97px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 7081936
+Type: 49
+Object_ID: 5000000" />
+
+
+    </div>
+    <div id="questmarker">
+
+
+    </div>
+    <div id="collisionbox">
+
+
+    </div>
+    <div id="clientpath">
+
+
+    </div>
+    <div id="serverpath">
+
+<img id="5797714" style="position: absolute; left: 1064.87px; top: 1176.6px;" src="icons/66.png" alt="" title="
+    
+Level_ID: 5797714
+Type: 66
+Object_ID: 0" />
+
+
+    </div>
+    <div id="targetmarker">
+
+
+    </div>
+    </div>
+    <script src="assets/js/key.js"></script>
+    <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+    </body>
+    </html>
+
