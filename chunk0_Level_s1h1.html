@@ -1,0 +1,475 @@
+{mapdata}
+
+
+
+
+    <!doctype html>
+
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+
+      <title>s1h1 - Mist</title>
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+    </head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-hide-small w3-padding-large w3-hover-white">Markers</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="allmarkers()">All Markers on/off</button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="positionmarker()">PositionMarker = <img src="icons/5.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="gimmick()">Gimmick = <img src="icons/6.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="eventnpc()">EventNpc = <img src="icons/8.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="battlenpc()">BattleNpc = <img src="icons/9.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="aetheryte()">Aetheryte = <img src="icons/12.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="gathering()">Gathering = <img src="icons/14.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="treasure()">Treasure = <img src="icons/16.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="poprange()">PopRange = <img src="icons/40.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="exitrange()">ExitRange = <img src="icons/41.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="eventobject()">EventObject = <img src="icons/45.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="eventrange()">EventRange = <img src="icons/49.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="questmarker()">QuestMarker = <img src="icons/51.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="collisionbox()">CollisionBox = <img src="icons/57.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="clientpath()">ClientPath = <img src="icons/65.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="serverpath()">ServerPath = <img src="icons/66.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border" onclick="targetmarker()">TargetMarker = <img src="icons/68.png" alt=""></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+          <div style="width: 2048px; height: 2048px; position: absolute;">
+        <img id="backgroundmap" style="position: relative;" src="maps/s1h1 - Mist.png" alt="..."/>
+
+    <div id="allmarkers">
+    <div id="positionmarker">
+
+
+    </div>
+    <div id="gimmick">
+
+<img id="4323017" style="position: absolute; left: 1004.65px; top: 668.59px;" src="icons/41.png" alt="" title="
+    
+Level_ID: 4323017
+Type: 41
+Object_ID: 0" />
+
+<img id="4323020" style="position: absolute; left: 1004.99px; top: 745.22px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4323020
+Type: 40
+Object_ID: 0" />
+
+<img id="4506450" style="position: absolute; left: 1044.69px; top: 1039.3px;" src="icons/8.png" alt="resident caretaker" title="
+            resident caretaker
+Level_ID: 4506450
+Type: 8
+Object_ID: 1005632" />
+
+<img id="4506455" style="position: absolute; left: 1004.24px; top: 1039.78px;" src="icons/8.png" alt="material supplier" title="
+            material supplier
+Level_ID: 4506455
+Type: 8
+Object_ID: 1005633" />
+
+<img id="4506469" style="position: absolute; left: 986.73px; top: 1051.27px;" src="icons/8.png" alt="housing merchant" title="
+            housing merchant
+Level_ID: 4506469
+Type: 8
+Object_ID: 1005634" />
+
+<img id="4506474" style="position: absolute; left: 975.3px; top: 1069.53px;" src="icons/8.png" alt="junkmonger" title="
+            junkmonger
+Level_ID: 4506474
+Type: 8
+Object_ID: 1005635" />
+
+<img id="4506476" style="position: absolute; left: 1072.16px; top: 1065.23px;" src="icons/8.png" alt="independent sutler" title="
+            independent sutler
+Level_ID: 4506476
+Type: 8
+Object_ID: 1005636" />
+
+<img id="4506478" style="position: absolute; left: 1006.98px; top: 802.78px;" src="icons/8.png" alt="housing enthusiast" title="
+            housing enthusiast
+Level_ID: 4506478
+Type: 8
+Object_ID: 1005637" />
+
+<img id="4507956" style="position: absolute; left: 1004.37px; top: 781.57px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4507956
+Type: 51
+Object_ID: 0" />
+
+<img id="4575561" style="position: absolute; left: 987.76px; top: 797.95px;" src="icons/8.png" alt="storm recruit" title="
+            storm recruit
+Level_ID: 4575561
+Type: 8
+Object_ID: 1005881" />
+
+<img id="4664035" style="position: absolute; left: 900.88px; top: 1219.01px;" src="icons/8.png" alt="storm private" title="
+            storm private
+Level_ID: 4664035
+Type: 8
+Object_ID: 1007994" />
+
+<img id="5391924" style="position: absolute; left: 1023.26px; top: 1099.65px;" src="icons/8.png" alt="saint's little helper" title="
+            saint's little helper
+Level_ID: 5391924
+Type: 8
+Object_ID: 1010745" />
+
+<img id="5391940" style="position: absolute; left: 915.34px; top: 1079.72px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5391940
+Type: 45
+Object_ID: 2005004" />
+
+<img id="5411157" style="position: absolute; left: 1101.36px; top: 1137.66px;" src="icons/8.png" alt="west-end girl" title="
+            west-end girl
+Level_ID: 5411157
+Type: 8
+Object_ID: 1010754" />
+
+<img id="5411158" style="position: absolute; left: 1098px; top: 1125.76px;" src="icons/8.png" alt="east-end boy" title="
+            east-end boy
+Level_ID: 5411158
+Type: 8
+Object_ID: 1010755" />
+
+<img id="5411159" style="position: absolute; left: 1113.99px; top: 1143.89px;" src="icons/8.png" alt="west-end girl" title="
+            west-end girl
+Level_ID: 5411159
+Type: 8
+Object_ID: 1010756" />
+
+<img id="5411160" style="position: absolute; left: 1051.27px; top: 1110.2px;" src="icons/8.png" alt="mammet dispensator #012P" title="
+            mammet dispensator #012P
+Level_ID: 5411160
+Type: 8
+Object_ID: 1010757" />
+
+<img id="5411168" style="position: absolute; left: 1112.75px; top: 1156.73px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5411168
+Type: 51
+Object_ID: 0" />
+
+<img id="5419040" style="position: absolute; left: 1028.03px; top: 1097.72px;" src="icons/8.png" alt="Starlight Celebration crier" title="
+            Starlight Celebration crier
+Level_ID: 5419040
+Type: 8
+Object_ID: 1010743" />
+
+<img id="5422949" style="position: absolute; left: 1054.61px; top: 1104.51px;" src="icons/8.png" alt="mammet interchanger #012T" title="
+            mammet interchanger #012T
+Level_ID: 5422949
+Type: 8
+Object_ID: 1010800" />
+
+<img id="5422950" style="position: absolute; left: 1051.27px; top: 1110.2px;" src="icons/8.png" alt="mammet dispensator #012P" title="
+            mammet dispensator #012P
+Level_ID: 5422950
+Type: 8
+Object_ID: 1010794" />
+
+<img id="6066195" style="position: absolute; left: -25.53px; top: -399.93px;" src="icons/41.png" alt="" title="
+    
+Level_ID: 6066195
+Type: 41
+Object_ID: 0" />
+
+<img id="6066198" style="position: absolute; left: -104.01px; top: -404.04px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 6066198
+Type: 40
+Object_ID: 0" />
+
+<img id="6066227" style="position: absolute; left: -572.29px; top: -512.55px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 6066227
+Type: 40
+Object_ID: 0" />
+
+<img id="6160524" style="position: absolute; left: 996.24px; top: 800.09px;" src="icons/8.png" alt="spoils trader" title="
+            spoils trader
+Level_ID: 6160524
+Type: 8
+Object_ID: 1016497" />
+
+<img id="6160525" style="position: absolute; left: 993.43px; top: 798.84px;" src="icons/8.png" alt="spoils collector" title="
+            spoils collector
+Level_ID: 6160525
+Type: 8
+Object_ID: 1016498" />
+
+<img id="6710860" style="position: absolute; left: 999.06px; top: 800.93px;" src="icons/8.png" alt="picker of locks" title="
+            picker of locks
+Level_ID: 6710860
+Type: 8
+Object_ID: 1019650" />
+
+
+    </div>
+    <div id="eventnpc">
+
+<img id="4506450" style="position: absolute; left: 1044.69px; top: 1039.3px;" src="icons/8.png" alt="resident caretaker" title="
+            resident caretaker
+Level_ID: 4506450
+Type: 8
+ENpc_ID: 1005632" />
+
+<img id="4506455" style="position: absolute; left: 1004.24px; top: 1039.78px;" src="icons/8.png" alt="material supplier" title="
+            material supplier
+Level_ID: 4506455
+Type: 8
+ENpc_ID: 1005633" />
+
+<img id="4506469" style="position: absolute; left: 986.73px; top: 1051.27px;" src="icons/8.png" alt="housing merchant" title="
+            housing merchant
+Level_ID: 4506469
+Type: 8
+ENpc_ID: 1005634" />
+
+<img id="4506474" style="position: absolute; left: 975.3px; top: 1069.53px;" src="icons/8.png" alt="junkmonger" title="
+            junkmonger
+Level_ID: 4506474
+Type: 8
+ENpc_ID: 1005635" />
+
+<img id="4506476" style="position: absolute; left: 1072.16px; top: 1065.23px;" src="icons/8.png" alt="independent sutler" title="
+            independent sutler
+Level_ID: 4506476
+Type: 8
+ENpc_ID: 1005636" />
+
+<img id="4506478" style="position: absolute; left: 1006.98px; top: 802.78px;" src="icons/8.png" alt="housing enthusiast" title="
+            housing enthusiast
+Level_ID: 4506478
+Type: 8
+ENpc_ID: 1005637" />
+
+<img id="4575561" style="position: absolute; left: 987.76px; top: 797.95px;" src="icons/8.png" alt="storm recruit" title="
+            storm recruit
+Level_ID: 4575561
+Type: 8
+ENpc_ID: 1005881" />
+
+<img id="4664035" style="position: absolute; left: 900.88px; top: 1219.01px;" src="icons/8.png" alt="storm private" title="
+            storm private
+Level_ID: 4664035
+Type: 8
+ENpc_ID: 1007994" />
+
+<img id="5391924" style="position: absolute; left: 1023.26px; top: 1099.65px;" src="icons/8.png" alt="saint's little helper" title="
+            saint's little helper
+Level_ID: 5391924
+Type: 8
+ENpc_ID: 1010745" />
+
+<img id="5411157" style="position: absolute; left: 1101.36px; top: 1137.66px;" src="icons/8.png" alt="west-end girl" title="
+            west-end girl
+Level_ID: 5411157
+Type: 8
+ENpc_ID: 1010754" />
+
+<img id="5411158" style="position: absolute; left: 1098px; top: 1125.76px;" src="icons/8.png" alt="east-end boy" title="
+            east-end boy
+Level_ID: 5411158
+Type: 8
+ENpc_ID: 1010755" />
+
+<img id="5411159" style="position: absolute; left: 1113.99px; top: 1143.89px;" src="icons/8.png" alt="west-end girl" title="
+            west-end girl
+Level_ID: 5411159
+Type: 8
+ENpc_ID: 1010756" />
+
+<img id="5411160" style="position: absolute; left: 1051.27px; top: 1110.2px;" src="icons/8.png" alt="mammet dispensator #012P" title="
+            mammet dispensator #012P
+Level_ID: 5411160
+Type: 8
+ENpc_ID: 1010757" />
+
+<img id="5419040" style="position: absolute; left: 1028.03px; top: 1097.72px;" src="icons/8.png" alt="Starlight Celebration crier" title="
+            Starlight Celebration crier
+Level_ID: 5419040
+Type: 8
+ENpc_ID: 1010743" />
+
+<img id="5422949" style="position: absolute; left: 1054.61px; top: 1104.51px;" src="icons/8.png" alt="mammet interchanger #012T" title="
+            mammet interchanger #012T
+Level_ID: 5422949
+Type: 8
+ENpc_ID: 1010800" />
+
+<img id="5422950" style="position: absolute; left: 1051.27px; top: 1110.2px;" src="icons/8.png" alt="mammet dispensator #012P" title="
+            mammet dispensator #012P
+Level_ID: 5422950
+Type: 8
+ENpc_ID: 1010794" />
+
+<img id="6160524" style="position: absolute; left: 996.24px; top: 800.09px;" src="icons/8.png" alt="spoils trader" title="
+            spoils trader
+Level_ID: 6160524
+Type: 8
+ENpc_ID: 1016497" />
+
+<img id="6160525" style="position: absolute; left: 993.43px; top: 798.84px;" src="icons/8.png" alt="spoils collector" title="
+            spoils collector
+Level_ID: 6160525
+Type: 8
+ENpc_ID: 1016498" />
+
+<img id="6710860" style="position: absolute; left: 999.06px; top: 800.93px;" src="icons/8.png" alt="picker of locks" title="
+            picker of locks
+Level_ID: 6710860
+Type: 8
+ENpc_ID: 1019650" />
+
+
+    </div>
+    <div id="battlenpc">
+
+
+    </div>
+    <div id="aetheryte">
+
+
+    </div>
+    <div id="gathering">
+
+
+    </div>
+    <div id="treasure">
+
+
+    </div>
+    <div id="poprange">
+
+<img id="4323020" style="position: absolute; left: 1004.99px; top: 745.22px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4323020
+Type: 40
+Object_ID: 0" />
+
+<img id="6066198" style="position: absolute; left: -104.01px; top: -404.04px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 6066198
+Type: 40
+Object_ID: 0" />
+
+<img id="6066227" style="position: absolute; left: -572.29px; top: -512.55px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 6066227
+Type: 40
+Object_ID: 0" />
+
+
+    </div>
+    <div id="exitrange">
+
+<img id="4323017" style="position: absolute; left: 1004.65px; top: 668.59px;" src="icons/41.png" alt="" title="
+    
+Level_ID: 4323017
+Type: 41
+Object_ID: 0" />
+
+<img id="6066195" style="position: absolute; left: -25.53px; top: -399.93px;" src="icons/41.png" alt="" title="
+    
+Level_ID: 6066195
+Type: 41
+Object_ID: 0" />
+
+
+    </div>
+    <div id="eventobject">
+
+<img id="5391940" style="position: absolute; left: 915.34px; top: 1079.72px;" src="icons/45.png" alt="Starlight sentinel" title="
+            Starlight sentinel
+Level_ID: 5391940
+Type: 45
+
+EObj_ID: 2005004" />
+
+
+    </div>
+    <div id="eventrange">
+
+
+    </div>
+    <div id="questmarker">
+
+<img id="4507956" style="position: absolute; left: 1004.37px; top: 781.57px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4507956
+Type: 51
+Object_ID: 0" />
+
+<img id="5411168" style="position: absolute; left: 1112.75px; top: 1156.73px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5411168
+Type: 51
+Object_ID: 0" />
+
+
+    </div>
+    <div id="collisionbox">
+
+
+    </div>
+    <div id="clientpath">
+
+
+    </div>
+    <div id="serverpath">
+
+
+    </div>
+    <div id="targetmarker">
+
+
+    </div>
+
+    </div>
+    </div>
+    <script src="assets/js/key.js"></script>
+    <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+    </body>
+    </html>
+
