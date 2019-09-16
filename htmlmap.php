@@ -17,8 +17,6 @@ class htmlmap implements ParseInterface
     // the wiki output format / template we shall use
     const WIKI_FORMAT = '
     <!doctype html>
-    {x}
-    {key}
     <html lang="en">
     <head>
       <meta charset="utf-8">
@@ -41,22 +39,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Navbar -->
 <div class="w3-sidebar w3-bar-block w3-black" style="width:4%">
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="allmarkers()">---Markers on/off</button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="positionmarker()"><img src="icons/5.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="gimmick()"><img src="icons/6.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventnpc()"><img src="icons/8.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="battlenpc()"><img src="icons/9.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="aetheryte()"><img src="icons/12.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="gathering()"><img src="icons/14.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="treasure()"><img src="icons/16.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="poprange()"><img src="icons/40.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="exitrange()"><img src="icons/41.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventobject()"><img src="icons/45.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventrange()"><img src="icons/49.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="questmarker()"><img src="icons/51.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="collisionbox()"><img src="icons/57.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="clientpath()"><img src="icons/65.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="serverpath()"><img src="icons/66.png" alt=""></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="targetmarker()"><img src="icons/68.png" alt=""></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="positionmarker()"><img src="icons/5.png" alt="" title="PositionMarker Type 5"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="gimmick()"><img src="icons/6.png" alt="" title="Gimmick Type 6"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventnpc()"><img src="icons/8.png" alt="" title="EventNpc Type 8"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="battlenpc()"><img src="icons/9.png" alt="" title="BattleNpc Type 9"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="aetheryte()"><img src="icons/12.png" alt="" title="Aetheryte Type 12"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="gathering()"><img src="icons/14.png" alt="" title="Gathering Type 14"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="treasure()"><img src="icons/16.png" alt="" title="Treasure Type 16"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="poprange()"><img src="icons/40.png" alt="" title="PopRange Type 40"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="exitrange()"><img src="icons/41.png" alt="" title="ExitRange Type 41"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventobject()"><img src="icons/45.png" alt="" title="EventObject Type 45"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventrange()"><img src="icons/49.png" alt="" title="EventRange Type 49"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="questmarker()"><img src="icons/51.png" alt="" title="QuestMarker Type 51"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="collisionbox()"><img src="icons/57.png" alt="" title="CollisionBox Type 57"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="clientpath()"><img src="icons/65.png" alt="" title="ClientPath Type 65"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="serverpath()"><img src="icons/66.png" alt="" title="ServerPath Type 66"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="targetmarker()"><img src="icons/68.png" alt="" title="TargetMarker Type 68"></button>
 </div>
 
 <div class="w3-top">
@@ -162,7 +160,7 @@ function myFunction() {
         $eobjnamecsv = $this->csv('EObjName');
         $mapmarkercsv = $this->csv('MapMarker');
         //this controls the map it will make, just change it to anything in map.exd
-        $mapnumber = 12;
+        $mapnumber = 369;
 
     // (optional) start a progress bar
         $this->io->progressStart($Level->total);
@@ -765,8 +763,6 @@ function myFunction() {
                 '{output68}' => "\n\n$Total68",
                 '{mapshort}' => $mapshort,
                 '{placename}' => $placename,
-                '{x}' => $marker['X'],
-                '{key}' => $key,
 //                '{mapdata}' => $mapmarker,
             ];
 
