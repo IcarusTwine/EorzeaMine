@@ -1,0 +1,5644 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+
+      <title>s1f2 - Lower La Noscea</title>
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+    </head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-sidebar w3-bar-block w3-black" style="width:4%">
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="allmarkers()">---Markers on/off</button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="positionmarker()"><img src="icons/5.png" alt="" title="PositionMarker Type 5"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="gimmick()"><img src="icons/6.png" alt="" title="Gimmick Type 6"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventnpc()"><img src="icons/8.png" alt="" title="EventNpc Type 8"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="battlenpc()"><img src="icons/9.png" alt="" title="BattleNpc Type 9"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="aetheryte()"><img src="icons/12.png" alt="" title="Aetheryte Type 12"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="gathering()"><img src="icons/14.png" alt="" title="Gathering Type 14"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="treasure()"><img src="icons/16.png" alt="" title="Treasure Type 16"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="poprange()"><img src="icons/40.png" alt="" title="PopRange Type 40"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="exitrange()"><img src="icons/41.png" alt="" title="ExitRange Type 41"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventobject()"><img src="icons/45.png" alt="" title="EventObject Type 45"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventrange()"><img src="icons/49.png" alt="" title="EventRange Type 49"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="questmarker()"><img src="icons/51.png" alt="" title="QuestMarker Type 51"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="collisionbox()"><img src="icons/57.png" alt="" title="CollisionBox Type 57"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="clientpath()"><img src="icons/65.png" alt="" title="ClientPath Type 65"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="serverpath()"><img src="icons/66.png" alt="" title="ServerPath Type 66"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="targetmarker()"><img src="icons/68.png" alt="" title="TargetMarker Type 68"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="mapmarker()">Lables</button>
+</div>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+          <div style="width: 2048px; height: 2048px; position: absolute;">
+        <img id="backgroundmap" style="position: relative; left: 18px; top: 18px" src="maps/s1f2 - Lower La Noscea - .png" alt="..."/></div>
+
+    <div id="allmarkers">
+    <div id="positionmarker">
+
+<img id="3985691" style="position: absolute; left: 1274.19px; top: 1638.66px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 3985691
+Type: 5
+Object_ID: 0" />
+
+<img id="4098676" style="position: absolute; left: 1589.06px; top: 944.33px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4098676
+Type: 5
+Object_ID: 0" />
+
+<img id="4144321" style="position: absolute; left: 1192.78px; top: 1709.62px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4144321
+Type: 5
+Object_ID: 0" />
+
+<img id="4144324" style="position: absolute; left: 1272.55px; top: 1637.44px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4144324
+Type: 5
+Object_ID: 0" />
+
+<img id="4144325" style="position: absolute; left: 1266.13px; top: 1634.28px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4144325
+Type: 5
+Object_ID: 0" />
+
+<img id="4144326" style="position: absolute; left: 1282.94px; top: 1645.02px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4144326
+Type: 5
+Object_ID: 0" />
+
+<img id="4163777" style="position: absolute; left: 1398.2px; top: 684.69px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4163777
+Type: 5
+Object_ID: 0" />
+
+<img id="4164696" style="position: absolute; left: 789.41px; top: 1715.16px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4164696
+Type: 5
+Object_ID: 0" />
+
+<img id="4164697" style="position: absolute; left: 790.72px; top: 1711.59px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4164697
+Type: 5
+Object_ID: 0" />
+
+<img id="4244349" style="position: absolute; left: 1219.34px; top: 1136.54px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4244349
+Type: 5
+Object_ID: 0" />
+
+<img id="4273860" style="position: absolute; left: 1021.92px; top: 1442.13px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4273860
+Type: 5
+Object_ID: 0" />
+
+<img id="4273868" style="position: absolute; left: 1026.01px; top: 1441.41px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4273868
+Type: 5
+Object_ID: 0" />
+
+<img id="4273870" style="position: absolute; left: 1024.56px; top: 1440.24px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4273870
+Type: 5
+Object_ID: 0" />
+
+<img id="4273880" style="position: absolute; left: 1025.46px; top: 1443.84px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4273880
+Type: 5
+Object_ID: 0" />
+
+<img id="4273891" style="position: absolute; left: 1016.98px; top: 1450.43px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4273891
+Type: 5
+Object_ID: 0" />
+
+<img id="4277041" style="position: absolute; left: 1023.37px; top: 1440.92px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4277041
+Type: 5
+Object_ID: 0" />
+
+<img id="4278520" style="position: absolute; left: 1089.1px; top: 1394.93px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4278520
+Type: 5
+Object_ID: 0" />
+
+<img id="4278527" style="position: absolute; left: 1050.44px; top: 1426.89px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4278527
+Type: 5
+Object_ID: 0" />
+
+<img id="4278563" style="position: absolute; left: 1052.95px; top: 1427.89px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4278563
+Type: 5
+Object_ID: 0" />
+
+<img id="4312558" style="position: absolute; left: 1722.23px; top: 737.04px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 4312558
+Type: 5
+Object_ID: 0" />
+
+<img id="5125607" style="position: absolute; left: 881.43px; top: 1780.31px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5125607
+Type: 5
+Object_ID: 0" />
+
+<img id="5125608" style="position: absolute; left: 893.25px; top: 1755.69px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5125608
+Type: 5
+Object_ID: 0" />
+
+<img id="5388437" style="position: absolute; left: 1598.7px; top: 640.89px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5388437
+Type: 5
+Object_ID: 0" />
+
+<img id="5388444" style="position: absolute; left: 1597.57px; top: 632.27px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5388444
+Type: 5
+Object_ID: 0" />
+
+<img id="5578158" style="position: absolute; left: 940.95px; top: 1850.84px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5578158
+Type: 5
+Object_ID: 0" />
+
+<img id="5582874" style="position: absolute; left: 941.29px; top: 1851.92px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5582874
+Type: 5
+Object_ID: 0" />
+
+<img id="5583536" style="position: absolute; left: 940.58px; top: 1851.55px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5583536
+Type: 5
+Object_ID: 0" />
+
+<img id="5584267" style="position: absolute; left: 939.9px; top: 1851.8px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5584267
+Type: 5
+Object_ID: 0" />
+
+<img id="5899928" style="position: absolute; left: 1340.21px; top: 1043.19px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5899928
+Type: 5
+Object_ID: 0" />
+
+<img id="5917728" style="position: absolute; left: 843.81px; top: 1704.51px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 5917728
+Type: 5
+Object_ID: 0" />
+
+<img id="7022853" style="position: absolute; left: 1127.09px; top: 1353.37px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 7022853
+Type: 5
+Object_ID: 0" />
+
+<img id="7815262" style="position: absolute; left: 919.01px; top: 1775.79px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 7815262
+Type: 5
+Object_ID: 0" />
+
+<img id="7994244" style="position: absolute; left: 1251.77px; top: 745.22px;" src="icons/5.png" alt="" title="
+    
+Level_ID: 7994244
+Type: 5
+Object_ID: 0" />
+
+
+    </div>
+    <div id="gimmick">
+
+
+    </div>
+    <div id="eventnpc">
+
+<img id="3636824" style="position: absolute; left: 1587.22px; top: 943.41px;" src="icons/8.png" alt="Neddard" title="
+            Neddard
+Level_ID: 3636824
+Type: 8
+ENpc_ID: 1002112" />
+
+<img id="3637200" style="position: absolute; left: 1587.9px; top: 944.7px;" src="icons/8.png" alt="Sighard" title="
+            Sighard
+Level_ID: 3637200
+Type: 8
+ENpc_ID: 1002115" />
+
+<img id="3765383" style="position: absolute; left: 1024.53px; top: 1624.18px;" src="icons/8.png" alt="Urswyrst" title="
+            Urswyrst
+Level_ID: 3765383
+Type: 8
+ENpc_ID: 1002229" />
+
+<img id="3765426" style="position: absolute; left: 1206.47px; top: 1637.13px;" src="icons/8.png" alt="Yulgi Honalgi" title="
+            Yulgi Honalgi
+Level_ID: 3765426
+Type: 8
+ENpc_ID: 1002232" />
+
+<img id="3765457" style="position: absolute; left: 1250.58px; top: 1646.63px;" src="icons/8.png" alt="Wafufu" title="
+            Wafufu
+Level_ID: 3765457
+Type: 8
+ENpc_ID: 1002233" />
+
+<img id="3766208" style="position: absolute; left: 1209.22px; top: 1611.5px;" src="icons/8.png" alt="Razyn Mylzyn" title="
+            Razyn Mylzyn
+Level_ID: 3766208
+Type: 8
+ENpc_ID: 1002234" />
+
+<img id="3766209" style="position: absolute; left: 1262.29px; top: 1615.3px;" src="icons/8.png" alt="Ruimo Falaimo" title="
+            Ruimo Falaimo
+Level_ID: 3766209
+Type: 8
+ENpc_ID: 1002235" />
+
+<img id="3766212" style="position: absolute; left: 1210.32px; top: 1703.02px;" src="icons/8.png" alt="Mimidoa" title="
+            Mimidoa
+Level_ID: 3766212
+Type: 8
+ENpc_ID: 1002236" />
+
+<img id="3766655" style="position: absolute; left: 1192.72px; top: 1709.59px;" src="icons/8.png" alt="Ghimthota" title="
+            Ghimthota
+Level_ID: 3766655
+Type: 8
+ENpc_ID: 1002237" />
+
+<img id="3766680" style="position: absolute; left: 1272.61px; top: 1637.53px;" src="icons/8.png" alt="Ahtbyrm" title="
+            Ahtbyrm
+Level_ID: 3766680
+Type: 8
+ENpc_ID: 1002238" />
+
+<img id="3766690" style="position: absolute; left: 1156.77px; top: 1694.13px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 3766690
+Type: 8
+ENpc_ID: 1002239" />
+
+<img id="3766692" style="position: absolute; left: 1143.64px; top: 1761.42px;" src="icons/8.png" alt="C'nangho" title="
+            C'nangho
+Level_ID: 3766692
+Type: 8
+ENpc_ID: 1002240" />
+
+<img id="3767041" style="position: absolute; left: 990.33px; top: 1887.32px;" src="icons/8.png" alt="Haldbroda" title="
+            Haldbroda
+Level_ID: 3767041
+Type: 8
+ENpc_ID: 1002274" />
+
+<img id="3767042" style="position: absolute; left: 990.27px; top: 1870.8px;" src="icons/8.png" alt="A'zumyn" title="
+            A'zumyn
+Level_ID: 3767042
+Type: 8
+ENpc_ID: 1002446" />
+
+<img id="3767056" style="position: absolute; left: 1161.98px; top: 1963.35px;" src="icons/8.png" alt="Rostnzeh" title="
+            Rostnzeh
+Level_ID: 3767056
+Type: 8
+ENpc_ID: 1002445" />
+
+<img id="3767101" style="position: absolute; left: 1127.35px; top: 1354.26px;" src="icons/8.png" alt="Doesrael" title="
+            Doesrael
+Level_ID: 3767101
+Type: 8
+ENpc_ID: 1002231" />
+
+<img id="3767109" style="position: absolute; left: 1138.68px; top: 1401.6px;" src="icons/8.png" alt="Wyrstmaga" title="
+            Wyrstmaga
+Level_ID: 3767109
+Type: 8
+ENpc_ID: 1002447" />
+
+<img id="3767114" style="position: absolute; left: 1066.5px; top: 1413.58px;" src="icons/8.png" alt="panicked Yellowjacket" title="
+            panicked Yellowjacket
+Level_ID: 3767114
+Type: 8
+ENpc_ID: 1002448" />
+
+<img id="3767120" style="position: absolute; left: 1066.8px; top: 1415.03px;" src="icons/8.png" alt="irate coachman" title="
+            irate coachman
+Level_ID: 3767120
+Type: 8
+ENpc_ID: 1002449" />
+
+<img id="3767125" style="position: absolute; left: 1067.89px; top: 1414.42px;" src="icons/8.png" alt="irate coachman" title="
+            irate coachman
+Level_ID: 3767125
+Type: 8
+ENpc_ID: 1002450" />
+
+<img id="3767128" style="position: absolute; left: 1057.91px; top: 1417.99px;" src="icons/8.png" alt="troubled coachman" title="
+            troubled coachman
+Level_ID: 3767128
+Type: 8
+ENpc_ID: 1002451" />
+
+<img id="3767129" style="position: absolute; left: 1074.5px; top: 1408.33px;" src="icons/8.png" alt="troubled coachman" title="
+            troubled coachman
+Level_ID: 3767129
+Type: 8
+ENpc_ID: 1002452" />
+
+<img id="3781602" style="position: absolute; left: 1360.67px; top: 1670.19px;" src="icons/8.png" alt="Lyngstyrm" title="
+            Lyngstyrm
+Level_ID: 3781602
+Type: 8
+ENpc_ID: 1002453" />
+
+<img id="3781638" style="position: absolute; left: 1310.06px; top: 1640.8px;" src="icons/8.png" alt="Hezzkhezl" title="
+            Hezzkhezl
+Level_ID: 3781638
+Type: 8
+ENpc_ID: 1002454" />
+
+<img id="3781639" style="position: absolute; left: 1225.38px; top: 1641.65px;" src="icons/8.png" alt="Maetimynd" title="
+            Maetimynd
+Level_ID: 3781639
+Type: 8
+ENpc_ID: 1002455" />
+
+<img id="3781814" style="position: absolute; left: 930.04px; top: 1760.02px;" src="icons/8.png" alt="Fyrilsmyd" title="
+            Fyrilsmyd
+Level_ID: 3781814
+Type: 8
+ENpc_ID: 1002456" />
+
+<img id="3818489" style="position: absolute; left: 1275.16px; top: 1798.89px;" src="icons/8.png" alt="disreputable pirate" title="
+            disreputable pirate
+Level_ID: 3818489
+Type: 8
+ENpc_ID: 1002463" />
+
+<img id="3818490" style="position: absolute; left: 1277.39px; top: 1801.06px;" src="icons/8.png" alt="loyal scrag" title="
+            loyal scrag
+Level_ID: 3818490
+Type: 8
+ENpc_ID: 1002464" />
+
+<img id="3818491" style="position: absolute; left: 1272.9px; top: 1801.06px;" src="icons/8.png" alt="loyal scrag" title="
+            loyal scrag
+Level_ID: 3818491
+Type: 8
+ENpc_ID: 1002465" />
+
+<img id="3853915" style="position: absolute; left: 1169.69px; top: 1692.88px;" src="icons/8.png" alt="hunter-scholar" title="
+            hunter-scholar
+Level_ID: 3853915
+Type: 8
+ENpc_ID: 1002267" />
+
+<img id="3862829" style="position: absolute; left: 1014.58px; top: 1857.43px;" src="icons/8.png" alt="Zahrmerl" title="
+            Zahrmerl
+Level_ID: 3862829
+Type: 8
+ENpc_ID: 1002515" />
+
+<img id="3881977" style="position: absolute; left: 1510.02px; top: 918.31px;" src="icons/8.png" alt="Chartain" title="
+            Chartain
+Level_ID: 3881977
+Type: 8
+ENpc_ID: 1002550" />
+
+<img id="3882400" style="position: absolute; left: 1574.19px; top: 950.63px;" src="icons/8.png" alt="Anaoc" title="
+            Anaoc
+Level_ID: 3882400
+Type: 8
+ENpc_ID: 1002571" />
+
+<img id="3882427" style="position: absolute; left: 1533.54px; top: 962.98px;" src="icons/8.png" alt="Ahctkoen" title="
+            Ahctkoen
+Level_ID: 3882427
+Type: 8
+ENpc_ID: 1002579" />
+
+<img id="3882871" style="position: absolute; left: 1593.39px; top: 925.31px;" src="icons/8.png" alt="Skarnmhar" title="
+            Skarnmhar
+Level_ID: 3882871
+Type: 8
+ENpc_ID: 1002591" />
+
+<img id="3884001" style="position: absolute; left: 1503.13px; top: 927.14px;" src="icons/8.png" alt="shaggy sheep" title="
+            shaggy sheep
+Level_ID: 3884001
+Type: 8
+ENpc_ID: 1002600" />
+
+<img id="3884326" style="position: absolute; left: 1303.23px; top: 1058.69px;" src="icons/8.png" alt="Ancreta" title="
+            Ancreta
+Level_ID: 3884326
+Type: 8
+ENpc_ID: 1002605" />
+
+<img id="3893103" style="position: absolute; left: 1516.96px; top: 912.42px;" src="icons/8.png" alt="shaggy sheep" title="
+            shaggy sheep
+Level_ID: 3893103
+Type: 8
+ENpc_ID: 1002611" />
+
+<img id="3893106" style="position: absolute; left: 1521.35px; top: 929.26px;" src="icons/8.png" alt="shaggy sheep" title="
+            shaggy sheep
+Level_ID: 3893106
+Type: 8
+ENpc_ID: 1002614" />
+
+<img id="3961746" style="position: absolute; left: 1132.78px; top: 1700.62px;" src="icons/8.png" alt="shifty-eyed sailor" title="
+            shifty-eyed sailor
+Level_ID: 3961746
+Type: 8
+ENpc_ID: 1002651" />
+
+<img id="3977292" style="position: absolute; left: 1566.07px; top: 950.93px;" src="icons/8.png" alt="Moegramm" title="
+            Moegramm
+Level_ID: 3977292
+Type: 8
+ENpc_ID: 1002657" />
+
+<img id="3977317" style="position: absolute; left: 1730.55px; top: 716.24px;" src="icons/8.png" alt="Weitzaren" title="
+            Weitzaren
+Level_ID: 3977317
+Type: 8
+ENpc_ID: 1002652" />
+
+<img id="3977328" style="position: absolute; left: 1733.4px; top: 715.5px;" src="icons/8.png" alt="Loetrswys" title="
+            Loetrswys
+Level_ID: 3977328
+Type: 8
+ENpc_ID: 1002653" />
+
+<img id="3977363" style="position: absolute; left: 1628.84px; top: 717.06px;" src="icons/8.png" alt="R'jumani" title="
+            R'jumani
+Level_ID: 3977363
+Type: 8
+ENpc_ID: 1002654" />
+
+<img id="3977373" style="position: absolute; left: 1715.05px; top: 835.32px;" src="icons/8.png" alt="Eshushu" title="
+            Eshushu
+Level_ID: 3977373
+Type: 8
+ENpc_ID: 1002655" />
+
+<img id="3977380" style="position: absolute; left: 1635.24px; top: 837.57px;" src="icons/8.png" alt="Waentzirn" title="
+            Waentzirn
+Level_ID: 3977380
+Type: 8
+ENpc_ID: 1002656" />
+
+<img id="3977886" style="position: absolute; left: 1338.84px; top: 722.72px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 3977886
+Type: 8
+ENpc_ID: 1002218" />
+
+<img id="3977910" style="position: absolute; left: 1308.47px; top: 815.4px;" src="icons/8.png" alt="K'wabati" title="
+            K'wabati
+Level_ID: 3977910
+Type: 8
+ENpc_ID: 1002221" />
+
+<img id="3978052" style="position: absolute; left: 1337.8px; top: 716.5px;" src="icons/8.png" alt="Broenruht" title="
+            Broenruht
+Level_ID: 3978052
+Type: 8
+ENpc_ID: 1002658" />
+
+<img id="3978721" style="position: absolute; left: 1558.38px; top: 952.83px;" src="icons/8.png" alt="Arenlona" title="
+            Arenlona
+Level_ID: 3978721
+Type: 8
+ENpc_ID: 1002659" />
+
+<img id="3982022" style="position: absolute; left: 1567.3px; top: 1019.55px;" src="icons/8.png" alt="X'payan" title="
+            X'payan
+Level_ID: 3982022
+Type: 8
+ENpc_ID: 1002660" />
+
+<img id="3998968" style="position: absolute; left: 1525.1px; top: 950.37px;" src="icons/8.png" alt="Wyrkholsk" title="
+            Wyrkholsk
+Level_ID: 3998968
+Type: 8
+ENpc_ID: 1004342" />
+
+<img id="3998970" style="position: absolute; left: 1573.17px; top: 974.34px;" src="icons/8.png" alt="Zwynwyda" title="
+            Zwynwyda
+Level_ID: 3998970
+Type: 8
+ENpc_ID: 1004343" />
+
+<img id="4014370" style="position: absolute; left: 1337.52px; top: 700.1px;" src="icons/8.png" alt="Wahoy Mahoy" title="
+            Wahoy Mahoy
+Level_ID: 4014370
+Type: 8
+ENpc_ID: 1002678" />
+
+<img id="4018485" style="position: absolute; left: 1147.45px; top: 1603.87px;" src="icons/8.png" alt="Ourawann" title="
+            Ourawann
+Level_ID: 4018485
+Type: 8
+ENpc_ID: 1004347" />
+
+<img id="4037153" style="position: absolute; left: 1579.84px; top: 952.52px;" src="icons/8.png" alt="Solkwyb" title="
+            Solkwyb
+Level_ID: 4037153
+Type: 8
+ENpc_ID: 1002686" />
+
+<img id="4037179" style="position: absolute; left: 1585.19px; top: 944.78px;" src="icons/8.png" alt="Solkwyb" title="
+            Solkwyb
+Level_ID: 4037179
+Type: 8
+ENpc_ID: 1002683" />
+
+<img id="4038134" style="position: absolute; left: 789.43px; top: 1701.03px;" src="icons/8.png" alt="Solkwyb" title="
+            Solkwyb
+Level_ID: 4038134
+Type: 8
+ENpc_ID: 1002685" />
+
+<img id="4056584" style="position: absolute; left: 1595.19px; top: 660.7px;" src="icons/8.png" alt="Wyrnzoen" title="
+            Wyrnzoen
+Level_ID: 4056584
+Type: 8
+ENpc_ID: 1002689" />
+
+<img id="4097270" style="position: absolute; left: 790.27px; top: 1754.51px;" src="icons/8.png" alt="???" title="
+            ???
+Level_ID: 4097270
+Type: 8
+ENpc_ID: 1003278" />
+
+<img id="4103304" style="position: absolute; left: 1139.61px; top: 1700.62px;" src="icons/8.png" alt="Eugene" title="
+            Eugene
+Level_ID: 4103304
+Type: 8
+ENpc_ID: 1004735" />
+
+<img id="4103652" style="position: absolute; left: 1272.59px; top: 1637.46px;" src="icons/8.png" alt="Ahtbyrm" title="
+            Ahtbyrm
+Level_ID: 4103652
+Type: 8
+ENpc_ID: 1002702" />
+
+<img id="4104708" style="position: absolute; left: 1579.95px; top: 956.95px;" src="icons/8.png" alt="Broenbhar" title="
+            Broenbhar
+Level_ID: 4104708
+Type: 8
+ENpc_ID: 1002713" />
+
+<img id="4104709" style="position: absolute; left: 1598.16px; top: 659.3px;" src="icons/8.png" alt="Solkwyb" title="
+            Solkwyb
+Level_ID: 4104709
+Type: 8
+ENpc_ID: 1002714" />
+
+<img id="4104711" style="position: absolute; left: 1591.99px; top: 659.71px;" src="icons/8.png" alt="Broenbhar" title="
+            Broenbhar
+Level_ID: 4104711
+Type: 8
+ENpc_ID: 1002715" />
+
+<img id="4107472" style="position: absolute; left: 1194.87px; top: 1107.13px;" src="icons/8.png" alt="Sighard" title="
+            Sighard
+Level_ID: 4107472
+Type: 8
+ENpc_ID: 1003287" />
+
+<img id="4126875" style="position: absolute; left: 1414.62px; top: 675.61px;" src="icons/8.png" alt="airship crewman" title="
+            airship crewman
+Level_ID: 4126875
+Type: 8
+ENpc_ID: 1004888" />
+
+<img id="4257118" style="position: absolute; left: 1014.97px; top: 1435.21px;" src="icons/8.png" alt="Qiqirn trader" title="
+            Qiqirn trader
+Level_ID: 4257118
+Type: 8
+ENpc_ID: 1005185" />
+
+<img id="4259850" style="position: absolute; left: 1736.61px; top: 747.08px;" src="icons/8.png" alt="Trachtoum" title="
+            Trachtoum
+Level_ID: 4259850
+Type: 8
+ENpc_ID: 1006264" />
+
+<img id="4259892" style="position: absolute; left: 1729.22px; top: 735.97px;" src="icons/8.png" alt="Grey Fleet miller" title="
+            Grey Fleet miller
+Level_ID: 4259892
+Type: 8
+ENpc_ID: 1006265" />
+
+<img id="4263516" style="position: absolute; left: 1128.86px; top: 1354.78px;" src="icons/8.png" alt="Thubyrgeim" title="
+            Thubyrgeim
+Level_ID: 4263516
+Type: 8
+ENpc_ID: 1005217" />
+
+<img id="4263925" style="position: absolute; left: 1021.92px; top: 1442.13px;" src="icons/8.png" alt="Geissfryn" title="
+            Geissfryn
+Level_ID: 4263925
+Type: 8
+ENpc_ID: 1005220" />
+
+<img id="4263926" style="position: absolute; left: 1023.14px; top: 1440.72px;" src="icons/8.png" alt="Aersthota" title="
+            Aersthota
+Level_ID: 4263926
+Type: 8
+ENpc_ID: 1005221" />
+
+<img id="4263927" style="position: absolute; left: 1023.47px; top: 1442.02px;" src="icons/8.png" alt="Qiqirn trader" title="
+            Qiqirn trader
+Level_ID: 4263927
+Type: 8
+ENpc_ID: 1005222" />
+
+<img id="4295474" style="position: absolute; left: 1729.34px; top: 736.05px;" src="icons/8.png" alt="Grey Fleet miller" title="
+            Grey Fleet miller
+Level_ID: 4295474
+Type: 8
+ENpc_ID: 1007082" />
+
+<img id="4308607" style="position: absolute; left: 950.85px; top: 1742.1px;" src="icons/8.png" alt="Qiqirn trader" title="
+            Qiqirn trader
+Level_ID: 4308607
+Type: 8
+ENpc_ID: 1007877" />
+
+<img id="4505904" style="position: absolute; left: 1618.81px; top: 910.93px;" src="icons/8.png" alt="Roeganlona" title="
+            Roeganlona
+Level_ID: 4505904
+Type: 8
+ENpc_ID: 1005529" />
+
+<img id="4509033" style="position: absolute; left: 1455.85px; top: 865.93px;" src="icons/8.png" alt="red uma doshin" title="
+            red uma doshin
+Level_ID: 4509033
+Type: 8
+ENpc_ID: 1005663" />
+
+<img id="4509044" style="position: absolute; left: 1555.53px; top: 819.87px;" src="icons/8.png" alt="stead botanist" title="
+            stead botanist
+Level_ID: 4509044
+Type: 8
+ENpc_ID: 1005669" />
+
+<img id="4629181" style="position: absolute; left: 1180.65px; top: 1609.7px;" src="icons/8.png" alt="Eynzahr Slafyrsyn" title="
+            Eynzahr Slafyrsyn
+Level_ID: 4629181
+Type: 8
+ENpc_ID: 1008693" />
+
+<img id="4629182" style="position: absolute; left: 1184.78px; top: 1608.35px;" src="icons/8.png" alt="Styrnlona" title="
+            Styrnlona
+Level_ID: 4629182
+Type: 8
+ENpc_ID: 1005409" />
+
+<img id="4629227" style="position: absolute; left: 1738.56px; top: 745.68px;" src="icons/8.png" alt="storm private" title="
+            storm private
+Level_ID: 4629227
+Type: 8
+ENpc_ID: 1008692" />
+
+<img id="4635444" style="position: absolute; left: 1191.4px; top: 1610.11px;" src="icons/8.png" alt="Merlwyb" title="
+            Merlwyb
+Level_ID: 4635444
+Type: 8
+ENpc_ID: 1008891" />
+
+<img id="4635445" style="position: absolute; left: 1187.55px; top: 1613.92px;" src="icons/8.png" alt="Minfilia" title="
+            Minfilia
+Level_ID: 4635445
+Type: 8
+ENpc_ID: 1008892" />
+
+<img id="4635446" style="position: absolute; left: 1188.94px; top: 1615.49px;" src="icons/8.png" alt="Thancred" title="
+            Thancred
+Level_ID: 4635446
+Type: 8
+ENpc_ID: 1008893" />
+
+<img id="4635447" style="position: absolute; left: 1190.21px; top: 1611.38px;" src="icons/8.png" alt="Y'shtola" title="
+            Y'shtola
+Level_ID: 4635447
+Type: 8
+ENpc_ID: 1008894" />
+
+<img id="4635448" style="position: absolute; left: 1187.2px; top: 1615.68px;" src="icons/8.png" alt="Yugiri" title="
+            Yugiri
+Level_ID: 4635448
+Type: 8
+ENpc_ID: 1008895" />
+
+<img id="4720319" style="position: absolute; left: 1119.53px; top: 1385.63px;" src="icons/8.png" alt="novice explorer" title="
+            novice explorer
+Level_ID: 4720319
+Type: 8
+ENpc_ID: 1008962" />
+
+<img id="4757360" style="position: absolute; left: 1359.35px; top: 730.29px;" src="icons/8.png" alt="Ethelia" title="
+            Ethelia
+Level_ID: 4757360
+Type: 8
+ENpc_ID: 1009248" />
+
+<img id="4757361" style="position: absolute; left: 944.49px; top: 1719.25px;" src="icons/8.png" alt="Mayaru Moyaru" title="
+            Mayaru Moyaru
+Level_ID: 4757361
+Type: 8
+ENpc_ID: 1009249" />
+
+<img id="4759724" style="position: absolute; left: 1595.2px; top: 702.99px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759724
+Type: 8
+ENpc_ID: 1009251" />
+
+<img id="4759725" style="position: absolute; left: 1591.87px; top: 700.05px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759725
+Type: 8
+ENpc_ID: 1009252" />
+
+<img id="4759726" style="position: absolute; left: 1595.14px; top: 698.89px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759726
+Type: 8
+ENpc_ID: 1009253" />
+
+<img id="4759729" style="position: absolute; left: 1557.59px; top: 752.75px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759729
+Type: 8
+ENpc_ID: 1009254" />
+
+<img id="4759730" style="position: absolute; left: 1556px; top: 755.54px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759730
+Type: 8
+ENpc_ID: 1009255" />
+
+<img id="4759731" style="position: absolute; left: 1559.41px; top: 755.55px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759731
+Type: 8
+ENpc_ID: 1009256" />
+
+<img id="4759740" style="position: absolute; left: 1639.46px; top: 820.65px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759740
+Type: 8
+ENpc_ID: 1009257" />
+
+<img id="4759741" style="position: absolute; left: 1636.7px; top: 821.69px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759741
+Type: 8
+ENpc_ID: 1009258" />
+
+<img id="4759742" style="position: absolute; left: 1638.88px; top: 823.38px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759742
+Type: 8
+ENpc_ID: 1009259" />
+
+<img id="4759745" style="position: absolute; left: 1587.21px; top: 800.12px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759745
+Type: 8
+ENpc_ID: 1009260" />
+
+<img id="4759746" style="position: absolute; left: 1590.02px; top: 800.55px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759746
+Type: 8
+ENpc_ID: 1009261" />
+
+<img id="4759753" style="position: absolute; left: 1510.5px; top: 829.15px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759753
+Type: 8
+ENpc_ID: 1009262" />
+
+<img id="4759755" style="position: absolute; left: 1509.66px; top: 831.94px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759755
+Type: 8
+ENpc_ID: 1009263" />
+
+<img id="4759756" style="position: absolute; left: 1507.65px; top: 829.72px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759756
+Type: 8
+ENpc_ID: 1009264" />
+
+<img id="4759758" style="position: absolute; left: 1510.56px; top: 779.05px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759758
+Type: 8
+ENpc_ID: 1009265" />
+
+<img id="4759760" style="position: absolute; left: 1512.7px; top: 780.67px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 4759760
+Type: 8
+ENpc_ID: 1009266" />
+
+<img id="4797536" style="position: absolute; left: 1300.43px; top: 1754.86px;" src="icons/8.png" alt="Denston" title="
+            Denston
+Level_ID: 4797536
+Type: 8
+ENpc_ID: 1009382" />
+
+<img id="4889131" style="position: absolute; left: 1430.57px; top: 732.99px;" src="icons/8.png" alt="Moonfire marine" title="
+            Moonfire marine
+Level_ID: 4889131
+Type: 8
+ENpc_ID: 1009590" />
+
+<img id="5063246" style="position: absolute; left: 1281.4px; top: 1606.98px;" src="icons/8.png" alt="Swarsynt" title="
+            Swarsynt
+Level_ID: 5063246
+Type: 8
+ENpc_ID: 1010199" />
+
+<img id="5069543" style="position: absolute; left: 1267.55px; top: 1693.91px;" src="icons/8.png" alt="Jacke" title="
+            Jacke
+Level_ID: 5069543
+Type: 8
+ENpc_ID: 1010237" />
+
+<img id="5069545" style="position: absolute; left: 1272.12px; top: 1686.83px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5069545
+Type: 8
+ENpc_ID: 1010239" />
+
+<img id="5069558" style="position: absolute; left: 1269.37px; top: 1691.17px;" src="icons/8.png" alt="Grinning Cur cap'n" title="
+            Grinning Cur cap'n
+Level_ID: 5069558
+Type: 8
+ENpc_ID: 1010243" />
+
+<img id="5069587" style="position: absolute; left: 1266.38px; top: 1692.35px;" src="icons/8.png" alt="Milala" title="
+            Milala
+Level_ID: 5069587
+Type: 8
+ENpc_ID: 1010249" />
+
+<img id="5109558" style="position: absolute; left: 1533.74px; top: 574.76px;" src="icons/8.png" alt="black marketeer" title="
+            black marketeer
+Level_ID: 5109558
+Type: 8
+ENpc_ID: 1010252" />
+
+<img id="5109559" style="position: absolute; left: 1534.92px; top: 572.32px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5109559
+Type: 8
+ENpc_ID: 1010253" />
+
+<img id="5109574" style="position: absolute; left: 1526.91px; top: 577.9px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5109574
+Type: 8
+ENpc_ID: 1010254" />
+
+<img id="5109575" style="position: absolute; left: 1526.82px; top: 579.9px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5109575
+Type: 8
+ENpc_ID: 1010255" />
+
+<img id="5114752" style="position: absolute; left: 1270.66px; top: 1694.51px;" src="icons/8.png" alt="V'kebbe" title="
+            V'kebbe
+Level_ID: 5114752
+Type: 8
+ENpc_ID: 1010541" />
+
+<img id="5327299" style="position: absolute; left: 1516.55px; top: 826.32px;" src="icons/8.png" alt="suspicious-looking milkmaid" title="
+            suspicious-looking milkmaid
+Level_ID: 5327299
+Type: 8
+ENpc_ID: 1010571" />
+
+<img id="5392696" style="position: absolute; left: 1595.46px; top: 526.42px;" src="icons/8.png" alt="Drest" title="
+            Drest
+Level_ID: 5392696
+Type: 8
+ENpc_ID: 1010370" />
+
+<img id="5392697" style="position: absolute; left: 1595.83px; top: 529.56px;" src="icons/8.png" alt="sharp-eyed shaver" title="
+            sharp-eyed shaver
+Level_ID: 5392697
+Type: 8
+ENpc_ID: 1010372" />
+
+<img id="5392698" style="position: absolute; left: 1597.66px; top: 528.49px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5392698
+Type: 8
+ENpc_ID: 1010373" />
+
+<img id="5392699" style="position: absolute; left: 1593.49px; top: 528.35px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5392699
+Type: 8
+ENpc_ID: 1010374" />
+
+<img id="5578107" style="position: absolute; left: 940.14px; top: 1851px;" src="icons/8.png" alt="Rorojaru" title="
+            Rorojaru
+Level_ID: 5578107
+Type: 8
+ENpc_ID: 1009734" />
+
+<img id="5578108" style="position: absolute; left: 940.72px; top: 1852.43px;" src="icons/8.png" alt="Wawalago" title="
+            Wawalago
+Level_ID: 5578108
+Type: 8
+ENpc_ID: 1009735" />
+
+<img id="5658820" style="position: absolute; left: 1220.37px; top: 1697.02px;" src="icons/8.png" alt="Philippe" title="
+            Philippe
+Level_ID: 5658820
+Type: 8
+ENpc_ID: 1011745" />
+
+<img id="5757824" style="position: absolute; left: 935.98px; top: 1676.42px;" src="icons/8.png" alt="sylphic sorceress" title="
+            sylphic sorceress
+Level_ID: 5757824
+Type: 8
+ENpc_ID: 1011817" />
+
+<img id="5890299" style="position: absolute; left: 1340.03px; top: 1043.78px;" src="icons/8.png" alt="Blanstyr" title="
+            Blanstyr
+Level_ID: 5890299
+Type: 8
+ENpc_ID: 1012522" />
+
+<img id="5895544" style="position: absolute; left: 1134.48px; top: 1358.43px;" src="icons/8.png" alt="Oboro" title="
+            Oboro
+Level_ID: 5895544
+Type: 8
+ENpc_ID: 1013897" />
+
+<img id="5895546" style="position: absolute; left: 1132.82px; top: 1357.86px;" src="icons/8.png" alt="Akagi" title="
+            Akagi
+Level_ID: 5895546
+Type: 8
+ENpc_ID: 1013898" />
+
+<img id="5895547" style="position: absolute; left: 1127.09px; top: 1353.37px;" src="icons/8.png" alt="Yuki" title="
+            Yuki
+Level_ID: 5895547
+Type: 8
+ENpc_ID: 1013899" />
+
+<img id="5895548" style="position: absolute; left: 1131.87px; top: 1372.86px;" src="icons/8.png" alt="enemy guard" title="
+            enemy guard
+Level_ID: 5895548
+Type: 8
+ENpc_ID: 1013900" />
+
+<img id="5895549" style="position: absolute; left: 1133.75px; top: 1371.41px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5895549
+Type: 8
+ENpc_ID: 1013901" />
+
+<img id="5895550" style="position: absolute; left: 1117.27px; top: 1365.26px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5895550
+Type: 8
+ENpc_ID: 1013902" />
+
+<img id="5895551" style="position: absolute; left: 1123.02px; top: 1368.8px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5895551
+Type: 8
+ENpc_ID: 1013903" />
+
+<img id="5895552" style="position: absolute; left: 1139.1px; top: 1364.89px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5895552
+Type: 8
+ENpc_ID: 1013904" />
+
+<img id="5895553" style="position: absolute; left: 1122.23px; top: 1360.55px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5895553
+Type: 8
+ENpc_ID: 1013905" />
+
+<img id="5895565" style="position: absolute; left: 887.98px; top: 1723.55px;" src="icons/8.png" alt="Oboro" title="
+            Oboro
+Level_ID: 5895565
+Type: 8
+ENpc_ID: 1013906" />
+
+<img id="5895567" style="position: absolute; left: 987.26px; top: 1135.62px;" src="icons/8.png" alt="Akagi" title="
+            Akagi
+Level_ID: 5895567
+Type: 8
+ENpc_ID: 1013907" />
+
+<img id="5895568" style="position: absolute; left: 986.97px; top: 1137.09px;" src="icons/8.png" alt="Yuki" title="
+            Yuki
+Level_ID: 5895568
+Type: 8
+ENpc_ID: 1013908" />
+
+<img id="5895582" style="position: absolute; left: 1534.26px; top: 574.29px;" src="icons/8.png" alt="black marketeer" title="
+            black marketeer
+Level_ID: 5895582
+Type: 8
+ENpc_ID: 1013909" />
+
+<img id="5895713" style="position: absolute; left: 1129.12px; top: 1700.55px;" src="icons/8.png" alt="Oboro" title="
+            Oboro
+Level_ID: 5895713
+Type: 8
+ENpc_ID: 1013916" />
+
+<img id="5895745" style="position: absolute; left: 1148.37px; top: 1695.2px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5895745
+Type: 8
+ENpc_ID: 1013917" />
+
+<img id="5895746" style="position: absolute; left: 1145.07px; top: 1678.4px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5895746
+Type: 8
+ENpc_ID: 1013918" />
+
+<img id="5895747" style="position: absolute; left: 1152.49px; top: 1665.82px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 5895747
+Type: 8
+ENpc_ID: 1013919" />
+
+<img id="5895750" style="position: absolute; left: 1284.86px; top: 1741.09px;" src="icons/8.png" alt="Akagi" title="
+            Akagi
+Level_ID: 5895750
+Type: 8
+ENpc_ID: 1013920" />
+
+<img id="5896058" style="position: absolute; left: 1340.66px; top: 1041.55px;" src="icons/8.png" alt="Benathaire" title="
+            Benathaire
+Level_ID: 5896058
+Type: 8
+ENpc_ID: 1013921" />
+
+<img id="5896059" style="position: absolute; left: 1341.55px; top: 1041.24px;" src="icons/8.png" alt="Barberella" title="
+            Barberella
+Level_ID: 5896059
+Type: 8
+ENpc_ID: 1013922" />
+
+<img id="5896060" style="position: absolute; left: 1339.71px; top: 1040.82px;" src="icons/8.png" alt="Wannmaga" title="
+            Wannmaga
+Level_ID: 5896060
+Type: 8
+ENpc_ID: 1013923" />
+
+<img id="5896061" style="position: absolute; left: 1341.51px; top: 1041.91px;" src="icons/8.png" alt="Sasapiku" title="
+            Sasapiku
+Level_ID: 5896061
+Type: 8
+ENpc_ID: 1013924" />
+
+<img id="5916368" style="position: absolute; left: 988.43px; top: 1135.71px;" src="icons/8.png" alt="Oboro" title="
+            Oboro
+Level_ID: 5916368
+Type: 8
+ENpc_ID: 1014668" />
+
+<img id="5922972" style="position: absolute; left: 1193.93px; top: 1609.45px;" src="icons/8.png" alt="Fray" title="
+            Fray
+Level_ID: 5922972
+Type: 8
+ENpc_ID: 1014897" />
+
+<img id="5922974" style="position: absolute; left: 1187.16px; top: 1609.42px;" src="icons/8.png" alt="overbearing trader" title="
+            overbearing trader
+Level_ID: 5922974
+Type: 8
+ENpc_ID: 1014898" />
+
+<img id="5922978" style="position: absolute; left: 927.15px; top: 1738.77px;" src="icons/8.png" alt="Fray" title="
+            Fray
+Level_ID: 5922978
+Type: 8
+ENpc_ID: 1014899" />
+
+<img id="5922979" style="position: absolute; left: 914.03px; top: 1698.38px;" src="icons/8.png" alt="Fray" title="
+            Fray
+Level_ID: 5922979
+Type: 8
+ENpc_ID: 1014900" />
+
+<img id="5922982" style="position: absolute; left: 1260.93px; top: 1723.91px;" src="icons/8.png" alt="Fray" title="
+            Fray
+Level_ID: 5922982
+Type: 8
+ENpc_ID: 1014901" />
+
+<img id="5958861" style="position: absolute; left: 1186px; top: 1610.25px;" src="icons/8.png" alt="overbearing trader" title="
+            overbearing trader
+Level_ID: 5958861
+Type: 8
+ENpc_ID: 1015327" />
+
+<img id="6847973" style="position: absolute; left: 1589.74px; top: 924.58px;" src="icons/8.png" alt="Edgyth" title="
+            Edgyth
+Level_ID: 6847973
+Type: 8
+ENpc_ID: 1021353" />
+
+<img id="7022370" style="position: absolute; left: 1242.54px; top: 1712.1px;" src="icons/8.png" alt="Broken Mountain" title="
+            Broken Mountain
+Level_ID: 7022370
+Type: 8
+ENpc_ID: 1023885" />
+
+<img id="7022371" style="position: absolute; left: 1240.75px; top: 1710.95px;" src="icons/8.png" alt="Curious Gorge" title="
+            Curious Gorge
+Level_ID: 7022371
+Type: 8
+ENpc_ID: 1023886" />
+
+<img id="7022372" style="position: absolute; left: 1241.26px; top: 1711.03px;" src="icons/8.png" alt="Dorgono" title="
+            Dorgono
+Level_ID: 7022372
+Type: 8
+ENpc_ID: 1023887" />
+
+<img id="7022373" style="position: absolute; left: 1243.72px; top: 1713.44px;" src="icons/8.png" alt="strong-willed warrior" title="
+            strong-willed warrior
+Level_ID: 7022373
+Type: 8
+ENpc_ID: 1023888" />
+
+<img id="7022374" style="position: absolute; left: 1243.68px; top: 1714.82px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 7022374
+Type: 8
+ENpc_ID: 1023889" />
+
+<img id="7022375" style="position: absolute; left: 1245.09px; top: 1714.41px;" src="icons/8.png" alt="" title="
+    
+Level_ID: 7022375
+Type: 8
+ENpc_ID: 1023890" />
+
+<img id="7022376" style="position: absolute; left: 1242.54px; top: 1712.1px;" src="icons/8.png" alt="Broken Mountain" title="
+            Broken Mountain
+Level_ID: 7022376
+Type: 8
+ENpc_ID: 1023891" />
+
+<img id="7780589" style="position: absolute; left: 939.54px; top: 1754.28px;" src="icons/8.png" alt="zealous Yellowjacket" title="
+            zealous Yellowjacket
+Level_ID: 7780589
+Type: 8
+ENpc_ID: 1026930" />
+
+<img id="7780596" style="position: absolute; left: 919.01px; top: 1775.79px;" src="icons/8.png" alt="Martyn" title="
+            Martyn
+Level_ID: 7780596
+Type: 8
+ENpc_ID: 1026932" />
+
+<img id="7780599" style="position: absolute; left: 916.85px; top: 1774.89px;" src="icons/8.png" alt="Maudlin Latool Ja" title="
+            Maudlin Latool Ja
+Level_ID: 7780599
+Type: 8
+ENpc_ID: 1026934" />
+
+<img id="7875875" style="position: absolute; left: 1181.79px; top: 1675.02px;" src="icons/8.png" alt="zealous Yellowjacket" title="
+            zealous Yellowjacket
+Level_ID: 7875875
+Type: 8
+ENpc_ID: 1028430" />
+
+<img id="7935133" style="position: absolute; left: 1458.76px; top: 840.55px;" src="icons/8.png" alt="Godeheard" title="
+            Godeheard
+Level_ID: 7935133
+Type: 8
+ENpc_ID: 1030089" />
+
+<img id="7946624" style="position: absolute; left: 1241.32px; top: 1711.09px;" src="icons/8.png" alt="Dorgono" title="
+            Dorgono
+Level_ID: 7946624
+Type: 8
+ENpc_ID: 1030040" />
+
+<img id="7946626" style="position: absolute; left: 1240.23px; top: 1711.21px;" src="icons/8.png" alt="Luvsan" title="
+            Luvsan
+Level_ID: 7946626
+Type: 8
+ENpc_ID: 1030041" />
+
+<img id="7946846" style="position: absolute; left: 1450.55px; top: 982.55px;" src="icons/8.png" alt="Luvsan" title="
+            Luvsan
+Level_ID: 7946846
+Type: 8
+ENpc_ID: 1030042" />
+
+<img id="7946849" style="position: absolute; left: 1448.84px; top: 982.45px;" src="icons/8.png" alt="Dorgono" title="
+            Dorgono
+Level_ID: 7946849
+Type: 8
+ENpc_ID: 1030043" />
+
+<img id="7946863" style="position: absolute; left: 1461.31px; top: 748.18px;" src="icons/8.png" alt="Luvsan" title="
+            Luvsan
+Level_ID: 7946863
+Type: 8
+ENpc_ID: 1030044" />
+
+<img id="7946864" style="position: absolute; left: 1457.67px; top: 748.04px;" src="icons/8.png" alt="Dorgono" title="
+            Dorgono
+Level_ID: 7946864
+Type: 8
+ENpc_ID: 1030045" />
+
+<img id="7946865" style="position: absolute; left: 1459.42px; top: 747.25px;" src="icons/8.png" alt="Broken Mountain" title="
+            Broken Mountain
+Level_ID: 7946865
+Type: 8
+ENpc_ID: 1030046" />
+
+<img id="7955856" style="position: absolute; left: 1136.21px; top: 1661.42px;" src="icons/8.png" alt="Futag Yafutag" title="
+            Futag Yafutag
+Level_ID: 7955856
+Type: 8
+ENpc_ID: 1029085" />
+
+<img id="7955857" style="position: absolute; left: 1137.52px; top: 1660.21px;" src="icons/8.png" alt="Radovan" title="
+            Radovan
+Level_ID: 7955857
+Type: 8
+ENpc_ID: 1029086" />
+
+<img id="7955859" style="position: absolute; left: 1137.55px; top: 1662.55px;" src="icons/8.png" alt="Sophie" title="
+            Sophie
+Level_ID: 7955859
+Type: 8
+ENpc_ID: 1029087" />
+
+<img id="7955929" style="position: absolute; left: 1136.2px; top: 1662.57px;" src="icons/8.png" alt="Guldweitz" title="
+            Guldweitz
+Level_ID: 7955929
+Type: 8
+ENpc_ID: 1029083" />
+
+<img id="7955957" style="position: absolute; left: 1347.71px; top: 702.27px;" src="icons/8.png" alt="Radovan" title="
+            Radovan
+Level_ID: 7955957
+Type: 8
+ENpc_ID: 1029092" />
+
+<img id="7955959" style="position: absolute; left: 1349.37px; top: 701.02px;" src="icons/8.png" alt="Sophie" title="
+            Sophie
+Level_ID: 7955959
+Type: 8
+ENpc_ID: 1029093" />
+
+<img id="7955960" style="position: absolute; left: 989.17px; top: 1149.8px;" src="icons/8.png" alt="Radovan" title="
+            Radovan
+Level_ID: 7955960
+Type: 8
+ENpc_ID: 1029094" />
+
+<img id="7955961" style="position: absolute; left: 988.56px; top: 1148.46px;" src="icons/8.png" alt="Sophie" title="
+            Sophie
+Level_ID: 7955961
+Type: 8
+ENpc_ID: 1029095" />
+
+<img id="7955962" style="position: absolute; left: 987.47px; top: 1149.79px;" src="icons/8.png" alt="Futag Yafutag" title="
+            Futag Yafutag
+Level_ID: 7955962
+Type: 8
+ENpc_ID: 1029096" />
+
+<img id="7955963" style="position: absolute; left: 987.2px; top: 1150.96px;" src="icons/8.png" alt="Guldweitz" title="
+            Guldweitz
+Level_ID: 7955963
+Type: 8
+ENpc_ID: 1029097" />
+
+
+    </div>
+    <div id="battlenpc">
+
+<img id="3631814" style="position: absolute; left: 1590.78px; top: 800.85px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3631814
+Type: 9
+Object_ID: 12" />
+
+<img id="3631816" style="position: absolute; left: 1616.54px; top: 744.16px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3631816
+Type: 9
+Object_ID: 2" />
+
+<img id="3631818" style="position: absolute; left: 1593.9px; top: 691.44px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3631818
+Type: 9
+Object_ID: 179" />
+
+<img id="3781826" style="position: absolute; left: 877.51px; top: 1730.63px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3781826
+Type: 9
+Object_ID: 170" />
+
+<img id="3781831" style="position: absolute; left: 837.04px; top: 1714.88px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3781831
+Type: 9
+Object_ID: 170" />
+
+<img id="3781834" style="position: absolute; left: 860.31px; top: 1685.06px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3781834
+Type: 9
+Object_ID: 170" />
+
+<img id="3782177" style="position: absolute; left: 1124.61px; top: 1798.97px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782177
+Type: 9
+Object_ID: 9" />
+
+<img id="3782179" style="position: absolute; left: 1122.98px; top: 1797.31px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782179
+Type: 9
+Object_ID: 9" />
+
+<img id="3782180" style="position: absolute; left: 1123.14px; top: 1801.19px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782180
+Type: 9
+Object_ID: 9" />
+
+<img id="3782187" style="position: absolute; left: 1123.08px; top: 1799.06px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782187
+Type: 9
+Object_ID: 10" />
+
+<img id="3782196" style="position: absolute; left: 1072.96px; top: 1782.13px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782196
+Type: 9
+Object_ID: 9" />
+
+<img id="3782197" style="position: absolute; left: 1071.85px; top: 1783.67px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782197
+Type: 9
+Object_ID: 9" />
+
+<img id="3782198" style="position: absolute; left: 1070.31px; top: 1782.39px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782198
+Type: 9
+Object_ID: 9" />
+
+<img id="3782209" style="position: absolute; left: 1071.68px; top: 1782.11px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782209
+Type: 9
+Object_ID: 10" />
+
+<img id="3782220" style="position: absolute; left: 1119.29px; top: 1847.94px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782220
+Type: 9
+Object_ID: 9" />
+
+<img id="3782386" style="position: absolute; left: 1119.55px; top: 1844.24px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782386
+Type: 9
+Object_ID: 9" />
+
+<img id="3782387" style="position: absolute; left: 1117.73px; top: 1846.04px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782387
+Type: 9
+Object_ID: 9" />
+
+<img id="3782389" style="position: absolute; left: 1119.42px; top: 1846.26px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3782389
+Type: 9
+Object_ID: 10" />
+
+<img id="3818788" style="position: absolute; left: 1061.76px; top: 1737.69px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3818788
+Type: 9
+Object_ID: 22" />
+
+<img id="3818789" style="position: absolute; left: 1055.25px; top: 1742.17px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3818789
+Type: 9
+Object_ID: 22" />
+
+<img id="3818790" style="position: absolute; left: 1086.51px; top: 1715.55px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3818790
+Type: 9
+Object_ID: 22" />
+
+<img id="3818791" style="position: absolute; left: 1079.93px; top: 1719.15px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3818791
+Type: 9
+Object_ID: 22" />
+
+<img id="3818792" style="position: absolute; left: 1090.54px; top: 1699.01px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3818792
+Type: 9
+Object_ID: 22" />
+
+<img id="3818793" style="position: absolute; left: 1090.33px; top: 1703.97px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3818793
+Type: 9
+Object_ID: 22" />
+
+<img id="3970427" style="position: absolute; left: 1257.56px; top: 1634.51px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970427
+Type: 9
+Object_ID: 938" />
+
+<img id="3970428" style="position: absolute; left: 1256.9px; top: 1636.04px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970428
+Type: 9
+Object_ID: 939" />
+
+<img id="3970651" style="position: absolute; left: 1270.25px; top: 1635.91px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970651
+Type: 9
+Object_ID: 934" />
+
+<img id="3970655" style="position: absolute; left: 1248.17px; top: 1672px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970655
+Type: 9
+Object_ID: 935" />
+
+<img id="3970671" style="position: absolute; left: 1247.72px; top: 1672.68px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970671
+Type: 9
+Object_ID: 935" />
+
+<img id="3970673" style="position: absolute; left: 1249.02px; top: 1672.89px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970673
+Type: 9
+Object_ID: 940" />
+
+<img id="3970675" style="position: absolute; left: 1298.13px; top: 1629.61px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970675
+Type: 9
+Object_ID: 941" />
+
+<img id="3970684" style="position: absolute; left: 1294.89px; top: 1629.99px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970684
+Type: 9
+Object_ID: 937" />
+
+<img id="3970685" style="position: absolute; left: 1294.1px; top: 1627.04px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970685
+Type: 9
+Object_ID: 936" />
+
+<img id="3970686" style="position: absolute; left: 1296.18px; top: 1628.33px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 3970686
+Type: 9
+Object_ID: 936" />
+
+<img id="4014174" style="position: absolute; left: 1273.77px; top: 721.22px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4014174
+Type: 9
+Object_ID: 329" />
+
+<img id="4014176" style="position: absolute; left: 1295.25px; top: 726.81px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4014176
+Type: 9
+Object_ID: 329" />
+
+<img id="4014178" style="position: absolute; left: 1292.23px; top: 690.27px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4014178
+Type: 9
+Object_ID: 331" />
+
+<img id="4014786" style="position: absolute; left: 1240.42px; top: 738.25px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4014786
+Type: 9
+Object_ID: 329" />
+
+<img id="4014787" style="position: absolute; left: 1255.03px; top: 736.22px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4014787
+Type: 9
+Object_ID: 329" />
+
+<img id="4014788" style="position: absolute; left: 1250.98px; top: 751.23px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4014788
+Type: 9
+Object_ID: 331" />
+
+<img id="4031951" style="position: absolute; left: 1481.45px; top: 838.81px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4031951
+Type: 9
+Object_ID: 205" />
+
+<img id="4031954" style="position: absolute; left: 1496.83px; top: 838.97px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4031954
+Type: 9
+Object_ID: 205" />
+
+<img id="4031956" style="position: absolute; left: 1497.23px; top: 850.9px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4031956
+Type: 9
+Object_ID: 205" />
+
+<img id="4031959" style="position: absolute; left: 1469.2px; top: 848.81px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4031959
+Type: 9
+Object_ID: 49" />
+
+<img id="4031960" style="position: absolute; left: 1465.71px; top: 844.27px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4031960
+Type: 9
+Object_ID: 49" />
+
+<img id="4031980" style="position: absolute; left: 1295.52px; top: 761.29px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4031980
+Type: 9
+Object_ID: 57" />
+
+<img id="4031981" style="position: absolute; left: 1318.49px; top: 755.27px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4031981
+Type: 9
+Object_ID: 57" />
+
+<img id="4031982" style="position: absolute; left: 1319.4px; top: 752.69px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4031982
+Type: 9
+Object_ID: 57" />
+
+<img id="4057136" style="position: absolute; left: 995.8px; top: 1137.25px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4057136
+Type: 9
+Object_ID: 784" />
+
+<img id="4057153" style="position: absolute; left: 991.66px; top: 1481.7px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4057153
+Type: 9
+Object_ID: 785" />
+
+<img id="4057178" style="position: absolute; left: 1024.63px; top: 1616.99px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4057178
+Type: 9
+Object_ID: 786" />
+
+<img id="4057204" style="position: absolute; left: 1151.19px; top: 1761.34px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4057204
+Type: 9
+Object_ID: 788" />
+
+<img id="4103658" style="position: absolute; left: 1296.97px; top: 1631.36px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4103658
+Type: 9
+Object_ID: 941" />
+
+<img id="4105799" style="position: absolute; left: 1393.54px; top: 693.45px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105799
+Type: 9
+Object_ID: 1030" />
+
+<img id="4105800" style="position: absolute; left: 1397.56px; top: 696.64px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105800
+Type: 9
+Object_ID: 1031" />
+
+<img id="4105801" style="position: absolute; left: 1389.18px; top: 696.17px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105801
+Type: 9
+Object_ID: 1032" />
+
+<img id="4105802" style="position: absolute; left: 1393.7px; top: 681.2px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105802
+Type: 9
+Object_ID: 1020" />
+
+<img id="4105803" style="position: absolute; left: 1393.8px; top: 676.13px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105803
+Type: 9
+Object_ID: 1022" />
+
+<img id="4105804" style="position: absolute; left: 1399.33px; top: 680.85px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105804
+Type: 9
+Object_ID: 1021" />
+
+<img id="4105805" style="position: absolute; left: 1388.43px; top: 679.47px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105805
+Type: 9
+Object_ID: 1021" />
+
+<img id="4105806" style="position: absolute; left: 1399.61px; top: 676.34px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105806
+Type: 9
+Object_ID: 1023" />
+
+<img id="4105807" style="position: absolute; left: 1388.51px; top: 675.67px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105807
+Type: 9
+Object_ID: 1023" />
+
+<img id="4105862" style="position: absolute; left: 1399.02px; top: 642.64px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105862
+Type: 9
+Object_ID: 1016" />
+
+<img id="4105863" style="position: absolute; left: 1394.58px; top: 641.72px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105863
+Type: 9
+Object_ID: 1023" />
+
+<img id="4105864" style="position: absolute; left: 1404.48px; top: 641.28px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4105864
+Type: 9
+Object_ID: 1023" />
+
+<img id="4107368" style="position: absolute; left: 1182.08px; top: 1114.59px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107368
+Type: 9
+Object_ID: 713" />
+
+<img id="4107369" style="position: absolute; left: 1161.94px; top: 1140.38px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107369
+Type: 9
+Object_ID: 715" />
+
+<img id="4107370" style="position: absolute; left: 1191.88px; top: 1121.79px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107370
+Type: 9
+Object_ID: 714" />
+
+<img id="4107372" style="position: absolute; left: 1175.04px; top: 1120.87px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107372
+Type: 9
+Object_ID: 714" />
+
+<img id="4107418" style="position: absolute; left: 1221.79px; top: 1075.54px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107418
+Type: 9
+Object_ID: 714" />
+
+<img id="4107419" style="position: absolute; left: 1216.47px; top: 1068.12px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107419
+Type: 9
+Object_ID: 714" />
+
+<img id="4107420" style="position: absolute; left: 1230.24px; top: 1074.63px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107420
+Type: 9
+Object_ID: 714" />
+
+<img id="4107421" style="position: absolute; left: 1198.68px; top: 1063.44px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107421
+Type: 9
+Object_ID: 714" />
+
+<img id="4107422" style="position: absolute; left: 1192.53px; top: 1061.66px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107422
+Type: 9
+Object_ID: 714" />
+
+<img id="4107423" style="position: absolute; left: 1201.67px; top: 1064.28px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107423
+Type: 9
+Object_ID: 714" />
+
+<img id="4107424" style="position: absolute; left: 1236.84px; top: 1063.28px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107424
+Type: 9
+Object_ID: 714" />
+
+<img id="4107425" style="position: absolute; left: 1242.2px; top: 1065.44px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107425
+Type: 9
+Object_ID: 714" />
+
+<img id="4107426" style="position: absolute; left: 1238.19px; top: 1069.94px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107426
+Type: 9
+Object_ID: 714" />
+
+<img id="4107427" style="position: absolute; left: 1244.1px; top: 1071.32px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107427
+Type: 9
+Object_ID: 714" />
+
+<img id="4107428" style="position: absolute; left: 1247.6px; top: 1063.77px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107428
+Type: 9
+Object_ID: 714" />
+
+<img id="4107432" style="position: absolute; left: 1183.25px; top: 1128.28px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107432
+Type: 9
+Object_ID: 957" />
+
+<img id="4107433" style="position: absolute; left: 1237.8px; top: 1076.78px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107433
+Type: 9
+Object_ID: 957" />
+
+<img id="4107434" style="position: absolute; left: 1217.12px; top: 1061.41px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107434
+Type: 9
+Object_ID: 957" />
+
+<img id="4107435" style="position: absolute; left: 1222.66px; top: 1057.74px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107435
+Type: 9
+Object_ID: 957" />
+
+<img id="4107436" style="position: absolute; left: 1248.6px; top: 1072.78px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107436
+Type: 9
+Object_ID: 957" />
+
+<img id="4107437" style="position: absolute; left: 1250.85px; top: 1075.71px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4107437
+Type: 9
+Object_ID: 957" />
+
+<img id="4126546" style="position: absolute; left: 792.63px; top: 1722.83px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126546
+Type: 9
+Object_ID: 1394" />
+
+<img id="4126547" style="position: absolute; left: 789.85px; top: 1725.64px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126547
+Type: 9
+Object_ID: 1394" />
+
+<img id="4126548" style="position: absolute; left: 795.3px; top: 1725.14px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126548
+Type: 9
+Object_ID: 1394" />
+
+<img id="4126549" style="position: absolute; left: 792.38px; top: 1727.48px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126549
+Type: 9
+Object_ID: 1394" />
+
+<img id="4126550" style="position: absolute; left: 788.97px; top: 1729.83px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126550
+Type: 9
+Object_ID: 1394" />
+
+<img id="4126551" style="position: absolute; left: 795px; top: 1728.66px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126551
+Type: 9
+Object_ID: 1394" />
+
+<img id="4126558" style="position: absolute; left: 795.42px; top: 1702.59px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126558
+Type: 9
+Object_ID: 999" />
+
+<img id="4126569" style="position: absolute; left: 789.08px; top: 1731.36px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126569
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126570" style="position: absolute; left: 787.36px; top: 1733.44px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126570
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126571" style="position: absolute; left: 790.36px; top: 1733.67px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126571
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126573" style="position: absolute; left: 795.18px; top: 1731.54px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126573
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126574" style="position: absolute; left: 793.52px; top: 1733.85px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126574
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126575" style="position: absolute; left: 797.22px; top: 1733.92px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126575
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126627" style="position: absolute; left: 814.63px; top: 1738.24px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126627
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126628" style="position: absolute; left: 816.34px; top: 1735.36px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126628
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126629" style="position: absolute; left: 813.1px; top: 1735.13px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126629
+Type: 9
+Object_ID: 1001" />
+
+<img id="4126631" style="position: absolute; left: 819.82px; top: 1741.24px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126631
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126632" style="position: absolute; left: 821.66px; top: 1738.56px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126632
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126633" style="position: absolute; left: 818.69px; top: 1738.8px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126633
+Type: 9
+Object_ID: 1001" />
+
+<img id="4126649" style="position: absolute; left: 815.23px; top: 1732.21px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126649
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126655" style="position: absolute; left: 816.3px; top: 1730.82px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126655
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126656" style="position: absolute; left: 818.11px; top: 1734.69px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126656
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126657" style="position: absolute; left: 819.78px; top: 1731.54px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126657
+Type: 9
+Object_ID: 1000" />
+
+<img id="4126658" style="position: absolute; left: 817.4px; top: 1732.86px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126658
+Type: 9
+Object_ID: 1002" />
+
+<img id="4126659" style="position: absolute; left: 792.45px; top: 1721.19px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4126659
+Type: 9
+Object_ID: 1003" />
+
+<img id="4127474" style="position: absolute; left: 1596.69px; top: 591.69px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127474
+Type: 9
+Object_ID: 992" />
+
+<img id="4127475" style="position: absolute; left: 1602.31px; top: 591.82px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127475
+Type: 9
+Object_ID: 993" />
+
+<img id="4127476" style="position: absolute; left: 1595.87px; top: 555.96px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127476
+Type: 9
+Object_ID: 994" />
+
+<img id="4127477" style="position: absolute; left: 1592.99px; top: 518.89px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127477
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127478" style="position: absolute; left: 1594.72px; top: 519.62px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127478
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127479" style="position: absolute; left: 1591.72px; top: 518.74px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127479
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127480" style="position: absolute; left: 1599.5px; top: 519.88px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127480
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127481" style="position: absolute; left: 1598.15px; top: 520.76px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127481
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127482" style="position: absolute; left: 1601px; top: 518.27px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127482
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127485" style="position: absolute; left: 1592.99px; top: 524.14px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127485
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127486" style="position: absolute; left: 1594.72px; top: 522.31px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127486
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127487" style="position: absolute; left: 1591.72px; top: 524.57px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127487
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127488" style="position: absolute; left: 1599.5px; top: 521.07px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127488
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127489" style="position: absolute; left: 1598.15px; top: 522.74px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127489
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127490" style="position: absolute; left: 1601px; top: 517.86px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127490
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127491" style="position: absolute; left: 1592.99px; top: 521.03px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127491
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127492" style="position: absolute; left: 1594.72px; top: 519.32px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127492
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127493" style="position: absolute; left: 1591.72px; top: 524.23px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127493
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127494" style="position: absolute; left: 1599.5px; top: 518.91px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127494
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127495" style="position: absolute; left: 1598.15px; top: 520.26px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127495
+Type: 9
+Object_ID: 1007" />
+
+<img id="4127496" style="position: absolute; left: 1601px; top: 515.82px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4127496
+Type: 9
+Object_ID: 1007" />
+
+<img id="4167378" style="position: absolute; left: 1222.32px; top: 1629.25px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4167378
+Type: 9
+Object_ID: 935" />
+
+<img id="4167379" style="position: absolute; left: 1217.13px; top: 1628.43px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4167379
+Type: 9
+Object_ID: 940" />
+
+<img id="4167390" style="position: absolute; left: 1199.87px; top: 1652.5px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4167390
+Type: 9
+Object_ID: 935" />
+
+<img id="4167391" style="position: absolute; left: 1196.54px; top: 1652.5px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4167391
+Type: 9
+Object_ID: 935" />
+
+<img id="4178129" style="position: absolute; left: 1087.91px; top: 1811px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4178129
+Type: 9
+Object_ID: 1325" />
+
+<img id="4178137" style="position: absolute; left: 1149.42px; top: 1918.69px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4178137
+Type: 9
+Object_ID: 1326" />
+
+<img id="4185314" style="position: absolute; left: 1159.21px; top: 1908.17px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4185314
+Type: 9
+Object_ID: 1326" />
+
+<img id="4185361" style="position: absolute; left: 1156.54px; top: 1914.17px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4185361
+Type: 9
+Object_ID: 1326" />
+
+<img id="4203868" style="position: absolute; left: 1465.97px; top: 854.18px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4203868
+Type: 9
+Object_ID: 49" />
+
+<img id="4256744" style="position: absolute; left: 1087.17px; top: 1393.61px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256744
+Type: 9
+Object_ID: 2061" />
+
+<img id="4256746" style="position: absolute; left: 1033.04px; top: 1446.58px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256746
+Type: 9
+Object_ID: 2063" />
+
+<img id="4256747" style="position: absolute; left: 1033.25px; top: 1447.84px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256747
+Type: 9
+Object_ID: 2064" />
+
+<img id="4256749" style="position: absolute; left: 1090.32px; top: 1394.85px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256749
+Type: 9
+Object_ID: 2062" />
+
+<img id="4256750" style="position: absolute; left: 1047.53px; top: 1427.57px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256750
+Type: 9
+Object_ID: 2059" />
+
+<img id="4256751" style="position: absolute; left: 1049.36px; top: 1429.57px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256751
+Type: 9
+Object_ID: 2059" />
+
+<img id="4256753" style="position: absolute; left: 1050.21px; top: 1426.43px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256753
+Type: 9
+Object_ID: 2060" />
+
+<img id="4256754" style="position: absolute; left: 1050.28px; top: 1425.12px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256754
+Type: 9
+Object_ID: 2060" />
+
+<img id="4256755" style="position: absolute; left: 1051.64px; top: 1427.57px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256755
+Type: 9
+Object_ID: 2060" />
+
+<img id="4256758" style="position: absolute; left: 1032.55px; top: 1440.96px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256758
+Type: 9
+Object_ID: 2059" />
+
+<img id="4256759" style="position: absolute; left: 1032.26px; top: 1440.1px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256759
+Type: 9
+Object_ID: 2059" />
+
+<img id="4256760" style="position: absolute; left: 1033.4px; top: 1441.67px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256760
+Type: 9
+Object_ID: 2059" />
+
+<img id="4256761" style="position: absolute; left: 1033.01px; top: 1438.86px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256761
+Type: 9
+Object_ID: 2060" />
+
+<img id="4256762" style="position: absolute; left: 1034.67px; top: 1439.85px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256762
+Type: 9
+Object_ID: 2060" />
+
+<img id="4256763" style="position: absolute; left: 1035.9px; top: 1441.01px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256763
+Type: 9
+Object_ID: 2060" />
+
+<img id="4256766" style="position: absolute; left: 1030.55px; top: 1441.23px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256766
+Type: 9
+Object_ID: 2065" />
+
+<img id="4256772" style="position: absolute; left: 1032.08px; top: 1442.81px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256772
+Type: 9
+Object_ID: 2065" />
+
+<img id="4256776" style="position: absolute; left: 1029.96px; top: 1442.15px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256776
+Type: 9
+Object_ID: 2059" />
+
+<img id="4256777" style="position: absolute; left: 1030.69px; top: 1443.01px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256777
+Type: 9
+Object_ID: 2059" />
+
+<img id="4256782" style="position: absolute; left: 1029.98px; top: 1440.63px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256782
+Type: 9
+Object_ID: 2060" />
+
+<img id="4256783" style="position: absolute; left: 1032.07px; top: 1443.24px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256783
+Type: 9
+Object_ID: 2060" />
+
+<img id="4256788" style="position: absolute; left: 1029.8px; top: 1439.26px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256788
+Type: 9
+Object_ID: 2066" />
+
+<img id="4256789" style="position: absolute; left: 1029.91px; top: 1443.08px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4256789
+Type: 9
+Object_ID: 2067" />
+
+<img id="4291274" style="position: absolute; left: 1695.56px; top: 820.65px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4291274
+Type: 9
+Object_ID: 2239" />
+
+<img id="4291279" style="position: absolute; left: 1696.15px; top: 818.32px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4291279
+Type: 9
+Object_ID: 2239" />
+
+<img id="4291283" style="position: absolute; left: 1698.44px; top: 817.88px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4291283
+Type: 9
+Object_ID: 2239" />
+
+<img id="4291284" style="position: absolute; left: 1695.17px; top: 819.31px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4291284
+Type: 9
+Object_ID: 2239" />
+
+<img id="4291285" style="position: absolute; left: 1696.32px; top: 821.43px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4291285
+Type: 9
+Object_ID: 2240" />
+
+<img id="4291318" style="position: absolute; left: 1655.22px; top: 754.79px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4291318
+Type: 9
+Object_ID: 1900" />
+
+<img id="4295469" style="position: absolute; left: 1726.83px; top: 736.4px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4295469
+Type: 9
+Object_ID: 1769" />
+
+<img id="4295470" style="position: absolute; left: 1719.42px; top: 728.43px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4295470
+Type: 9
+Object_ID: 1770" />
+
+<img id="4295472" style="position: absolute; left: 1716.65px; top: 734.87px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4295472
+Type: 9
+Object_ID: 1771" />
+
+<img id="4295473" style="position: absolute; left: 1718.02px; top: 735.83px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4295473
+Type: 9
+Object_ID: 1772" />
+
+<img id="4304848" style="position: absolute; left: 1033.45px; top: 1443.65px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4304848
+Type: 9
+Object_ID: 2066" />
+
+<img id="4308653" style="position: absolute; left: 954.98px; top: 1746.2px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4308653
+Type: 9
+Object_ID: 348" />
+
+<img id="4308658" style="position: absolute; left: 956.97px; top: 1748.38px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4308658
+Type: 9
+Object_ID: 81" />
+
+<img id="4308682" style="position: absolute; left: 950.09px; top: 1737.64px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4308682
+Type: 9
+Object_ID: 345" />
+
+<img id="4392499" style="position: absolute; left: 1088.37px; top: 1815.13px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4392499
+Type: 9
+Object_ID: 1325" />
+
+<img id="4510193" style="position: absolute; left: 1625.86px; top: 909.37px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 4510193
+Type: 9
+Object_ID: 787" />
+
+<img id="5032404" style="position: absolute; left: 993.65px; top: 1878.97px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5032404
+Type: 9
+Object_ID: 3389" />
+
+<img id="5072116" style="position: absolute; left: 1595.83px; top: 529.56px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5072116
+Type: 9
+Object_ID: 3563" />
+
+<img id="5072118" style="position: absolute; left: 1597.66px; top: 528.49px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5072118
+Type: 9
+Object_ID: 2861" />
+
+<img id="5072120" style="position: absolute; left: 1593.48px; top: 528.34px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5072120
+Type: 9
+Object_ID: 3562" />
+
+<img id="5110359" style="position: absolute; left: 1548.3px; top: 570.77px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5110359
+Type: 9
+Object_ID: 2864" />
+
+<img id="5110360" style="position: absolute; left: 1544.87px; top: 585.68px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5110360
+Type: 9
+Object_ID: 2865" />
+
+<img id="5110361" style="position: absolute; left: 1538.34px; top: 561.24px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5110361
+Type: 9
+Object_ID: 2866" />
+
+<img id="5112962" style="position: absolute; left: 1002.12px; top: 1877.48px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112962
+Type: 9
+Object_ID: 3524" />
+
+<img id="5112964" style="position: absolute; left: 1001.43px; top: 1872.68px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112964
+Type: 9
+Object_ID: 3523" />
+
+<img id="5112965" style="position: absolute; left: 1000.46px; top: 1877.8px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112965
+Type: 9
+Object_ID: 3522" />
+
+<img id="5112967" style="position: absolute; left: 1019.87px; top: 1874.82px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112967
+Type: 9
+Object_ID: 3387" />
+
+<img id="5112968" style="position: absolute; left: 1020.07px; top: 1882.57px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112968
+Type: 9
+Object_ID: 3388" />
+
+<img id="5112969" style="position: absolute; left: 994.5px; top: 1875.5px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112969
+Type: 9
+Object_ID: 3390" />
+
+<img id="5112977" style="position: absolute; left: 994.82px; top: 1882.09px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112977
+Type: 9
+Object_ID: 3390" />
+
+<img id="5112979" style="position: absolute; left: 1000.73px; top: 1878.85px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112979
+Type: 9
+Object_ID: 3524" />
+
+<img id="5112980" style="position: absolute; left: 1000.77px; top: 1875.97px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5112980
+Type: 9
+Object_ID: 3524" />
+
+<img id="5113180" style="position: absolute; left: 990.95px; top: 1878.8px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5113180
+Type: 9
+Object_ID: 3599" />
+
+<img id="5113181" style="position: absolute; left: 995.39px; top: 1865.82px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5113181
+Type: 9
+Object_ID: 3599" />
+
+<img id="5113182" style="position: absolute; left: 1001.74px; top: 1877.49px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5113182
+Type: 9
+Object_ID: 3599" />
+
+<img id="5113183" style="position: absolute; left: 998.46px; top: 1890.16px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5113183
+Type: 9
+Object_ID: 3599" />
+
+<img id="5113184" style="position: absolute; left: 1008.04px; top: 1890.46px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5113184
+Type: 9
+Object_ID: 3599" />
+
+<img id="5113185" style="position: absolute; left: 1013.58px; top: 1878.86px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5113185
+Type: 9
+Object_ID: 3599" />
+
+<img id="5113186" style="position: absolute; left: 1007.63px; top: 1866.71px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5113186
+Type: 9
+Object_ID: 3599" />
+
+<img id="5114065" style="position: absolute; left: 1005.57px; top: 1873.42px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5114065
+Type: 9
+Object_ID: 3527" />
+
+<img id="5114066" style="position: absolute; left: 1003.46px; top: 1880.83px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5114066
+Type: 9
+Object_ID: 3528" />
+
+<img id="5118217" style="position: absolute; left: 1020.1px; top: 1867.01px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5118217
+Type: 9
+Object_ID: 3599" />
+
+<img id="5118218" style="position: absolute; left: 1024.34px; top: 1879.97px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5118218
+Type: 9
+Object_ID: 3599" />
+
+<img id="5118221" style="position: absolute; left: 1019.43px; top: 1893.18px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5118221
+Type: 9
+Object_ID: 3599" />
+
+<img id="5330182" style="position: absolute; left: 1516.55px; top: 826.32px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5330182
+Type: 9
+Object_ID: 3573" />
+
+<img id="5420138" style="position: absolute; left: 1000.85px; top: 1877.32px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5420138
+Type: 9
+Object_ID: 3601" />
+
+<img id="5886266" style="position: absolute; left: 800.08px; top: 1707.31px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5886266
+Type: 9
+Object_ID: 4579" />
+
+<img id="5886267" style="position: absolute; left: 808.61px; top: 1710.48px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5886267
+Type: 9
+Object_ID: 4578" />
+
+<img id="5886268" style="position: absolute; left: 808.34px; top: 1703.05px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5886268
+Type: 9
+Object_ID: 4578" />
+
+<img id="5886270" style="position: absolute; left: 825.9px; top: 1698.59px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5886270
+Type: 9
+Object_ID: 4580" />
+
+<img id="5886272" style="position: absolute; left: 814.92px; top: 1723.88px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5886272
+Type: 9
+Object_ID: 4580" />
+
+<img id="5886273" style="position: absolute; left: 845.88px; top: 1715.36px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5886273
+Type: 9
+Object_ID: 4577" />
+
+<img id="5887414" style="position: absolute; left: 825.91px; top: 1698.59px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5887414
+Type: 9
+Object_ID: 4581" />
+
+<img id="5887415" style="position: absolute; left: 814.93px; top: 1723.91px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5887415
+Type: 9
+Object_ID: 4581" />
+
+<img id="5892100" style="position: absolute; left: 903.45px; top: 1731.85px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892100
+Type: 9
+Object_ID: 4728" />
+
+<img id="5892101" style="position: absolute; left: 877.38px; top: 1699px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892101
+Type: 9
+Object_ID: 4727" />
+
+<img id="5892107" style="position: absolute; left: 868.46px; top: 1699.82px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892107
+Type: 9
+Object_ID: 4725" />
+
+<img id="5892108" style="position: absolute; left: 879.74px; top: 1692.24px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892108
+Type: 9
+Object_ID: 4726" />
+
+<img id="5892109" style="position: absolute; left: 862.55px; top: 1734.5px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892109
+Type: 9
+Object_ID: 4726" />
+
+<img id="5892110" style="position: absolute; left: 884.13px; top: 1704.26px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892110
+Type: 9
+Object_ID: 4725" />
+
+<img id="5892111" style="position: absolute; left: 885.98px; top: 1695.41px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892111
+Type: 9
+Object_ID: 4725" />
+
+<img id="5892113" style="position: absolute; left: 877.39px; top: 1690.6px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892113
+Type: 9
+Object_ID: 4725" />
+
+<img id="5892115" style="position: absolute; left: 875.86px; top: 1707.71px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892115
+Type: 9
+Object_ID: 4725" />
+
+<img id="5892116" style="position: absolute; left: 883.28px; top: 1696.61px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892116
+Type: 9
+Object_ID: 4725" />
+
+<img id="5892118" style="position: absolute; left: 881.35px; top: 1694.8px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892118
+Type: 9
+Object_ID: 4725" />
+
+<img id="5892119" style="position: absolute; left: 884.29px; top: 1692.99px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892119
+Type: 9
+Object_ID: 4725" />
+
+<img id="5892121" style="position: absolute; left: 883.02px; top: 1691.43px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5892121
+Type: 9
+Object_ID: 4725" />
+
+<img id="5895583" style="position: absolute; left: 1536.73px; top: 570.89px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5895583
+Type: 9
+Object_ID: 4616" />
+
+<img id="5895584" style="position: absolute; left: 1538.14px; top: 574.32px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5895584
+Type: 9
+Object_ID: 4616" />
+
+<img id="5895585" style="position: absolute; left: 1537.4px; top: 577.17px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5895585
+Type: 9
+Object_ID: 4616" />
+
+<img id="5961390" style="position: absolute; left: 879.09px; top: 1699.43px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 5961390
+Type: 9
+Object_ID: 410" />
+
+<img id="7955934" style="position: absolute; left: 997.04px; top: 1564.62px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7955934
+Type: 9
+Object_ID: 11128" />
+
+<img id="7955937" style="position: absolute; left: 961.94px; top: 1505.55px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7955937
+Type: 9
+Object_ID: 11129" />
+
+<img id="7955938" style="position: absolute; left: 959.33px; top: 1507.01px;" src="icons/9.png" alt="" title="
+    
+Level_ID: 7955938
+Type: 9
+Object_ID: 11130" />
+
+
+    </div>
+    <div id="aetheryte">
+
+
+    </div>
+    <div id="gathering">
+
+
+    </div>
+    <div id="treasure">
+
+
+    </div>
+    <div id="poprange">
+
+<img id="3630009" style="position: absolute; left: 1000.15px; top: 1653.7px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630009
+Type: 40
+Object_ID: 0" />
+
+<img id="3630015" style="position: absolute; left: 1004.45px; top: 1639.74px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630015
+Type: 40
+Object_ID: 0" />
+
+<img id="3630018" style="position: absolute; left: 1016.68px; top: 1657.18px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630018
+Type: 40
+Object_ID: 0" />
+
+<img id="3630019" style="position: absolute; left: 995.99px; top: 1668.83px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630019
+Type: 40
+Object_ID: 0" />
+
+<img id="3630022" style="position: absolute; left: 983.1px; top: 1652px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630022
+Type: 40
+Object_ID: 0" />
+
+<img id="3630030" style="position: absolute; left: 1098.74px; top: 1679.89px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630030
+Type: 40
+Object_ID: 0" />
+
+<img id="3630037" style="position: absolute; left: 1112.89px; top: 1676.29px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630037
+Type: 40
+Object_ID: 0" />
+
+<img id="3630082" style="position: absolute; left: 1107.71px; top: 1692.98px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630082
+Type: 40
+Object_ID: 0" />
+
+<img id="3630085" style="position: absolute; left: 1089.73px; top: 1691.4px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630085
+Type: 40
+Object_ID: 0" />
+
+<img id="3630086" style="position: absolute; left: 1087.19px; top: 1670.74px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630086
+Type: 40
+Object_ID: 0" />
+
+<img id="3630151" style="position: absolute; left: 1035.55px; top: 1756.96px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630151
+Type: 40
+Object_ID: 0" />
+
+<img id="3630191" style="position: absolute; left: 1037.37px; top: 1741.99px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630191
+Type: 40
+Object_ID: 0" />
+
+<img id="3630197" style="position: absolute; left: 1050.84px; top: 1754.16px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630197
+Type: 40
+Object_ID: 0" />
+
+<img id="3630198" style="position: absolute; left: 1034.29px; top: 1771.62px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630198
+Type: 40
+Object_ID: 0" />
+
+<img id="3630234" style="position: absolute; left: 1019.85px; top: 1757.82px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3630234
+Type: 40
+Object_ID: 0" />
+
+<img id="3965488" style="position: absolute; left: 1274.23px; top: 1079.54px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965488
+Type: 40
+Object_ID: 0" />
+
+<img id="3965495" style="position: absolute; left: 1284.3px; top: 1070.32px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965495
+Type: 40
+Object_ID: 0" />
+
+<img id="3965502" style="position: absolute; left: 1263.84px; top: 1071.56px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965502
+Type: 40
+Object_ID: 0" />
+
+<img id="3965509" style="position: absolute; left: 1282.68px; top: 1085.57px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965509
+Type: 40
+Object_ID: 0" />
+
+<img id="3965512" style="position: absolute; left: 1264.77px; top: 1089.16px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965512
+Type: 40
+Object_ID: 0" />
+
+<img id="3965523" style="position: absolute; left: 1142.04px; top: 1101.95px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965523
+Type: 40
+Object_ID: 0" />
+
+<img id="3965525" style="position: absolute; left: 1132.21px; top: 1111.36px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965525
+Type: 40
+Object_ID: 0" />
+
+<img id="3965528" style="position: absolute; left: 1131.86px; top: 1092.65px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965528
+Type: 40
+Object_ID: 0" />
+
+<img id="3965531" style="position: absolute; left: 1155.73px; top: 1108.67px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965531
+Type: 40
+Object_ID: 0" />
+
+<img id="3965536" style="position: absolute; left: 1151.19px; top: 1090.78px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965536
+Type: 40
+Object_ID: 0" />
+
+<img id="3965544" style="position: absolute; left: 1190.56px; top: 1144.47px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965544
+Type: 40
+Object_ID: 0" />
+
+<img id="3965552" style="position: absolute; left: 1204.99px; top: 1141.12px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965552
+Type: 40
+Object_ID: 0" />
+
+<img id="3965560" style="position: absolute; left: 1183.28px; top: 1131.61px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965560
+Type: 40
+Object_ID: 0" />
+
+<img id="3965572" style="position: absolute; left: 1176.44px; top: 1148.89px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965572
+Type: 40
+Object_ID: 0" />
+
+<img id="3965576" style="position: absolute; left: 1196.93px; top: 1157.47px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965576
+Type: 40
+Object_ID: 0" />
+
+<img id="3965582" style="position: absolute; left: 1187.18px; top: 1206.56px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965582
+Type: 40
+Object_ID: 0" />
+
+<img id="3965591" style="position: absolute; left: 1191.95px; top: 1194.83px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965591
+Type: 40
+Object_ID: 0" />
+
+<img id="3965593" style="position: absolute; left: 1199.57px; top: 1210.88px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965593
+Type: 40
+Object_ID: 0" />
+
+<img id="3965597" style="position: absolute; left: 1178.14px; top: 1217.05px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965597
+Type: 40
+Object_ID: 0" />
+
+<img id="3965602" style="position: absolute; left: 1176.86px; top: 1197.59px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3965602
+Type: 40
+Object_ID: 0" />
+
+<img id="3967743" style="position: absolute; left: 1444.35px; top: 958.16px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967743
+Type: 40
+Object_ID: 0" />
+
+<img id="3967829" style="position: absolute; left: 1456.01px; top: 946.3px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967829
+Type: 40
+Object_ID: 0" />
+
+<img id="3967833" style="position: absolute; left: 1456.66px; top: 969.44px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967833
+Type: 40
+Object_ID: 0" />
+
+<img id="3967838" style="position: absolute; left: 1433.49px; top: 970.71px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967838
+Type: 40
+Object_ID: 0" />
+
+<img id="3967843" style="position: absolute; left: 1433.35px; top: 947.55px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967843
+Type: 40
+Object_ID: 0" />
+
+<img id="3967848" style="position: absolute; left: 1374.74px; top: 930.75px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967848
+Type: 40
+Object_ID: 0" />
+
+<img id="3967851" style="position: absolute; left: 1384.72px; top: 916.83px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967851
+Type: 40
+Object_ID: 0" />
+
+<img id="3967856" style="position: absolute; left: 1387.52px; top: 943.87px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967856
+Type: 40
+Object_ID: 0" />
+
+<img id="3967864" style="position: absolute; left: 1363.5px; top: 944.48px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967864
+Type: 40
+Object_ID: 0" />
+
+<img id="3967871" style="position: absolute; left: 1359.71px; top: 921.49px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967871
+Type: 40
+Object_ID: 0" />
+
+<img id="3967882" style="position: absolute; left: 1423.13px; top: 843.35px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967882
+Type: 40
+Object_ID: 0" />
+
+<img id="3967888" style="position: absolute; left: 1435.24px; top: 830.98px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967888
+Type: 40
+Object_ID: 0" />
+
+<img id="3967892" style="position: absolute; left: 1431.25px; top: 858.26px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967892
+Type: 40
+Object_ID: 0" />
+
+<img id="3967899" style="position: absolute; left: 1408.45px; top: 852.15px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967899
+Type: 40
+Object_ID: 0" />
+
+<img id="3967903" style="position: absolute; left: 1412.48px; top: 829.13px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967903
+Type: 40
+Object_ID: 0" />
+
+<img id="3967906" style="position: absolute; left: 1447.05px; top: 779.19px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967906
+Type: 40
+Object_ID: 0" />
+
+<img id="3967908" style="position: absolute; left: 1458.05px; top: 765.69px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967908
+Type: 40
+Object_ID: 0" />
+
+<img id="3967916" style="position: absolute; left: 1460.22px; top: 791.37px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967916
+Type: 40
+Object_ID: 0" />
+
+<img id="3967920" style="position: absolute; left: 1435.15px; top: 790.53px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967920
+Type: 40
+Object_ID: 0" />
+
+<img id="3967922" style="position: absolute; left: 1435.86px; top: 766.63px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3967922
+Type: 40
+Object_ID: 0" />
+
+<img id="3968208" style="position: absolute; left: 995.3px; top: 1706.2px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3968208
+Type: 40
+Object_ID: 0" />
+
+<img id="3968211" style="position: absolute; left: 1006.06px; top: 1695.37px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3968211
+Type: 40
+Object_ID: 0" />
+
+<img id="3968213" style="position: absolute; left: 1008.19px; top: 1715.12px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3968213
+Type: 40
+Object_ID: 0" />
+
+<img id="3968214" style="position: absolute; left: 985.08px; top: 1718.27px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3968214
+Type: 40
+Object_ID: 0" />
+
+<img id="3968216" style="position: absolute; left: 981.47px; top: 1698.22px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3968216
+Type: 40
+Object_ID: 0" />
+
+<img id="3970340" style="position: absolute; left: 1261.99px; top: 1630.59px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3970340
+Type: 40
+Object_ID: 0" />
+
+<img id="3970393" style="position: absolute; left: 1190.07px; top: 1701.86px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3970393
+Type: 40
+Object_ID: 0" />
+
+<img id="3999239" style="position: absolute; left: 1527.67px; top: 952.3px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3999239
+Type: 40
+Object_ID: 0" />
+
+<img id="3999242" style="position: absolute; left: 1151.96px; top: 1608.1px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 3999242
+Type: 40
+Object_ID: 0" />
+
+<img id="4011538" style="position: absolute; left: 1510.54px; top: 768.97px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4011538
+Type: 40
+Object_ID: 0" />
+
+<img id="4011540" style="position: absolute; left: 1497.21px; top: 773.37px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4011540
+Type: 40
+Object_ID: 0" />
+
+<img id="4011543" style="position: absolute; left: 1504.49px; top: 765.01px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4011543
+Type: 40
+Object_ID: 0" />
+
+<img id="4011546" style="position: absolute; left: 1491.38px; top: 784.47px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4011546
+Type: 40
+Object_ID: 0" />
+
+<img id="4011548" style="position: absolute; left: 1504.61px; top: 796.45px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4011548
+Type: 40
+Object_ID: 0" />
+
+<img id="4011549" style="position: absolute; left: 1524.76px; top: 773.65px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4011549
+Type: 40
+Object_ID: 0" />
+
+<img id="4011550" style="position: absolute; left: 1487.81px; top: 761.98px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4011550
+Type: 40
+Object_ID: 0" />
+
+<img id="4074118" style="position: absolute; left: 1218.11px; top: 1133.79px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4074118
+Type: 40
+Object_ID: 0" />
+
+<img id="4074119" style="position: absolute; left: 1183.82px; top: 1114.75px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4074119
+Type: 40
+Object_ID: 0" />
+
+<img id="4074202" style="position: absolute; left: 1183.01px; top: 1091.4px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4074202
+Type: 40
+Object_ID: 0" />
+
+<img id="4103791" style="position: absolute; left: 1191.05px; top: 1705.13px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4103791
+Type: 40
+Object_ID: 0" />
+
+<img id="4105797" style="position: absolute; left: 1393.47px; top: 698.03px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4105797
+Type: 40
+Object_ID: 0" />
+
+<img id="4105896" style="position: absolute; left: 1432.45px; top: 722.5px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4105896
+Type: 40
+Object_ID: 0" />
+
+<img id="4105897" style="position: absolute; left: 1393.74px; top: 674.61px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4105897
+Type: 40
+Object_ID: 0" />
+
+<img id="4126309" style="position: absolute; left: 792.88px; top: 1700.99px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4126309
+Type: 40
+Object_ID: 0" />
+
+<img id="4126373" style="position: absolute; left: 792.88px; top: 1700.99px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4126373
+Type: 40
+Object_ID: 0" />
+
+<img id="4127467" style="position: absolute; left: 792.88px; top: 1700.99px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4127467
+Type: 40
+Object_ID: 0" />
+
+<img id="4127468" style="position: absolute; left: 1599.93px; top: 601.68px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4127468
+Type: 40
+Object_ID: 0" />
+
+<img id="4127469" style="position: absolute; left: 1594.89px; top: 641.64px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4127469
+Type: 40
+Object_ID: 0" />
+
+<img id="4127473" style="position: absolute; left: 1599.81px; top: 591.81px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4127473
+Type: 40
+Object_ID: 0" />
+
+<img id="4132193" style="position: absolute; left: 1140.66px; top: 1700.64px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4132193
+Type: 40
+Object_ID: 0" />
+
+<img id="4164738" style="position: absolute; left: 987.11px; top: 1658.85px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4164738
+Type: 40
+Object_ID: 0" />
+
+<img id="4165248" style="position: absolute; left: 1409.73px; top: 707.7px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4165248
+Type: 40
+Object_ID: 0" />
+
+<img id="4165249" style="position: absolute; left: 1385.17px; top: 702.11px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4165249
+Type: 40
+Object_ID: 0" />
+
+<img id="4165250" style="position: absolute; left: 1391.76px; top: 680.23px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4165250
+Type: 40
+Object_ID: 0" />
+
+<img id="4167157" style="position: absolute; left: 1016.04px; top: 1620.72px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4167157
+Type: 40
+Object_ID: 0" />
+
+<img id="4167160" style="position: absolute; left: 927.82px; top: 1662.77px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4167160
+Type: 40
+Object_ID: 0" />
+
+<img id="4167162" style="position: absolute; left: 928.44px; top: 1705.02px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4167162
+Type: 40
+Object_ID: 0" />
+
+<img id="4167163" style="position: absolute; left: 945.35px; top: 1747.07px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4167163
+Type: 40
+Object_ID: 0" />
+
+<img id="4167165" style="position: absolute; left: 965.7px; top: 1789.36px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4167165
+Type: 40
+Object_ID: 0" />
+
+<img id="4167166" style="position: absolute; left: 1018.67px; top: 1846.12px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4167166
+Type: 40
+Object_ID: 0" />
+
+<img id="4167167" style="position: absolute; left: 1045.97px; top: 1709.9px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4167167
+Type: 40
+Object_ID: 0" />
+
+<img id="4178130" style="position: absolute; left: 1059.63px; top: 1814.44px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4178130
+Type: 40
+Object_ID: 0" />
+
+<img id="4178149" style="position: absolute; left: 1141.83px; top: 1892.78px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4178149
+Type: 40
+Object_ID: 0" />
+
+<img id="4179979" style="position: absolute; left: 1175.72px; top: 1116.37px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4179979
+Type: 40
+Object_ID: 0" />
+
+<img id="4180041" style="position: absolute; left: 1408.35px; top: 936.53px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4180041
+Type: 40
+Object_ID: 0" />
+
+<img id="4180042" style="position: absolute; left: 1464.06px; top: 811.42px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4180042
+Type: 40
+Object_ID: 0" />
+
+<img id="4180045" style="position: absolute; left: 1034.49px; top: 1698.96px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4180045
+Type: 40
+Object_ID: 0" />
+
+<img id="4180046" style="position: absolute; left: 921.82px; top: 1699.32px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4180046
+Type: 40
+Object_ID: 0" />
+
+<img id="4185316" style="position: absolute; left: 1134.44px; top: 1916.29px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4185316
+Type: 40
+Object_ID: 0" />
+
+<img id="4256806" style="position: absolute; left: 1036.08px; top: 1438.7px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4256806
+Type: 40
+Object_ID: 0" />
+
+<img id="4295468" style="position: absolute; left: 1729.5px; top: 733.54px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4295468
+Type: 40
+Object_ID: 0" />
+
+<img id="4295504" style="position: absolute; left: 1730.13px; top: 745.85px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4295504
+Type: 40
+Object_ID: 0" />
+
+<img id="4295512" style="position: absolute; left: 1727.95px; top: 735.67px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4295512
+Type: 40
+Object_ID: 0" />
+
+<img id="4323244" style="position: absolute; left: 1020.25px; top: 1437.84px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4323244
+Type: 40
+Object_ID: 0" />
+
+<img id="4323248" style="position: absolute; left: 1022.34px; top: 1439.61px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4323248
+Type: 40
+Object_ID: 0" />
+
+<img id="4323251" style="position: absolute; left: 1022.67px; top: 1444.79px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4323251
+Type: 40
+Object_ID: 0" />
+
+<img id="4517187" style="position: absolute; left: 1422.95px; top: 639.01px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4517187
+Type: 40
+Object_ID: 0" />
+
+<img id="4517188" style="position: absolute; left: 1454.24px; top: 876.77px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4517188
+Type: 40
+Object_ID: 0" />
+
+<img id="4517189" style="position: absolute; left: 1048.22px; top: 1752.78px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4517189
+Type: 40
+Object_ID: 0" />
+
+<img id="4517195" style="position: absolute; left: 1087.73px; top: 1206.04px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4517195
+Type: 40
+Object_ID: 0" />
+
+<img id="4517202" style="position: absolute; left: 1648.6px; top: 746.82px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4517202
+Type: 40
+Object_ID: 0" />
+
+<img id="4520505" style="position: absolute; left: 1474.09px; top: 1018.55px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520505
+Type: 40
+Object_ID: 0" />
+
+<img id="4520506" style="position: absolute; left: 952.59px; top: 1567.57px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520506
+Type: 40
+Object_ID: 0" />
+
+<img id="4520507" style="position: absolute; left: 1126.98px; top: 1104.29px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520507
+Type: 40
+Object_ID: 0" />
+
+<img id="4520508" style="position: absolute; left: 933.32px; top: 1690.89px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520508
+Type: 40
+Object_ID: 0" />
+
+<img id="4520509" style="position: absolute; left: 1300.67px; top: 1037.8px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520509
+Type: 40
+Object_ID: 0" />
+
+<img id="4520510" style="position: absolute; left: 1374.58px; top: 959.39px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520510
+Type: 40
+Object_ID: 0" />
+
+<img id="4520511" style="position: absolute; left: 1179.51px; top: 1185.54px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520511
+Type: 40
+Object_ID: 0" />
+
+<img id="4520512" style="position: absolute; left: 1016.75px; top: 1484.97px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520512
+Type: 40
+Object_ID: 0" />
+
+<img id="4520513" style="position: absolute; left: 1190.06px; top: 1315.14px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520513
+Type: 40
+Object_ID: 0" />
+
+<img id="4520514" style="position: absolute; left: 1405.17px; top: 765.84px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4520514
+Type: 40
+Object_ID: 0" />
+
+<img id="4521478" style="position: absolute; left: 1089.44px; top: 1216.18px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521478
+Type: 40
+Object_ID: 0" />
+
+<img id="4521479" style="position: absolute; left: 1097.47px; top: 1205.53px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521479
+Type: 40
+Object_ID: 0" />
+
+<img id="4521480" style="position: absolute; left: 1080.08px; top: 1214.48px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521480
+Type: 40
+Object_ID: 0" />
+
+<img id="4521481" style="position: absolute; left: 1084.82px; top: 1196.32px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521481
+Type: 40
+Object_ID: 0" />
+
+<img id="4521482" style="position: absolute; left: 1480.91px; top: 1025.86px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521482
+Type: 40
+Object_ID: 0" />
+
+<img id="4521483" style="position: absolute; left: 1484.1px; top: 1013.08px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521483
+Type: 40
+Object_ID: 0" />
+
+<img id="4521484" style="position: absolute; left: 1469.34px; top: 1029.03px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521484
+Type: 40
+Object_ID: 0" />
+
+<img id="4521485" style="position: absolute; left: 1465.72px; top: 1009.45px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521485
+Type: 40
+Object_ID: 0" />
+
+<img id="4521486" style="position: absolute; left: 944.67px; top: 1566.7px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521486
+Type: 40
+Object_ID: 0" />
+
+<img id="4521487" style="position: absolute; left: 945.69px; top: 1575.21px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521487
+Type: 40
+Object_ID: 0" />
+
+<img id="4521488" style="position: absolute; left: 954.21px; top: 1561.13px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521488
+Type: 40
+Object_ID: 0" />
+
+<img id="4521489" style="position: absolute; left: 960.68px; top: 1568.75px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521489
+Type: 40
+Object_ID: 0" />
+
+<img id="4521490" style="position: absolute; left: 1423.56px; top: 630.75px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521490
+Type: 40
+Object_ID: 0" />
+
+<img id="4521491" style="position: absolute; left: 1415px; top: 633.42px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521491
+Type: 40
+Object_ID: 0" />
+
+<img id="4521492" style="position: absolute; left: 1433.07px; top: 642.85px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521492
+Type: 40
+Object_ID: 0" />
+
+<img id="4521493" style="position: absolute; left: 1420.44px; top: 648px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521493
+Type: 40
+Object_ID: 0" />
+
+<img id="4521494" style="position: absolute; left: 1196.56px; top: 1322.35px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521494
+Type: 40
+Object_ID: 0" />
+
+<img id="4521495" style="position: absolute; left: 1200.5px; top: 1312.71px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521495
+Type: 40
+Object_ID: 0" />
+
+<img id="4521496" style="position: absolute; left: 1186.2px; top: 1322.98px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521496
+Type: 40
+Object_ID: 0" />
+
+<img id="4521497" style="position: absolute; left: 1182.88px; top: 1307.77px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521497
+Type: 40
+Object_ID: 0" />
+
+<img id="4521498" style="position: absolute; left: 1397.27px; top: 770.03px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521498
+Type: 40
+Object_ID: 0" />
+
+<img id="4521499" style="position: absolute; left: 1405.72px; top: 775.6px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521499
+Type: 40
+Object_ID: 0" />
+
+<img id="4521500" style="position: absolute; left: 1396.83px; top: 759.49px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521500
+Type: 40
+Object_ID: 0" />
+
+<img id="4521501" style="position: absolute; left: 1414.06px; top: 762.32px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521501
+Type: 40
+Object_ID: 0" />
+
+<img id="4521502" style="position: absolute; left: 1459.5px; top: 868.97px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521502
+Type: 40
+Object_ID: 0" />
+
+<img id="4521503" style="position: absolute; left: 1450.12px; top: 866.97px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521503
+Type: 40
+Object_ID: 0" />
+
+<img id="4521504" style="position: absolute; left: 1465.26px; top: 876.97px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521504
+Type: 40
+Object_ID: 0" />
+
+<img id="4521505" style="position: absolute; left: 1448.89px; top: 884.36px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521505
+Type: 40
+Object_ID: 0" />
+
+<img id="4521506" style="position: absolute; left: 1119.26px; top: 1101.13px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521506
+Type: 40
+Object_ID: 0" />
+
+<img id="4521507" style="position: absolute; left: 1121.54px; top: 1111.24px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521507
+Type: 40
+Object_ID: 0" />
+
+<img id="4521508" style="position: absolute; left: 1127.26px; top: 1093.42px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521508
+Type: 40
+Object_ID: 0" />
+
+<img id="4521509" style="position: absolute; left: 1134.52px; top: 1109.64px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521509
+Type: 40
+Object_ID: 0" />
+
+<img id="4521510" style="position: absolute; left: 939.24px; top: 1687.1px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521510
+Type: 40
+Object_ID: 0" />
+
+<img id="4521511" style="position: absolute; left: 932.26px; top: 1680.8px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521511
+Type: 40
+Object_ID: 0" />
+
+<img id="4521512" style="position: absolute; left: 939.27px; top: 1696.13px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521512
+Type: 40
+Object_ID: 0" />
+
+<img id="4521513" style="position: absolute; left: 925.52px; top: 1695.72px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521513
+Type: 40
+Object_ID: 0" />
+
+<img id="4521514" style="position: absolute; left: 1058.26px; top: 1752.71px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521514
+Type: 40
+Object_ID: 0" />
+
+<img id="4521515" style="position: absolute; left: 1048.15px; top: 1742.1px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521515
+Type: 40
+Object_ID: 0" />
+
+<img id="4521516" style="position: absolute; left: 1050.16px; top: 1762.64px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521516
+Type: 40
+Object_ID: 0" />
+
+<img id="4521517" style="position: absolute; left: 1037.71px; top: 1752.92px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521517
+Type: 40
+Object_ID: 0" />
+
+<img id="4521518" style="position: absolute; left: 1307.18px; top: 1029.78px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521518
+Type: 40
+Object_ID: 0" />
+
+<img id="4521519" style="position: absolute; left: 1296.81px; top: 1030.97px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521519
+Type: 40
+Object_ID: 0" />
+
+<img id="4521520" style="position: absolute; left: 1310.36px; top: 1039.55px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521520
+Type: 40
+Object_ID: 0" />
+
+<img id="4521521" style="position: absolute; left: 1294.01px; top: 1045.08px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521521
+Type: 40
+Object_ID: 0" />
+
+<img id="4521522" style="position: absolute; left: 1380.92px; top: 954.19px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521522
+Type: 40
+Object_ID: 0" />
+
+<img id="4521523" style="position: absolute; left: 1369.59px; top: 951.15px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521523
+Type: 40
+Object_ID: 0" />
+
+<img id="4521524" style="position: absolute; left: 1383.15px; top: 963.94px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521524
+Type: 40
+Object_ID: 0" />
+
+<img id="4521525" style="position: absolute; left: 1366.14px; top: 964.14px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521525
+Type: 40
+Object_ID: 0" />
+
+<img id="4521526" style="position: absolute; left: 1655.04px; top: 738.41px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521526
+Type: 40
+Object_ID: 0" />
+
+<img id="4521527" style="position: absolute; left: 1644.37px; top: 740.11px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521527
+Type: 40
+Object_ID: 0" />
+
+<img id="4521528" style="position: absolute; left: 1657.7px; top: 747.96px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521528
+Type: 40
+Object_ID: 0" />
+
+<img id="4521529" style="position: absolute; left: 1642.86px; top: 755.39px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521529
+Type: 40
+Object_ID: 0" />
+
+<img id="4521530" style="position: absolute; left: 1172.44px; top: 1191.04px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521530
+Type: 40
+Object_ID: 0" />
+
+<img id="4521531" style="position: absolute; left: 1182.41px; top: 1193.1px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521531
+Type: 40
+Object_ID: 0" />
+
+<img id="4521532" style="position: absolute; left: 1168.44px; top: 1181.94px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521532
+Type: 40
+Object_ID: 0" />
+
+<img id="4521533" style="position: absolute; left: 1187.33px; top: 1179.65px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521533
+Type: 40
+Object_ID: 0" />
+
+<img id="4521534" style="position: absolute; left: 1025.14px; top: 1480.37px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521534
+Type: 40
+Object_ID: 0" />
+
+<img id="4521535" style="position: absolute; left: 1016.74px; top: 1474.3px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521535
+Type: 40
+Object_ID: 0" />
+
+<img id="4521536" style="position: absolute; left: 1024.56px; top: 1490.68px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521536
+Type: 40
+Object_ID: 0" />
+
+<img id="4521537" style="position: absolute; left: 1007.16px; top: 1488.93px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4521537
+Type: 40
+Object_ID: 0" />
+
+<img id="4629452" style="position: absolute; left: 1675.67px; top: 668.05px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4629452
+Type: 40
+Object_ID: 0" />
+
+<img id="4629453" style="position: absolute; left: 1675.19px; top: 657.09px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4629453
+Type: 40
+Object_ID: 0" />
+
+<img id="4629454" style="position: absolute; left: 1666.55px; top: 663.46px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4629454
+Type: 40
+Object_ID: 0" />
+
+<img id="4629455" style="position: absolute; left: 1686.06px; top: 664.23px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4629455
+Type: 40
+Object_ID: 0" />
+
+<img id="4629456" style="position: absolute; left: 1675.61px; top: 678.36px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4629456
+Type: 40
+Object_ID: 0" />
+
+<img id="4633262" style="position: absolute; left: 1183.91px; top: 1611.16px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4633262
+Type: 40
+Object_ID: 0" />
+
+<img id="4745488" style="position: absolute; left: 1130.83px; top: 1906.78px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4745488
+Type: 40
+Object_ID: 0" />
+
+<img id="4745489" style="position: absolute; left: 1128.02px; top: 1914.61px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4745489
+Type: 40
+Object_ID: 0" />
+
+<img id="4745490" style="position: absolute; left: 1139.54px; top: 1910.78px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4745490
+Type: 40
+Object_ID: 0" />
+
+<img id="4745491" style="position: absolute; left: 1117.27px; top: 1906.93px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4745491
+Type: 40
+Object_ID: 0" />
+
+<img id="4745492" style="position: absolute; left: 1134.58px; top: 1897.25px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4745492
+Type: 40
+Object_ID: 0" />
+
+<img id="4868403" style="position: absolute; left: 1243.23px; top: 1054.57px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868403
+Type: 40
+Object_ID: 0" />
+
+<img id="4868404" style="position: absolute; left: 1242.71px; top: 1045.75px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868404
+Type: 40
+Object_ID: 0" />
+
+<img id="4868405" style="position: absolute; left: 1233.71px; top: 1051.84px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868405
+Type: 40
+Object_ID: 0" />
+
+<img id="4868406" style="position: absolute; left: 1252.68px; top: 1051.17px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868406
+Type: 40
+Object_ID: 0" />
+
+<img id="4868407" style="position: absolute; left: 1244.2px; top: 1064.42px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868407
+Type: 40
+Object_ID: 0" />
+
+<img id="4868408" style="position: absolute; left: 1533.42px; top: 787.57px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868408
+Type: 40
+Object_ID: 0" />
+
+<img id="4868409" style="position: absolute; left: 1539.94px; top: 780.36px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868409
+Type: 40
+Object_ID: 0" />
+
+<img id="4868410" style="position: absolute; left: 1529.11px; top: 778.8px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868410
+Type: 40
+Object_ID: 0" />
+
+<img id="4868411" style="position: absolute; left: 1543.23px; top: 790.97px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868411
+Type: 40
+Object_ID: 0" />
+
+<img id="4868412" style="position: absolute; left: 1526.43px; top: 794.93px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4868412
+Type: 40
+Object_ID: 0" />
+
+<img id="4890045" style="position: absolute; left: 1456.12px; top: 665.59px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890045
+Type: 40
+Object_ID: 0" />
+
+<img id="4890046" style="position: absolute; left: 1403.78px; top: 797.45px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890046
+Type: 40
+Object_ID: 0" />
+
+<img id="4890047" style="position: absolute; left: 1526.64px; top: 771.13px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890047
+Type: 40
+Object_ID: 0" />
+
+<img id="4890048" style="position: absolute; left: 1599.81px; top: 750.44px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890048
+Type: 40
+Object_ID: 0" />
+
+<img id="4890049" style="position: absolute; left: 1378.87px; top: 861.32px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890049
+Type: 40
+Object_ID: 0" />
+
+<img id="4890050" style="position: absolute; left: 1624.54px; top: 826.37px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890050
+Type: 40
+Object_ID: 0" />
+
+<img id="4890051" style="position: absolute; left: 1384.08px; top: 976.03px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890051
+Type: 40
+Object_ID: 0" />
+
+<img id="4890052" style="position: absolute; left: 1340.35px; top: 1046.79px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890052
+Type: 40
+Object_ID: 0" />
+
+<img id="4890054" style="position: absolute; left: 1205.76px; top: 1072.21px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890054
+Type: 40
+Object_ID: 0" />
+
+<img id="4890057" style="position: absolute; left: 1246.32px; top: 1192.76px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890057
+Type: 40
+Object_ID: 0" />
+
+<img id="4890059" style="position: absolute; left: 1162.64px; top: 1277.36px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890059
+Type: 40
+Object_ID: 0" />
+
+<img id="4890060" style="position: absolute; left: 1273.05px; top: 1267.24px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890060
+Type: 40
+Object_ID: 0" />
+
+<img id="4890061" style="position: absolute; left: 963.23px; top: 1551.62px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890061
+Type: 40
+Object_ID: 0" />
+
+<img id="4890062" style="position: absolute; left: 952.74px; top: 1669.2px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890062
+Type: 40
+Object_ID: 0" />
+
+<img id="4890063" style="position: absolute; left: 794.58px; top: 1716.97px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890063
+Type: 40
+Object_ID: 0" />
+
+<img id="4890064" style="position: absolute; left: 912.33px; top: 1723.99px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890064
+Type: 40
+Object_ID: 0" />
+
+<img id="4890065" style="position: absolute; left: 982.25px; top: 1729.49px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890065
+Type: 40
+Object_ID: 0" />
+
+<img id="4890066" style="position: absolute; left: 1086.17px; top: 1676.64px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890066
+Type: 40
+Object_ID: 0" />
+
+<img id="4890067" style="position: absolute; left: 902.02px; top: 1758.33px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890067
+Type: 40
+Object_ID: 0" />
+
+<img id="4890068" style="position: absolute; left: 1108.12px; top: 1750.26px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890068
+Type: 40
+Object_ID: 0" />
+
+<img id="4890069" style="position: absolute; left: 953.03px; top: 1827.16px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890069
+Type: 40
+Object_ID: 0" />
+
+<img id="4890076" style="position: absolute; left: 1097.01px; top: 1865.03px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 4890076
+Type: 40
+Object_ID: 0" />
+
+<img id="5032395" style="position: absolute; left: 1047.9px; top: 1881.43px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5032395
+Type: 40
+Object_ID: 0" />
+
+<img id="5032398" style="position: absolute; left: 1023.83px; top: 1878.73px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5032398
+Type: 40
+Object_ID: 0" />
+
+<img id="5046294" style="position: absolute; left: 1265.67px; top: 1689.14px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5046294
+Type: 40
+Object_ID: 0" />
+
+<img id="5392203" style="position: absolute; left: 1010.98px; top: 1878.6px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5392203
+Type: 40
+Object_ID: 0" />
+
+<img id="5651966" style="position: absolute; left: 1227.54px; top: 1162.59px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651966
+Type: 40
+Object_ID: 0" />
+
+<img id="5651967" style="position: absolute; left: 1238.21px; top: 1162.51px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651967
+Type: 40
+Object_ID: 0" />
+
+<img id="5651968" style="position: absolute; left: 1232.32px; top: 1153.4px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651968
+Type: 40
+Object_ID: 0" />
+
+<img id="5651969" style="position: absolute; left: 1232.11px; top: 1171.39px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651969
+Type: 40
+Object_ID: 0" />
+
+<img id="5651970" style="position: absolute; left: 1217.43px; top: 1162.42px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651970
+Type: 40
+Object_ID: 0" />
+
+<img id="5651971" style="position: absolute; left: 1652.77px; top: 825.81px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651971
+Type: 40
+Object_ID: 0" />
+
+<img id="5651972" style="position: absolute; left: 1659.59px; top: 832.73px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651972
+Type: 40
+Object_ID: 0" />
+
+<img id="5651973" style="position: absolute; left: 1662.68px; top: 823.21px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651973
+Type: 40
+Object_ID: 0" />
+
+<img id="5651974" style="position: absolute; left: 1649.86px; top: 835.63px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651974
+Type: 40
+Object_ID: 0" />
+
+<img id="5651975" style="position: absolute; left: 1646.07px; top: 818.8px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5651975
+Type: 40
+Object_ID: 0" />
+
+<img id="5890279" style="position: absolute; left: 901.67px; top: 1734.54px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5890279
+Type: 40
+Object_ID: 0" />
+
+<img id="5891769" style="position: absolute; left: 863.65px; top: 1683.26px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5891769
+Type: 40
+Object_ID: 0" />
+
+<img id="5908225" style="position: absolute; left: 1283.35px; top: 1739.99px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5908225
+Type: 40
+Object_ID: 0" />
+
+<img id="5919710" style="position: absolute; left: 846.84px; top: 1704.32px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5919710
+Type: 40
+Object_ID: 0" />
+
+<img id="5919711" style="position: absolute; left: 848.59px; top: 1704.32px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5919711
+Type: 40
+Object_ID: 0" />
+
+<img id="5922987" style="position: absolute; left: 925.55px; top: 1733.54px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5922987
+Type: 40
+Object_ID: 0" />
+
+<img id="5922991" style="position: absolute; left: 909.47px; top: 1697.83px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 5922991
+Type: 40
+Object_ID: 0" />
+
+<img id="6386459" style="position: absolute; left: 1296.73px; top: 1749.67px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 6386459
+Type: 40
+Object_ID: 0" />
+
+<img id="7022535" style="position: absolute; left: 1244.19px; top: 1709.74px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 7022535
+Type: 40
+Object_ID: 0" />
+
+<img id="7780529" style="position: absolute; left: 941.81px; top: 1751.63px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 7780529
+Type: 40
+Object_ID: 0" />
+
+<img id="7780603" style="position: absolute; left: 919.78px; top: 1770.32px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 7780603
+Type: 40
+Object_ID: 0" />
+
+<img id="7955964" style="position: absolute; left: 990.7px; top: 1151.2px;" src="icons/40.png" alt="" title="
+    
+Level_ID: 7955964
+Type: 40
+Object_ID: 0" />
+
+
+    </div>
+    <div id="exitrange">
+
+<img id="4387469" style="position: absolute; left: 1625.73px; top: 922.94px;" src="icons/41.png" alt="" title="
+    
+Level_ID: 4387469
+Type: 41
+Object_ID: 0" />
+
+
+    </div>
+    <div id="eventobject">
+
+<img id="3629570" style="position: absolute; left: 1156px; top: 1053.56px;" src="icons/45.png" alt="megalocrab nest" title="
+            megalocrab nest
+Level_ID: 3629570
+Type: 45
+
+EObj_ID: 2000284" />
+
+<img id="3631743" style="position: absolute; left: 1590.72px; top: 809.55px;" src="icons/45.png" alt="lavender pot" title="
+            lavender pot
+Level_ID: 3631743
+Type: 45
+
+EObj_ID: 2000296" />
+
+<img id="3631815" style="position: absolute; left: 1616.41px; top: 752.65px;" src="icons/45.png" alt="fruit barrel" title="
+            fruit barrel
+Level_ID: 3631815
+Type: 45
+
+EObj_ID: 2000297" />
+
+<img id="3631817" style="position: absolute; left: 1592.41px; top: 703.89px;" src="icons/45.png" alt="splintered crate" title="
+            splintered crate
+Level_ID: 3631817
+Type: 45
+
+EObj_ID: 2000298" />
+
+<img id="3631819" style="position: absolute; left: 1599.65px; top: 595.51px;" src="icons/45.png" alt="overturned wain" title="
+            overturned wain
+Level_ID: 3631819
+Type: 45
+
+EObj_ID: 2000299" />
+
+<img id="3767676" style="position: absolute; left: 1061.85px; top: 1418.81px;" src="icons/45.png" alt="×SubSea110：荷車1" title="
+            ×SubSea110：荷車1
+Level_ID: 3767676
+Type: 45
+
+EObj_ID: 2000756" />
+
+<img id="3767681" style="position: absolute; left: 1073.23px; top: 1412.11px;" src="icons/45.png" alt="×SubSea110：荷車1" title="
+            ×SubSea110：荷車1
+Level_ID: 3767681
+Type: 45
+
+EObj_ID: 2000756" />
+
+<img id="3767687" style="position: absolute; left: 1054.03px; top: 1425.1px;" src="icons/45.png" alt="×SubSea110：荷車1" title="
+            ×SubSea110：荷車1
+Level_ID: 3767687
+Type: 45
+
+EObj_ID: 2000756" />
+
+<img id="3767692" style="position: absolute; left: 1080.42px; top: 1405.15px;" src="icons/45.png" alt="×SubSea110：荷車1" title="
+            ×SubSea110：荷車1
+Level_ID: 3767692
+Type: 45
+
+EObj_ID: 2000756" />
+
+<img id="3781381" style="position: absolute; left: 1235.32px; top: 1617.01px;" src="icons/45.png" alt="forecastle planks" title="
+            forecastle planks
+Level_ID: 3781381
+Type: 45
+
+EObj_ID: 2000760" />
+
+<img id="3781382" style="position: absolute; left: 1196.76px; top: 1615.36px;" src="icons/45.png" alt="quarterdeck logs" title="
+            quarterdeck logs
+Level_ID: 3781382
+Type: 45
+
+EObj_ID: 2000761" />
+
+<img id="3781642" style="position: absolute; left: 1242.55px; top: 1632.04px;" src="icons/45.png" alt="packed lunch" title="
+            packed lunch
+Level_ID: 3781642
+Type: 45
+
+EObj_ID: 2000762" />
+
+<img id="3781643" style="position: absolute; left: 1312.45px; top: 1632.65px;" src="icons/45.png" alt="packed lunch" title="
+            packed lunch
+Level_ID: 3781643
+Type: 45
+
+EObj_ID: 2000763" />
+
+<img id="3781659" style="position: absolute; left: 1275.24px; top: 1798.46px;" src="icons/45.png" alt="×SubSea116：焚火1" title="
+            ×SubSea116：焚火1
+Level_ID: 3781659
+Type: 45
+
+EObj_ID: 2000766" />
+
+<img id="3781662" style="position: absolute; left: 1275.2px; top: 1801.02px;" src="icons/45.png" alt="×SubSea116：焚火2" title="
+            ×SubSea116：焚火2
+Level_ID: 3781662
+Type: 45
+
+EObj_ID: 2000767" />
+
+<img id="3781818" style="position: absolute; left: 879.76px; top: 1734.82px;" src="icons/45.png" alt="brass helm wheel" title="
+            brass helm wheel
+Level_ID: 3781818
+Type: 45
+
+EObj_ID: 2000769" />
+
+<img id="3781824" style="position: absolute; left: 839.14px; top: 1720.35px;" src="icons/45.png" alt="tangled rigging" title="
+            tangled rigging
+Level_ID: 3781824
+Type: 45
+
+EObj_ID: 2000770" />
+
+<img id="3781825" style="position: absolute; left: 855.99px; top: 1684.97px;" src="icons/45.png" alt="folded sailcloth" title="
+            folded sailcloth
+Level_ID: 3781825
+Type: 45
+
+EObj_ID: 2000771" />
+
+<img id="3781879" style="position: absolute; left: 1123.02px; top: 1799.19px;" src="icons/45.png" alt="suspicious mound" title="
+            suspicious mound
+Level_ID: 3781879
+Type: 45
+
+EObj_ID: 2000772" />
+
+<img id="3782137" style="position: absolute; left: 1071.76px; top: 1782.23px;" src="icons/45.png" alt="suspicious mound" title="
+            suspicious mound
+Level_ID: 3782137
+Type: 45
+
+EObj_ID: 2000773" />
+
+<img id="3782147" style="position: absolute; left: 1119.69px; top: 1846.43px;" src="icons/45.png" alt="suspicious mound" title="
+            suspicious mound
+Level_ID: 3782147
+Type: 45
+
+EObj_ID: 2000774" />
+
+<img id="3782531" style="position: absolute; left: 1061.2px; top: 1742.23px;" src="icons/45.png" alt="La Noscean lilybell" title="
+            La Noscean lilybell
+Level_ID: 3782531
+Type: 45
+
+EObj_ID: 2000775" />
+
+<img id="3782535" style="position: absolute; left: 1083.71px; top: 1718.6px;" src="icons/45.png" alt="La Noscean lilybell" title="
+            La Noscean lilybell
+Level_ID: 3782535
+Type: 45
+
+EObj_ID: 2000776" />
+
+<img id="3782540" style="position: absolute; left: 1093.98px; top: 1701.84px;" src="icons/45.png" alt="La Noscean lilybell" title="
+            La Noscean lilybell
+Level_ID: 3782540
+Type: 45
+
+EObj_ID: 2000777" />
+
+<img id="3871000" style="position: absolute; left: 1235.91px; top: 1621.39px;" src="icons/45.png" alt="forecastle planks" title="
+            forecastle planks
+Level_ID: 3871000
+Type: 45
+
+EObj_ID: 2000764" />
+
+<img id="3871001" style="position: absolute; left: 1244.1px; top: 1619.26px;" src="icons/45.png" alt="forecastle planks" title="
+            forecastle planks
+Level_ID: 3871001
+Type: 45
+
+EObj_ID: 2000765" />
+
+<img id="4013516" style="position: absolute; left: 1502.32px; top: 948.2px;" src="icons/45.png" alt="sack of fleece" title="
+            sack of fleece
+Level_ID: 4013516
+Type: 45
+
+EObj_ID: 2001487" />
+
+<img id="4014067" style="position: absolute; left: 1279.69px; top: 702.55px;" src="icons/45.png" alt="damaged wain" title="
+            damaged wain
+Level_ID: 4014067
+Type: 45
+
+EObj_ID: 2001489" />
+
+<img id="4014784" style="position: absolute; left: 1248.69px; top: 741.38px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 4014784
+Type: 45
+
+EObj_ID: 2001491" />
+
+<img id="4014785" style="position: absolute; left: 1272.64px; top: 715.7px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 4014785
+Type: 45
+
+EObj_ID: 2001492" />
+
+<img id="4031958" style="position: absolute; left: 1466px; top: 848.79px;" src="icons/45.png" alt="Althyk lavender" title="
+            Althyk lavender
+Level_ID: 4031958
+Type: 45
+
+EObj_ID: 2001488" />
+
+<img id="4031977" style="position: absolute; left: 1304.06px; top: 716.91px;" src="icons/45.png" alt="gas plume" title="
+            gas plume
+Level_ID: 4031977
+Type: 45
+
+EObj_ID: 2001500" />
+
+<img id="4031978" style="position: absolute; left: 1295.51px; top: 761.45px;" src="icons/45.png" alt="gas plume" title="
+            gas plume
+Level_ID: 4031978
+Type: 45
+
+EObj_ID: 2001501" />
+
+<img id="4031979" style="position: absolute; left: 1319.68px; top: 754.52px;" src="icons/45.png" alt="gas plume" title="
+            gas plume
+Level_ID: 4031979
+Type: 45
+
+EObj_ID: 2001502" />
+
+<img id="4101363" style="position: absolute; left: 1392.65px; top: 657.86px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 4101363
+Type: 45
+
+EObj_ID: 2001656" />
+
+<img id="4265088" style="position: absolute; left: 1133.52px; top: 1376.98px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 4265088
+Type: 45
+
+EObj_ID: 2002010" />
+
+<img id="4286266" style="position: absolute; left: 1696.85px; top: 819.55px;" src="icons/45.png" alt="rats' nest" title="
+            rats' nest
+Level_ID: 4286266
+Type: 45
+
+EObj_ID: 2002033" />
+
+<img id="4286899" style="position: absolute; left: 1671.8px; top: 761.37px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 4286899
+Type: 45
+
+EObj_ID: 2002034" />
+
+<img id="4291539" style="position: absolute; left: 1729.33px; top: 735.92px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 4291539
+Type: 45
+
+EObj_ID: 2002284" />
+
+<img id="4322716" style="position: absolute; left: 1014.95px; top: 1441.41px;" src="icons/45.png" alt="K'lyhia's grimoire" title="
+            K'lyhia's grimoire
+Level_ID: 4322716
+Type: 45
+
+EObj_ID: 2002520" />
+
+<img id="4322717" style="position: absolute; left: 1014.78px; top: 1441.5px;" src="icons/45.png" alt="K'lyhia's grimoire" title="
+            K'lyhia's grimoire
+Level_ID: 4322717
+Type: 45
+
+EObj_ID: 2002521" />
+
+<img id="4322719" style="position: absolute; left: 1016.12px; top: 1442.25px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 4322719
+Type: 45
+
+EObj_ID: 2002519" />
+
+<img id="4334655" style="position: absolute; left: 1674.08px; top: 763.12px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 4334655
+Type: 45
+
+EObj_ID: 2002633" />
+
+<img id="4334657" style="position: absolute; left: 1672.43px; top: 759.01px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 4334657
+Type: 45
+
+EObj_ID: 2002634" />
+
+<img id="4334658" style="position: absolute; left: 1670.16px; top: 763.09px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 4334658
+Type: 45
+
+EObj_ID: 2002635" />
+
+<img id="4334659" style="position: absolute; left: 1675.2px; top: 757.82px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 4334659
+Type: 45
+
+EObj_ID: 2002636" />
+
+<img id="4334660" style="position: absolute; left: 1667.78px; top: 761.43px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 4334660
+Type: 45
+
+EObj_ID: 2002637" />
+
+<img id="4509046" style="position: absolute; left: 1516.75px; top: 836.11px;" src="icons/45.png" alt="fresh carrot" title="
+            fresh carrot
+Level_ID: 4509046
+Type: 45
+
+EObj_ID: 2002962" />
+
+<img id="4509047" style="position: absolute; left: 1489.85px; top: 838.65px;" src="icons/45.png" alt="fresh carrot" title="
+            fresh carrot
+Level_ID: 4509047
+Type: 45
+
+EObj_ID: 2002963" />
+
+<img id="4509048" style="position: absolute; left: 1510.46px; top: 847.73px;" src="icons/45.png" alt="fresh carrot" title="
+            fresh carrot
+Level_ID: 4509048
+Type: 45
+
+EObj_ID: 2002964" />
+
+<img id="4509050" style="position: absolute; left: 1499.36px; top: 861.79px;" src="icons/45.png" alt="fresh carrot" title="
+            fresh carrot
+Level_ID: 4509050
+Type: 45
+
+EObj_ID: 2002965" />
+
+<img id="4509051" style="position: absolute; left: 1530.49px; top: 852.95px;" src="icons/45.png" alt="fresh carrot" title="
+            fresh carrot
+Level_ID: 4509051
+Type: 45
+
+EObj_ID: 2002966" />
+
+<img id="4509066" style="position: absolute; left: 1464.83px; top: 822.33px;" src="icons/45.png" alt="enormous carrot" title="
+            enormous carrot
+Level_ID: 4509066
+Type: 45
+
+EObj_ID: 2002967" />
+
+<img id="4629203" style="position: absolute; left: 1181.47px; top: 1605.98px;" src="icons/45.png" alt="entrance" title="
+            entrance
+Level_ID: 4629203
+Type: 45
+
+EObj_ID: 2003597" />
+
+<img id="4759722" style="position: absolute; left: 1593.97px; top: 700.96px;" src="icons/45.png" alt="pillar of fire" title="
+            pillar of fire
+Level_ID: 4759722
+Type: 45
+
+EObj_ID: 2004307" />
+
+<img id="4759728" style="position: absolute; left: 1557.56px; top: 754.82px;" src="icons/45.png" alt="pillar of fire" title="
+            pillar of fire
+Level_ID: 4759728
+Type: 45
+
+EObj_ID: 2004308" />
+
+<img id="4759739" style="position: absolute; left: 1638.32px; top: 821.93px;" src="icons/45.png" alt="pillar of fire" title="
+            pillar of fire
+Level_ID: 4759739
+Type: 45
+
+EObj_ID: 2004309" />
+
+<img id="4759744" style="position: absolute; left: 1588.62px; top: 800.34px;" src="icons/45.png" alt="pillar of fire" title="
+            pillar of fire
+Level_ID: 4759744
+Type: 45
+
+EObj_ID: 2004310" />
+
+<img id="4759752" style="position: absolute; left: 1509.46px; top: 830.14px;" src="icons/45.png" alt="pillar of fire" title="
+            pillar of fire
+Level_ID: 4759752
+Type: 45
+
+EObj_ID: 2004311" />
+
+<img id="4759757" style="position: absolute; left: 1511.58px; top: 779.9px;" src="icons/45.png" alt="pillar of fire" title="
+            pillar of fire
+Level_ID: 4759757
+Type: 45
+
+EObj_ID: 2004312" />
+
+<img id="4797571" style="position: absolute; left: 1297.34px; top: 1752.85px;" src="icons/45.png" alt="entrance" title="
+            entrance
+Level_ID: 4797571
+Type: 45
+
+EObj_ID: 2004304" />
+
+<img id="4982814" style="position: absolute; left: 1276.88px; top: 1808.67px;" src="icons/45.png" alt="mark of the Spinner" title="
+            mark of the Spinner
+Level_ID: 4982814
+Type: 45
+
+EObj_ID: 2004592" />
+
+<img id="5069536" style="position: absolute; left: 893.25px; top: 1755.69px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 5069536
+Type: 45
+
+EObj_ID: 2004861" />
+
+<img id="5072102" style="position: absolute; left: 1594.89px; top: 528.48px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5072102
+Type: 45
+
+EObj_ID: 2004859" />
+
+<img id="5327302" style="position: absolute; left: 1044.97px; top: 1881.33px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 5327302
+Type: 45
+
+EObj_ID: 2004935" />
+
+<img id="5392062" style="position: absolute; left: 1518.37px; top: 827.22px;" src="icons/45.png" alt="weathered crate" title="
+            weathered crate
+Level_ID: 5392062
+Type: 45
+
+EObj_ID: 2005006" />
+
+<img id="5578176" style="position: absolute; left: 941.29px; top: 1851.92px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 5578176
+Type: 45
+
+EObj_ID: 2004570" />
+
+<img id="5891770" style="position: absolute; left: 835.81px; top: 1682.92px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5891770
+Type: 45
+
+EObj_ID: 2004812" />
+
+<img id="5895554" style="position: absolute; left: 1002.15px; top: 1451.59px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 5895554
+Type: 45
+
+EObj_ID: 2005928" />
+
+<img id="5895555" style="position: absolute; left: 978.27px; top: 1554.7px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 5895555
+Type: 45
+
+EObj_ID: 2005929" />
+
+<img id="5895558" style="position: absolute; left: 931.04px; top: 1648.87px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 5895558
+Type: 45
+
+EObj_ID: 2005930" />
+
+<img id="5895563" style="position: absolute; left: 839.43px; top: 1704.5px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 5895563
+Type: 45
+
+EObj_ID: 2005931" />
+
+<img id="5895749" style="position: absolute; left: 1147.67px; top: 1960.4px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 5895749
+Type: 45
+
+EObj_ID: 2005942" />
+
+<img id="5895751" style="position: absolute; left: 1284.86px; top: 1741.09px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5895751
+Type: 45
+
+EObj_ID: 2005943" />
+
+<img id="5905149" style="position: absolute; left: 1534.26px; top: 574.29px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5905149
+Type: 45
+
+EObj_ID: 2006047" />
+
+<img id="5922985" style="position: absolute; left: 927.15px; top: 1738.77px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5922985
+Type: 45
+
+EObj_ID: 2006298" />
+
+<img id="5928029" style="position: absolute; left: 876.03px; top: 1697.18px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5928029
+Type: 45
+
+EObj_ID: 2006339" />
+
+<img id="5928033" style="position: absolute; left: 876.03px; top: 1697.18px;" src="icons/45.png" alt="stolen goods" title="
+            stolen goods
+Level_ID: 5928033
+Type: 45
+
+EObj_ID: 2006340" />
+
+<img id="5939504" style="position: absolute; left: 1260.93px; top: 1723.91px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5939504
+Type: 45
+
+EObj_ID: 2006335" />
+
+<img id="5958507" style="position: absolute; left: 1188.44px; top: 1609.35px;" src="icons/45.png" alt="" title="
+    
+Level_ID: 5958507
+Type: 45
+
+EObj_ID: 2006429" />
+
+<img id="6858155" style="position: absolute; left: 1227.56px; top: 1802.08px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 6858155
+Type: 45
+
+EObj_ID: 2008204" />
+
+<img id="6858173" style="position: absolute; left: 1227.56px; top: 1802.08px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 6858173
+Type: 45
+
+EObj_ID: 2008206" />
+
+<img id="7946857" style="position: absolute; left: 1370.71px; top: 961.43px;" src="icons/45.png" alt="mossy boulder" title="
+            mossy boulder
+Level_ID: 7946857
+Type: 45
+
+EObj_ID: 2010149" />
+
+<img id="7946860" style="position: absolute; left: 1394.82px; top: 936.08px;" src="icons/45.png" alt="mossy boulder" title="
+            mossy boulder
+Level_ID: 7946860
+Type: 45
+
+EObj_ID: 2010150" />
+
+<img id="7946861" style="position: absolute; left: 1386.32px; top: 905.84px;" src="icons/45.png" alt="mossy boulder" title="
+            mossy boulder
+Level_ID: 7946861
+Type: 45
+
+EObj_ID: 2010151" />
+
+<img id="7955933" style="position: absolute; left: 990.45px; top: 1566.76px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 7955933
+Type: 45
+
+EObj_ID: 2010241" />
+
+<img id="7955936" style="position: absolute; left: 965.95px; top: 1517.66px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 7955936
+Type: 45
+
+EObj_ID: 2010242" />
+
+<img id="7958845" style="position: absolute; left: 1009.34px; top: 1457.08px;" src="icons/45.png" alt="destination" title="
+            destination
+Level_ID: 7958845
+Type: 45
+
+EObj_ID: 2010243" />
+
+
+    </div>
+    <div id="eventrange">
+
+<img id="4021195" style="position: absolute; left: 1181.05px; top: 1120.88px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4021195
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4103659" style="position: absolute; left: 1266.05px; top: 1628.23px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4103659
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4126868" style="position: absolute; left: 1392.91px; top: 639.99px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4126868
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4167388" style="position: absolute; left: 1215.92px; top: 1626.15px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4167388
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4167389" style="position: absolute; left: 1188.33px; top: 1648.6px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4167389
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4323867" style="position: absolute; left: 1664.14px; top: 755.43px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4323867
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4876920" style="position: absolute; left: 1105.86px; top: 1957.99px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4876920
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4876921" style="position: absolute; left: 1622.75px; top: 913.14px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4876921
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4877085" style="position: absolute; left: 1528.64px; top: 589.86px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4877085
+Type: 49
+Object_ID: 5000000" />
+
+<img id="4889153" style="position: absolute; left: 1359px; top: 728.84px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 4889153
+Type: 49
+Object_ID: 5000000" />
+
+<img id="5072108" style="position: absolute; left: 1594.89px; top: 528.48px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 5072108
+Type: 49
+Object_ID: 5000000" />
+
+<img id="5110336" style="position: absolute; left: 1533.74px; top: 574.76px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 5110336
+Type: 49
+Object_ID: 5000000" />
+
+<img id="5890310" style="position: absolute; left: 1341.72px; top: 1041.93px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 5890310
+Type: 49
+Object_ID: 5000000" />
+
+<img id="5905150" style="position: absolute; left: 1534.26px; top: 574.29px;" src="icons/49.png" alt="" title="
+    
+Level_ID: 5905150
+Type: 49
+Object_ID: 5000000" />
+
+
+    </div>
+    <div id="questmarker">
+
+<img id="3863394" style="position: absolute; left: 978.08px; top: 1556.38px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 3863394
+Type: 51
+Object_ID: 0" />
+
+<img id="3863452" style="position: absolute; left: 1032.01px; top: 1695.41px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 3863452
+Type: 51
+Object_ID: 0" />
+
+<img id="3964110" style="position: absolute; left: 1114.7px; top: 1700.82px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 3964110
+Type: 51
+Object_ID: 0" />
+
+<img id="3977643" style="position: absolute; left: 1179.13px; top: 1087.89px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 3977643
+Type: 51
+Object_ID: 0" />
+
+<img id="3977652" style="position: absolute; left: 1444.37px; top: 674.14px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 3977652
+Type: 51
+Object_ID: 0" />
+
+<img id="3982029" style="position: absolute; left: 1589.59px; top: 1000.02px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 3982029
+Type: 51
+Object_ID: 0" />
+
+<img id="4021392" style="position: absolute; left: 1150.81px; top: 1062.38px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4021392
+Type: 51
+Object_ID: 0" />
+
+<img id="4021393" style="position: absolute; left: 1183.09px; top: 1115.52px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4021393
+Type: 51
+Object_ID: 0" />
+
+<img id="4031957" style="position: absolute; left: 1489.68px; top: 846.46px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4031957
+Type: 51
+Object_ID: 0" />
+
+<img id="4087780" style="position: absolute; left: 1261.01px; top: 1077.56px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4087780
+Type: 51
+Object_ID: 0" />
+
+<img id="4087810" style="position: absolute; left: 1038.88px; top: 1135.73px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4087810
+Type: 51
+Object_ID: 0" />
+
+<img id="4089253" style="position: absolute; left: 1436.25px; top: 692.55px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4089253
+Type: 51
+Object_ID: 0" />
+
+<img id="4089254" style="position: absolute; left: 1436.25px; top: 692.55px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4089254
+Type: 51
+Object_ID: 0" />
+
+<img id="4101786" style="position: absolute; left: 1596.11px; top: 816.23px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4101786
+Type: 51
+Object_ID: 0" />
+
+<img id="4101788" style="position: absolute; left: 1623.55px; top: 751.48px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4101788
+Type: 51
+Object_ID: 0" />
+
+<img id="4101848" style="position: absolute; left: 1607.51px; top: 694.58px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4101848
+Type: 51
+Object_ID: 0" />
+
+<img id="4101852" style="position: absolute; left: 1598.66px; top: 605.16px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4101852
+Type: 51
+Object_ID: 0" />
+
+<img id="4102364" style="position: absolute; left: 1584.11px; top: 917.65px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4102364
+Type: 51
+Object_ID: 0" />
+
+<img id="4102369" style="position: absolute; left: 1516.12px; top: 1001.26px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4102369
+Type: 51
+Object_ID: 0" />
+
+<img id="4164750" style="position: absolute; left: 986.92px; top: 1656.29px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4164750
+Type: 51
+Object_ID: 0" />
+
+<img id="4167140" style="position: absolute; left: 1274.35px; top: 1079.55px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167140
+Type: 51
+Object_ID: 0" />
+
+<img id="4167141" style="position: absolute; left: 1142.45px; top: 1100.87px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167141
+Type: 51
+Object_ID: 0" />
+
+<img id="4167142" style="position: absolute; left: 1190.79px; top: 1142.93px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167142
+Type: 51
+Object_ID: 0" />
+
+<img id="4167143" style="position: absolute; left: 1187.25px; top: 1204.95px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167143
+Type: 51
+Object_ID: 0" />
+
+<img id="4167145" style="position: absolute; left: 1444.24px; top: 957.25px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167145
+Type: 51
+Object_ID: 0" />
+
+<img id="4167146" style="position: absolute; left: 1374.78px; top: 929.58px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167146
+Type: 51
+Object_ID: 0" />
+
+<img id="4167147" style="position: absolute; left: 1423.19px; top: 842.15px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167147
+Type: 51
+Object_ID: 0" />
+
+<img id="4167148" style="position: absolute; left: 1447.5px; top: 778.07px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167148
+Type: 51
+Object_ID: 0" />
+
+<img id="4167149" style="position: absolute; left: 1502.73px; top: 774.48px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167149
+Type: 51
+Object_ID: 0" />
+
+<img id="4167150" style="position: absolute; left: 999.97px; top: 1652.91px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167150
+Type: 51
+Object_ID: 0" />
+
+<img id="4167151" style="position: absolute; left: 1099.06px; top: 1679.22px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167151
+Type: 51
+Object_ID: 0" />
+
+<img id="4167152" style="position: absolute; left: 1035.71px; top: 1756.04px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167152
+Type: 51
+Object_ID: 0" />
+
+<img id="4167153" style="position: absolute; left: 994.93px; top: 1705.07px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167153
+Type: 51
+Object_ID: 0" />
+
+<img id="4167168" style="position: absolute; left: 1016.2px; top: 1620.12px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167168
+Type: 51
+Object_ID: 0" />
+
+<img id="4167169" style="position: absolute; left: 1048.15px; top: 1708.84px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4167169
+Type: 51
+Object_ID: 0" />
+
+<img id="4178179" style="position: absolute; left: 1058.67px; top: 1814.46px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4178179
+Type: 51
+Object_ID: 0" />
+
+<img id="4178181" style="position: absolute; left: 1141.14px; top: 1892.81px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4178181
+Type: 51
+Object_ID: 0" />
+
+<img id="4260919" style="position: absolute; left: 1082.47px; top: 1129.36px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4260919
+Type: 51
+Object_ID: 0" />
+
+<img id="4260920" style="position: absolute; left: 1257.43px; top: 1073.66px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4260920
+Type: 51
+Object_ID: 0" />
+
+<img id="4260921" style="position: absolute; left: 1370.74px; top: 992.8px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4260921
+Type: 51
+Object_ID: 0" />
+
+<img id="4260923" style="position: absolute; left: 1400.29px; top: 926.06px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4260923
+Type: 51
+Object_ID: 0" />
+
+<img id="4260924" style="position: absolute; left: 1099.83px; top: 1143.64px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4260924
+Type: 51
+Object_ID: 0" />
+
+<img id="4260925" style="position: absolute; left: 943.13px; top: 1720.94px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4260925
+Type: 51
+Object_ID: 0" />
+
+<img id="4291408" style="position: absolute; left: 1669.7px; top: 754.8px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4291408
+Type: 51
+Object_ID: 0" />
+
+<img id="4509060" style="position: absolute; left: 1504.15px; top: 847.71px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4509060
+Type: 51
+Object_ID: 0" />
+
+<img id="4509071" style="position: absolute; left: 1467.63px; top: 826.74px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4509071
+Type: 51
+Object_ID: 0" />
+
+<img id="4759738" style="position: absolute; left: 1573.85px; top: 728.39px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4759738
+Type: 51
+Object_ID: 0" />
+
+<img id="4759747" style="position: absolute; left: 1597.52px; top: 822.99px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4759747
+Type: 51
+Object_ID: 0" />
+
+<img id="4759763" style="position: absolute; left: 1494.53px; top: 816.67px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4759763
+Type: 51
+Object_ID: 0" />
+
+<img id="4877924" style="position: absolute; left: 916.96px; top: 1768.89px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 4877924
+Type: 51
+Object_ID: 0" />
+
+<img id="5058426" style="position: absolute; left: 1231.09px; top: 1065.75px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5058426
+Type: 51
+Object_ID: 0" />
+
+<img id="5072122" style="position: absolute; left: 1594.26px; top: 531.58px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5072122
+Type: 51
+Object_ID: 0" />
+
+<img id="5117555" style="position: absolute; left: 1533.74px; top: 574.76px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5117555
+Type: 51
+Object_ID: 0" />
+
+<img id="5327300" style="position: absolute; left: 1512.45px; top: 841.11px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5327300
+Type: 51
+Object_ID: 0" />
+
+<img id="5327301" style="position: absolute; left: 1020.34px; top: 1858.4px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5327301
+Type: 51
+Object_ID: 0" />
+
+<img id="5891176" style="position: absolute; left: 1341.72px; top: 1041.93px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5891176
+Type: 51
+Object_ID: 0" />
+
+<img id="5905315" style="position: absolute; left: 1534.26px; top: 574.29px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5905315
+Type: 51
+Object_ID: 0" />
+
+<img id="5923256" style="position: absolute; left: 1251.14px; top: 1688.99px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5923256
+Type: 51
+Object_ID: 0" />
+
+<img id="5962871" style="position: absolute; left: 999.06px; top: 1457.45px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5962871
+Type: 51
+Object_ID: 0" />
+
+<img id="5962872" style="position: absolute; left: 977.22px; top: 1560.76px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5962872
+Type: 51
+Object_ID: 0" />
+
+<img id="5962873" style="position: absolute; left: 938.16px; top: 1647.29px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 5962873
+Type: 51
+Object_ID: 0" />
+
+<img id="6847975" style="position: absolute; left: 1561.11px; top: 962.42px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 6847975
+Type: 51
+Object_ID: 0" />
+
+<img id="6858166" style="position: absolute; left: 1231.44px; top: 1813.06px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 6858166
+Type: 51
+Object_ID: 0" />
+
+<img id="6858174" style="position: absolute; left: 1231.44px; top: 1813.06px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 6858174
+Type: 51
+Object_ID: 0" />
+
+<img id="7935144" style="position: absolute; left: 1464.82px; top: 850.23px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 7935144
+Type: 51
+Object_ID: 0" />
+
+<img id="7946862" style="position: absolute; left: 1395px; top: 936.91px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 7946862
+Type: 51
+Object_ID: 0" />
+
+<img id="7955941" style="position: absolute; left: 982.22px; top: 1538.37px;" src="icons/51.png" alt="" title="
+    
+Level_ID: 7955941
+Type: 51
+Object_ID: 0" />
+
+
+    </div>
+    <div id="collisionbox">
+
+
+    </div>
+    <div id="clientpath">
+
+<img id="4886182" style="position: absolute; left: 1136.25px; top: 1958.63px;" src="icons/65.png" alt="" title="
+    
+Level_ID: 4886182
+Type: 65
+Object_ID: 0" />
+
+
+    </div>
+    <div id="serverpath">
+
+
+    </div>
+    <div id="targetmarker">
+
+
+    </div>
+    <div id="mapmarker">
+    
+
+<img id ="1" style="position: absolute; left: 1349px; top: 707px;" src="icons/060442.png" alt="Blind Iron Mines"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1331px; top: 689px;" alt="Blind Iron Mines"/><b>Blind Iron Mines</b></div>
+
+<img id ="1" style="position: absolute; left: 1594px; top: 497px;" src="icons/060441.png" alt="Eastern La Noscea"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1576px; top: 479px;" alt="Eastern La Noscea"/><b>Eastern La Noscea</b></div>
+
+<img id ="1" style="position: absolute; left: 1514px; top: 945px;" src="icons/060551.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1496px; top: 927px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 1307px; top: 1052px;" src="icons/060442.png" alt="The Eyes"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1289px; top: 1034px;" alt="The Eyes"/><b>The Eyes</b></div>
+
+<img id ="1" style="position: absolute; left: 1160px; top: 1209px;" src="icons/00.png" alt="The Mourning Widow"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1142px; top: 1191px;" alt="The Mourning Widow"/><b>The Mourning Widow</b></div>
+
+<img id ="1" style="position: absolute; left: 985px; top: 1143px;" src="icons/060442.png" alt="Tempest Gate"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 967px; top: 1125px;" alt="Tempest Gate"/><b>Tempest Gate</b></div>
+
+<img id ="1" style="position: absolute; left: 1112px; top: 1371px;" src="icons/060442.png" alt="Oschon's Embrace"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1094px; top: 1353px;" alt="Oschon's Embrace"/><b>Oschon's Embrace</b></div>
+
+<img id ="1" style="position: absolute; left: 1555px; top: 956px;" src="icons/060448.png" alt="Red Rooster Stead"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1537px; top: 938px;" alt="Red Rooster Stead"/><b>Red Rooster Stead</b></div>
+
+<img id ="1" style="position: absolute; left: 1695px; top: 815px;" src="icons/060442.png" alt="The Grey Fleet"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1677px; top: 797px;" alt="The Grey Fleet"/><b>The Grey Fleet</b></div>
+
+<img id ="1" style="position: absolute; left: 1273px; top: 1092px;" src="icons/00.png" alt="La Thagran Eastroad"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1255px; top: 1074px;" alt="La Thagran Eastroad"/><b>La Thagran Eastroad</b></div>
+
+<img id ="1" style="position: absolute; left: 1545px; top: 590px;" src="icons/060442.png" alt="House of Sticks"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1527px; top: 572px;" alt="House of Sticks"/><b>House of Sticks</b></div>
+
+<img id ="1" style="position: absolute; left: 1175px; top: 1631px;" src="icons/060448.png" alt="Moraby Drydocks"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1157px; top: 1613px;" alt="Moraby Drydocks"/><b>Moraby Drydocks</b></div>
+
+<img id ="1" style="position: absolute; left: 890px; top: 1716px;" src="icons/060442.png" alt="The Salt Strand"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 872px; top: 1698px;" alt="The Salt Strand"/><b>The Salt Strand</b></div>
+
+<img id ="1" style="position: absolute; left: 1010px; top: 1870px;" src="icons/060442.png" alt="Candlekeep Quay"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 992px; top: 1852px;" alt="Candlekeep Quay"/><b>Candlekeep Quay</b></div>
+
+<img id ="1" style="position: absolute; left: 1041px; top: 1697px;" src="icons/060442.png" alt="Empty Heart"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1023px; top: 1679px;" alt="Empty Heart"/><b>Empty Heart</b></div>
+
+<img id ="1" style="position: absolute; left: 1130px; top: 1959px;" src="icons/060442.png" alt="Oschon's Torch"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1112px; top: 1941px;" alt="Oschon's Torch"/><b>Oschon's Torch</b></div>
+
+<img id ="1" style="position: absolute; left: 973px; top: 1140px;" src="icons/060441.png" alt="Limsa Lominsa Upper Decks"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 955px; top: 1122px;" alt="Limsa Lominsa Upper Decks"/><b>Limsa Lominsa Upper Decks</b></div>
+
+<img id ="1" style="position: absolute; left: 1250px; top: 678px;" src="icons/060441.png" alt="Middle La Noscea"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1232px; top: 660px;" alt="Middle La Noscea"/><b>Middle La Noscea</b></div>
+
+<img id ="1" style="position: absolute; left: 1719px; top: 634px;" src="icons/060441.png" alt="Eastern La Noscea"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1701px; top: 616px;" alt="Eastern La Noscea"/><b>Eastern La Noscea</b></div>
+
+<img id ="1" style="position: absolute; left: 940px; top: 1874px;" src="icons/00.png" alt="Western La Noscea"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 922px; top: 1856px;" alt="Western La Noscea"/><b>Western La Noscea</b></div>
+
+<img id ="1" style="position: absolute; left: 1526px; top: 945px;" src="icons/060311.png" alt="Chocobokeep"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1508px; top: 927px;" alt="Chocobokeep"/><b>Chocobokeep</b></div>
+
+<img id ="1" style="position: absolute; left: 1583px; top: 974px;" src="icons/060434.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1565px; top: 956px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 1180px; top: 1697px;" src="icons/060453.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1162px; top: 1679px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 1070px; top: 1628px;" src="icons/060311.png" alt="Chocobokeep"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1052px; top: 1610px;" alt="Chocobokeep"/><b>Chocobokeep</b></div>
+
+<img id ="1" style="position: absolute; left: 1224px; top: 1699px;" src="icons/060434.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1206px; top: 1681px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 1019px; top: 1887px;" src="icons/060434.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1001px; top: 1869px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 979px; top: 1871px;" src="icons/060456.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 961px; top: 1853px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 1210px; top: 1680px;" src="icons/060551.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1192px; top: 1662px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 1622px; top: 916px;" src="icons/060441.png" alt="Mist"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1604px; top: 898px;" alt="Mist"/><b>Mist</b></div>
+
+<img id ="1" style="position: absolute; left: 1440px; top: 1720px;" src="icons/00.png" alt="Wolves' Den Docks"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1422px; top: 1702px;" alt="Wolves' Den Docks"/><b>Wolves' Den Docks</b></div>
+
+<img id ="1" style="position: absolute; left: 1292px; top: 1738px;" src="icons/060456.png" alt="Moraby Drydocks Landing"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1274px; top: 1720px;" alt="Moraby Drydocks Landing"/><b>Moraby Drydocks Landing</b></div>
+
+<img id ="1" style="position: absolute; left: 1302px; top: 1758px;" src="icons/060414.png" alt="Hullbreaker Isle"/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1284px; top: 1740px;" alt="Hullbreaker Isle"/><b>Hullbreaker Isle</b></div>
+
+<img id ="1" style="position: absolute; left: 1297px; top: 1751px;" src="icons/00.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1279px; top: 1733px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 1297px; top: 1751px;" src="icons/00.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1279px; top: 1733px;" alt=""/><b></b></div>
+
+<img id ="1" style="position: absolute; left: 1181px; top: 1605px;" src="icons/00.png" alt=""/>
+ <div class="w3-image w3-text-white w3-hover-black w3-bold" style="text-shadow:1px 1px 0 #444; position: absolute; left: 1163px; top: 1587px;" alt=""/><b></b></div>
+
+
+    </div>
+    </div>
+    <script src="assets/js/key.js"></script>
+    <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+    </body>
+    </html>
+
