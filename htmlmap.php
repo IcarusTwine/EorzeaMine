@@ -55,16 +55,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="clientpath()"><img src="icons/65.png" alt="" title="ClientPath Type 65"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="serverpath()"><img src="icons/66.png" alt="" title="ServerPath Type 66"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="targetmarker()"><img src="icons/68.png" alt="" title="TargetMarker Type 68"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="mapmarker()">Lables</button>
 </div>
 
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button w3-hide-small w3-padding-large w3-hover-white">Markers</button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-      </div>
     </div>
   </div>
 
@@ -78,7 +75,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
           <div style="width: 2048px; height: 2048px; position: absolute;">
-        <img id="backgroundmap" style="position: relative; left: 18px; top: 18px" src="maps/{mapshort} - {placename}.png" alt="..."/></div>
+        <img id="backgroundmap" style="position: relative; left: 18px; top: 18px" src="maps/{mapshort} - {placename}{sub}.png" alt="..."/></div>
 
     <div id="allmarkers">
     <div id="positionmarker">
@@ -98,9 +95,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
     <div id="gathering">
         {output14}
-    </div>
-    <div id="treasure">
-        {output16}
     </div>
     <div id="poprange">
         {output40}
@@ -129,6 +123,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div id="targetmarker">
         {output68}
     </div>
+    <div id="treasure">
+    {treasure}
+    </div>
+    <div id="mapmarker">
+    {output}
+    </div>
+
     </div>
     <script src="assets/js/key.js"></script>
     <script>
@@ -159,11 +160,67 @@ function myFunction() {
         $enpcresidentcsv = $this->csv('ENpcResident');
         $eobjnamecsv = $this->csv('EObjName');
         $mapmarkercsv = $this->csv('MapMarker');
+        $treasurespotcsv = $this->csv('TreasureSpot');
+        $treasurehuntrankcsv = $this->csv('TreasureHuntRank');
+        $itemcsv = $this->csv('Item');
+
+
         //this controls the map it will make, just change it to anything in map.exd
-        $mapnumber = 369;
+        $mapnumber = 555;
+
+
+        
 
     // (optional) start a progress bar
         $this->io->progressStart($Level->total);
+
+        $output =[];
+        foreach ($mapcsv->data as $id => $Map){
+            $id = $Map['id'];
+            if ($id !=$mapnumber) continue;
+            $number = 0;
+
+            foreach ($mapmarkercsv->data as $key => $MapMarker) {
+                $this->io->progressAdvance();
+                $number++;
+                $thekey = $MapMarker['id'];
+                //create a range between 0.01 and 0.99
+                $range = range(0, 1, 0.01);
+
+                foreach ($range as $id)
+
+                //Only pick the values set in the mapnumber variable above
+                if ($thekey !=$mapnumber) continue;
+
+                //grab icon from MapMarker.csv (Testing purposes)
+
+                    if ($Map["PlaceName{Sub}"] > 0) {
+                        $sub = " - ".$placenamecsv->at($Map["PlaceName{Sub}"])['Name']."";
+                        } elseif ($Map["PlaceName{Sub}"] < 1) {
+                        $sub = "";
+                    }
+
+
+
+                //pull the correct link from Map.csv to MapMarker.csv
+                $MMRange = $Map['MapMarkerRange'];
+
+
+                $formatkey = sprintf('%d.%s', $MMRange, $number);
+                $X = $mapmarkercsv->at($formatkey)['X'];
+                $Y = $mapmarkercsv->at($formatkey)['Y'];
+                $icon = $mapmarkercsv->at($formatkey)['Icon'];
+                $PlaceName = $mapmarkercsv->at($formatkey)['PlaceName{Subtext}'];
+                    $PlaceNameSub = $placenamecsv->at($PlaceName)['Name'];
+                    
+                if (empty($X))continue;
+                $string =
+            "<img id =\"". $id ."\" style=\"position: absolute; left: ". $X ."px; top: ". $Y ."px;\" src=\"icons/0". $icon .".png\" alt=\"". $PlaceNameSub ."\"/>\n <div class=\"w3-image w3-text-white w3-bold\" style=\"text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; position: absolute; left: ". ($X-18) ."px; top: ". ($Y-18) ."px;\" alt=\"". $PlaceNameSub ."\"/><b>". $PlaceNameSub  ."</b></div>\n\n";
+                $output[] = $string;
+            }
+        }
+
+
         $Total5 =[];
         // loop through data
         foreach ($Level->data as $id => $LevelData) {
@@ -197,10 +254,41 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total5[] = $string;
 
+            
         };
+
+            $treasure =[];
+        foreach ($treasurespotcsv->data as $key => $spot){
+            $key = $spot['id'];
+
+            $locationmap = $Level->at($spot['Location'])['Map'];
+            if ($locationmap !=$mapnumber) continue;
+
+                $locationX = $Level->at($spot['Location'])['X'];
+                $locationY = $Level->at($spot['Location'])['Z'];
+                $keylink = round($key, 0);
+
+                $ItemID = $treasurehuntrankcsv->at($keylink)['ItemName'];
+                $MapName = $itemcsv->at($ItemID)['Name'];
+                $scale = $mapcsv->at($locationmap)['SizeFactor'];
+                $c = $scale / 100.0;
+                $offsetx = $mapcsv->at($locationmap)['Offset{X}'];
+                $offsetValueX = ($locationX + $offsetx) * $c;
+                    $NpcTLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                    $NpcTPixelX = (($NpcTLocX - 1) * 50 * $c);
+                $offsety = $mapcsv->at($locationmap)['Offset{Y}'];
+                $offsetValueY = ($locationY + $offsety) * $c;
+                    $NpcTLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                    $NpcTPixelY = (($NpcTLocY - 1) * 50 * $c);
+                    $string =
+                "<img id=\"". $key ."\" style=\"position: absolute; left: ". (round($NpcTPixelX, 2)) ."px; top: ". (round($NpcTPixelY, 2)) ."px;\" src=\"icons/16.png\" alt=\"Treasure Spot\" title=\"
+            Treasure Spot\n". $MapName ."\n\nX: (". (round($NpcTLocX, 1)) .") Y: (". (round($NpcTLocY, 1)) .")\n\nTreasure_ID: ". $key ."\nType: Treasure Map\n\" />\n\n";
+                $treasure[] = $string;
+            }
+        
 
 //start of section
              $Total6 =[];
@@ -233,7 +321,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total6[] = $string;
 
         };
@@ -268,7 +356,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nENpc_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nENpc_ID: ". $object ."\" />\n\n";
             $Total8[] = $string;
         }
 // end of section
@@ -302,7 +390,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total9[] = $string;
         }
 // end of section
@@ -336,7 +424,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total12[] = $string;
         }
 // end of section
@@ -374,45 +462,10 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total14[] = $string;
         }
-// end of section
 
-        //start of section
-             $Total16 =[];
-        foreach ($Level->data as $id => $LevelData) {
-            $type = $LevelData['Type'];
-            $map = $LevelData['Map'];
-            $name = $id;
-            if ($map !=$mapnumber) continue;
-            if ($type !=16) continue;
-            $mapshort = substr($mapcsv->at($map)['Id'], 0, 4);
-            $mapplacename = $mapcsv->at($map)['PlaceName'];
-            $placename = $placenamecsv->at($mapplacename)['Name'];
-            $object = $LevelData['Object'];
-            $objectname = $enpcresidentcsv->at($object)['Singular'];
-            $eobjectname = $eobjnamecsv->at($object)['Singular'];
-            //get the map positions for each object
-            $scale = $mapcsv->at($LevelData["Map"])['SizeFactor'];
-            $c = $scale / 100.0;
-            $NpcLevelX = $LevelData["X"];
-            $NpcLevelY = $LevelData["Z"];
-            $offsetx = $mapcsv->at($LevelData["Map"])['Offset{X}'];
-            $offsetValueX = ($NpcLevelX + $offsetx) * $c;
-                $NpcLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
-                $NpcPixelX = (($NpcLocX - 1) * 50 * $c);
-            $offsety = $mapcsv->at($LevelData["Map"])['Offset{Y}'];
-                $offsetValueY = ($NpcLevelY + $offsety) * $c;
-                $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
-                $NpcPixelY = (($NpcLocY - 1) * 50 * $c);
-            $icon = $type;
-            $string =
-            "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
-            $Total16[] = $string;
-        }
-// end of section
 
 
 //start of section
@@ -445,7 +498,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total40[] = $string;
         }
 // end of section
@@ -479,7 +532,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total41[] = $string;
         }
 // end of section
@@ -513,7 +566,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $eobjectname ."\" title=\"
-            ". $eobjectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\n\nEObj_ID: ". $object ."\" />\n\n";
+            ". $eobjectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\n\nEObj_ID: ". $object ."\" />\n\n";
             $Total45[] = $string;
         }
 // end of section
@@ -547,7 +600,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total49[] = $string;
         }
 // end of section
@@ -581,7 +634,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total51[] = $string;
         }
 // end of section
@@ -615,7 +668,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total57[] = $string;
         }
 // end of section
@@ -649,7 +702,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total65[] = $string;
         }
 // end of section
@@ -683,7 +736,7 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total66[] = $string;
         }
 // end of section
@@ -717,22 +770,20 @@ function myFunction() {
             $icon = $type;
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $objectname ."\" title=\"
-            ". $objectname ."\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
+            ". $objectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\nObject_ID: ". $object ."\" />\n\n";
             $Total68[] = $string;
         }
 // end of section
 
 
 
-
-        
+            $output = implode($output);
             $Total5 = implode($Total5);
             $Total6 = implode($Total6);
             $Total8 = implode($Total8);
             $Total9 = implode($Total9);
             $Total12 = implode($Total12);
             $Total14 = implode($Total14);
-            $Total16 = implode($Total16);
             $Total40 = implode($Total40);
             $Total41 = implode($Total41);
             $Total45 = implode($Total45);
@@ -742,6 +793,7 @@ function myFunction() {
             $Total65 = implode($Total65);
             $Total66 = implode($Total66);
             $Total68 = implode($Total68);
+            $treasure = implode($treasure);
 {
             // Save some data
             $data = [
@@ -750,7 +802,6 @@ function myFunction() {
                 '{output8}' => "\n\n$Total8",
                 '{output9}' => "\n\n$Total9",
                 '{output12}' => "\n\n$Total12",
-                '{output16}' => "\n\n$Total16",
                 '{output14}' => "\n\n$Total14",
                 '{output40}' => "\n\n$Total40",
                 '{output41}' => "\n\n$Total41",
@@ -763,6 +814,10 @@ function myFunction() {
                 '{output68}' => "\n\n$Total68",
                 '{mapshort}' => $mapshort,
                 '{placename}' => $placename,
+                '{output}' => "\n\n$output",
+                '{sub}' => $sub,
+                '{treasure}' => "\n\n$treasure",
+
 //                '{mapdata}' => $mapmarker,
             ];
 
@@ -774,11 +829,11 @@ function myFunction() {
         // save our data to the filename: GeRecipeWiki.txt
         $this->io->progressFinish();
         $this->io->text('Saving ...');
-        $info = $this->save('Level_'. $mapshort .'.html', 999999);
-
+        $info = $this->save('Level_'. $mapshort .''. $sub .'.html', 999999);
         $this->io->table(
             [ 'Filename', 'Data Count', 'File Size' ],
             $info
         );
+        echo $mapnumber;
     }
 }
