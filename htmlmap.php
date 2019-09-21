@@ -12,6 +12,7 @@ use App\Parsers\ParseInterface;
  */
 class htmlmap implements ParseInterface
 {
+    
     use CsvParseTrait;
 
     // the wiki output format / template we shall use
@@ -21,12 +22,14 @@ class htmlmap implements ParseInterface
     <head>
       <meta charset="utf-8">
 
-      <title>{mapshort} - {placename}</title>
+      <title>AR:RM - {placename}{sub}</title>
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -48,7 +51,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="treasure()"><img src="icons/16.png" alt="" title="Treasure Type 16"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="poprange()"><img src="icons/40.png" alt="" title="PopRange Type 40"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="exitrange()"><img src="icons/41.png" alt="" title="ExitRange Type 41"></button>
-            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventobject()"><img src="icons/45.png" alt="" title="EventObject Type 45"></button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventobject()"><img src="icons/45.png" alt="" title="EventObject Type 45"><img src="icons/current.png" alt="" title="Aether Current"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="eventrange()"><img src="icons/49.png" alt="" title="EventRange Type 49"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="questmarker()"><img src="icons/51.png" alt="" title="QuestMarker Type 51"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="collisionbox()"><img src="icons/57.png" alt="" title="CollisionBox Type 57"></button>
@@ -56,12 +59,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="serverpath()"><img src="icons/66.png" alt="" title="ServerPath Type 66"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="targetmarker()"><img src="icons/68.png" alt="" title="TargetMarker Type 68"></button>
             <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="mapmarker()">Lables</button>
+            <button class="w3-bar-item w3-button w3-black w3-border-top w3-border-bottom w3-border-green " onclick="vista()">Vistas</button>
 </div>
 
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <span class="w3-bar-item" style="width:33%">({mapshort}) - {placename}{sub}</span>
     </div>
   </div>
 
@@ -126,6 +131,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div id="treasure">
     {treasure}
     </div>
+    <div id="vista">
+    {vista}
+    </div>
     <div id="mapmarker">
     {output}
     </div>
@@ -163,13 +171,12 @@ function myFunction() {
         $treasurespotcsv = $this->csv('TreasureSpot');
         $treasurehuntrankcsv = $this->csv('TreasureHuntRank');
         $itemcsv = $this->csv('Item');
-
+        $adventurecsv = $this->csv('Adventure');
+        $emotecsv = $this->csv('Emote');
 
         //this controls the map it will make, just change it to anything in map.exd
-        $mapnumber = 555;
+        $mapnumber = 492;
 
-
-        
 
     // (optional) start a progress bar
         $this->io->progressStart($Level->total);
@@ -192,6 +199,7 @@ function myFunction() {
                 //Only pick the values set in the mapnumber variable above
                 if ($thekey !=$mapnumber) continue;
 
+                $decimals = range(0,99);
                 //grab icon from MapMarker.csv (Testing purposes)
 
                     if ($Map["PlaceName{Sub}"] > 0) {
@@ -287,6 +295,34 @@ function myFunction() {
                 "<img id=\"". $key ."\" style=\"position: absolute; left: ". (round($NpcTPixelX, 2)) ."px; top: ". (round($NpcTPixelY, 2)) ."px;\" src=\"icons/16.png\" alt=\"Treasure Spot\" title=\"
             Treasure Spot\n". $MapName ."\n\nX: (". (round($NpcTLocX, 1)) .") Y: (". (round($NpcTLocY, 1)) .")\n\nTreasure_ID: ". $key ."\nType: Treasure Map\n\" />\n\n";
                 $treasure[] = $string;
+            }
+
+            $vista =[];
+        foreach ($adventurecsv->data as $key => $vistadata){
+            $key = $vistadata['id'];
+
+            $locationmap = $Level->at($vistadata['Level'])['Map'];
+            if ($locationmap !=$mapnumber) continue;
+
+                $locationX = $Level->at($vistadata['Level'])['X'];
+                $locationY = $Level->at($vistadata['Level'])['Z'];
+
+                $action = $emotecsv->at($vistadata['Emote'])['Name'];
+                $vistaname = $vistadata['Name'];
+                $scale = $mapcsv->at($locationmap)['SizeFactor'];
+                $c = $scale / 100.0;
+                $offsetx = $mapcsv->at($locationmap)['Offset{X}'];
+                $offsetValueX = ($locationX + $offsetx) * $c;
+                    $NpcTLocX = ((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1);
+                    $NpcTPixelX = (($NpcTLocX - 1) * 50 * $c);
+                $offsety = $mapcsv->at($locationmap)['Offset{Y}'];
+                $offsetValueY = ($locationY + $offsety) * $c;
+                    $NpcTLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
+                    $NpcTPixelY = (($NpcTLocY - 1) * 50 * $c);
+                    $string =
+                "<img id=\"". $key ."\" style=\"position: absolute; left: ". (round($NpcTPixelX, 2)) ."px; top: ". (round($NpcTPixelY, 2)) ."px;\" src=\"icons/060563.png\" alt=\"Vista\" title=\"
+            Vista: \n". $vistaname ."\n\nX: (". (round($NpcTLocX, 1)) .") Y: (". (round($NpcTLocY, 1)) .")\n\nAction: /". $action ."\" />\n\n";
+                $vista[] = $string;
             }
         
 
@@ -563,7 +599,13 @@ function myFunction() {
                 $offsetValueY = ($NpcLevelY + $offsety) * $c;
                 $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
                 $NpcPixelY = (($NpcLocY - 1) * 50 * $c);
-            $icon = $type;
+            //$icon = $type;
+                
+                if ($eobjectname != 'aether current') {
+                    $icon = $type;
+                } elseif ($eobjectname = 'aether current') {
+                    $icon = 'current';
+                }
             $string =
             "<img id=\"". $id ."\" style=\"position: absolute; left: ". (round($NpcPixelX, 2)) ."px; top: ". (round($NpcPixelY, 2)) ."px;\" src=\"icons/". $icon .".png\" alt=\"". $eobjectname ."\" title=\"
             ". $eobjectname ."\n\nX: (". (round($NpcLocX, 1)) .") Y: (". (round($NpcLocY, 1)) .")\n\nLevel_ID: ". $name ."\nType: ".$type ."\n\nEObj_ID: ". $object ."\" />\n\n";
@@ -776,7 +818,6 @@ function myFunction() {
 // end of section
 
 
-
             $output = implode($output);
             $Total5 = implode($Total5);
             $Total6 = implode($Total6);
@@ -794,6 +835,7 @@ function myFunction() {
             $Total66 = implode($Total66);
             $Total68 = implode($Total68);
             $treasure = implode($treasure);
+            $vista = implode($vista);
 {
             // Save some data
             $data = [
@@ -817,6 +859,7 @@ function myFunction() {
                 '{output}' => "\n\n$output",
                 '{sub}' => $sub,
                 '{treasure}' => "\n\n$treasure",
+                '{vista}' => "\n\n$vista",
 
 //                '{mapdata}' => $mapmarker,
             ];
@@ -829,11 +872,10 @@ function myFunction() {
         // save our data to the filename: GeRecipeWiki.txt
         $this->io->progressFinish();
         $this->io->text('Saving ...');
-        $info = $this->save('Level_'. $mapshort .''. $sub .'.html', 999999);
+        $info = $this->save(''. str_replace(" ", "_", $placename) .''. str_replace(" ", "_", $sub) .'.html', 999999);
         $this->io->table(
             [ 'Filename', 'Data Count', 'File Size' ],
             $info
         );
-        echo $mapnumber;
     }
 }
