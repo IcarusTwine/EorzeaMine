@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html style="height: 100%; margin: 0;">
+<head>
+    <title>AR:RM - </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="scripts\leaflet\leaflet.css" />
+    <script src="scripts\leaflet\leaflet.js"></script>
+
+</head>
+<body style="height: 100%; margin: 0;">
+
+<div id="map" style="width: 100%; height: 100%; background: #000000;"></div>
+
+<script type="text/javascript">
+//variables
+var mapSW = [0, 4096],
+    mapNE = [4096, 0];
+
+// declare map object
+var map = L.map('map').setView([0, 0], 1);
+
+
+// reference the tiles
+L.tileLayer('/{z}/{x}/{y}.png', {
+    minZoom: 2,
+    maxZoom: 4,
+    noWrap: true,
+    crs: L.CRS.Simple,
+}).addTo(map);
+
+map.setMaxBounds(new L.LatLngBounds(
+    map.unproject(mapSW, map.getMaxZoom()),
+    map.unproject(mapNE, map.getMaxZoom())
+));
+
+//icons
+var icon5 = L.icon({
+    iconUrl: 'icons/5.png',
+    iconSize: [32, 32],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon6 = L.icon({
+    iconUrl: 'icons/6.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon8 = L.icon({
+    iconUrl: 'icons/8.png',
+    iconSize: [32, 32],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon9 = L.icon({
+    iconUrl: 'icons/9.png',
+    iconSize: [32, 32],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon12 = L.icon({
+    iconUrl: 'icons/12.png',
+    iconSize: [32, 32],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon14 = L.icon({
+    iconUrl: 'icons/14.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon16 = L.icon({
+    iconUrl: 'icons/16.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon40 = L.icon({
+    iconUrl: 'icons/40.png',
+    iconSize: [32, 32],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon41 = L.icon({
+    iconUrl: 'icons/41.png',
+    iconSize: [32, 32],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon45 = L.icon({
+    iconUrl: 'icons/45.png',
+    iconSize: [18, 18],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var iconcurrent = L.icon({
+    iconUrl: 'icons/iconcurrent.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon49 = L.icon({
+    iconUrl: 'icons/49.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon51 = L.icon({
+    iconUrl: 'icons/51.png',
+    iconSize: [18, 18],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon57 = L.icon({
+    iconUrl: 'icons/57.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon65 = L.icon({
+    iconUrl: 'icons/65.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icon66 = L.icon({
+    iconUrl: 'icons/68.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var iconvista = L.icon({
+    iconUrl: 'icons/060563.png',
+    iconSize: [20, 20],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+var icontreasure = L.icon({
+    iconUrl: 'icons/16.png',
+    iconSize: [32, 32],
+    iconAnchor: [11, 21],
+    popupAnchor: [5, -32]
+});
+
+
+
+// markers and popups
+
+var vista = L.layerGroup();
+
+
+var positionmarker = L.layerGroup();
+
+
+var gimmick = L.layerGroup();
+
+var gimmick7078807 = L.marker(map.unproject([2293.1, 2152.9], map.getMaxZoom()), {icon: icon6})
+                    .bindPopup('<h3><b>Gimmick</b></h3>X: (12.5) Y: (11.8)<br>LGBType: 6(Gimmick)<br>LevelID: 7078807<br>ObjectID: 0<br><i>More Information Needed</i>'
+                    ).openPopup().addTo(gimmick);
+
+var gimmick7078900 = L.marker(map.unproject([2305.2, 1916.2], map.getMaxZoom()), {icon: icon6})
+                    .bindPopup('<h3><b>Gimmick</b></h3>X: (12.5) Y: (10.6)<br>LGBType: 6(Gimmick)<br>LevelID: 7078900<br>ObjectID: 0<br><i>More Information Needed</i>'
+                    ).openPopup().addTo(gimmick);
+
+var gimmick7078927 = L.marker(map.unproject([2399.3, 2041.4], map.getMaxZoom()), {icon: icon6})
+                    .bindPopup('<h3><b>Gimmick</b></h3>X: (13) Y: (11.2)<br>LGBType: 6(Gimmick)<br>LevelID: 7078927<br>ObjectID: 0<br><i>More Information Needed</i>'
+                    ).openPopup().addTo(gimmick);
+
+var gimmick7078929 = L.marker(map.unproject([2173.4, 1905.8], map.getMaxZoom()), {icon: icon6})
+                    .bindPopup('<h3><b>Gimmick</b></h3>X: (11.9) Y: (10.5)<br>LGBType: 6(Gimmick)<br>LevelID: 7078929<br>ObjectID: 0<br><i>More Information Needed</i>'
+                    ).openPopup().addTo(gimmick);
+
+
+var eventnpc = L.layerGroup();
+
+var eventnpc3278193 = L.marker(map.unproject([2053.2, 1901], map.getMaxZoom()), {icon: icon8})
+                    .bindPopup("<h3><b></b></h3>X: (11.3) Y: (10.5)<br>LGBType: 8(ENpc)<br>LevelID: 3278193<br>ObjectID: 12275<br><i></i>"
+                    ).openPopup().addTo(eventnpc);
+
+var eventnpc3278194 = L.marker(map.unproject([2042, 1902.1], map.getMaxZoom()), {icon: icon8})
+                    .bindPopup("<h3><b></b></h3>X: (11.2) Y: (10.5)<br>LGBType: 8(ENpc)<br>LevelID: 3278194<br>ObjectID: 12276<br><i></i>"
+                    ).openPopup().addTo(eventnpc);
+
+var eventnpc3963618 = L.marker(map.unproject([1979.1, 2472.1], map.getMaxZoom()), {icon: icon8})
+                    .bindPopup("<h3><b>Yda</b></h3>X: (10.9) Y: (13.4)<br>LGBType: 8(ENpc)<br>LevelID: 3963618<br>ObjectID: 1002275<br><i></i>"
+                    ).openPopup().addTo(eventnpc);
+
+var eventnpc3963619 = L.marker(map.unproject([1991.4, 2472.8], map.getMaxZoom()), {icon: icon8})
+                    .bindPopup("<h3><b>Papalymo</b></h3>X: (11) Y: (13.4)<br>LGBType: 8(ENpc)<br>LevelID: 3963619<br>ObjectID: 1002276<br><i></i>"
+                    ).openPopup().addTo(eventnpc);
+
+
+var battlenpc = L.layerGroup();
+
+var battlenpc3284483 = L.marker(map.unproject([2131, 1905.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.7) Y: (10.5)<br>LGBType: 9(bnpc)<br>LevelID: 3284483<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284484 = L.marker(map.unproject([2124.2, 1942.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.6) Y: (10.7)<br>LGBType: 9(bnpc)<br>LevelID: 3284484<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284485 = L.marker(map.unproject([2112.8, 1970.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.6) Y: (10.9)<br>LGBType: 9(bnpc)<br>LevelID: 3284485<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284486 = L.marker(map.unproject([2122.4, 1923.4], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.6) Y: (10.6)<br>LGBType: 9(bnpc)<br>LevelID: 3284486<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284487 = L.marker(map.unproject([2122.6, 1957.5], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.6) Y: (10.8)<br>LGBType: 9(bnpc)<br>LevelID: 3284487<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284498 = L.marker(map.unproject([2106.2, 1888.2], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (10.4)<br>LGBType: 9(bnpc)<br>LevelID: 3284498<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284499 = L.marker(map.unproject([2151.1, 1912.4], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.8) Y: (10.6)<br>LGBType: 9(bnpc)<br>LevelID: 3284499<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284500 = L.marker(map.unproject([2160.9, 1943.1], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.8) Y: (10.7)<br>LGBType: 9(bnpc)<br>LevelID: 3284500<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284501 = L.marker(map.unproject([2096.6, 1989.1], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (10.9)<br>LGBType: 9(bnpc)<br>LevelID: 3284501<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284502 = L.marker(map.unproject([2033.5, 1988.3], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.2) Y: (10.9)<br>LGBType: 9(bnpc)<br>LevelID: 3284502<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284503 = L.marker(map.unproject([2018.1, 1950], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.1) Y: (10.7)<br>LGBType: 9(bnpc)<br>LevelID: 3284503<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284504 = L.marker(map.unproject([2026.2, 1908.3], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.1) Y: (10.5)<br>LGBType: 9(bnpc)<br>LevelID: 3284504<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284505 = L.marker(map.unproject([2066.4, 1878.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.3) Y: (10.4)<br>LGBType: 9(bnpc)<br>LevelID: 3284505<br>ObjectID: 251<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284506 = L.marker(map.unproject([2080.3, 1924], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (10.6)<br>LGBType: 9(bnpc)<br>LevelID: 3284506<br>ObjectID: 249<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3284507 = L.marker(map.unproject([2082.5, 1958.2], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (10.8)<br>LGBType: 9(bnpc)<br>LevelID: 3284507<br>ObjectID: 250<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3879685 = L.marker(map.unproject([2144, 2328.2], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.7) Y: (12.6)<br>LGBType: 9(bnpc)<br>LevelID: 3879685<br>ObjectID: 540<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3954548 = L.marker(map.unproject([2773.8, 1494.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (14.9) Y: (8.5)<br>LGBType: 9(bnpc)<br>LevelID: 3954548<br>ObjectID: 544<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3963616 = L.marker(map.unproject([2101.2, 2410.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (13.1)<br>LGBType: 9(bnpc)<br>LevelID: 3963616<br>ObjectID: 113<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3963617 = L.marker(map.unproject([2078.2, 2356.7], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (12.8)<br>LGBType: 9(bnpc)<br>LevelID: 3963617<br>ObjectID: 246<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc3995190 = L.marker(map.unproject([2043.6, 2374.1], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.2) Y: (12.9)<br>LGBType: 9(bnpc)<br>LevelID: 3995190<br>ObjectID: 249<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5797717 = L.marker(map.unproject([2112.9, 2482.4], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.6) Y: (13.4)<br>LGBType: 9(bnpc)<br>LevelID: 5797717<br>ObjectID: 4099<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5797718 = L.marker(map.unproject([1936.1, 2327.9], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (10.7) Y: (12.6)<br>LGBType: 9(bnpc)<br>LevelID: 5797718<br>ObjectID: 4102<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5800011 = L.marker(map.unproject([2092, 2429], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (13.1)<br>LGBType: 9(bnpc)<br>LevelID: 5800011<br>ObjectID: 4140<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5800012 = L.marker(map.unproject([2089.7, 2442.3], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (13.2)<br>LGBType: 9(bnpc)<br>LevelID: 5800012<br>ObjectID: 4112<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5800013 = L.marker(map.unproject([2098.6, 2437.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (13.2)<br>LGBType: 9(bnpc)<br>LevelID: 5800013<br>ObjectID: 4113<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5800016 = L.marker(map.unproject([2070.8, 2456.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (13.3)<br>LGBType: 9(bnpc)<br>LevelID: 5800016<br>ObjectID: 4111<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5811220 = L.marker(map.unproject([2071.3, 2414.5], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (13.1)<br>LGBType: 9(bnpc)<br>LevelID: 5811220<br>ObjectID: 4145<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5811221 = L.marker(map.unproject([2087.6, 2427.2], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (13.1)<br>LGBType: 9(bnpc)<br>LevelID: 5811221<br>ObjectID: 4146<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5814827 = L.marker(map.unproject([2045, 2447.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.2) Y: (13.2)<br>LGBType: 9(bnpc)<br>LevelID: 5814827<br>ObjectID: 3599<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5814828 = L.marker(map.unproject([2113.8, 2456.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.6) Y: (13.3)<br>LGBType: 9(bnpc)<br>LevelID: 5814828<br>ObjectID: 3599<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5814829 = L.marker(map.unproject([2036.5, 2404.1], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.2) Y: (13)<br>LGBType: 9(bnpc)<br>LevelID: 5814829<br>ObjectID: 3599<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5814830 = L.marker(map.unproject([2104.2, 2386.2], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (12.9)<br>LGBType: 9(bnpc)<br>LevelID: 5814830<br>ObjectID: 3599<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5814836 = L.marker(map.unproject([2056.6, 2409.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.3) Y: (13)<br>LGBType: 9(bnpc)<br>LevelID: 5814836<br>ObjectID: 3868<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5814837 = L.marker(map.unproject([2082.3, 2437.4], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (13.2)<br>LGBType: 9(bnpc)<br>LevelID: 5814837<br>ObjectID: 3933<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5852857 = L.marker(map.unproject([2157.9, 2489.9], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.8) Y: (13.4)<br>LGBType: 9(bnpc)<br>LevelID: 5852857<br>ObjectID: 4165<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5853010 = L.marker(map.unproject([1977.3, 2385.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (10.9) Y: (12.9)<br>LGBType: 9(bnpc)<br>LevelID: 5853010<br>ObjectID: 4282<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5874953 = L.marker(map.unproject([2126.5, 2486.5], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.6) Y: (13.4)<br>LGBType: 9(bnpc)<br>LevelID: 5874953<br>ObjectID: 4597<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5874955 = L.marker(map.unproject([2127.8, 2494.9], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.6) Y: (13.5)<br>LGBType: 9(bnpc)<br>LevelID: 5874955<br>ObjectID: 4602<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5874956 = L.marker(map.unproject([2135.1, 2485.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.7) Y: (13.4)<br>LGBType: 9(bnpc)<br>LevelID: 5874956<br>ObjectID: 4601<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5874961 = L.marker(map.unproject([2029.4, 2425.2], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.1) Y: (13.1)<br>LGBType: 9(bnpc)<br>LevelID: 5874961<br>ObjectID: 4605<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5874962 = L.marker(map.unproject([1990.7, 2332.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11) Y: (12.7)<br>LGBType: 9(bnpc)<br>LevelID: 5874962<br>ObjectID: 4606<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc5906154 = L.marker(map.unproject([2106.6, 2401.4], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (13)<br>LGBType: 9(bnpc)<br>LevelID: 5906154<br>ObjectID: 1016<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc6970266 = L.marker(map.unproject([2107.7, 2430.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (13.2)<br>LGBType: 9(bnpc)<br>LevelID: 6970266<br>ObjectID: 7746<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc6970267 = L.marker(map.unproject([2097.2, 2457.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.5) Y: (13.3)<br>LGBType: 9(bnpc)<br>LevelID: 6970267<br>ObjectID: 7746<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc6970268 = L.marker(map.unproject([2077.5, 2471.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.4) Y: (13.4)<br>LGBType: 9(bnpc)<br>LevelID: 6970268<br>ObjectID: 7746<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074454 = L.marker(map.unproject([1699.8, 2032], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (9.5) Y: (11.2)<br>LGBType: 9(bnpc)<br>LevelID: 7074454<br>ObjectID: 8117<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074455 = L.marker(map.unproject([1698, 2055.9], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (9.5) Y: (11.3)<br>LGBType: 9(bnpc)<br>LevelID: 7074455<br>ObjectID: 8118<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074456 = L.marker(map.unproject([1709.8, 2015.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (9.5) Y: (11.1)<br>LGBType: 9(bnpc)<br>LevelID: 7074456<br>ObjectID: 8118<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074457 = L.marker(map.unproject([1683.1, 2029.7], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (9.4) Y: (11.1)<br>LGBType: 9(bnpc)<br>LevelID: 7074457<br>ObjectID: 8118<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074458 = L.marker(map.unproject([2330.4, 2506.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.7) Y: (13.5)<br>LGBType: 9(bnpc)<br>LevelID: 7074458<br>ObjectID: 8119<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074459 = L.marker(map.unproject([2350.1, 2496.1], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.8) Y: (13.5)<br>LGBType: 9(bnpc)<br>LevelID: 7074459<br>ObjectID: 8116<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074460 = L.marker(map.unproject([2320.9, 2483], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.6) Y: (13.4)<br>LGBType: 9(bnpc)<br>LevelID: 7074460<br>ObjectID: 8115<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074461 = L.marker(map.unproject([2214.6, 1880], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.1) Y: (10.4)<br>LGBType: 9(bnpc)<br>LevelID: 7074461<br>ObjectID: 8114<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074462 = L.marker(map.unproject([2146.9, 1871.2], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.7) Y: (10.4)<br>LGBType: 9(bnpc)<br>LevelID: 7074462<br>ObjectID: 8113<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7074463 = L.marker(map.unproject([2166, 1917.1], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (11.8) Y: (10.6)<br>LGBType: 9(bnpc)<br>LevelID: 7074463<br>ObjectID: 8112<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078700 = L.marker(map.unproject([2323.6, 2398.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.6) Y: (13)<br>LGBType: 9(bnpc)<br>LevelID: 7078700<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078701 = L.marker(map.unproject([2316.4, 2387.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.6) Y: (12.9)<br>LGBType: 9(bnpc)<br>LevelID: 7078701<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078702 = L.marker(map.unproject([2327.7, 2393.3], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.6) Y: (13)<br>LGBType: 9(bnpc)<br>LevelID: 7078702<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078708 = L.marker(map.unproject([2262.6, 2290], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.3) Y: (12.5)<br>LGBType: 9(bnpc)<br>LevelID: 7078708<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078709 = L.marker(map.unproject([2256.9, 2276.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.3) Y: (12.4)<br>LGBType: 9(bnpc)<br>LevelID: 7078709<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078711 = L.marker(map.unproject([2272.7, 2283.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.4) Y: (12.4)<br>LGBType: 9(bnpc)<br>LevelID: 7078711<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078751 = L.marker(map.unproject([2290.8, 2171], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.5) Y: (11.9)<br>LGBType: 9(bnpc)<br>LevelID: 7078751<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078752 = L.marker(map.unproject([2274.9, 2162.7], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.4) Y: (11.8)<br>LGBType: 9(bnpc)<br>LevelID: 7078752<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7078753 = L.marker(map.unproject([2280.5, 2174.6], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.4) Y: (11.9)<br>LGBType: 9(bnpc)<br>LevelID: 7078753<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7079366 = L.marker(map.unproject([2370.5, 2008], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.9) Y: (11)<br>LGBType: 9(bnpc)<br>LevelID: 7079366<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7079368 = L.marker(map.unproject([2397.2, 2015.1], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (13) Y: (11.1)<br>LGBType: 9(bnpc)<br>LevelID: 7079368<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7079370 = L.marker(map.unproject([2385.3, 1999.8], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.9) Y: (11)<br>LGBType: 9(bnpc)<br>LevelID: 7079370<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7079378 = L.marker(map.unproject([2277.3, 1905.4], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.4) Y: (10.5)<br>LGBType: 9(bnpc)<br>LevelID: 7079378<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7079379 = L.marker(map.unproject([2291.4, 1894.5], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.5) Y: (10.5)<br>LGBType: 9(bnpc)<br>LevelID: 7079379<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7079380 = L.marker(map.unproject([2270.6, 1922.4], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (12.4) Y: (10.6)<br>LGBType: 9(bnpc)<br>LevelID: 7079380<br>ObjectID: 8170<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7083067 = L.marker(map.unproject([1748.2, 2079.4], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (9.7) Y: (11.4)<br>LGBType: 9(bnpc)<br>LevelID: 7083067<br>ObjectID: 8216<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7083068 = L.marker(map.unproject([1790.4, 2055], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (10) Y: (11.3)<br>LGBType: 9(bnpc)<br>LevelID: 7083068<br>ObjectID: 8216<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+var battlenpc7083069 = L.marker(map.unproject([1774, 2014.3], map.getMaxZoom()), {icon: icon9})
+                    .bindPopup("<h3><b>Battle NPC</b></h3>X: (9.9) Y: (11.1)<br>LGBType: 9(bnpc)<br>LevelID: 7083069<br>ObjectID: 8216<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(battlenpc);
+
+
+var aetheryte = L.layerGroup();
+
+
+var gathering = L.layerGroup();
+
+
+var poprange = L.layerGroup();
+
+var poprange3278186 = L.marker(map.unproject([2027.6, 1772.6], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11.1) Y: (9.9)<br>LGBType: 40(Pop Range)<br>LevelID: 3278186<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange3284474 = L.marker(map.unproject([2038.9, 1912.4], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11.2) Y: (10.6)<br>LGBType: 40(Pop Range)<br>LevelID: 3284474<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange3879683 = L.marker(map.unproject([2070.7, 2430.5], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11.4) Y: (13.2)<br>LGBType: 40(Pop Range)<br>LevelID: 3879683<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange3909119 = L.marker(map.unproject([2056.9, 1902.2], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11.3) Y: (10.5)<br>LGBType: 40(Pop Range)<br>LevelID: 3909119<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange3954549 = L.marker(map.unproject([2775.8, 1437.1], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (14.9) Y: (8.2)<br>LGBType: 40(Pop Range)<br>LevelID: 3954549<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange3963620 = L.marker(map.unproject([1977.8, 2489.8], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (10.9) Y: (13.4)<br>LGBType: 40(Pop Range)<br>LevelID: 3963620<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange4306517 = L.marker(map.unproject([2032.6, 2501.4], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11.2) Y: (13.5)<br>LGBType: 40(Pop Range)<br>LevelID: 4306517<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange5041149 = L.marker(map.unproject([2110.5, 2215.4], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11.6) Y: (12.1)<br>LGBType: 40(Pop Range)<br>LevelID: 5041149<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange5853006 = L.marker(map.unproject([1993.6, 2516.5], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11) Y: (13.6)<br>LGBType: 40(Pop Range)<br>LevelID: 5853006<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange5853007 = L.marker(map.unproject([1992.9, 2441.6], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11) Y: (13.2)<br>LGBType: 40(Pop Range)<br>LevelID: 5853007<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange5853009 = L.marker(map.unproject([2130.3, 2370.5], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (11.7) Y: (12.9)<br>LGBType: 40(Pop Range)<br>LevelID: 5853009<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange7074578 = L.marker(map.unproject([1776.1, 2039.5], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (9.9) Y: (11.2)<br>LGBType: 40(Pop Range)<br>LevelID: 7074578<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+var poprange7078952 = L.marker(map.unproject([1765.2, 2041.9], map.getMaxZoom()), {icon: icon40})
+                    .bindPopup("<h3><b>Pop Range</b></h3>X: (9.8) Y: (11.2)<br>LGBType: 40(Pop Range)<br>LevelID: 7078952<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(poprange);
+
+
+var exitrange = L.layerGroup();
+
+
+var eventobject = L.layerGroup();
+
+var eventobject4018569 = L.marker(map.unproject([2000.6, 2498.2], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>iron leg trap</b></h3>X: (11) Y: (13.5)<br>LGBType: 45(EObj)<br>LevelID: 4018569<br>ObjectID: 2001097<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject4309031 = L.marker(map.unproject([2085.8, 2528.5], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>magitek terminal</b></h3>X: (11.4) Y: (13.6)<br>LGBType: 45(EObj)<br>LevelID: 4309031<br>ObjectID: 2000116<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject5776851 = L.marker(map.unproject([1765.7, 2306.7], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (9.8) Y: (12.5)<br>LGBType: 45(EObj)<br>LevelID: 5776851<br>ObjectID: 2003520<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject5783051 = L.marker(map.unproject([2018.5, 2353.3], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>diabolical gate</b></h3>X: (11.1) Y: (12.8)<br>LGBType: 45(EObj)<br>LevelID: 5783051<br>ObjectID: 2004080<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject5926482 = L.marker(map.unproject([2047.6, 2413.2], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>the Balance</b></h3>X: (11.2) Y: (13.1)<br>LGBType: 45(EObj)<br>LevelID: 5926482<br>ObjectID: 2005959<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject5926505 = L.marker(map.unproject([2119, 2376], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>×テスト用タロットカード</b></h3>X: (11.6) Y: (12.9)<br>LGBType: 45(EObj)<br>LevelID: 5926505<br>ObjectID: 2006327<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject6892409 = L.marker(map.unproject([2062, 2449.3], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>bronze chest</b></h3>X: (11.3) Y: (13.2)<br>LGBType: 45(EObj)<br>LevelID: 6892409<br>ObjectID: 2008381<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7078817 = L.marker(map.unproject([2293.3, 2153.4], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>water-stained letter</b></h3>X: (12.5) Y: (11.8)<br>LGBType: 45(EObj)<br>LevelID: 7078817<br>ObjectID: 2005165<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7078818 = L.marker(map.unproject([2293.3, 2153.4], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (12.5) Y: (11.8)<br>LGBType: 45(EObj)<br>LevelID: 7078818<br>ObjectID: 2004995<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7078894 = L.marker(map.unproject([2159.7, 1915.3], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (11.8) Y: (10.6)<br>LGBType: 45(EObj)<br>LevelID: 7078894<br>ObjectID: 2005587<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7078897 = L.marker(map.unproject([2380, 1924.5], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (12.9) Y: (10.6)<br>LGBType: 45(EObj)<br>LevelID: 7078897<br>ObjectID: 2008780<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7078928 = L.marker(map.unproject([2438.4, 2063], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (13.2) Y: (11.3)<br>LGBType: 45(EObj)<br>LevelID: 7078928<br>ObjectID: 2008780<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7079395 = L.marker(map.unproject([2314.9, 1929.9], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>destination</b></h3>X: (12.6) Y: (10.6)<br>LGBType: 45(EObj)<br>LevelID: 7079395<br>ObjectID: 2001260<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7079396 = L.marker(map.unproject([2392.7, 2034.3], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>destination</b></h3>X: (13) Y: (11.2)<br>LGBType: 45(EObj)<br>LevelID: 7079396<br>ObjectID: 2001260<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7079397 = L.marker(map.unproject([2184.6, 1898.4], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b>destination</b></h3>X: (11.9) Y: (10.5)<br>LGBType: 45(EObj)<br>LevelID: 7079397<br>ObjectID: 2001260<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7080610 = L.marker(map.unproject([2398.9, 2042.4], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (13) Y: (11.2)<br>LGBType: 45(EObj)<br>LevelID: 7080610<br>ObjectID: 2009067<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7080611 = L.marker(map.unproject([2304.8, 1917], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (12.5) Y: (10.6)<br>LGBType: 45(EObj)<br>LevelID: 7080611<br>ObjectID: 2009067<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7080612 = L.marker(map.unproject([2173.2, 1906.1], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (11.9) Y: (10.5)<br>LGBType: 45(EObj)<br>LevelID: 7080612<br>ObjectID: 2009066<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+var eventobject7082005 = L.marker(map.unproject([1776.1, 2039.5], map.getMaxZoom()), {icon: icon45})
+                    .bindPopup("<h3><b></b></h3>X: (9.9) Y: (11.2)<br>LGBType: 45(EObj)<br>LevelID: 7082005<br>ObjectID: 2007457<br><i></i>"
+                    ).openPopup().addTo(eventobject);
+
+
+var eventrange = L.layerGroup();
+
+var eventrange3970069 = L.marker(map.unproject([2190.7, 2437.8], map.getMaxZoom()), {icon: icon49})
+                    .bindPopup("<h3><b>EventRange</b></h3>X: (12) Y: (13.2)<br>LGBType: 49(eventrange)<br>LevelID: 3970069<br>ObjectID: 5000000<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(eventrange);
+
+var eventrange7081936 = L.marker(map.unproject([1771.7, 2033.9], map.getMaxZoom()), {icon: icon49})
+                    .bindPopup("<h3><b>EventRange</b></h3>X: (9.9) Y: (11.2)<br>LGBType: 49(eventrange)<br>LevelID: 7081936<br>ObjectID: 5000000<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(eventrange);
+
+
+var questmarker = L.layerGroup();
+
+
+var collisionbox = L.layerGroup();
+
+
+var clientpath = L.layerGroup();
+
+
+var serverpath = L.layerGroup();
+
+var serverpath5797714 = L.marker(map.unproject([2129.7, 2353.2], map.getMaxZoom()), {icon: icon66})
+                    .bindPopup("<h3><b>Serverside Path</b></h3>X: (11.6) Y: (12.8)<br>LGBType: 66(ServerPath)<br>LevelID: 5797714<br>ObjectID: 0<br><i>More Information Needed</i>"
+                    ).openPopup().addTo(serverpath);
+
+
+var targetmarker = L.layerGroup();
+
+
+var treasure = L.layerGroup();
+
+
+var mapmarker = L.layerGroup().addTo(map);
+
+
+
+
+
+
+
+//Layer Groups
+var overlays = {
+    "Vistas" : vista,
+    "PositionMarker" : positionmarker,
+    "Gimmick" : gimmick,
+    "EventNPCs" : eventnpc,
+    "BNPCs" : battlenpc,
+    "Aetheryte" : aetheryte,
+    "DoL Leve Spots" : gathering,
+    "PopRange" : poprange,
+    "ExitRange" : exitrange,
+    "EObj/Aether Current" : eventobject,
+    "QuestMarker" : questmarker,
+    "CollisionBox" : collisionbox,
+    "ClientPath" : clientpath,
+    "ServerPath" : serverpath,
+    "TargetMarker" : targetmarker,
+    "Treasure" : treasure,
+    "Map Labels" : mapmarker,
+    
+}
+
+// add layer control
+L.control.layers(null, overlays).addTo(map);
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
