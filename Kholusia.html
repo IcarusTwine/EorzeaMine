@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="scripts\leaflet\leaflet.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="scripts\leaflet\leaflet.js"></script>
-
+    <style>html { overflow-y: hidden; }</style>
 </head>
 <body style="height: 100%; margin: 0;">
+
+ <div class="w3-bar w3-black">
+  <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+  <span class="w3-bar-item w3-wide w3-display-topmiddle"><b>n4f2 - Kholusia</b></span>
+  <span class="w3-bar-item w3-wide w3-right">Layers</span>
+  <span class="w3-bar-item w3-wide">A Realm Remapped</span>
+
+</div>
 
 <div id="map" style="width: 100%; height: 100%; background: #000000;"></div>
 
@@ -3199,7 +3208,6 @@ var overlays = {
     "Gimmick" : gimmick,
     "EventNPCs" : eventnpc,
     "BNPCs" : battlenpc,
-    "Aetheryte" : aetheryte,
     "DoL Leve Spots" : gathering,
     "PopRange" : poprange,
     "ExitRange" : exitrange,
